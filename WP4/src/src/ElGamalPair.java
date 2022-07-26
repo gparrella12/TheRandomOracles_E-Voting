@@ -4,6 +4,11 @@ package src;
 import java.math.*;
 import java.security.*;
 
+/**
+ *
+ * @author Ernesto
+ */
+
 public class ElGamalPair {
     private BigInteger g, p, q;
     private int securityparameter;
