@@ -1,5 +1,6 @@
 package src;
 
+import java.security.Key;
 import java.util.List;
 
 public class AuthorityManagement {
@@ -8,11 +9,12 @@ public class AuthorityManagement {
 
     public AuthorityManagement() {
     }
-
-    public void generateVotingKey() {
+    // questa funzione deve restituire la chiave PK_voting
+    public Key generateVotingKey() {
+        return null;
     }
 
-    public void validateVote() {
+    public void validateVote(Voter voter, Vote v) {
     }
 
     public void votesDecryption() {

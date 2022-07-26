@@ -1,16 +1,18 @@
 package src;
 
+import java.security.Key;
+
 public class Authority {
 
     private String name;
 
-    private Object privateEncKey;
+    private Key privateEncKey;
 
-    private Object publicEncKey;
+    private Key publicEncKey;
 
-    private Object privateSigKey;
+    private Key privateSigKey;
 
-    private Object publicSigKey;
+    private Key publicSigKey;
 
     private Object authorityCertificate;
 

@@ -1,10 +1,12 @@
 package src;
 
+import java.security.Key;
+
 public class Voter {
 
-    private Object publicKey;
+    private Key publicKey;
 
-    private Object privateKey;
+    private Key privateKey;
 
     private Object voterCertificate;
 
