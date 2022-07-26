@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="UML_Diagram">
+  <ClassDiagramComponents>
+    <Class name="SmartContract" package="" visibility="public" xPosition="584.0" yPosition="0.0">
+      <Fields>
+        <Field name="blockchain" type="BlochChain" visibility="private"/>
+        <Field name="votingKey" type="Object" visibility="private"/>
+        <Field name="startElection" type="DateTime" visibility="private"/>
+        <Field name="endElection" type="DateTime" visibility="private"/>
+        <Field name="manager" type="AuthorityManagement" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="keyGeneration" returnType="void" visibility="public"/>
+        <Method name="vote" returnType="void" visibility="public"/>
+        <Method name="tallying" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="AuthorityManagement" package="" visibility="public" xPosition="376.0" yPosition="25.0">
+      <Fields>
+        <Field name="authorityList" type="List&lt;Authority&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="generateVotingKey" returnType="void" visibility="public"/>
+        <Method name="validateVote" returnType="void" visibility="public"/>
+        <Method name="votesDecryption" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Vote" package="" visibility="public" xPosition="386.0" yPosition="241.0">
+      <Fields>
+        <Field name="preferences" type="Object" visibility="private"/>
+        <Field name="voteProof" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Transaction" package="" visibility="public" xPosition="386.0" yPosition="403.0">
+      <Fields>
+        <Field name="v" type="Vote" visibility="private"/>
+        <Field name="timestamp" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Voter" package="" visibility="public" xPosition="74.0" yPosition="327.0">
+      <Fields>
+        <Field name="publicKey" type="Object" visibility="private"/>
+        <Field name="privateKey" type="Object" visibility="private"/>
+        <Field name="voterCertificate" type="Object" visibility="private"/>
+        <Field name="voted" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="vote" returnType="Vote" visibility="public">
+          <Argument type="Vote" name="v"/>
+        </Method>
+        <Method name="makeProof" returnType="Vote" visibility="public">
+          <Argument type="Vote" name="v"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Authority" package="" visibility="public" xPosition="63.0" yPosition="41.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="privateEncKey" type="Object" visibility="private"/>
+        <Field name="publicEncKey" type="Object" visibility="private"/>
+        <Field name="privateSigKey" type="Object" visibility="private"/>
+        <Field name="publicSigKey" type="Object" visibility="private"/>
+        <Field name="authorityCertificate" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="BlockChain" package="" visibility="public" xPosition="665.0" yPosition="280.0">
+      <Fields>
+        <Field name="chain" type="List&lt;Block&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="addBlock" returnType="Block" visibility="public">
+          <Argument type="Block" name="b"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Block" package="" visibility="public" xPosition="683.0" yPosition="422.0">
+      <Fields>
+        <Field name="transaction" type="Transaction" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Transaction" name="t"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
