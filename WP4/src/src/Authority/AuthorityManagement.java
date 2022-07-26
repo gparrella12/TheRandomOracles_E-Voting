@@ -52,7 +52,7 @@ public class AuthorityManagement {
             votingKey = votingKey.multiply(a.getPublicEncKey());
         }
 
-        return votingKey.mod(ElGamalPair.getInstance().getP());
+        return votingKey.mod(ElGamalParameters.getP());
     }
 
     public void validateVote(Voter voter, Vote v) {

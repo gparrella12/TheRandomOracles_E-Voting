@@ -17,7 +17,7 @@ public class Authority {
     //nel costruttore creo la coppia (sk,pk);   
     public Authority(String name) {
         this.name=name;        
-        ElGamalPair pair = ElGamalPair.getInstance();
+        ElGamalPair pair = new ElGamalPair();
         this.privateEncKey = pair.getSkValue();
         this.publicEncKey = pair.getPkValue();
     }
