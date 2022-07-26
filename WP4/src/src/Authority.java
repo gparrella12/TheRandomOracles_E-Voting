@@ -1,21 +1,36 @@
 package src;
+import src.ElGamalPair;
+import java.math.BigInteger;
 
-import java.security.Key;
-
+/**
+ *
+ * @author Ernesto
+ */
 public class Authority {
 
     private String name;
-
-    private Key privateEncKey;
-
-    private Key publicEncKey;
-
-    private Key privateSigKey;
-
-    private Key publicSigKey;
-
-    private Object authorityCertificate;
+    private BigInteger privateEncKey;
+    private BigInteger publicEncKey;
+    private Object privateSigKey;
+    private Object publicSigKey;
+    private Object certificate;
 
     public Authority() {
+        ElGamalPair pair = new ElGamalPair(5);
+        privateEncKey = pair.getSkValue();
+        publicEncKey = pair.getPkValue();
     }
+
+    public BigInteger getPublicEncKey() {
+        return publicEncKey;
+    }
+
+    public Object getPublicSigKey() {
+        return publicSigKey;
+    }
+
+    public Object getCertificate() {
+        return certificate;
+    }
+
 }
