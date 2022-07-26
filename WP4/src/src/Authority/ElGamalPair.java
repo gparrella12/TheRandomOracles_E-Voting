@@ -1,6 +1,4 @@
-package src;
-
-
+package src.Authority;
 import java.math.*;
 import java.security.*;
 
@@ -10,18 +8,30 @@ import java.security.*;
  */
 
 public class ElGamalPair {
+    //Per velocità 5, poi andrà settato a 2048.
+    private static int SECURITY_PARAMETER=5;
     private BigInteger g, p, q;
     private int securityparameter;
     private BigInteger skValue;
     private BigInteger pkValue;
+    private static ElGamalPair single_instance = null;
+        //metodo per implementare il singleton.
+    
+    public static ElGamalPair getInstance() {
+        if (single_instance == null) {
+            single_instance = new ElGamalPair();
+        }
 
-    public ElGamalPair(int securityparameter) {
+        return single_instance;
+    }
+    
+    private ElGamalPair() {
         BigInteger p, q, g, pk, sk;
 
         SecureRandom sr = new SecureRandom();
 
         while (true) {
-            q = BigInteger.probablePrime(securityparameter, sr);
+            q = BigInteger.probablePrime(SECURITY_PARAMETER, sr);
             p = q.multiply(BigInteger.TWO);
             p = p.add(BigInteger.ONE);
 
@@ -32,7 +42,7 @@ public class ElGamalPair {
         }
 
         g = new BigInteger("4");
-        sk = new BigInteger(securityparameter, sr);
+        sk = new BigInteger(SECURITY_PARAMETER, sr);
         pk = g.modPow(sk, p);
 
         this.g = g;
@@ -49,6 +59,22 @@ public class ElGamalPair {
 
     public BigInteger getSkValue() {
         return skValue;
+    }
+
+    public BigInteger getG() {
+        return g;
+    }
+
+    public BigInteger getP() {
+        return p;
+    }
+
+    public BigInteger getQ() {
+        return q;
+    }
+
+    public static int getSECURITY_PARAMETER() {
+        return SECURITY_PARAMETER;
     }
 
 }

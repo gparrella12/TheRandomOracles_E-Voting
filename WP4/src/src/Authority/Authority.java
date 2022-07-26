@@ -1,5 +1,4 @@
-package src;
-import src.ElGamalPair;
+package src.Authority;
 import java.math.BigInteger;
 
 /**
@@ -15,10 +14,12 @@ public class Authority {
     private Object publicSigKey;
     private Object certificate;
 
-    public Authority() {
-        ElGamalPair pair = new ElGamalPair(5);
-        privateEncKey = pair.getSkValue();
-        publicEncKey = pair.getPkValue();
+    //nel costruttore creo la coppia (sk,pk);   
+    public Authority(String name) {
+        this.name=name;        
+        ElGamalPair pair = ElGamalPair.getInstance();
+        this.privateEncKey = pair.getSkValue();
+        this.publicEncKey = pair.getPkValue();
     }
 
     public BigInteger getPublicEncKey() {
