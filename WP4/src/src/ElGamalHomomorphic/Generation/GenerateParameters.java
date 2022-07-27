@@ -1,4 +1,4 @@
-package src.ElGamalHomomorphic;
+package src.ElGamalHomomorphic.Generation;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

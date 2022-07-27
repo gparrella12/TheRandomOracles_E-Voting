@@ -1,12 +1,5 @@
-package src.ElGamalHomomorphic;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.math.*;
+package src.ElGamalHomomorphic;import java.math.*;
 import java.security.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
 import src.Authority.Authority;
 
 /**

@@ -4,8 +4,8 @@ import java.math.BigInteger;
 
 public class ElGamalCipherText {
 
-    private BigInteger u; // u = g^r, con r randomness
-    private BigInteger v; // v = g^m * y^r, con y PK
+    private final BigInteger u; // u = g^r, con r randomness
+    private final BigInteger v; // v = g^m * y^r, con y PK
 
     public ElGamalCipherText(BigInteger u, BigInteger v) {
         this.u = u;

@@ -13,7 +13,10 @@ import java.util.Scanner;
  */
 public class ElGamalParameters {
 
-    private BigInteger g, p, q, SECURITY_PARAMETER;
+    private final BigInteger g;
+    private final BigInteger p;
+    private final BigInteger q;
+    private BigInteger SECURITY_PARAMETER;
 
     public ElGamalParameters() {
         File file = new File("parameters.txt");

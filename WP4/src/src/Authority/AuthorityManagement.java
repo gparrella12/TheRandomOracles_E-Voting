@@ -1,6 +1,6 @@
 package src.Authority;
 
-import src.ElGamalHomomorphic.ElGamalParametersGeneration;
+import src.ElGamalHomomorphic.Generation.ElGamalParametersGeneration;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
