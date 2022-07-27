@@ -12,7 +12,7 @@ import java.util.List;
 public class ElGamalParametersGeneration {
 
     //Per velocità 5, poi andrà settato a 2048.
-    private static BigInteger SECURITY_PARAMETER = BigInteger.valueOf(2048);
+    private static BigInteger SECURITY_PARAMETER = BigInteger.valueOf(10);
     private static List<BigInteger> schemeParameters;
     private static BigInteger g, p, q;
 
