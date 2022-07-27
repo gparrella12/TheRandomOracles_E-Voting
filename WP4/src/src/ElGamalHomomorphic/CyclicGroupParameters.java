@@ -13,13 +13,28 @@ import java.util.Scanner;
  */
 public class CyclicGroupParameters {
 
-    private final BigInteger g;
-    private final BigInteger p;
-    private final BigInteger q;
+    private BigInteger g;
+    private BigInteger p;
+    private BigInteger q;
     private BigInteger SECURITY_PARAMETER;
 
     public CyclicGroupParameters() {
-        File file = new File("parameters.txt");
+        this.importFromFile("parameters.txt"); // Default name
+    }
+
+    public CyclicGroupParameters(String fileName) {
+        this.importFromFile(fileName);
+    }
+
+    public CyclicGroupParameters(BigInteger g, BigInteger p, BigInteger q, BigInteger SECURITY_PARAMETER) {
+        this.g = g;
+        this.p = p;
+        this.q = q;
+        this.SECURITY_PARAMETER = SECURITY_PARAMETER;
+    }
+
+    private void importFromFile(String fileName) {
+        File file = new File(fileName);
         List<BigInteger> parameters = new ArrayList<>();
         try {
 
@@ -33,6 +48,7 @@ public class CyclicGroupParameters {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
         SECURITY_PARAMETER = parameters.get(0);
         g = parameters.get(1);
         p = parameters.get(2);
@@ -54,7 +70,5 @@ public class CyclicGroupParameters {
     public BigInteger getSECURITY_PARAMETER() {
         return SECURITY_PARAMETER;
     }
-    
-    
 
 }

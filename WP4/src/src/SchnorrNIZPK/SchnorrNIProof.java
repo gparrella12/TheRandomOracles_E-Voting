@@ -7,7 +7,7 @@ import java.math.BigInteger;
  * @author gparrella
  */
 public class SchnorrNIProof {
-    private BigInteger a; // a = g^x, con x il secreto da dimostrare
+    private BigInteger a; // a = g^r, x is the secrete to demostrate and r some randommess
     private BigInteger c; // c = H(y || a), con y=g^x mod p
     private BigInteger z; // z = (r + c*x) mod q
 

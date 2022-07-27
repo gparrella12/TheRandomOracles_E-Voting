@@ -36,8 +36,10 @@ public class ElGamalKeyPair {
         BigInteger M1, M2;          // Encryption done by Bob and Charlie
         M1 = new BigInteger("69");  // Bob encrypts 24
         M2 = new BigInteger("12");  // Charlie encrypts 14
+        
         System.out.println("M1: " + M1.intValue());
         System.out.println("M2: " + M2.intValue());
+        
         ElGamalKeyPair pair = new ElGamalKeyPair();
         CyclicGroupParameters param = new CyclicGroupParameters();
         ElGamalCipherText ct1 = ExponentialElGamal.encrypt(param, pair.getPublicKey(), M1);
