@@ -13,7 +13,7 @@ public class ElGamalKeyPair {
 
     public ElGamalKeyPair() {
 
-        ElGamalParameters param = new ElGamalParameters();
+        CyclicGroupParameters param = new CyclicGroupParameters();
         // Genera un elemento random di SECURITY_PARAMETER bit
         secretKey = new BigInteger(param.getSECURITY_PARAMETER().intValue(), new SecureRandom());
         // PK = G^SK mod P
@@ -39,7 +39,7 @@ public class ElGamalKeyPair {
         System.out.println("M1: " + M1.intValue());
         System.out.println("M2: " + M2.intValue());
         ElGamalKeyPair pair = new ElGamalKeyPair();
-        ElGamalParameters param = new ElGamalParameters();
+        CyclicGroupParameters param = new CyclicGroupParameters();
         ElGamalCipherText ct1 = ExponentialElGamal.encrypt(param, pair.getPublicKey(), M1);
         ElGamalCipherText ct2 = ExponentialElGamal.encrypt(param, pair.getPublicKey(), M2);
         
@@ -52,6 +52,6 @@ public class ElGamalKeyPair {
         
         BigInteger plainTextResult = ExponentialElGamal.decrypt(param, res, pair.getSecretKey());
 
-        System.out.println("The result is: " + plainTextResult.intValue());
+        System.out.println("The result is: " + plainTextResult.intValue());   
     }
 }

@@ -9,7 +9,7 @@ import java.security.SecureRandom;
  */
 public class ExponentialElGamal {
 
-    public static ElGamalCipherText encrypt(ElGamalParameters param, BigInteger pk, BigInteger m) {
+    public static ElGamalCipherText encrypt(CyclicGroupParameters param, BigInteger pk, BigInteger m) {
         int securityParameter = param.getSECURITY_PARAMETER().intValue();
         BigInteger q = param.getQ();
         BigInteger p = param.getP();
@@ -27,7 +27,7 @@ public class ExponentialElGamal {
 
     }
 
-    public static BigInteger decrypt(ElGamalParameters param, ElGamalCipherText cipherText, BigInteger sk) {
+    public static BigInteger decrypt(CyclicGroupParameters param, ElGamalCipherText cipherText, BigInteger sk) {
         BigInteger q = param.getQ();
         BigInteger p = param.getP();
         BigInteger g = param.getG();
@@ -49,7 +49,7 @@ public class ExponentialElGamal {
 
     }
 
-    public static ElGamalCipherText aggregate(ElGamalParameters param, ElGamalCipherText cipherText1, ElGamalCipherText cipherText2) {
+    public static ElGamalCipherText aggregate(CyclicGroupParameters param, ElGamalCipherText cipherText1, ElGamalCipherText cipherText2) {
         BigInteger q = param.getQ();
         BigInteger p = param.getP();
         BigInteger g = param.getG();

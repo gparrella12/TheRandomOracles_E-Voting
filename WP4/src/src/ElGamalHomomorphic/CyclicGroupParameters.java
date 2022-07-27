@@ -11,14 +11,14 @@ import java.util.Scanner;
  *
  * @author gparrella
  */
-public class ElGamalParameters {
+public class CyclicGroupParameters {
 
     private final BigInteger g;
     private final BigInteger p;
     private final BigInteger q;
     private BigInteger SECURITY_PARAMETER;
 
-    public ElGamalParameters() {
+    public CyclicGroupParameters() {
         File file = new File("parameters.txt");
         List<BigInteger> parameters = new ArrayList<>();
         try {
