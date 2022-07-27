@@ -35,4 +35,8 @@ public class SmartContract {
     public void tallying() {
         this.manager.votesDecryption();
     }
+
+    public BigInteger getVotingKey() {
+        return votingKey;
+    }    
 }
