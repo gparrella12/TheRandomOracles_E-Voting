@@ -1,13 +1,14 @@
 package src;
 
-import java.security.Key;
+import src.Authority.AuthorityManagement;
+import java.math.BigInteger;
 import java.time.LocalDateTime;
 
 public class SmartContract {
 
     private BlockChain blockchain;
 
-    private Key votingKey;
+    private BigInteger votingKey;
 
     private LocalDateTime startElection;
 
@@ -19,11 +20,11 @@ public class SmartContract {
         this.blockchain = new BlockChain("file.txt");
         this.startElection = startElection;
         this.endElection = endElection;
-        this.manager = new AuthorityManagement();
+        this.manager = AuthorityManagement.getInstance();
     }
 
     public void keyGeneration() {
-        this.votingKey = this.manager.generateVotingKey();
+        this.votingKey = this.manager.getVotingKey();
     }
 
     public void vote(Voter voter, Vote vote) {
