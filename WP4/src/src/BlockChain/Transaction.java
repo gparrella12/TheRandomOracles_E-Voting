@@ -1,4 +1,6 @@
-package src;
+package src.BlockChain;
+
+import src.Vote;
 
 public class Transaction {
 

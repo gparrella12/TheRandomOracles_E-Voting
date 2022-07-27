@@ -1,5 +1,6 @@
 package src;
 
+import src.BlockChain.BlockChain;
 import src.Authority.AuthorityManagement;
 import java.math.BigInteger;
 import java.time.LocalDateTime;
