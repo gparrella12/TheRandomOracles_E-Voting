@@ -25,7 +25,11 @@ public class Authority {
     public BigInteger getPublicEncKey() {
         return publicEncKey;
     }
-
+    
+    public BigInteger getPrivateEncKey() {
+        return privateEncKey;
+    }
+    
     public Object getPublicSigKey() {
         return publicSigKey;
     }
