@@ -1,4 +1,4 @@
-package src.Authority;
+package src.AuthorityPackage;
 
 import src.ElGamalHomomorphic.ElGamalKeyPair;
 import java.math.BigInteger;

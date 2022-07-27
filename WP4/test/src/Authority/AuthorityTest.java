@@ -1,5 +1,6 @@
 package src.Authority;
 
+import src.AuthorityPackage.Authority;
 import java.math.BigInteger;
 import org.junit.After;
 import org.junit.AfterClass;

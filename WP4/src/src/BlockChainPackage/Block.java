@@ -1,4 +1,4 @@
-package src.BlockChain;
+package src.BlockChainPackage;
 
 public class Block {
 

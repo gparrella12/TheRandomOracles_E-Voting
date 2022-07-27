@@ -1,6 +1,6 @@
 package src.ElGamalHomomorphic;import java.math.*;
 import java.security.*;
-import src.Authority.Authority;
+import src.AuthorityPackage.Authority;
 
 /**
  *

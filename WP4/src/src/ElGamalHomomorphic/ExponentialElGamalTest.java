@@ -1,7 +1,7 @@
 package src.ElGamalHomomorphic;
 
 import java.math.BigInteger;
-import src.Authority.Authority;
+import src.AuthorityPackage.Authority;
 
 /**
  *

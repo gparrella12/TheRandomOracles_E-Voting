@@ -1,4 +1,4 @@
-package src.Authority;
+package src.AuthorityPackage;
 
 import src.ElGamalHomomorphic.Generation.ElGamalParametersGeneration;
 import java.math.BigInteger;
@@ -40,21 +40,17 @@ public class AuthorityManagement {
     //se pk_voting già esiste, la ritorno subito
     //se no la genero e poi la ritorno
     public BigInteger getVotingKey() {
-        if (votingKey != null) {
-            return votingKey;
-        }
-
-        return generateVotingKey();
+        return this.votingKey;
     }
 
     //recall: (a mod p) * (b mod p) = (a*b) mod p
-    private BigInteger generateVotingKey() {        
+    private void generateVotingKey() {        
         votingKey = BigInteger.ONE;
         for (Authority a : authorityList) {            
             votingKey = votingKey.multiply(a.getPublicEncKey());
         }
 
-        return votingKey.mod(ElGamalParametersGeneration.getP());
+        this.votingKey =  votingKey.mod(ElGamalParametersGeneration.getP());
     }
 
     public void validateVote(Voter voter, Vote v) {
