@@ -1,4 +1,5 @@
 package src.Authority;
+
 import java.math.BigInteger;
 import java.security.SecureRandom;
 import java.util.ArrayList;
@@ -16,12 +17,13 @@ public class ElGamalParameters {
     private static BigInteger g, p, q;
 
     public static List<BigInteger> getParameters() {
-        schemeParameters = new ArrayList<>();
-        SecureRandom sr = new SecureRandom();
 
-        if (!schemeParameters.isEmpty()) {
+        if (schemeParameters != null && !schemeParameters.isEmpty()) {
             return schemeParameters;
         }
+
+        schemeParameters = new ArrayList<>();
+        SecureRandom sr = new SecureRandom();
 
         while (true) {
             q = BigInteger.probablePrime(SECURITY_PARAMETER.intValue(), sr);
@@ -29,6 +31,7 @@ public class ElGamalParameters {
             p = p.add(BigInteger.ONE);
 
             if (p.isProbablePrime(50) == true) {
+                //da settare random
                 g = new BigInteger("4");
                 schemeParameters.add(SECURITY_PARAMETER);
                 schemeParameters.add(g);
