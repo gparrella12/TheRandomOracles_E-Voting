@@ -1,5 +1,10 @@
 package src.BlockChainPackage;
 
+/**
+ *
+ * @author Speranza
+ */
+
 public class Block {
 
     private Transaction transaction; // attualmente il blocco è fatto da una sola transazione
@@ -7,6 +12,7 @@ public class Block {
     public Block(Transaction t) {
         this.transaction = t;
     }
+    
     
     /*
     Se decidessimo in futuro di avere blocchi con più transazioni
@@ -22,5 +28,10 @@ public class Block {
         listTransactions.add(t);
     }
     */
+
+    @Override
+    public String toString() {
+        return "Block - " + "transaction: " + transaction + "\n";
+    }
     
 }
