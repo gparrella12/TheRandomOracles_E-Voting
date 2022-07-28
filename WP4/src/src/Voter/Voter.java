@@ -1,5 +1,6 @@
 package src.Voter;
 
+import java.math.BigInteger;
 import java.security.Key;
 import java.security.cert.CertificateEncodingException;
 import java.security.cert.X509Certificate;
@@ -10,6 +11,9 @@ import org.bouncycastle.asn1.x500.X500Name;
 import org.bouncycastle.asn1.x500.style.BCStyle;
 import org.bouncycastle.asn1.x500.style.IETFUtils;
 import org.bouncycastle.cert.jcajce.JcaX509CertificateHolder;
+import src.ElGamalHomomorphic.CyclicGroupParameters;
+import src.ElGamalHomomorphic.ElGamalCipherText;
+import src.ElGamalHomomorphic.ExponentialElGamal;
 
 /**
  *
@@ -46,8 +50,9 @@ public class Voter {
         this.privateKey = Loader.loadSkFromFile(privateKeyFilename);
     }
 
-    public Vote vote(Vote v) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public Vote vote(BigInteger preference, BigInteger votingKey, CyclicGroupParameters param) {        
+        ElGamalCipherText ciphertext = ExponentialElGamal.encrypt(param, votingKey, preference);
+        return new Vote(ciphertext, certificate, true);
     }
 
     public Vote makeProof(Vote v) {
