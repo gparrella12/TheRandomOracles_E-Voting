@@ -1,7 +1,7 @@
 package src.BlockChainPackage;
 
 import java.sql.Timestamp;
-import src.Vote;
+import src.Voter.*;
 
 /**
  *

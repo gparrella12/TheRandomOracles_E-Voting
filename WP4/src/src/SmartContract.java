@@ -4,6 +4,7 @@ import src.BlockChainPackage.BlockChain;
 import src.AuthorityPackage.AuthorityManagement;
 import java.math.BigInteger;
 import java.time.LocalDateTime;
+import src.Voter.*;
 
 public class SmartContract {
 

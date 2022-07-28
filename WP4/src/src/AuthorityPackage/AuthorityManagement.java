@@ -6,8 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import src.ElGamalHomomorphic.CyclicGroupParameters;
 import src.ElGamalHomomorphic.ElGamalCipherText;
-import src.Vote;
-import src.Voter;
+import src.Voter.*;
 
 /**
  *
