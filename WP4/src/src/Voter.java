@@ -5,11 +5,8 @@ import java.security.Key;
 public class Voter {
 
     private Key publicKey;
-
     private Key privateKey;
-
     private Object voterCertificate;
-
     private boolean voted;
 
     public Voter() {
