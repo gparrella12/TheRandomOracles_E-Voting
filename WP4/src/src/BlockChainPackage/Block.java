@@ -31,7 +31,7 @@ public class Block {
 
     @Override
     public String toString() {
-        return "Block - " + "transaction: " + transaction + "\n";
+        return "=== Block ===" + transaction + "=============\n";
     }
     
 }
