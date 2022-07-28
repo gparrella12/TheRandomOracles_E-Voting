@@ -1,7 +1,7 @@
 package src.BlockChainPackage;
 
+import src.VoterPackage.Vote;
 import java.sql.Timestamp;
-import src.Voter.*;
 
 /**
  *
@@ -20,7 +20,7 @@ public class Transaction {
 
     @Override
     public String toString() {
-        return "Transaction: " + "vote=" + vote + ", timestamp=" + timestamp;
+        return "\nTransaction:" + vote + "\nTimestamp=" + timestamp;
     }
     
 }
