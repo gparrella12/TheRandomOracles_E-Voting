@@ -20,6 +20,10 @@ import src.VoterPackage.Vote;
 import src.VoterPackage.VoteProof;
 import src.VoterPackage.Voter;
 
+/**
+ *
+ * @author franc
+ */
 public class SmartContract implements Serializable {
 
     private BlockChain blockchain;
@@ -31,6 +35,13 @@ public class SmartContract implements Serializable {
     private BigInteger resultCandidate1 = null;
     private BigInteger resultCandidate2 = null;
 
+    /**
+     *
+     * @param startElection
+     * @param endElection
+     * @param am
+     * @param bcFilename
+     */
     public SmartContract(LocalDateTime startElection, LocalDateTime endElection, AuthorityManagement am, String bcFilename) {
         this.blockchain = new BlockChain(bcFilename, "blockchain_serial");
         this.startElection = startElection;
@@ -39,6 +50,9 @@ public class SmartContract implements Serializable {
         this.votes = new ArrayList<ElGamalCipherText>();
     }
 
+    /**
+     *
+     */
     public void blockChainInit() {
         for (Authority a : manager.getAuthorityList()) {
             SchnorrNIProof proof = SchnorrNIZKP.makeProof(a.getPrivateEncKey(), a.getPublicEncKey(), new CyclicGroupParameters());
@@ -48,12 +62,22 @@ public class SmartContract implements Serializable {
         }
     }
 
+    /**
+     *
+     */
     public void keyGeneration() {
         this.manager.generateVotingKey();
         this.votingKey = this.manager.getVotingKey();
         blockchain.addBlock(new Block<SmartContract>(this));
     }
 
+    /**
+     *
+     * @param voter
+     * @param vote
+     * @param vp
+     * @param signVote
+     */
     public void vote(Voter voter, Vote vote, VoteProof vp, byte[] signVote) {
         if (LocalDateTime.now().isBefore(endElection) && LocalDateTime.now().isAfter(startElection)) {
             if (this.manager.validateVote(voter, vote, vp, signVote)) {
@@ -69,6 +93,10 @@ public class SmartContract implements Serializable {
         }
     }
 
+    /**
+     *
+     * @return
+     */
     public ElGamalCipherText aggregateCipherText() {
         ElGamalCipherText result = this.votes.get(0);
         for (int i = 1; i < this.votes.size(); i++) {
@@ -79,23 +107,43 @@ public class SmartContract implements Serializable {
         return result;
     }
 
+    /**
+     *
+     * @param aggregatedCipherText
+     */
     public void tallying(ElGamalCipherText aggregatedCipherText) {
         this.resultCandidate1 = this.manager.votesDecryption(aggregatedCipherText);
         this.resultCandidate2 = new BigInteger(String.valueOf(this.votes.size())).subtract(this.resultCandidate1);
     }
 
+    /**
+     *
+     * @return
+     */
     public BigInteger getVotingKey() {
         return votingKey;
     }
 
+    /**
+     *
+     * @return
+     */
     public BigInteger getResultCandidate1() {
         return resultCandidate1;
     }
 
+    /**
+     *
+     * @return
+     */
     public BigInteger getResultCandidate2() {
         return resultCandidate2;
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     public String toString() {
         return "SmartContract( votingKey=" + votingKey + ", startElection=" + startElection + ", endElection=" + endElection + " Candidate1 = Omega1 [v=1], Candidate2 = Omega2 [v=0] )";

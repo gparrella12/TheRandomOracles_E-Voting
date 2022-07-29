@@ -7,7 +7,7 @@ import random
 crt_dir = "../Authorities/"
 
 rand_names = set()
-while len(rand_names) != 4:
+while len(rand_names) != 10:
     rand_names.add(names.get_first_name())
 
 with open(".voters_list.txt", "w") as outStream:

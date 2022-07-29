@@ -27,6 +27,11 @@ public class AuthorityManagement implements Serializable {
     private BigInteger votingKey;
 
     //Singleton method
+
+    /**
+     *
+     * @return
+     */
     public static AuthorityManagement getInstance() {
         if (single_instance == null) {
             single_instance = new AuthorityManagement();
@@ -44,10 +49,17 @@ public class AuthorityManagement implements Serializable {
 
     }
 
+    /**
+     *
+     * @return
+     */
     public BigInteger getVotingKey() {
         return this.votingKey;
     }
 
+    /**
+     *
+     */
     public void generateVotingKey() {
         CyclicGroupParameters c = new CyclicGroupParameters();
         BigInteger p = c.getP();
@@ -60,6 +72,14 @@ public class AuthorityManagement implements Serializable {
         this.votingKey = votingKey.mod(p);
     }
 
+    /**
+     *
+     * @param voter
+     * @param vote
+     * @param vp
+     * @param signVote
+     * @return
+     */
     public boolean validateVote(Voter voter, Vote vote, VoteProof vp, byte[] signVote) {
         try {
             Signature signature = Signature.getInstance("SHA256withECDSA", new BouncyCastleProvider());
@@ -76,6 +96,11 @@ public class AuthorityManagement implements Serializable {
         return false;
     }
 
+    /**
+     *
+     * @param pk_vote
+     * @return
+     */
     public static ElGamalCipherText simulate(BigInteger pk_vote) {
         CyclicGroupParameters c = new CyclicGroupParameters();
         BigInteger p = c.getP();
@@ -103,6 +128,11 @@ public class AuthorityManagement implements Serializable {
 
     }
 
+    /**
+     *
+     * @param c
+     * @return
+     */
     public BigInteger votesDecryption(ElGamalCipherText c) {
         List<BigInteger> d = new ArrayList<>();
         CyclicGroupParameters cp = new CyclicGroupParameters();
@@ -140,6 +170,10 @@ public class AuthorityManagement implements Serializable {
 
     }
 
+    /**
+     *
+     * @return
+     */
     public List<Authority> getAuthorityList() {
         return authorityList;
     }

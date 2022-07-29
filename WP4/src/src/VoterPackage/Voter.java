@@ -35,6 +35,12 @@ public class Voter implements Serializable{
     private X509Certificate certificate;
     private boolean voted;
 
+    /**
+     *
+     * @param name
+     * @param privateSigKey
+     * @param certificate
+     */
     public Voter(String name, PrivateKey privateSigKey, X509Certificate certificate) {
         this.name = name;
         this.publicSigKey = certificate.getPublicKey();
@@ -43,6 +49,11 @@ public class Voter implements Serializable{
         this.voted = false;
     }
 
+    /**
+     *
+     * @param certFilename
+     * @param privateKeyFilename
+     */
     public Voter(String certFilename, String privateKeyFilename) {
         this.certificate = CertificateLoader.loadCrtFromFile(certFilename);
 
@@ -59,15 +70,33 @@ public class Voter implements Serializable{
         this.privateSigKey = CertificateLoader.loadSkFromFile(privateKeyFilename);
     }
 
+    /**
+     *
+     * @param preference
+     * @param votingKey
+     * @param param
+     * @return
+     */
     public Vote makeVote(BigInteger preference, BigInteger votingKey, CyclicGroupParameters param) {
         ElGamalCipherText ciphertext = ExponentialElGamal.encrypt(param, votingKey, preference);
         return new Vote(ciphertext);
     }
 
+    /**
+     *
+     * @param v
+     * @return
+     */
     public VoteProof makeProof(Vote v) {
         return new VoteProof(v);
     }
     
+    /**
+     *
+     * @param v
+     * @param vp
+     * @return
+     */
     public byte[] signVote(Vote v, VoteProof vp){
         try {
             Signature signature = Signature.getInstance("SHA256withECDSA", new BouncyCastleProvider());
@@ -83,30 +112,57 @@ public class Voter implements Serializable{
         return null;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     *
+     * @return
+     */
     public PublicKey getPublicSigKey() {
         return publicSigKey;
     }
 
+    /**
+     *
+     * @return
+     */
     public PrivateKey getPrivateSigKey() {
         return privateSigKey;
     }
 
+    /**
+     *
+     * @return
+     */
     public X509Certificate getCertificate() {
         return certificate;
     }
 
+    /**
+     *
+     * @return
+     */
     public boolean hasVoted() {
         return voted;
     }
 
+    /**
+     *
+     */
     public void setVoted() {
         this.voted = true;
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     public String toString() {
         return "\n" + "name: " + name + "\npk: " + publicSigKey.toString() + "\nsk: " + privateSigKey.toString() + "\ncrt: " + certificate.toString() + "\nvoted: " + voted + "\n";

@@ -14,6 +14,13 @@ public class SchnorrNIZKP {
 
     private static String hashFunction = "SHA256";
 
+    /**
+     *
+     * @param x
+     * @param y
+     * @param param
+     * @return
+     */
     public static SchnorrNIProof makeProof(BigInteger x, BigInteger y, CyclicGroupParameters param) {
         int securityParameter = param.getSECURITY_PARAMETER().intValue();
         BigInteger q = param.getQ();
@@ -32,6 +39,13 @@ public class SchnorrNIZKP {
         return new SchnorrNIProof(a, c, z);
     }
 
+    /**
+     *
+     * @param proof
+     * @param y
+     * @param param
+     * @return
+     */
     public static boolean verityProof(SchnorrNIProof proof, BigInteger y, CyclicGroupParameters param) {
         BigInteger g = param.getG();
         BigInteger p = param.getP();
@@ -74,10 +88,18 @@ public class SchnorrNIZKP {
 
     }
 
+    /**
+     *
+     * @return
+     */
     public static String getHashFunction() {
         return hashFunction;
     }
 
+    /**
+     *
+     * @param hashFunction
+     */
     public static void setHashFunction(String hashFunction) {
         SchnorrNIZKP.hashFunction = hashFunction;
     }

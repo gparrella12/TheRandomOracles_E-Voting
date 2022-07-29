@@ -19,18 +19,31 @@ public class BlockChain implements Serializable {
     private String filename;
     private String filename_serial;
 
+    /**
+     *
+     */
     public BlockChain() {
         chain = new ArrayList<>();
     }
 
     // costruttore da utilizzare quando bisogna richiamare la blockchain
     // da file di testo, dopo la prima inizializzazione.
+
+    /**
+     *
+     * @param fileName
+     * @param filename_serial
+     */
     public BlockChain(String fileName, String filename_serial) {
         this.filename_serial = filename_serial;
         this.filename = fileName;
         chain = readFromFile(filename_serial);
     }
 
+    /**
+     *
+     * @param block
+     */
     public void addBlock(Block block) {
         chain.add(block);
         writeOnFile(this.filename, block);
@@ -92,6 +105,10 @@ public class BlockChain implements Serializable {
         return temporaryChain;
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     public String toString() {
         return chain.toString();

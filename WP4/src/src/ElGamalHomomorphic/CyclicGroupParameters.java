@@ -18,14 +18,28 @@ public class CyclicGroupParameters {
     private BigInteger q;
     private BigInteger SECURITY_PARAMETER;
 
+    /**
+     *
+     */
     public CyclicGroupParameters() {
         this.importFromFile("parameters.txt"); // Default name
     }
 
+    /**
+     *
+     * @param fileName
+     */
     public CyclicGroupParameters(String fileName) {
         this.importFromFile(fileName);
     }
 
+    /**
+     *
+     * @param g
+     * @param p
+     * @param q
+     * @param SECURITY_PARAMETER
+     */
     public CyclicGroupParameters(BigInteger g, BigInteger p, BigInteger q, BigInteger SECURITY_PARAMETER) {
         this.g = g;
         this.p = p;
@@ -55,18 +69,34 @@ public class CyclicGroupParameters {
         q = parameters.get(3);
     }
 
+    /**
+     *
+     * @return
+     */
     public BigInteger getG() {
         return g;
     }
 
+    /**
+     *
+     * @return
+     */
     public BigInteger getP() {
         return p;
     }
 
+    /**
+     *
+     * @return
+     */
     public BigInteger getQ() {
         return q;
     }
 
+    /**
+     *
+     * @return
+     */
     public BigInteger getSECURITY_PARAMETER() {
         return SECURITY_PARAMETER;
     }

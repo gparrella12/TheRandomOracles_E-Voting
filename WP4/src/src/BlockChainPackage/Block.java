@@ -5,6 +5,7 @@ import java.io.Serializable;
 /**
  *
  * @author Speranza
+ * @param <T>
  */
 
 public class Block<T> implements Serializable{
@@ -12,6 +13,10 @@ public class Block<T> implements Serializable{
     // attualmente il blocco è fatto da una sola transazione    
     private T data; 
 
+    /**
+     *
+     * @param data
+     */
     public Block(T data) {
         this.data = data;
     }
@@ -31,6 +36,12 @@ public class Block<T> implements Serializable{
         listTransactions.add(t);
     }
     */
+
+    /**
+     *
+     * @return
+     */
+
 
     @Override
     public String toString() {

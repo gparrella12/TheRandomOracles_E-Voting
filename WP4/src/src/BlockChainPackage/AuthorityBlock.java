@@ -18,6 +18,14 @@ public class AuthorityBlock implements Serializable{
     private X509Certificate certificate;
     private SchnorrNIProof proof;
 
+    /**
+     *
+     * @param name
+     * @param publicEncKey
+     * @param publicSigKey
+     * @param certificate
+     * @param proof
+     */
     public AuthorityBlock(String name, BigInteger publicEncKey, PublicKey publicSigKey, X509Certificate certificate, SchnorrNIProof proof) {
         this.name = name;
         this.publicEncKey = publicEncKey;
@@ -26,18 +34,34 @@ public class AuthorityBlock implements Serializable{
         this.proof = proof;
     }
 
+    /**
+     *
+     * @return
+     */
     public BigInteger getPublicEncKey() {
         return publicEncKey;
     }
 
+    /**
+     *
+     * @return
+     */
     public PublicKey getPublicSigKey() {
         return publicSigKey;
     }
 
+    /**
+     *
+     * @return
+     */
     public X509Certificate getCertificate() {
         return certificate;
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     public String toString() {
         return "(" + "name=" + name + ", publicEncKey=" + publicEncKey + ", publicSigKey=" + publicSigKey + ", certificate=" + certificate + ')';

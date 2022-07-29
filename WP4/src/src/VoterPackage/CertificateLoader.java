@@ -21,6 +21,11 @@ public class CertificateLoader {
 
     private static X509Certificate lastCrt = null;
 
+    /**
+     *
+     * @param filename
+     * @return
+     */
     public static X509Certificate loadCrtFromFile(String filename) {
         //Read the authority Certificate
         InputStream in = null;
@@ -47,10 +52,19 @@ public class CertificateLoader {
         return lastCrt;
     }
 
+    /**
+     *
+     * @return
+     */
     public static X509Certificate getLastCrt() {
         return lastCrt;
     }
 
+    /**
+     *
+     * @param filename
+     * @return
+     */
     public static PrivateKey loadSkFromFile(String filename) {
         PrivateKey key = null;
         try {

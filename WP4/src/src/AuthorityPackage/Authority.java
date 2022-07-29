@@ -30,6 +30,10 @@ public class Authority implements Serializable{
     private final PublicKey publicSigKey;
     private X509Certificate certificate;
 
+    /**
+     *
+     * @param name
+     */
     public Authority(String name) {
         this.name = name;
 
@@ -69,6 +73,12 @@ public class Authority implements Serializable{
         this.privateSigKey = key;
     }
 
+    /**
+     *
+     * @param filename
+     * @return
+     * @throws Exception
+     */
     public static PrivateKey readPrivateSigKey(String filename) throws Exception {
 
         byte[] keyBytes = Files.readAllBytes(Paths.get(filename));
@@ -79,26 +89,50 @@ public class Authority implements Serializable{
         return kf.generatePrivate(spec);
     }
 
+    /**
+     *
+     * @return
+     */
     public BigInteger getPublicEncKey() {
         return publicEncKey;
     }
 
+    /**
+     *
+     * @return
+     */
     public BigInteger getPrivateEncKey() {
         return privateEncKey;
     }
 
+    /**
+     *
+     * @return
+     */
     public PublicKey getPublicSigKey() {
         return publicSigKey;
     }
 
+    /**
+     *
+     * @return
+     */
     public PrivateKey getPrivateSigKey() {
         return privateSigKey;
     }
 
+    /**
+     *
+     * @return
+     */
     public X509Certificate getCertificate() {
         return certificate;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getName() {
         return name;
     }

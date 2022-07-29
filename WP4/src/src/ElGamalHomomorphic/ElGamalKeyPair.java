@@ -12,6 +12,9 @@ public class ElGamalKeyPair {
     private final BigInteger secretKey;
     private final BigInteger publicKey;
 
+    /**
+     *
+     */
     public ElGamalKeyPair() {
 
         CyclicGroupParameters param = new CyclicGroupParameters();
@@ -29,10 +32,18 @@ public class ElGamalKeyPair {
 
     }
 
+    /**
+     *
+     * @return
+     */
     public BigInteger getPublicKey() {
         return publicKey;
     }
 
+    /**
+     *
+     * @return
+     */
     public BigInteger getSecretKey() {
         return secretKey;
     }

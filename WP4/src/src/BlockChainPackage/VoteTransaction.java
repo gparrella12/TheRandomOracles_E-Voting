@@ -18,6 +18,12 @@ public class VoteTransaction implements Serializable {
     private byte[] sign;
     private Timestamp timestamp;
 
+    /**
+     *
+     * @param vote
+     * @param vp
+     * @param sign
+     */
     public VoteTransaction(Vote vote, VoteProof vp, byte[] sign) {
         this.vote = vote;
         this.vp = vp;
@@ -25,6 +31,10 @@ public class VoteTransaction implements Serializable {
         this.timestamp = Timestamp.valueOf(LocalDateTime.now());
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     public String toString() {
         return "VoteTransaction{" + "vote=" + vote + ", vp=" + vp + ", sign=" + Utils.toHex(sign) + ", timestamp=" + timestamp + '}';

@@ -7,10 +7,7 @@ import java.math.BigInteger;
 import java.security.SecureRandom;
 import java.time.LocalDateTime;
 import java.util.Random;
-import org.bouncycastle.asn1.x509.Time;
-import org.bouncycastle.jcajce.provider.asymmetric.ElGamal;
 import src.AuthorityPackage.AuthorityManagement;
-import src.BlockChainPackage.BlockChain;
 import src.ElGamalHomomorphic.CyclicGroupParameters;
 import src.ElGamalHomomorphic.ElGamalCipherText;
 import src.VoterPackage.Vote;
@@ -67,7 +64,6 @@ public class Main {
         sc.tallying(resulEnc);
         System.out.println("C1: " + sc.getResultCandidate1() + " C2: " + sc.getResultCandidate2());
         
-        // PERFETTOOOO
     }
 
 }

@@ -12,6 +12,7 @@ public class ProofTest {
 
     /**
      * @param args the command line arguments
+     * @throws java.security.NoSuchAlgorithmException
      */
     public static void main(String[] args) throws NoSuchAlgorithmException {
         // TODO code application logic here

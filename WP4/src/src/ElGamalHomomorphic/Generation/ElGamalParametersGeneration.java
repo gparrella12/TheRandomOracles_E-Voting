@@ -11,6 +11,10 @@ import java.util.List;
  */
 public class ElGamalParametersGeneration {
 
+    /**
+     *
+     * @return
+     */
     public static List<BigInteger> generateParameters() {
         BigInteger SECURITY_PARAMETER = BigInteger.valueOf(2048);
         List<BigInteger> schemeParameters;
