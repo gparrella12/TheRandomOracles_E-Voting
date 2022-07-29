@@ -20,7 +20,7 @@ import src.VoterPackage.*;
  *
  * @author Ernesto
  */
-public class AuthorityManagement implements Serializable{
+public class AuthorityManagement implements Serializable {
 
     private static AuthorityManagement single_instance = null;
     private List<Authority> authorityList;
@@ -63,16 +63,16 @@ public class AuthorityManagement implements Serializable{
     public boolean validateVote(Voter voter, Vote vote, VoteProof vp, byte[] signVote) {
         try {
             Signature signature = Signature.getInstance("SHA256withECDSA", new BouncyCastleProvider());
-            
+
             signature.initVerify(voter.getCertificate());
-            
+
             signature.update(vote.toString().concat(vp.toString()).getBytes()); // for verification use update+verify methods, first calling update with the message and the calling verify with the signature
-            
+
             return signature.verify(signVote);
-        } catch (NoSuchAlgorithmException | InvalidKeyException |  SignatureException ex) {
+        } catch (NoSuchAlgorithmException | InvalidKeyException | SignatureException ex) {
             ex.printStackTrace();
         }
-        
+
         return false;
     }
 
@@ -103,16 +103,14 @@ public class AuthorityManagement implements Serializable{
 
     }
 
-    public void votesDecryption() {
+    public BigInteger votesDecryption(ElGamalCipherText c) {
         List<BigInteger> d = new ArrayList<>();
         CyclicGroupParameters cp = new CyclicGroupParameters();
         BigInteger g = cp.getG();
         BigInteger p = cp.getP();
         BigInteger q = cp.getQ();
 
-        generateVotingKey();
-
-        ElGamalCipherText c = simulate(votingKey);
+        // ElGamalCipherText c = simulate(votingKey);
         BigInteger u = c.getU();
         BigInteger z = c.getV();
 
@@ -137,13 +135,13 @@ public class AuthorityManagement implements Serializable{
             }
             result = result.add(BigInteger.ONE);
         }
-        System.out.println("voti Omega_1 = " + result);
+
+        return result;
 
     }
 
     public List<Authority> getAuthorityList() {
         return authorityList;
     }
-    
-    
+
 }
