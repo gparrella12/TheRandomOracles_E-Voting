@@ -17,19 +17,19 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
  *
  * @author fsonnessa
  */
-public class Loader {
+public class CertificateLoader {
 
     private static X509Certificate lastCrt = null;
 
     public static X509Certificate loadCrtFromFile(String filename) {
-        // Read the authority Certificate
+        //Read the authority Certificate
         InputStream in = null;
         try {
             in = new FileInputStream(filename);
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
         }
-        // create the certificate factory 
+        //Create the certificate factory 
         CertificateFactory fact = null;
         try {
             fact = CertificateFactory.getInstance("X.509");
@@ -38,7 +38,7 @@ public class Loader {
         }
 
         try {
-            // read the certificate
+            //Read the certificate
             lastCrt = (X509Certificate) fact.generateCertificate(in);
         } catch (CertificateException ex) {
             ex.printStackTrace();

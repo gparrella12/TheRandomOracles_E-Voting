@@ -23,20 +23,21 @@ import src.ElGamalHomomorphic.ExponentialElGamal;
 public class Voter {
 
     private String name;
-    private final PublicKey publicKey;  // le chiavi del votante servono per schemi di firma
-    private final PrivateKey privateKey;
+    private final PublicKey publicSigKey;
+    private final PrivateKey privateSigKey;
     private X509Certificate certificate;
     private boolean voted;
 
-    public Voter(String name, PrivateKey privateKey, X509Certificate certificate) {
+    public Voter(String name, PrivateKey privateSigKey, X509Certificate certificate) {
         this.name = name;
-        this.publicKey = certificate.getPublicKey();
-        this.privateKey = privateKey;
+        this.publicSigKey = certificate.getPublicKey();
+        this.privateSigKey = privateSigKey;
         this.certificate = certificate;
+        this.voted = false;
     }
 
     public Voter(String certFilename, String privateKeyFilename) {
-        this.certificate = Loader.loadCrtFromFile(certFilename);
+        this.certificate = CertificateLoader.loadCrtFromFile(certFilename);
 
         X500Name x500name = null;
         try {
@@ -47,11 +48,11 @@ public class Voter {
             Logger.getLogger(Voter.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        this.publicKey = certificate.getPublicKey();
-        this.privateKey = Loader.loadSkFromFile(privateKeyFilename);
+        this.publicSigKey = certificate.getPublicKey();
+        this.privateSigKey = CertificateLoader.loadSkFromFile(privateKeyFilename);
     }
 
-    public Vote vote(BigInteger preference, BigInteger votingKey, CyclicGroupParameters param) {
+    public Vote makeVote(BigInteger preference, BigInteger votingKey, CyclicGroupParameters param) {
         ElGamalCipherText ciphertext = ExponentialElGamal.encrypt(param, votingKey, preference);
         return new Vote(ciphertext, certificate, true);
     }
@@ -64,24 +65,24 @@ public class Voter {
         return name;
     }
 
-    public PublicKey getPublicKey() {
-        return publicKey;
+    public PublicKey getPublicSigKey() {
+        return publicSigKey;
     }
 
-    public PrivateKey getPrivateKey() {
-        return privateKey;
+    public PrivateKey getPrivateSigKey() {
+        return privateSigKey;
     }
 
     public X509Certificate getCertificate() {
         return certificate;
     }
 
-    public boolean isVoted() {
+    public boolean hasVoted() {
         return voted;
     }
 
     @Override
     public String toString() {
-        return "\n" + "name: " + name + "\npk: " + publicKey.toString() + "\nsk: " + privateKey.toString() + "\ncrt: " + certificate.toString() + "\nvoted: " + voted + "\n";
+        return "\n" + "name: " + name + "\npk: " + publicSigKey.toString() + "\nsk: " + privateSigKey.toString() + "\ncrt: " + certificate.toString() + "\nvoted: " + voted + "\n";
     }
 }
