@@ -29,21 +29,22 @@ public class Authority {
     private final PublicKey publicSigKey;
     private X509Certificate certificate;
 
-    //nel costruttore creo la coppia (sk,pk);   
     public Authority(String name) {
         this.name = name;
+
+        //Create the pair (sk,pk);   
         ElGamalKeyPair encPair = new ElGamalKeyPair();
         this.privateEncKey = encPair.getSecretKey();
         this.publicEncKey = encPair.getPublicKey();
 
-        // Read the authority Certificate
+        //Read the authority Certificate
         InputStream in = null;
         try {
             in = new FileInputStream("Certificati/Authorities/" + name + ".crt");
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
         }
-        // create the certificate factory 
+        //Create the certificate factory 
         CertificateFactory fact = null;
         try {
             fact = CertificateFactory.getInstance("X.509");
@@ -52,7 +53,7 @@ public class Authority {
         }
 
         try {
-            // read the certificate
+            //Read the certificate
             this.certificate = (X509Certificate) fact.generateCertificate(in);
         } catch (CertificateException ex) {
             ex.printStackTrace();
@@ -60,26 +61,21 @@ public class Authority {
         this.publicSigKey = this.certificate.getPublicKey();
         PrivateKey key = null;
         try {
-            key = get("Certificati/Authorities/" + name + ".p8");
+            key = readPrivateSigKey("Certificati/Authorities/" + name + ".p8");
         } catch (Exception ex) {
             ex.printStackTrace();
         }
         this.privateSigKey = key;
     }
 
-    public static PrivateKey get(String filename)
-            throws Exception {
+    public static PrivateKey readPrivateSigKey(String filename) throws Exception {
 
         byte[] keyBytes = Files.readAllBytes(Paths.get(filename));
 
-        PKCS8EncodedKeySpec spec
-                = new PKCS8EncodedKeySpec(keyBytes);
+        PKCS8EncodedKeySpec spec = new PKCS8EncodedKeySpec(keyBytes);
+
         KeyFactory kf = KeyFactory.getInstance("ECDSA", new BouncyCastleProvider());
         return kf.generatePrivate(spec);
-    }
-
-    public PrivateKey getPrivateSigKey() {
-        return privateSigKey;
     }
 
     public BigInteger getPublicEncKey() {
@@ -92,6 +88,10 @@ public class Authority {
 
     public PublicKey getPublicSigKey() {
         return publicSigKey;
+    }
+
+    public PrivateKey getPrivateSigKey() {
+        return privateSigKey;
     }
 
     public X509Certificate getCertificate() {
