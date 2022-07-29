@@ -1,4 +1,4 @@
-package src.SchnorrNIZPK;
+package src.SchnorrNIZKP;
 
 import java.security.NoSuchAlgorithmException;
 import src.ElGamalHomomorphic.CyclicGroupParameters;
@@ -17,8 +17,8 @@ public class ProofTest {
         // TODO code application logic here
         ElGamalKeyPair p = new ElGamalKeyPair();
         CyclicGroupParameters param = new CyclicGroupParameters();
-        SchnorrNIProof proof = SchnorrNIZPK.makeProof(p.getSecretKey(), p.getPublicKey(), param);
-        System.out.println(SchnorrNIZPK.verityProof(proof, p.getPublicKey(), param));
+        SchnorrNIProof proof = SchnorrNIZKP.makeProof(p.getSecretKey(), p.getPublicKey(), param);
+        System.out.println(SchnorrNIZKP.verityProof(proof, p.getPublicKey(), param));
     }
 
 }

@@ -1,4 +1,4 @@
-package src.SchnorrNIZPK;
+package src.SchnorrNIZKP;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;
@@ -10,7 +10,7 @@ import src.ElGamalHomomorphic.CyclicGroupParameters;
  *
  * @author gparrella
  */
-public class SchnorrNIZPK {
+public class SchnorrNIZKP {
 
     private static String hashFunction = "SHA256";
 
@@ -79,6 +79,6 @@ public class SchnorrNIZPK {
     }
 
     public static void setHashFunction(String hashFunction) {
-        SchnorrNIZPK.hashFunction = hashFunction;
+        SchnorrNIZKP.hashFunction = hashFunction;
     }
 }

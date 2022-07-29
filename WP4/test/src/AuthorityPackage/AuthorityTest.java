@@ -10,6 +10,7 @@ import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
 import java.util.ArrayList;
 import java.util.List;
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.junit.After;
 import org.junit.AfterClass;
 import static org.junit.Assert.fail;
@@ -94,7 +95,7 @@ public class AuthorityTest {
         System.out.println("getPublicSigKey");
         System.out.println(a.getPublicSigKey());
 
-        Signature signature = Signature.getInstance("SHA256withECDSA");
+        Signature signature = Signature.getInstance("SHA256withECDSA", new BouncyCastleProvider());
         // generate a signature
         signature.initSign(a.getPrivateSigKey(), new SecureRandom()); // initialize signature for sign with private key K.getPrivate() and a secure random source
 

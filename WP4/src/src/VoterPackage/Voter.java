@@ -1,8 +1,14 @@
 package src.VoterPackage;
 
+import java.io.Serializable;
 import java.math.BigInteger;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
 import java.security.PrivateKey;
 import java.security.PublicKey;
+import java.security.SecureRandom;
+import java.security.Signature;
+import java.security.SignatureException;
 import java.security.cert.CertificateEncodingException;
 import java.security.cert.X509Certificate;
 import java.util.logging.Level;
@@ -12,6 +18,7 @@ import org.bouncycastle.asn1.x500.X500Name;
 import org.bouncycastle.asn1.x500.style.BCStyle;
 import org.bouncycastle.asn1.x500.style.IETFUtils;
 import org.bouncycastle.cert.jcajce.JcaX509CertificateHolder;
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import src.ElGamalHomomorphic.CyclicGroupParameters;
 import src.ElGamalHomomorphic.ElGamalCipherText;
 import src.ElGamalHomomorphic.ExponentialElGamal;
@@ -20,7 +27,7 @@ import src.ElGamalHomomorphic.ExponentialElGamal;
  *
  * @author fsonnessa
  */
-public class Voter {
+public class Voter implements Serializable{
 
     private String name;
     private final PublicKey publicSigKey;
@@ -54,11 +61,26 @@ public class Voter {
 
     public Vote makeVote(BigInteger preference, BigInteger votingKey, CyclicGroupParameters param) {
         ElGamalCipherText ciphertext = ExponentialElGamal.encrypt(param, votingKey, preference);
-        return new Vote(ciphertext, certificate, true);
+        return new Vote(ciphertext);
     }
 
-    public Vote makeProof(Vote v) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public VoteProof makeProof(Vote v) {
+        return new VoteProof(v);
+    }
+    
+    public byte[] signVote(Vote v, VoteProof vp){
+        try {
+            Signature signature = Signature.getInstance("SHA256withECDSA", new BouncyCastleProvider());
+            // generate a signature
+            signature.initSign(this.privateSigKey, new SecureRandom()); // initialize signature for sign with private key K.getPrivate() and a secure random source
+            
+            signature.update(v.toString().concat(vp.toString()).getBytes());
+            return signature.sign();
+            
+        } catch (NoSuchAlgorithmException | InvalidKeyException | SignatureException ex) {
+            ex.printStackTrace();
+        }
+        return null;
     }
 
     public String getName() {

@@ -3,6 +3,7 @@ package src.AuthorityPackage;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.io.Serializable;
 import src.ElGamalHomomorphic.ElGamalKeyPair;
 import java.math.BigInteger;
 import java.nio.file.Files;
@@ -20,7 +21,7 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
  *
  * @author Ernesto
  */
-public class Authority {
+public class Authority implements Serializable{
 
     private String name;
     private final BigInteger privateEncKey;

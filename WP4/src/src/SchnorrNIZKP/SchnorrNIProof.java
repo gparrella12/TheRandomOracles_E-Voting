@@ -1,12 +1,13 @@
-package src.SchnorrNIZPK;
+package src.SchnorrNIZKP;
 
+import java.io.Serializable;
 import java.math.BigInteger;
 
 /**
  *
  * @author gparrella
  */
-public class SchnorrNIProof {
+public class SchnorrNIProof implements Serializable{
 
     private BigInteger a; // a = g^r, x is the secrete to demostrate and r some randommess
     private BigInteger c; // c = H(y || a), con y=g^x mod p

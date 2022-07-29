@@ -1,17 +1,19 @@
 package src.BlockChainPackage;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Speranza
  */
 
-public class Block {
+public class Block<T> implements Serializable{
     
     // attualmente il blocco è fatto da una sola transazione    
-    private Transaction transaction; 
+    private T data; 
 
-    public Block(Transaction t) {
-        this.transaction = t;
+    public Block(T data) {
+        this.data = data;
     }
     
     
@@ -32,7 +34,7 @@ public class Block {
 
     @Override
     public String toString() {
-        return "=== Block ===" + transaction + "=============\n";
+        return "\n==== Block ====\n" + data + "\n=============\n";
     }
     
 }

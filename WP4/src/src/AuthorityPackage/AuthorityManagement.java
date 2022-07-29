@@ -1,9 +1,17 @@
 package src.AuthorityPackage;
 
+import java.io.Serializable;
 import java.math.BigInteger;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
+import java.security.Signature;
+import java.security.SignatureException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import src.ElGamalHomomorphic.CyclicGroupParameters;
 import src.ElGamalHomomorphic.ElGamalCipherText;
 import src.VoterPackage.*;
@@ -12,7 +20,7 @@ import src.VoterPackage.*;
  *
  * @author Ernesto
  */
-public class AuthorityManagement {
+public class AuthorityManagement implements Serializable{
 
     private static AuthorityManagement single_instance = null;
     private List<Authority> authorityList;
@@ -40,7 +48,7 @@ public class AuthorityManagement {
         return this.votingKey;
     }
 
-    private void generateVotingKey() {
+    public void generateVotingKey() {
         CyclicGroupParameters c = new CyclicGroupParameters();
         BigInteger p = c.getP();
 
@@ -52,8 +60,20 @@ public class AuthorityManagement {
         this.votingKey = votingKey.mod(p);
     }
 
-    public void validateVote(Voter voter, Vote v) {
-        throw new RuntimeException("Method not implemented");
+    public boolean validateVote(Voter voter, Vote vote, VoteProof vp, byte[] signVote) {
+        try {
+            Signature signature = Signature.getInstance("SHA256withECDSA", new BouncyCastleProvider());
+            
+            signature.initVerify(voter.getCertificate());
+            
+            signature.update(vote.toString().concat(vp.toString()).getBytes()); // for verification use update+verify methods, first calling update with the message and the calling verify with the signature
+            
+            return signature.verify(signVote);
+        } catch (NoSuchAlgorithmException | InvalidKeyException |  SignatureException ex) {
+            ex.printStackTrace();
+        }
+        
+        return false;
     }
 
     public static ElGamalCipherText simulate(BigInteger pk_vote) {
@@ -120,4 +140,10 @@ public class AuthorityManagement {
         System.out.println("voti Omega_1 = " + result);
 
     }
+
+    public List<Authority> getAuthorityList() {
+        return authorityList;
+    }
+    
+    
 }
