@@ -27,7 +27,7 @@ public class Voter {
     private final PrivateKey privateKey;
     private X509Certificate certificate;
     private boolean voted;
-    
+
     public Voter(String name, PrivateKey privateKey, X509Certificate certificate) {
         this.name = name;
         this.publicKey = certificate.getPublicKey();
@@ -35,7 +35,7 @@ public class Voter {
         this.certificate = certificate;
     }
 
-    public Voter(String certFilename, String privateKeyFilename) {        
+    public Voter(String certFilename, String privateKeyFilename) {
         this.certificate = Loader.loadCrtFromFile(certFilename);
 
         X500Name x500name = null;
@@ -46,12 +46,12 @@ public class Voter {
         } catch (CertificateEncodingException ex) {
             Logger.getLogger(Voter.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+
         this.publicKey = certificate.getPublicKey();
         this.privateKey = Loader.loadSkFromFile(privateKeyFilename);
     }
 
-    public Vote vote(BigInteger preference, BigInteger votingKey, CyclicGroupParameters param) {        
+    public Vote vote(BigInteger preference, BigInteger votingKey, CyclicGroupParameters param) {
         ElGamalCipherText ciphertext = ExponentialElGamal.encrypt(param, votingKey, preference);
         return new Vote(ciphertext, certificate, true);
     }

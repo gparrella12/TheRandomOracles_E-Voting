@@ -15,9 +15,9 @@ public class ProofTest {
      */
     public static void main(String[] args) throws NoSuchAlgorithmException {
         // TODO code application logic here
-    ElGamalKeyPair p = new ElGamalKeyPair();
+        ElGamalKeyPair p = new ElGamalKeyPair();
         CyclicGroupParameters param = new CyclicGroupParameters();
-        SchnorrNIProof proof = SchnorrNIZPK.makeProof(p.getSecretKey(),p.getPublicKey(), param);
+        SchnorrNIProof proof = SchnorrNIZPK.makeProof(p.getSecretKey(), p.getPublicKey(), param);
         System.out.println(SchnorrNIZPK.verityProof(proof, p.getPublicKey(), param));
     }
 

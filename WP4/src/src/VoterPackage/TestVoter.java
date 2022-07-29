@@ -34,7 +34,6 @@ public class TestVoter {
         }
 
         // Voter v = new Voter(Loader.loadCrtFromFile("Certificati/Voters/" + line + ".crt"));
-        
         // System.out.println(v.getName());
     }
 

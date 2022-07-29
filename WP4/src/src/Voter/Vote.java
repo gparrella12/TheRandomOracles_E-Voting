@@ -27,5 +27,4 @@ public class Vote {
         return voteProof;
     }
 
-    
 }

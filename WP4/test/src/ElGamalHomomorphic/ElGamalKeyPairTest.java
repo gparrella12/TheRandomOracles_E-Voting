@@ -14,7 +14,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
 package src.ElGamalHomomorphic;
 
 import org.junit.After;
@@ -29,6 +28,7 @@ import static org.junit.Assert.*;
  * @author gparrella
  */
 public class ElGamalKeyPairTest {
+
     ElGamalKeyPair pair = new ElGamalKeyPair();
 
     public ElGamalKeyPairTest() {
@@ -58,10 +58,11 @@ public class ElGamalKeyPairTest {
         System.out.println("getPublicKey");
         System.out.println(pair.getPublicKey());
         CyclicGroupParameters param = new CyclicGroupParameters();
-        if(!pair.getPublicKey().equals(param.getG().modPow(pair.getSecretKey().mod(param.getQ()), param.getP())))
+        if (!pair.getPublicKey().equals(param.getG().modPow(pair.getSecretKey().mod(param.getQ()), param.getP()))) {
             fail("error");
-        else
+        } else {
             System.out.println("Public/Private key Well Formed");
+        }
     }
 
     /**
@@ -71,7 +72,7 @@ public class ElGamalKeyPairTest {
     public void testGetSecretKey() {
         System.out.println("getSecretKey");
         System.out.println(pair.getSecretKey());
-        
+
     }
 
 }

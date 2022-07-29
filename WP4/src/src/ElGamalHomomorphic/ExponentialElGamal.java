@@ -34,6 +34,7 @@ public class ExponentialElGamal {
 
         // tmp = (u^sk mod p)^-1 mod p 
         BigInteger tmp = cipherText.getU().modPow(sk.mod(q), p).modInverse(p);
+        
         // res = tmp*v mod p = (u^sk mod p)^-1 mod p * v mod p
         BigInteger res = tmp.multiply(cipherText.getV()).mod(p);
 

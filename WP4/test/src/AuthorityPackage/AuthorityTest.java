@@ -68,11 +68,11 @@ public class AuthorityTest {
     public void testGetPublicEncKey() {
         System.out.println("getPublicEncKey");
         System.out.println(a.getPublicEncKey());
-        CyclicGroupParameters param= new CyclicGroupParameters();
-        
-        if(!a.getPublicEncKey().equals(param.getG().modPow(a.getPrivateEncKey().mod(param.getQ()), param.getP()))){
+        CyclicGroupParameters param = new CyclicGroupParameters();
+
+        if (!a.getPublicEncKey().equals(param.getG().modPow(a.getPrivateEncKey().mod(param.getQ()), param.getP()))) {
             fail("PublicEncKey malformed");
-        }else{
+        } else {
             System.out.println("\tPublic/Private Enc Key Well Formed");
         }
     }

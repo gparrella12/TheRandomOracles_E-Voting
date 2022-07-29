@@ -18,7 +18,7 @@ public class GenerateParameters {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        List<BigInteger> parameters = ElGamalParametersGeneration.getParameters();
+        List<BigInteger> parameters = ElGamalParametersGeneration.generateParameters();
         BufferedWriter writer;
         try {
             writer = new BufferedWriter(new FileWriter("parameters.txt"));
@@ -30,7 +30,6 @@ public class GenerateParameters {
         } catch (IOException ex) {
             Logger.getLogger(GenerateParameters.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
 
     }
 

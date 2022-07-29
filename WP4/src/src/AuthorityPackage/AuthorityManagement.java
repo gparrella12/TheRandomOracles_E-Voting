@@ -18,7 +18,7 @@ public class AuthorityManagement {
     private List<Authority> authorityList;
     private BigInteger votingKey;
 
-    //metodo per implementare il singleton.
+    //Singleton method
     public static AuthorityManagement getInstance() {
         if (single_instance == null) {
             single_instance = new AuthorityManagement();
@@ -27,7 +27,7 @@ public class AuthorityManagement {
         return single_instance;
     }
 
-    //inizializzo la lista inserendo le 20 regioni + il ministero
+    //Initialization of autorithy list with 20 regions + minister   
     private AuthorityManagement() {
         authorityList = new ArrayList<>();
         for (AuthorityName value : AuthorityName.values()) {
@@ -40,7 +40,6 @@ public class AuthorityManagement {
         return this.votingKey;
     }
 
-    //recall: (a mod p) * (b mod p) = (a*b) mod p
     private void generateVotingKey() {
         CyclicGroupParameters c = new CyclicGroupParameters();
         BigInteger p = c.getP();
@@ -90,7 +89,7 @@ public class AuthorityManagement {
         BigInteger g = cp.getG();
         BigInteger p = cp.getP();
         BigInteger q = cp.getQ();
-       
+
         generateVotingKey();
 
         ElGamalCipherText c = simulate(votingKey);

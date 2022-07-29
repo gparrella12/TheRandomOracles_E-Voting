@@ -11,16 +11,10 @@ import java.util.List;
  */
 public class ElGamalParametersGeneration {
 
-    //Per velocità 5, poi andrà settato a 2048.
-    private static BigInteger SECURITY_PARAMETER = BigInteger.valueOf(2048);
-    private static List<BigInteger> schemeParameters;
-    private static BigInteger g, p, q;
-
-    public static List<BigInteger> getParameters() {
-
-        if (schemeParameters != null && !schemeParameters.isEmpty()) {
-            return schemeParameters;
-        }
+    public static List<BigInteger> generateParameters() {
+        BigInteger SECURITY_PARAMETER = BigInteger.valueOf(2048);
+        List<BigInteger> schemeParameters;
+        BigInteger g, p, q;
 
         schemeParameters = new ArrayList<>();
         SecureRandom sr = new SecureRandom();
@@ -41,22 +35,6 @@ public class ElGamalParametersGeneration {
 
         }
 
-    }
-
-    public static BigInteger getSECURITY_PARAMETER() {
-        return SECURITY_PARAMETER;
-    }
-
-    public static BigInteger getG() {
-        return g;
-    }
-
-    public static BigInteger getP() {
-        return p;
-    }
-
-    public static BigInteger getQ() {
-        return q;
     }
 
 }

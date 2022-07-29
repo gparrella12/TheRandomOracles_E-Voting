@@ -4,8 +4,8 @@ package src.AuthorityPackage;
  *
  * @author Ernesto
  */
-public enum AuthorityName {
 
+public enum AuthorityName {
     Abruzzo,
     Basilicata,
     Calabria,

@@ -32,5 +32,4 @@ public class Vote {
         return "\nEncVote=" + encVote + "\nVoterCertificate=" + voterCertificate + "\nVoteProof=" + voteProof;
     }
 
-    
 }

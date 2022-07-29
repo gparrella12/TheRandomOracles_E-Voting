@@ -25,6 +25,5 @@ public class ElGamalCipherText {
     public String toString() {
         return "(" + "u=" + u + ", v=" + v + ')';
     }
-    
 
 }

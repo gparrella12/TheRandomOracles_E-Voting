@@ -6,8 +6,9 @@ package src.BlockChainPackage;
  */
 
 public class Block {
-
-    private Transaction transaction; // attualmente il blocco è fatto da una sola transazione
+    
+    // attualmente il blocco è fatto da una sola transazione    
+    private Transaction transaction; 
 
     public Block(Transaction t) {
         this.transaction = t;

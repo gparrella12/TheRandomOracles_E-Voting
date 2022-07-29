@@ -35,11 +35,10 @@ public class BlockChain {
         }
     }
 
-
     private static List<Block> readFromFile(String fileName) {
 
         List<Block> temporaryChain = new ArrayList<>();
-        
+
         try ( ObjectInputStream din = new ObjectInputStream(new BufferedInputStream(new FileInputStream(fileName)))) {
 
             Block b = (Block) din.readObject();

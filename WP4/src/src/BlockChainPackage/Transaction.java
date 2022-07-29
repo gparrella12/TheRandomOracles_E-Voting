@@ -7,7 +7,6 @@ import java.sql.Timestamp;
  *
  * @author Speranza
  */
-
 public class Transaction {
 
     private Vote vote;
@@ -22,5 +21,5 @@ public class Transaction {
     public String toString() {
         return "\nTransaction:" + vote + "\nTimestamp=" + timestamp;
     }
-    
+
 }

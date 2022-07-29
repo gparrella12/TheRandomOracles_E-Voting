@@ -11,7 +11,7 @@ import src.ElGamalHomomorphic.CyclicGroupParameters;
  * @author gparrella
  */
 public class SchnorrNIZPK {
-    
+
     private static String hashFunction = "SHA256";
 
     public static SchnorrNIProof makeProof(BigInteger x, BigInteger y, CyclicGroupParameters param) {
@@ -36,14 +36,14 @@ public class SchnorrNIZPK {
         BigInteger g = param.getG();
         BigInteger p = param.getP();
         BigInteger q = param.getQ();
-        
+
         BigInteger a = proof.getA();
         BigInteger c = proof.getC();
         BigInteger z = proof.getZ();
-        
-        BigInteger toHash = new BigInteger(y.toString().concat(a.toString()));  
+
+        BigInteger toHash = new BigInteger(y.toString().concat(a.toString()));
         BigInteger c1 = hash(toHash); // c1 = H(y || a), con y=g^x mod p
-        
+
         if (c.subtract(c1) == BigInteger.ZERO) {
             // k = g^z mod p
             BigInteger k = g.modPow(z.mod(q), p);
@@ -53,7 +53,7 @@ public class SchnorrNIZPK {
             //System.out.println(res);
             return k.subtract(res) == BigInteger.ZERO;
         }
-        
+
         return false;
     }
 
@@ -65,11 +65,11 @@ public class SchnorrNIZPK {
             ex.printStackTrace();
             System.exit(-1);
         }
-              
+
         byte digest[] = new byte[hashFunction.getDigestLength()];
         digest = hashFunction.digest(input.toByteArray());
         //System.out.println(BytesToHex(digest));
-        
+
         return new BigInteger(digest);
 
     }
