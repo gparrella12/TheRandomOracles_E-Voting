@@ -14,10 +14,10 @@ public class ExponentialElGamalTest {
      */
         //test
     public static void main(String[] args) {
-        Authority a1 = new Authority("Giuan");
+        Authority a1 = new Authority("Campania");
 
         BigInteger M1, M2;          // Encryption done by Bob and Charlie
-        M1 = new BigInteger("69");  // Bob encrypts 24
+        M1 = new BigInteger("24");  // Bob encrypts 24
         M2 = new BigInteger("12");  // Charlie encrypts 14
         
         System.out.println("M1: " + M1.intValue());

@@ -1,7 +1,8 @@
 package src.VoterPackage;
 
 import java.math.BigInteger;
-import java.security.Key;
+import java.security.PrivateKey;
+import java.security.PublicKey;
 import java.security.cert.CertificateEncodingException;
 import java.security.cert.X509Certificate;
 import java.util.logging.Level;
@@ -22,12 +23,12 @@ import src.ElGamalHomomorphic.ExponentialElGamal;
 public class Voter {
 
     private String name;
-    private Key publicKey;  // le chiavi del votante servono per schemi di firma
-    private Key privateKey;
+    private final PublicKey publicKey;  // le chiavi del votante servono per schemi di firma
+    private final PrivateKey privateKey;
     private X509Certificate certificate;
     private boolean voted;
     
-    public Voter(String name, Key privateKey, X509Certificate certificate) {
+    public Voter(String name, PrivateKey privateKey, X509Certificate certificate) {
         this.name = name;
         this.publicKey = certificate.getPublicKey();
         this.privateKey = privateKey;
@@ -63,11 +64,11 @@ public class Voter {
         return name;
     }
 
-    public Key getPublicKey() {
+    public PublicKey getPublicKey() {
         return publicKey;
     }
 
-    public Key getPrivateKey() {
+    public PrivateKey getPrivateKey() {
         return privateKey;
     }
 
@@ -81,6 +82,6 @@ public class Voter {
 
     @Override
     public String toString() {
-        return "\n" + "name: " + name + "\npk: " + publicKey.getEncoded() + "\nsk: " + privateKey.getEncoded() + "\ncrt: " + certificate.getType() + "\nvoted: " + voted + "\n";
+        return "\n" + "name: " + name + "\npk: " + publicKey.toString() + "\nsk: " + privateKey.toString() + "\ncrt: " + certificate.toString() + "\nvoted: " + voted + "\n";
     }
 }

@@ -4,7 +4,7 @@ import os
 import names
 import random
 
-crt_dir = "../"
+crt_dir = "../Authorities/"
 
 rand_names = set()
 while len(rand_names) != 4:

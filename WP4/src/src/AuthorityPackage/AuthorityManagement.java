@@ -54,6 +54,7 @@ public class AuthorityManagement {
     }
 
     public void validateVote(Voter voter, Vote v) {
+        throw new RuntimeException("Method not implemented");
     }
 
     public static ElGamalCipherText simulate(BigInteger pk_vote) {

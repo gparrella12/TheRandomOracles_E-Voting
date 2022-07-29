@@ -14,6 +14,7 @@ import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
 import java.security.spec.PKCS8EncodedKeySpec;
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 /**
  *
@@ -38,7 +39,7 @@ public class Authority {
         // Read the authority Certificate
         InputStream in = null;
         try {
-            in = new FileInputStream("Certificati/" + name + ".crt");
+            in = new FileInputStream("Certificati/Authorities/" + name + ".crt");
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
         }
@@ -59,7 +60,7 @@ public class Authority {
         this.publicSigKey = this.certificate.getPublicKey();
         PrivateKey key = null;
         try {
-            key = get("Certificati/" + name + ".p8");
+            key = get("Certificati/Authorities/" + name + ".p8");
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -73,7 +74,7 @@ public class Authority {
 
         PKCS8EncodedKeySpec spec
                 = new PKCS8EncodedKeySpec(keyBytes);
-        KeyFactory kf = KeyFactory.getInstance("ECDSA");
+        KeyFactory kf = KeyFactory.getInstance("ECDSA", new BouncyCastleProvider());
         return kf.generatePrivate(spec);
     }
 
