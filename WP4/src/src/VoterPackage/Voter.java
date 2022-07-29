@@ -81,6 +81,10 @@ public class Voter {
         return voted;
     }
 
+    public void setVoted() {
+        this.voted = true;
+    }
+
     @Override
     public String toString() {
         return "\n" + "name: " + name + "\npk: " + publicSigKey.toString() + "\nsk: " + privateSigKey.toString() + "\ncrt: " + certificate.toString() + "\nvoted: " + voted + "\n";
