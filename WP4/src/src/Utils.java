@@ -9,7 +9,7 @@ public class Utils {
     private static String digits = "0123456789abcdef";
 
     /**
-     *
+     * This method converts an array of bytes into a String
      * @param bytes
      * @return
      */
@@ -24,7 +24,7 @@ public class Utils {
     }
 
     /**
-     *
+     * This method converts an array of bytes into an Hexadecimal String
      * @param data
      * @return
      */
