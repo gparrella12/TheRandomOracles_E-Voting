@@ -9,16 +9,25 @@ import java.io.Serializable;
  */
 
 public class Block<T> implements Serializable{
-    
-    // attualmente il blocco è fatto da una sola transazione    
+     
     private T data; 
 
     /**
-     *
+     * 
      * @param data
      */
     public Block(T data) {
         this.data = data;
+    }
+    
+
+    /**
+     *
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "\n======== Block ========\n" + data + "\n=======================\n";
     }
     
     
@@ -36,16 +45,5 @@ public class Block<T> implements Serializable{
         listTransactions.add(t);
     }
     */
-
-    /**
-     *
-     * @return
-     */
-
-
-    @Override
-    public String toString() {
-        return "\n==== Block ====\n" + data + "\n=============\n";
-    }
     
 }
