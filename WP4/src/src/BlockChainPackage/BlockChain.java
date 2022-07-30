@@ -10,6 +10,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
+ * This class represents the BlockChain.
  *
  * @author Speranza
  */
@@ -20,19 +21,21 @@ public class BlockChain implements Serializable {
     private String filename_serial;
 
     /**
-     *
+     * Constructor of <code>BlockChain</code> class. It creates an empty
+     * <code>ArrayList</code> of Blocks.
      */
     public BlockChain() {
         chain = new ArrayList<>();
     }
 
-    // costruttore da utilizzare quando bisogna richiamare la blockchain
-    // da file di testo, dopo la prima inizializzazione.
-
     /**
+     * Constructor of <code>BlockChain</code> class, used to retrieve
+     * information from the BlockChain.
      *
-     * @param fileName
-     * @param filename_serial
+     * @param fileName name of the file used to make the content of the
+     * BlockChain human readable.
+     * @param filename_serial name of the file used to retrieve information from
+     * the BlockChain.
      */
     public BlockChain(String fileName, String filename_serial) {
         this.filename_serial = filename_serial;
@@ -41,8 +44,11 @@ public class BlockChain implements Serializable {
     }
 
     /**
+     * Function used to add a block to the BlockChain. It adds the block to a
+     * List of Blocks and writes it's content on the .txt file and the
+     * serialized one.
      *
-     * @param block
+     * @param block block to be added to the BlockChain.
      */
     public void addBlock(Block block) {
         chain.add(block);
@@ -50,6 +56,9 @@ public class BlockChain implements Serializable {
         writeSerialized(this.filename_serial);
     }
 
+    /**
+     * Function used to add a block to the file.txt.
+     */
     private static void writeOnFile(String fileName, Block block) {
 
         try ( PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(fileName, true)))) {
@@ -59,6 +68,9 @@ public class BlockChain implements Serializable {
         }
     }
 
+    /**
+     * Function used to add a block to the serialized file.
+     */
     private void writeSerialized(String fileName) {
         try ( ObjectOutputStream dout = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(this.filename_serial)))) {
             dout.writeObject(this.chain);
@@ -67,13 +79,16 @@ public class BlockChain implements Serializable {
         }
     }
 
-    private List<Block> readFromFile(String fileName) {
+    /**
+     * Function used to read from the serialized file.
+     */
+    private List<Block> readFromFile(String fileNameSerialized) {
 
         BufferedWriter writer;
         Path path = FileSystems.getDefault().getPath("/" + this.filename);
         try {
             Files.delete(path);
-        } catch (NoSuchFileException x) {
+        } catch (NoSuchFileException exp) {
             try {
                 writer = new BufferedWriter(new FileWriter(this.filename));
                 writer.close();
@@ -86,13 +101,13 @@ public class BlockChain implements Serializable {
 
         List<Block> temporaryChain = new ArrayList<>();
 
-        try ( ObjectInputStream din = new ObjectInputStream(new BufferedInputStream(new FileInputStream(this.filename_serial)))) {
+        try ( ObjectInputStream din = new ObjectInputStream(new BufferedInputStream(new FileInputStream(fileNameSerialized)))) {
 
             temporaryChain = (List) din.readObject();
 
         } catch (FileNotFoundException ex) {
             try {
-                writer = new BufferedWriter(new FileWriter(this.filename_serial));
+                writer = new BufferedWriter(new FileWriter(fileNameSerialized));
                 writer.close();
             } catch (IOException ex1) {
                 Logger.getLogger(BlockChain.class.getName()).log(Level.SEVERE, null, ex1);
@@ -106,6 +121,7 @@ public class BlockChain implements Serializable {
     }
 
     /**
+     * Function used to print the state of the BlockChain.
      *
      * @return
      */
