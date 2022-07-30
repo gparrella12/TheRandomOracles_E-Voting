@@ -14,7 +14,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
 package src.AuthorityPackage;
 
 import java.io.Serializable;
@@ -28,11 +27,12 @@ import src.Utils;
  *
  * @author gparrella
  */
-public class AuthorityShareProof implements Serializable{
+public class AuthorityShareProof implements Serializable {
+
     private String proof;
 
     public AuthorityShareProof(Authority a) {
-                MessageDigest h = null;
+        MessageDigest h = null;
         try {
             h = MessageDigest.getInstance(getHashFunction(), new BouncyCastleProvider());
         } catch (NoSuchAlgorithmException ex) {
@@ -47,10 +47,7 @@ public class AuthorityShareProof implements Serializable{
 
     @Override
     public String toString() {
-        return  proof ;
+        return proof;
     }
-    
-    
-    
 
 }

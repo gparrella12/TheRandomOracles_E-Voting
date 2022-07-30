@@ -226,7 +226,7 @@ public class SmartContract implements Serializable {
 
     /**
      * This method returns PK<sub>voting</sub>
-     * @return
+     * @return the PK<sub>voting</sub>
      */
     public BigInteger getVotingKey() {
         return votingKey;
@@ -234,7 +234,8 @@ public class SmartContract implements Serializable {
 
     /**
      * This method returns voti<sub>&#937;<sub>1</sub></sub>
-     * @return
+     * 
+     * @return voti<sub>&#937;<sub>1</sub></sub>
      */
     public BigInteger getResultCandidate1() {
         return resultCandidate1;
@@ -242,7 +243,7 @@ public class SmartContract implements Serializable {
 
     /**
      * This method returns voti<sub>&#937;<sub>2</sub></sub>
-     * @return
+     * @return voti<sub>&#937;<sub>2</sub></sub>
      */
     public BigInteger getResultCandidate2() {
         return resultCandidate2;
@@ -250,7 +251,7 @@ public class SmartContract implements Serializable {
 
     /**
      *
-     * @return
+     * @return all information of the smart contract
      */
     @Override
     public String toString() {
