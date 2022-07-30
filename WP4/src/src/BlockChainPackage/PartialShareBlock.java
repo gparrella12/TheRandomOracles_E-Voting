@@ -29,6 +29,8 @@ import src.AuthorityPackage.AuthorityShareProof;
 import src.Utils;
 
 /**
+ * This Class represents the Block that will contain the partial share of each
+ * Authority with relavite decryption ZKP with the correct key.
  *
  * @author gparrella
  */
@@ -39,6 +41,9 @@ public class PartialShareBlock implements Serializable {
     private AuthorityShareProof proof;
     private byte[] sign;
 
+    /**
+     * Constructor of <code>PartialShareBlock</code> class.
+     */
     public PartialShareBlock(BigInteger partialShare, Authority a) {
         this.partialShare = partialShare;
         this.authorityName = a.getName();
@@ -47,7 +52,8 @@ public class PartialShareBlock implements Serializable {
         try {
             Signature signature = Signature.getInstance("SHA256withECDSA", new BouncyCastleProvider());
             // generate a signature
-            signature.initSign(a.getPrivateSigKey(), new SecureRandom()); // initialize signature for sign with private key K.getPrivate() and a secure random source
+            // initialize signature for sign with private key K.getPrivate() and a secure random source
+            signature.initSign(a.getPrivateSigKey(), new SecureRandom());
 
             signature.update(partialShare.toString().concat(this.authorityName).concat(this.proof.toString()).getBytes());
             this.sign = signature.sign();
@@ -56,17 +62,33 @@ public class PartialShareBlock implements Serializable {
         }
     }
 
+    /**
+     * Function used to get the partial share.
+     *
+     * @return a <code>BigInteger</code> representing the partial share.
+     */
     public BigInteger getPartialShare() {
         return partialShare;
     }
 
+    /**
+     * Function used to get the Authority name.
+     *
+     * @return a <code>String</code> representing the Authority name.
+     */
     public String getAuthorityName() {
         return authorityName;
     }
 
+    /**
+     * Function used to print the informations on the BlockChain (in our case,
+     * on a file .txt)
+     *
+     * @return
+     */
     @Override
     public String toString() {
-        return "PartialShare:\npartialShare=" + partialShare + "\nauthorityName=" + authorityName + "\nproof=" + proof + "\nSign="+Utils.toHex(sign);
+        return "Partial Share= " + partialShare + "\nAuthority Name= " + authorityName + "\nproof= " + proof + "\nSign= " + Utils.toHex(sign);
     }
 
 }
