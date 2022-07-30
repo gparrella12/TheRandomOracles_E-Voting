@@ -28,7 +28,7 @@ public class VoteProof implements Serializable{
      */
     @Override
     public String toString() {
-        return "VoteProof{" + "proof=" + proof + '}';
+        return "\nProof= " + proof;
     }
 
 }

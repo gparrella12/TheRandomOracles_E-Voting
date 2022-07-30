@@ -33,7 +33,7 @@ public class Vote implements Serializable{
      */
     @Override
     public String toString() {
-        return "Vote{" + "encVote=" + encVote + '}';
+        return "(encVote) " + encVote;
     }
 
 }
