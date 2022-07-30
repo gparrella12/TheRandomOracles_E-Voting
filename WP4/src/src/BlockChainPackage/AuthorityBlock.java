@@ -64,7 +64,7 @@ public class AuthorityBlock implements Serializable{
      */
     @Override
     public String toString() {
-        return "Authority Name=" + name + "\npublicEncKey=" + publicEncKey + "\npublicSigKey=" + publicSigKey + "\nCertificate=" + certificate;
+        return "Authority Name=" + name + "\npublicEncKey=" + publicEncKey + "\nSchnorr Proof for publicEncKey=" + proof.toString() + "\npublicSigKey=" + publicSigKey + "\nCertificate=" + certificate;
     }
 
 }

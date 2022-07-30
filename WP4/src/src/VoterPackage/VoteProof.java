@@ -1,14 +1,17 @@
 package src.VoterPackage;
 
 import java.io.Serializable;
-import java.nio.charset.Charset;
-import java.util.Random;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
+import static src.SchnorrNIZKP.SchnorrNIZKP.getHashFunction;
+import src.Utils;
 
 /**
  *
  * @author fsonnessa
  */
-public class VoteProof implements Serializable{
+public class VoteProof implements Serializable {
 
     private String proof;
 
@@ -17,9 +20,17 @@ public class VoteProof implements Serializable{
      * @param v
      */
     public VoteProof(Vote v) {
-        byte[] array = new byte[7]; // length is bounded by 7
-        new Random().nextBytes(array);
-        this.proof  = new String(array, Charset.forName("UTF-8"));
+        MessageDigest h = null;
+        try {
+            h = MessageDigest.getInstance(getHashFunction(), new BouncyCastleProvider());
+        } catch (NoSuchAlgorithmException ex) {
+            ex.printStackTrace();
+            System.exit(-1);
+        }
+
+        byte digest[] = new byte[h.getDigestLength()];
+        digest = h.digest(v.toString().getBytes());
+        this.proof = Utils.toHex(digest);
     }
 
     /**

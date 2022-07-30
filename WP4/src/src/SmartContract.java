@@ -10,6 +10,7 @@ import java.util.List;
 import src.AuthorityPackage.Authority;
 import src.BlockChainPackage.AuthorityBlock;
 import src.BlockChainPackage.Block;
+import src.BlockChainPackage.PartialShareBlock;
 import src.BlockChainPackage.VoteTransaction;
 import src.ElGamalHomomorphic.CyclicGroupParameters;
 import src.ElGamalHomomorphic.ElGamalCipherText;
@@ -47,7 +48,7 @@ public class SmartContract implements Serializable {
         this.startElection = startElection;
         this.endElection = endElection;
         this.manager = am;
-        this.votes = new ArrayList<ElGamalCipherText>();
+        this.votes = new ArrayList<>();
     }
 
     /**
@@ -57,8 +58,7 @@ public class SmartContract implements Serializable {
         for (Authority a : manager.getAuthorityList()) {
             SchnorrNIProof proof = SchnorrNIZKP.makeProof(a.getPrivateEncKey(), a.getPublicEncKey(), new CyclicGroupParameters());
             AuthorityBlock data = new AuthorityBlock(a.getName(), a.getPublicEncKey(), a.getPublicSigKey(), a.getCertificate(), proof);
-//            System.out.println(data);
-            blockchain.addBlock(new Block<AuthorityBlock>(data));
+            blockchain.addBlock(new Block<>(data));
         }
     }
 
@@ -112,7 +112,40 @@ public class SmartContract implements Serializable {
      * @param aggregatedCipherText
      */
     public void tallying(ElGamalCipherText aggregatedCipherText) {
-        this.resultCandidate1 = this.manager.votesDecryption(aggregatedCipherText);
+        List<BigInteger> partialShares = new ArrayList<>();
+        CyclicGroupParameters cp = new CyclicGroupParameters();
+        BigInteger g = cp.getG();
+        BigInteger p = cp.getP();
+        BigInteger q = cp.getQ();
+
+        BigInteger u = aggregatedCipherText.getU();
+        BigInteger z = aggregatedCipherText.getV();
+
+        for (Authority a : manager.getAuthorityList()) {
+            BigInteger share = u.modPow(a.getPrivateEncKey().mod(q), p);
+            partialShares.add(share);
+            this.blockchain.addBlock(new Block<>(new PartialShareBlock(share, a)));
+        }
+
+        BigInteger prod_d = BigInteger.ONE;
+        for (BigInteger b : partialShares) {
+            prod_d = prod_d.multiply(b);
+        }
+        prod_d = prod_d.mod(p);
+
+        BigInteger prod_d_inverse = prod_d.modInverse(p);
+
+        BigInteger semiResult = prod_d_inverse.multiply(z).mod(p);
+
+        BigInteger result = new BigInteger("0");
+        while (true) {
+            if (g.modPow(result, p).compareTo(semiResult) == 0) {
+                break;
+            }
+            result = result.add(BigInteger.ONE);
+        }
+
+        this.resultCandidate1 = result;
         this.resultCandidate2 = new BigInteger(String.valueOf(this.votes.size())).subtract(this.resultCandidate1);
     }
 
