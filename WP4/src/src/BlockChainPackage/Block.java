@@ -3,25 +3,27 @@ package src.BlockChainPackage;
 import java.io.Serializable;
 
 /**
+ * This class represents a Block of the BlockChain.
  *
  * @author Speranza
- * @param <T>
+ * @param <T> type of data that will be cointained in the Block
  */
+public class Block<T> implements Serializable {
 
-public class Block<T> implements Serializable{
-     
-    private T data; 
+    private T data;
 
     /**
-     * 
-     * @param data
+     * Constructor of <code>Block</code> class.
+     *
+     * @param data data that will be contained in the Block.
      */
     public Block(T data) {
         this.data = data;
     }
-    
 
     /**
+     * Function used to print the data on the BlockChain (in our case,
+     * on a file .txt)
      *
      * @return
      */
@@ -29,21 +31,5 @@ public class Block<T> implements Serializable{
     public String toString() {
         return "\n======== Block ========\n" + data + "\n=======================\n";
     }
-    
-    
-    /*
-    Se decidessimo in futuro di avere blocchi con più transazioni
-    
-    List<Transaction> listTransactions;
-    
-    // costruttore
-    public Block() {
-        listTransactions = new ArrayList<>();
-    }
-    
-    void addTransaction(Transaction t) {
-        listTransactions.add(t);
-    }
-    */
-    
+
 }
