@@ -14,19 +14,23 @@ import java.security.spec.PKCS8EncodedKeySpec;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 /**
- *
+ * This class provides methods to make it easier to load a .crt certificate and 
+ * .p8 private key from a file.
+ * Keep the last certificate and the last loaded key for later.
+ * 
  * @author fsonnessa
  */
-public class CertificateLoader {
+public class EasyLoadFromFile {
 
     private static X509Certificate lastCrt = null;
+    private static PrivateKey lastKey = null;
 
     /**
-     *
+     * Upload the .crt certificate in X509 format from the specified file
      * @param filename
      * @return
      */
-    public static X509Certificate loadCrtFromFile(String filename) {
+    public static X509Certificate loadCrt(String filename) {
         //Read the authority Certificate
         InputStream in = null;
         try {
@@ -53,7 +57,7 @@ public class CertificateLoader {
     }
 
     /**
-     *
+     * Return last loaded X509Certificate
      * @return
      */
     public static X509Certificate getLastCrt() {
@@ -61,11 +65,11 @@ public class CertificateLoader {
     }
 
     /**
-     *
+     * Load the private key from the specified .p8 file
      * @param filename
      * @return
      */
-    public static PrivateKey loadSkFromFile(String filename) {
+    public static PrivateKey loadKey(String filename) {
         PrivateKey key = null;
         try {
             byte[] keyBytes = Files.readAllBytes(Paths.get(filename));
@@ -75,8 +79,17 @@ public class CertificateLoader {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-
+        lastKey = key;
+        
         return key;
+    }
+
+    /**
+     * Return last loaded PrivateKey
+     * @return
+     */
+    public static PrivateKey getLastKey() {
+        return lastKey;
     }
 
 }

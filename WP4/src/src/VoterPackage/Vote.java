@@ -4,7 +4,8 @@ import java.io.Serializable;
 import src.ElGamalHomomorphic.ElGamalCipherText;
 
 /**
- *
+ * This class contains the encrypted vote to be passed to the system for the 
+ * next count
  * @author franc
  */
 public class Vote implements Serializable{
@@ -12,7 +13,7 @@ public class Vote implements Serializable{
     private ElGamalCipherText encVote;
 
     /**
-     *
+     * Create a Vote by passing the ElGamalCipherText of the Voter's preference
      * @param encVote
      */
     public Vote(ElGamalCipherText encVote) {
@@ -20,7 +21,7 @@ public class Vote implements Serializable{
     }
 
     /**
-     *
+     * Return the ElGamalCipherText of the preference
      * @return
      */
     public ElGamalCipherText getEncVote() {
@@ -28,7 +29,7 @@ public class Vote implements Serializable{
     }
 
     /**
-     *
+     * Return the String rappresentation of a Vote
      * @return
      */
     @Override

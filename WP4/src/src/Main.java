@@ -43,7 +43,10 @@ public class Main {
                 voter = new Voter(filename + ".crt", filename + ".p8");
                 
                 int preference = new Random(new SecureRandom().nextLong()).nextInt(2);
+                
+                // Print votes
                 System.out.println(voter.getName() + " " + preference);
+                
                 Vote vote = voter.makeVote(new BigInteger( String.valueOf(preference)), sc.getVotingKey(), param);
                 VoteProof vp = voter.makeProof(vote);
                 byte[] sign = voter.signVote(vote, vp);

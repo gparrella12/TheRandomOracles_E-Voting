@@ -24,7 +24,9 @@ import src.ElGamalHomomorphic.ElGamalCipherText;
 import src.ElGamalHomomorphic.ExponentialElGamal;
 
 /**
- *
+ * This class contains the keys for a signature scheme and the authentication 
+ * certificate of the voter.
+ * 
  * @author fsonnessa
  */
 public class Voter implements Serializable{
@@ -36,7 +38,12 @@ public class Voter implements Serializable{
     private boolean voted;
 
     /**
-     *
+     * Defines a voter by his <code>name</code>, <code>private signature key</code> and <code>certificate of 
+     * authentication</code>.
+     * 
+     * The certificate must contain the public signature key of 
+     * the Voter.
+     * 
      * @param name
      * @param privateSigKey
      * @param certificate
@@ -50,12 +57,16 @@ public class Voter implements Serializable{
     }
 
     /**
-     *
+     * Defines a voter by his certificate of authentication, loaded from file, 
+     * and his private signature key.
+     * 
+     * As Voter's name the value CN in certificate is used.
+     * 
      * @param certFilename
      * @param privateKeyFilename
      */
     public Voter(String certFilename, String privateKeyFilename) {
-        this.certificate = CertificateLoader.loadCrtFromFile(certFilename);
+        this.certificate = EasyLoadFromFile.loadCrt(certFilename);
 
         X500Name x500name = null;
         try {
@@ -67,14 +78,15 @@ public class Voter implements Serializable{
         }
 
         this.publicSigKey = certificate.getPublicKey();
-        this.privateSigKey = CertificateLoader.loadSkFromFile(privateKeyFilename);
+        this.privateSigKey = EasyLoadFromFile.loadKey(privateKeyFilename);
     }
 
     /**
-     *
+     * Create the ElGamalCipherText of the preference expressed.
+     * 
      * @param preference
-     * @param votingKey
-     * @param param
+     * @param votingKey voting key obtained from the smart contract for El Gamal encryption
+     * @param param CyclicGroupParameters for El Gamal Scheme specified in smart contract
      * @return
      */
     public Vote makeVote(BigInteger preference, BigInteger votingKey, CyclicGroupParameters param) {
@@ -83,19 +95,20 @@ public class Voter implements Serializable{
     }
 
     /**
-     *
+     * Creates a signature to the integrity and non-repudiation of the Vote
      * @param v
-     * @return
+     * @return <code>VoteProof = H(Vote)</code>
      */
     public VoteProof makeProof(Vote v) {
         return new VoteProof(v);
     }
     
     /**
-     *
+     * Sign the vote and its proof with the voter's private signature key for integrity proprerty
+     * 
      * @param v
      * @param vp
-     * @return
+     * @return <code>Sign(Vote||VoteProof, privateSignKey)</code>
      */
     public byte[] signVote(Vote v, VoteProof vp){
         try {
@@ -153,14 +166,14 @@ public class Voter implements Serializable{
     }
 
     /**
-     *
+     * Used by the smart contract to mark that the voter has already expressed his preference
      */
     public void setVoted() {
         this.voted = true;
     }
 
     /**
-     *
+     * String rappresentation of a Voter
      * @return
      */
     @Override
