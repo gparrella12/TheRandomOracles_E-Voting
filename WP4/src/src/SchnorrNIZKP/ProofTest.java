@@ -1,6 +1,8 @@
 package src.SchnorrNIZKP;
 
+import java.math.BigInteger;
 import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
 import src.ElGamalHomomorphic.CyclicGroupParameters;
 import src.ElGamalHomomorphic.ElGamalKeyPair;
 
@@ -15,11 +17,14 @@ public class ProofTest {
      * @throws java.security.NoSuchAlgorithmException
      */
     public static void main(String[] args) throws NoSuchAlgorithmException {
-        // TODO code application logic here
+
         ElGamalKeyPair p = new ElGamalKeyPair();
         CyclicGroupParameters param = new CyclicGroupParameters();
         SchnorrNIProof proof = SchnorrNIZKP.makeProof(p.getSecretKey(), p.getPublicKey(), param);
-        System.out.println(SchnorrNIZKP.verityProof(proof, p.getPublicKey(), param));
+        System.out.println("Test with well formed proof: " + SchnorrNIZKP.verityProof(proof, p.getPublicKey(), param));
+        
+        SchnorrNIProof fakeProof = SchnorrNIZKP.makeProof(new BigInteger(p.getSecretKey().bitLength(), new SecureRandom()), p.getPublicKey(), param);
+        System.out.println("Test with bad formed proof: " + SchnorrNIZKP.verityProof(fakeProof, p.getPublicKey(), param));
     }
 
 }
