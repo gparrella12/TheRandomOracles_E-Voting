@@ -22,7 +22,7 @@ public class SchnorrNIZKP {
      * @return
      */
     public static SchnorrNIProof makeProof(BigInteger x, BigInteger y, CyclicGroupParameters param) {
-        int securityParameter = param.getSECURITY_PARAMETER().intValue();
+        int securityParameter = param.getSecurityParameter().intValue();
         BigInteger q = param.getQ();
         BigInteger p = param.getP();
         BigInteger g = param.getG();

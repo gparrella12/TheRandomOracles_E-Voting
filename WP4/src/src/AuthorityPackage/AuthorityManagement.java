@@ -106,7 +106,7 @@ public class AuthorityManagement implements Serializable {
         BigInteger p = c.getP();
         BigInteger g = c.getG();
         BigInteger q = c.getQ();
-        int securityParameter = c.getSECURITY_PARAMETER().intValue();
+        int securityParameter = c.getSecurityParameter().intValue();
 
         SecureRandom sc = new SecureRandom();
         BigInteger r = new BigInteger(securityParameter, sc);
