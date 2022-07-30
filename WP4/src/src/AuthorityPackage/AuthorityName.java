@@ -1,7 +1,9 @@
 package src.AuthorityPackage;
 
 /**
- *
+ * This class contains the enums associated to the names of the 
+ * authorities:
+ * there are the names of the 20 regions plus the name of the Minister
  * @author Ernesto
  */
 

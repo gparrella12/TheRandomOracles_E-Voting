@@ -11,7 +11,7 @@ public class Utils {
     /**
      * This method converts an array of bytes into a String
      * @param bytes
-     * @return
+     * @return the new converted string
      */
     public static String toString(byte[] bytes) {
         char[] chars = new char[bytes.length];
@@ -26,7 +26,7 @@ public class Utils {
     /**
      * This method converts an array of bytes into an Hexadecimal String
      * @param data
-     * @return
+     * @return the new converted string
      */
     public static String toHex(byte[] data) {
         StringBuffer buf = new StringBuffer();
