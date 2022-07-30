@@ -146,7 +146,7 @@ public class SmartContract implements Serializable {
      */
     @Override
     public String toString() {
-        return "SmartContract( votingKey=" + votingKey + ", startElection=" + startElection + ", endElection=" + endElection + " Candidate1 = Omega1 [v=1], Candidate2 = Omega2 [v=0] )";
+        return "SmartContract:\nVoting Key=" + votingKey + "\nStart Election= " + startElection + "\tEnd Election= " + endElection + "\nCandidate #1 = Omega1 [v=1]\nCandidate #2 = Omega2 [v=0]";
     }
 
 }
