@@ -37,7 +37,7 @@ public class VoteTransaction implements Serializable {
      */
     @Override
     public String toString() {
-        return "VoteTransaction{" + "vote=" + vote + ", vp=" + vp + ", sign=" + Utils.toHex(sign) + ", timestamp=" + timestamp + '}';
+        return "VoteTransaction:\nVote= " + vote + vp + "\nSign= " + Utils.toHex(sign) + "\nTimestamp= " + timestamp;
     }
 
 }
