@@ -32,13 +32,19 @@ public class SimulateProtocol {
         CyclicGroupParameters param = new CyclicGroupParameters();
         AuthorityManagement am = AuthorityManagement.getInstance();
         SmartContract sc = new SmartContract(LocalDateTime.now(), LocalDateTime.now().plusDays(2), am, "blockchain.txt");
+        
+
         // Blockchain initialization
         sc.blockChainInit();
         System.out.println("======== BLOCKCHAIN INITIALIZATION OK ========");
+        
+
         // Key generation phase
         System.out.println("======== KEY GENERATION PHASE ========\nGenerate PK_voting...");
         sc.keyGeneration();
         System.out.println("======== KEY GENERATION OK ========");
+        
+
         // Voting Phase
         Voter voter = null;
         int c1RealVotes = 0;
@@ -63,6 +69,8 @@ public class SimulateProtocol {
             e.printStackTrace();
         }
         System.out.println("======== END VOTING PHASE ========");
+        
+
         // Post-Voting Phase
         System.out.println("Ciphertext aggregation...");
         ElGamalCipherText resulEnc = sc.aggregateCipherText();
@@ -72,6 +80,8 @@ public class SimulateProtocol {
             throw new RuntimeException("ERROR - INVALID ELECTION RESULT");
         }
         System.out.println("\n======== RESULT ========");
+        
+
         // Printing the results
         System.out.println("Votes for candidate Omega1 =\t" + sc.getResultCandidate1());
         System.out.println("Votes for candidate Omega2 =\t" + sc.getResultCandidate2());
