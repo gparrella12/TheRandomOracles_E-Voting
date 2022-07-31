@@ -4,9 +4,9 @@ import java.io.Serializable;
 import java.math.BigInteger;
 
 /**
- * This class contains the elements to perform a 
- * Schnorr Non-interactive Zero-Knowledge Proof
- * used to prove that the owner of a public key knows its secret key
+ * This class contains the elements to perform a Schnorr Non-interactive
+ * Zero-Knowledge Proof used to prove that the owner of a public key knows its
+ * secret key.
  *
  * @author gparrella
  */
@@ -20,7 +20,8 @@ public class SchnorrNIProof implements Serializable {
      * Creates a Schnorr Non-interactive Zero-Knowledge Proof by passing:
      * <ul>
      * <li><code>a = g<sup>r</sup> mod p</code></li>
-     * <li><code>c = H(y || a)</code>, whit <code>y=g<sup>x</sup> mod p</code></li>
+     * <li><code>c = H(y || a)</code>, whit <code>y=g<sup>x</sup> mod
+     * p</code></li>
      * <li><code>z = (r + c*x) mod q</code></li>
      * </ul>
      *
@@ -28,8 +29,8 @@ public class SchnorrNIProof implements Serializable {
      * <ul>
      * <li><code>x</code> is the secrete to prove</li>
      * <li><code>r</code> is randomness </li>
-     * <li><code>p, q, g</code> are parameters of a cyclic group of order q,
-     * for schemes for schemes that use the DLog </li>
+     * <li><code>p, q, g</code> are parameters of a cyclic group of order q, for
+     * schemes for schemes that use the DLog </li>
      * </ul>
      *
      * @param a g<sup>r</sup> mod p
@@ -43,33 +44,39 @@ public class SchnorrNIProof implements Serializable {
     }
 
     /**
-     * This method returns the a value, that is g^r mod p
-     * @return a BigInteger with <code>a</code> value.
+     * This method returns the <code>a</code> value, that is equal to
+     * g<sup>r</sup> mod p.
+     *
+     * @return a <code>BigInteger</code> representing the <code>a</code> value.
      */
     public BigInteger getA() {
         return a;
     }
 
     /**
-     * This method returns the c value, that is H(y || a)
-     * @return a BigInteger with <code>c</code> value.
+     * This method returns the <code>c</code> value, that is equal to
+     * H(g<sup>x</sup> mod p || g<sup>r</sup> mod p)
+     *
+     * @return a <code>BigInteger</code> representing the <code>c</code> value.
      */
     public BigInteger getC() {
         return c;
     }
 
     /**
-     * This method returns the z value, that is (r + c*x) mod q
-     * @return a BigInteger with <code>z</code> value.
+     * This method returns the <code>z</code> value, that is equal to
+     * (r+c*x)mod(q)
+     *
+     * @return a <code>BigInteger</code> representing the <code>z</code> value.
      */
     public BigInteger getZ() {
         return z;
     }
 
     /**
-     * This method returns the string representation of the triple (a,c,z)
-     * 
-     * @return a string containing the representation of (a,c,z)
+     * This method prints the triple (a, c, z)
+     *
+     * @return a <code>String</code> containing the representation of (a, c, z).
      */
     @Override
     public String toString() {
