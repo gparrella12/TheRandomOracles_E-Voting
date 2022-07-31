@@ -16,19 +16,24 @@
  */
 package src.CryptographicTools;
 
-import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 /**
+ * This class represents SHA256
  *
  * @author gparrella
  */
 public class CryptographicHash {
-
+        
     private static String hashFunction = "SHA256";
 
+    /**
+     * This method returns the hash of the input
+     *
+     * @return SHA256(input)
+     */
     public static byte[] hash(byte[] input) {
         MessageDigest h = null;
         try {
@@ -44,7 +49,7 @@ public class CryptographicHash {
     }
 
     /**
-     * Get the hash function.
+     * This method returns the used hash function
      *
      * @return the hash function.
      */
@@ -53,7 +58,7 @@ public class CryptographicHash {
     }
 
     /**
-     * Set the hash function.
+     * This method sets the type of hash function to use
      *
      * @param hashFunction the new hash function
      */

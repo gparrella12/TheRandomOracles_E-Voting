@@ -41,7 +41,7 @@ public class SignatureScheme {
     private static String algorithm = "SHA256withECDSA";
 
     /**
-     * Sign a message m.
+     * This method signs a message m.
      *
      * @param key the private key used to sign the message.
      * @param message the message to sign.
@@ -62,6 +62,16 @@ public class SignatureScheme {
         return null;
     }
 
+     /**
+     * This method verify the correctness of a signature.
+     * It computes SIG(message) and compare it to the firm of the message
+     *
+     * @param publicKey the public key used to sign the message.
+     * @param message the message previously signed.
+     * @param messageSign the firm of the message to be verified.
+     * @return true if the signature is valid, false otherwise.
+     */
+    
     public static boolean verifySignature(PublicKey publicKey, byte[] message, byte[] messageSign) {
         try {
             Signature signature = Signature.getInstance(algorithm, new BouncyCastleProvider());
@@ -75,16 +85,17 @@ public class SignatureScheme {
     }
 
     /**
-     * Get the signature algorithm used.
+     * This method returns a string representation of the signature algorithm 
+     * used.
      *
-     * @return
+     * @return a string representing the algorithm used
      */
     public static String getAlgorithm() {
         return algorithm;
     }
 
     /**
-     * Set the signature algorithm.
+     * This method sets the signature algorithm.
      *
      * @param a the new signature algoritm
      */
