@@ -45,46 +45,52 @@ public class Authority implements Serializable {
         this.publicSigKey = this.certificate.getPublicKey();
         this.privateSigKey = EasyLoadFromFile.loadPrivSigKey("Certificati/Authorities/" + name + ".p8");
     }
+
     /**
-     * This method returns the the public encryption key of the authority
+     * This method returns the the public encryption key of the authority.
      *
-     * @return the public encryption key of the authority
+     * @return a <code>BigInteger</code> representing the public encryption key
+     * of the authority.
      */
     public BigInteger getPublicEncKey() {
         return publicEncKey;
     }
 
     /**
-     * This method returns the private encryption key of the authority
+     * This method returns the private encryption key of the authority.
      *
-     * @return the private encryption key of the authority
+     * @return a <code>BigInteger</code> representing the private encryption key
+     * of the authority.
      */
     public BigInteger getPrivateEncKey() {
         return privateEncKey;
     }
 
     /**
-     * This method returns the public signature key of the authority
+     * This method returns the public signature key of the authority.
      *
-     * @return the public signature key of the authority
+     * @return a <code>PublicKey</code> object representing the public signature
+     * key of the authority.
      */
     public PublicKey getPublicSigKey() {
         return publicSigKey;
     }
 
     /**
-     * This method returns the private signature key of the authority
+     * This method returns the private signature key of the authority.
      *
-     * @return the private signature key
+     * @return a <code>PrivateKey</code> object representing the private
+     * signature key.
      */
     public PrivateKey getPrivateSigKey() {
         return privateSigKey;
     }
 
     /**
-     * This method returns the certificate of the authority
+     * This method returns the certificate of the authority.
      *
-     * @return the certificate of the authority
+     * @return a <code>X509Certificate</code> object representing the
+     * certificate of the authority.
      */
     public X509Certificate getCertificate() {
         return certificate;
@@ -92,7 +98,7 @@ public class Authority implements Serializable {
 
     /**
      *
-     * @return the name of the authority
+     * @return a <code>String</code> representing the name of the authority.
      */
     public String getName() {
         return name;
