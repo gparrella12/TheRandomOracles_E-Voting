@@ -43,7 +43,7 @@ public class Authority implements Serializable {
         this.publicEncKey = encPair.getPublicKey();
         this.certificate = EasyLoadFromFile.loadCrt("Certificati/Authorities/" + name + ".crt");
         this.publicSigKey = this.certificate.getPublicKey();
-        this.privateSigKey = EasyLoadFromFile.loadKey("Certificati/Authorities/" + name + ".p8");
+        this.privateSigKey = EasyLoadFromFile.loadPrivSigKey("Certificati/Authorities/" + name + ".p8");
     }
     /**
      * This method returns the the public encryption key of the authority

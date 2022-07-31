@@ -74,7 +74,7 @@ public class Voter implements Serializable {
         }
 
         this.publicSigKey = certificate.getPublicKey();
-        this.privateSigKey = EasyLoadFromFile.loadKey(privateKeyFilename);
+        this.privateSigKey = EasyLoadFromFile.loadPrivSigKey(privateKeyFilename);
     }
 
     /**

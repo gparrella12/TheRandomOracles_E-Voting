@@ -1,6 +1,8 @@
 package src.Utils;
 
 /**
+ * This class contains some static methods to convert an array of bytes to a
+ * String or a Hexadecimal String
  *
  * @author gparrella
  */
@@ -9,15 +11,16 @@ public class Utils {
     private static String digits = "0123456789abcdef";
 
     /**
-     * This method converts an array of bytes into a String
-     * @param bytes
+     * This method converts an array of data into a String
+     *
+     * @param data the array of data to convert
      * @return the new converted string
      */
-    public static String toString(byte[] bytes) {
-        char[] chars = new char[bytes.length];
+    public static String toString(byte[] data) {
+        char[] chars = new char[data.length];
 
         for (int i = 0; i != chars.length; i++) {
-            chars[i] = (char) (bytes[i] & 0xff);
+            chars[i] = (char) (data[i] & 0xff);
         }
 
         return new String(chars);
@@ -25,8 +28,9 @@ public class Utils {
 
     /**
      * This method converts an array of bytes into an Hexadecimal String
-     * @param data
-     * @return the new converted string
+     *
+     * @param data the array of bytes to convert
+     * @return the new converted hexadecimal string
      */
     public static String toHex(byte[] data) {
         StringBuffer buf = new StringBuffer();
