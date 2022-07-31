@@ -6,27 +6,32 @@ import src.CryptographicTools.CryptographicHash;
 import src.CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters;
 
 /**
- * This class contains some static function to implements the Schnorr's NIZKP.
+ * This class contains some static methods to implements the Schnorr NIZKP.
  *
  * @author gparrella
  */
 public class SchnorrNIZKP {
-
+      
     /**
+     * This method allows to make the Schnorr Non-interactive Zero-Knowledge Proof       
      *
-     * @param x
-     * @param y
-     * @param param
-     * @return
+     * @param x the secrete key associated to y
+     * @param y the public key, y=g^x 
+     * @param param the parameters of a cyclic group of order q
+     * @return a <code> SchnorrNIProof </code> object
      */
+    
     public static SchnorrNIProof makeProof(BigInteger x, BigInteger y, CyclicGroupParameters param) {
         int securityParameter = param.getSecurityParameter().intValue();
         BigInteger q = param.getQ();
         BigInteger p = param.getP();
         BigInteger g = param.getG();
 
-        BigInteger r = new BigInteger(securityParameter, new SecureRandom()); // r random
-        BigInteger a = g.modPow(r.mod(q), p); // a = g^r mod p
+        // r random
+        BigInteger r = new BigInteger(securityParameter, new SecureRandom());
+
+        // a = g^r mod p
+        BigInteger a = g.modPow(r.mod(q), p);
 
         BigInteger toHash = new BigInteger(y.toString().concat(a.toString()));
         BigInteger c = new BigInteger(CryptographicHash.hash(toHash.toByteArray())); // c = H(y || a), con y=g^x mod p  
@@ -38,31 +43,39 @@ public class SchnorrNIZKP {
     }
 
     /**
-     * This function verify a NIZKP of Schnorr.
+     * This method checks if a Schnorr NIZKP is valid with respect to a 
+     * public key y
      *
-     * @param proof the values of the NIZKP
-     * @param y the public key
-     * @param param the parameters of cyclic group of order q
-     * @return true if ZKP is verified, false otherwise
+     * @param proof the proof, represented by a <code>SchnorrNIProof</code> object
+     * @param y the public key, y=g^x
+     * @param param the parameters of a cyclic group of order q
+     * @return true if the NIZKP is valid, false otherwise
      */
-    public static boolean verityProof(SchnorrNIProof proof, BigInteger y, CyclicGroupParameters param) {
+    public static boolean checkProof(SchnorrNIProof proof, BigInteger y, CyclicGroupParameters param) {
         // Get the parameters used
         BigInteger g = param.getG();
         BigInteger p = param.getP();
         BigInteger q = param.getQ();
         // Get the value of the NIZKP
+        
         BigInteger a = proof.getA();
         BigInteger c = proof.getC();
         BigInteger z = proof.getZ();
+        
         // Compute the digest of y || a
         BigInteger toHash = new BigInteger(y.toString().concat(a.toString()));
-        BigInteger c1 = new BigInteger(CryptographicHash.hash(toHash.toByteArray())); // c1 = H(y || a), con y=g^x mod p
+        
+        // c1 = H(y || a), con y=g^x mod p
+        BigInteger c1 = new BigInteger(CryptographicHash.hash(toHash.toByteArray())); 
+
         // Verify if c value is equal to H(y || a) previously computed
         if (c.equals(c1)) {
             // compute k = g^z mod p
             BigInteger k = g.modPow(z.mod(q), p);
+            
             // compute a * y^c mod p
             BigInteger res = a.multiply(y.modPow(c.mod(q), p)).mod(p);
+            
             // verify if a*y^c = g^z
             return k.equals(res);
         }

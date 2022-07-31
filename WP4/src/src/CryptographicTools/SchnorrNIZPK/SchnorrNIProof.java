@@ -4,16 +4,9 @@ import java.io.Serializable;
 import java.math.BigInteger;
 
 /**
- * This class contains the triad (a,b,c) to perform a ShnorrNIZKP, where:
- * <ul>
- * <li><code>a = g^r mod p</code></li>
- * <li><code>c = H(y || a)</code>, whit <code>y=g^x mod p</code></li>
- * <li><code>z = (r + c*x) mod q</code></li>
- * </ul>
- *
- * <code>x</code> is the secrete to demostrate and <code>r</code> some
- * randommess <code>p, q, g</code> are parameters of cyclic group for schemes
- * who uses DLog problem
+ * This class contains the elements to perform a 
+ * Schnorr Non-interactive Zero-Knowledge Proof
+ * used to prove that the owner of a public key knows its secret key
  *
  * @author gparrella
  */
@@ -24,24 +17,24 @@ public class SchnorrNIProof implements Serializable {
     private final BigInteger z; // z = (r + c*x) mod q
 
     /**
-     * Creates a SchnorrNIProof by passing:
+     * Creates a Schnorr Non-interactive Zero-Knowledge Proof by passing:
      * <ul>
-     * <li><code>a = g^r mod p</code></li>
-     * <li><code>c = H(y || a)</code>, whit <code>y=g^x mod p</code></li>
+     * <li><code>a = g<sup>r</sup> mod p</code></li>
+     * <li><code>c = H(y || a)</code>, whit <code>y=g<sup>x</sup> mod p</code></li>
      * <li><code>z = (r + c*x) mod q</code></li>
      * </ul>
      *
-     * Where
+     * where:
      * <ul>
-     * <li><code>x</code> is the secrete to demostrate and <code>r</code> some
-     * randommess</li>
-     * <li><code>p, q, g</code> are parameters of cyclic group for schemes who
-     * uses DLog problem</li>
+     * <li><code>x</code> is the secrete to prove</li>
+     * <li><code>r</code> is randomness </li>
+     * <li><code>p, q, g</code> are parameters of a cyclic group of order q,
+     * for schemes for schemes that use the DLog </li>
      * </ul>
      *
-     * @param a
-     * @param c
-     * @param z
+     * @param a g<sup>r</sup> mod p
+     * @param c H(g<sup>x</sup> mod p || g<sup>r</sup> mod p)
+     * @param z (r + c*x) mod q
      */
     public SchnorrNIProof(BigInteger a, BigInteger c, BigInteger z) {
         this.a = a;
@@ -50,32 +43,33 @@ public class SchnorrNIProof implements Serializable {
     }
 
     /**
-     *
-     * @return
+     * This method returns the a value, that is g^r mod p
+     * @return a BigInteger with <code>a</code> value.
      */
     public BigInteger getA() {
         return a;
     }
 
     /**
-     *
-     * @return
+     * This method returns the c value, that is H(y || a)
+     * @return a BigInteger with <code>c</code> value.
      */
     public BigInteger getC() {
         return c;
     }
 
     /**
-     *
-     * @return
+     * This method returns the z value, that is (r + c*x) mod q
+     * @return a BigInteger with <code>z</code> value.
      */
     public BigInteger getZ() {
         return z;
     }
 
     /**
-     *
-     * @return
+     * This method returns the string representation of the triple (a,c,z)
+     * 
+     * @return a string containing the representation of (a,c,z)
      */
     @Override
     public String toString() {
