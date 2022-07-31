@@ -21,9 +21,9 @@ public class BlockChain implements Serializable {
     private String filename_serial;
 
     /**
-     * Creates the blockchain, creating an empty
-     * <code>ArrayList</code> of blocks.
-     * 
+     * Creates the BlockChain as an empty <code>ArrayList</code> of
+     * blocks.
+     *
      */
     public BlockChain() {
         chain = new ArrayList<>();
@@ -32,17 +32,17 @@ public class BlockChain implements Serializable {
     /**
      * Creates the <code>BlockChain</code>, by passing:
      * <ul>
-     * <li><code>the name of the file on which the content of the 
-     * blockchain will be written in a human readable fashion.</code></li>
-     * <li><code>the name of the file from which the content of the 
-     * blockchain will be read. 
-     * The content is stored in a machine readable fashion</code></li>
-     * </ul>  
-     * 
-     * @param fileName, .txt file's name on which the content of the 
-     * blockchain will be written.
-     * @param filename_serial binary file's name from which the content of the 
+     * <li><code>the name of the file on which the content of the
+     * BlockChain will be written in a human readable fashion.</code></li>
+     * <li><code>the name of the file from which the content of the
      * blockchain will be read.
+     * The content is stored in a machine readable fashion.</code></li>
+     * </ul>
+     *
+     * @param fileName, .txt file's name on which the content of the blockchain
+     * will be written.
+     * @param filename_serial binary file's name from which the content of the
+     * BlockChain will be read.
      */
     public BlockChain(String fileName, String filename_serial) {
         this.filename_serial = filename_serial;
@@ -51,10 +51,9 @@ public class BlockChain implements Serializable {
     }
 
     /**
-     * This method adds a block to the BlockChain. 
-     * In particular, it adds the block to a List of Blocks 
-     * and then writes the list's content on the .txt file and on the
-     * binary one.
+     * This method adds a block to the BlockChain. In particular, it adds the
+     * block to a List of Blocks and then writes the list's content on the .txt
+     * file and on the binary one.
      *
      * @param block block to be added to the BlockChain.
      */
@@ -77,7 +76,7 @@ public class BlockChain implements Serializable {
     }
 
     /**
-     * This method writes a block to the binary file
+     * This method writes a block to the binary file.
      */
     private void writeSerialized(String fileName) {
         try ( ObjectOutputStream dout = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(this.filename_serial)))) {
@@ -88,7 +87,7 @@ public class BlockChain implements Serializable {
     }
 
     /**
-     * This method reads a list of blocks from the binary file
+     * This method reads a list of blocks from the binary file.
      */
     private List<Block> readFromFile(String fileNameSerialized) {
 
@@ -131,7 +130,7 @@ public class BlockChain implements Serializable {
     /**
      * This method prints the state of the BlockChain.
      *
-     * @return a string containing the state of the BlockChain
+     * @return a <code>String</code> containing the state of the BlockChain.
      */
     @Override
     public String toString() {
