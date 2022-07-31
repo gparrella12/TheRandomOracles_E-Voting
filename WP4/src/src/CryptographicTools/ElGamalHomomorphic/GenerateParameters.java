@@ -1,4 +1,4 @@
-package src.ElGamalHomomorphic.Generation;
+package src.CryptographicTools.ElGamalHomomorphic;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

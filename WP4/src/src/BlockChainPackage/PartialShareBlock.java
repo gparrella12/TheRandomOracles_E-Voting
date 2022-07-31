@@ -18,15 +18,11 @@ package src.BlockChainPackage;
 
 import java.io.Serializable;
 import java.math.BigInteger;
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
-import java.security.SecureRandom;
-import java.security.Signature;
-import java.security.SignatureException;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import src.AuthorityPackage.Authority;
 import src.AuthorityPackage.AuthorityShareProof;
-import src.Utils;
+import src.CryptographicTools.ElGamalHomomorphic.ElGamalCipherText;
+import src.CryptographicTools.SignatureScheme;
+import src.Utils.Utils;
 
 /**
  * This Class represents the Block that will contain the partial share of each
@@ -36,30 +32,23 @@ import src.Utils;
  */
 public class PartialShareBlock implements Serializable {
 
-    private BigInteger partialShare;
-    private String authorityName;
-    private AuthorityShareProof proof;
-    private byte[] sign;
+    private final BigInteger partialShare;
+    private final String authorityName;
+    private final AuthorityShareProof proof;
+    private final byte[] blockSignature;
 
     /**
      * Constructor of <code>PartialShareBlock</code> class.
+     *
+     * @param partialShare is the partial decryption share of the authority.
+     * @param a the authority
+     * @param c the initial ElGamal ciphertext.
      */
-    public PartialShareBlock(BigInteger partialShare, Authority a) {
+    public PartialShareBlock(BigInteger partialShare, Authority a, ElGamalCipherText c) {
         this.partialShare = partialShare;
         this.authorityName = a.getName();
-        this.proof = new AuthorityShareProof(a);
-
-        try {
-            Signature signature = Signature.getInstance("SHA256withECDSA", new BouncyCastleProvider());
-            // generate a signature
-            // initialize signature for sign with private key K.getPrivate() and a secure random source
-            signature.initSign(a.getPrivateSigKey(), new SecureRandom());
-
-            signature.update(partialShare.toString().concat(this.authorityName).concat(this.proof.toString()).getBytes());
-            this.sign = signature.sign();
-        } catch (NoSuchAlgorithmException | InvalidKeyException | SignatureException ex) {
-            ex.printStackTrace();
-        }
+        this.proof = new AuthorityShareProof(a, c, partialShare);
+        this.blockSignature = SignatureScheme.signMessage(a.getPrivateSigKey(), partialShare.toString().concat(this.authorityName).concat(this.proof.toString()).getBytes());
     }
 
     /**
@@ -88,7 +77,7 @@ public class PartialShareBlock implements Serializable {
      */
     @Override
     public String toString() {
-        return "Partial Share= " + partialShare + "\nAuthority Name= " + authorityName + "\nproof= " + proof + "\nSign= " + Utils.toHex(sign);
+        return "Partial Share= " + partialShare + "\nAuthority Name= " + authorityName + "\nproof= " + proof + "\nSign= " + Utils.toHex(blockSignature);
     }
 
 }

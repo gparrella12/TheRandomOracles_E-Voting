@@ -1,15 +1,18 @@
-package src.VoterPackage;
+package src.Utils;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.security.KeyFactory;
+import java.security.NoSuchAlgorithmException;
 import java.security.PrivateKey;
 import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
+import java.security.spec.InvalidKeySpecException;
 import java.security.spec.PKCS8EncodedKeySpec;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
@@ -65,9 +68,11 @@ public class EasyLoadFromFile {
     }
 
     /**
-     * Load the private key from the specified .p8 file
+     * This method read from a certificate, contained in a file named
+     * <code>filename</code>, the private signature key
+     *
      * @param filename
-     * @return
+     * @return the private signature key
      */
     public static PrivateKey loadKey(String filename) {
         PrivateKey key = null;
@@ -76,7 +81,7 @@ public class EasyLoadFromFile {
             PKCS8EncodedKeySpec spec = new PKCS8EncodedKeySpec(keyBytes);
             KeyFactory kf = KeyFactory.getInstance("ECDSA", new BouncyCastleProvider());
             key = kf.generatePrivate(spec);
-        } catch (Exception ex) {
+        } catch (IOException | NoSuchAlgorithmException | InvalidKeySpecException ex) {
             ex.printStackTrace();
         }
         lastKey = key;

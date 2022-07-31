@@ -1,10 +1,10 @@
-package src.SchnorrNIZKP;
+package src.CryptographicTools.SchnorrNIZPK;
 
 import java.math.BigInteger;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
-import src.ElGamalHomomorphic.CyclicGroupParameters;
-import src.ElGamalHomomorphic.ElGamalKeyPair;
+import src.CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters;
+import src.CryptographicTools.ElGamalHomomorphic.ElGamalKeyPair;
 
 /**
  *

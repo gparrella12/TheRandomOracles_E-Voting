@@ -1,5 +1,6 @@
 package src;
 
+import src.BlockChainPackage.SmartContract;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -8,8 +9,8 @@ import java.security.SecureRandom;
 import java.time.LocalDateTime;
 import java.util.Random;
 import src.AuthorityPackage.AuthorityManagement;
-import src.ElGamalHomomorphic.CyclicGroupParameters;
-import src.ElGamalHomomorphic.ElGamalCipherText;
+import src.CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters;
+import src.CryptographicTools.ElGamalHomomorphic.ElGamalCipherText;
 import src.VoterPackage.Vote;
 import src.VoterPackage.VoteProof;
 import src.VoterPackage.Voter;
@@ -18,7 +19,7 @@ import src.VoterPackage.Voter;
  *
  * @author fsonnessa
  */
-public class Main {
+public class SimulateProtocol {
 
     /**
      * Here we are simulating the entire protocol.
@@ -54,7 +55,7 @@ public class Main {
                 byte[] sign = voter.signVote(vote, vp);
 
                 sc.vote(voter, vote, vp, sign);
-                
+
                 line = reader.readLine();
             }
             reader.close();
@@ -65,7 +66,7 @@ public class Main {
         // Post-Voting Phase
         ElGamalCipherText resulEnc = sc.aggregateCipherText();
         sc.tallying(resulEnc);
-        
+
         // Printing the results
         System.out.println("C1: " + sc.getResultCandidate1() + " C2: " + sc.getResultCandidate2());
 

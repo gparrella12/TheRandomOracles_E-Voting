@@ -1,11 +1,9 @@
-package src.SchnorrNIZKP;
+package src.CryptographicTools.SchnorrNIZPK;
 
 import java.math.BigInteger;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import src.ElGamalHomomorphic.CyclicGroupParameters;
+import src.CryptographicTools.CryptographicHash;
+import src.CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters;
 
 /**
  * This class contains some static function to implements the Schnorr's NIZKP.
@@ -13,8 +11,6 @@ import src.ElGamalHomomorphic.CyclicGroupParameters;
  * @author gparrella
  */
 public class SchnorrNIZKP {
-
-    private static String hashFunction = "SHA256";
 
     /**
      *
@@ -33,7 +29,7 @@ public class SchnorrNIZKP {
         BigInteger a = g.modPow(r.mod(q), p); // a = g^r mod p
 
         BigInteger toHash = new BigInteger(y.toString().concat(a.toString()));
-        BigInteger c = hash(toHash); // c = H(y || a), con y=g^x mod p  
+        BigInteger c = new BigInteger(CryptographicHash.hash(toHash.toByteArray())); // c = H(y || a), con y=g^x mod p  
 
         // z = r+c*x
         BigInteger z = r.add(c.multiply(x)).mod(q);
@@ -60,7 +56,7 @@ public class SchnorrNIZKP {
         BigInteger z = proof.getZ();
         // Compute the digest of y || a
         BigInteger toHash = new BigInteger(y.toString().concat(a.toString()));
-        BigInteger c1 = hash(toHash); // c1 = H(y || a), con y=g^x mod p
+        BigInteger c1 = new BigInteger(CryptographicHash.hash(toHash.toByteArray())); // c1 = H(y || a), con y=g^x mod p
         // Verify if c value is equal to H(y || a) previously computed
         if (c.equals(c1)) {
             // compute k = g^z mod p
@@ -73,35 +69,4 @@ public class SchnorrNIZKP {
         return false;
     }
 
-    private static BigInteger hash(BigInteger input) {
-        MessageDigest h = null;
-        try {
-            h = MessageDigest.getInstance(getHashFunction(), new BouncyCastleProvider());
-        } catch (NoSuchAlgorithmException ex) {
-            ex.printStackTrace();
-            System.exit(-1);
-        }
-
-        byte digest[] = new byte[h.getDigestLength()];
-        digest = h.digest(input.toByteArray());
-
-        return new BigInteger(digest);
-
-    }
-
-    /**
-     *
-     * @return
-     */
-    public static String getHashFunction() {
-        return hashFunction;
-    }
-
-    /**
-     *
-     * @param hashFunction
-     */
-    public static void setHashFunction(String hashFunction) {
-        SchnorrNIZKP.hashFunction = hashFunction;
-    }
 }

@@ -1,4 +1,4 @@
-package src.SchnorrNIZKP;
+package src.CryptographicTools.SchnorrNIZPK;
 
 import java.io.Serializable;
 import java.math.BigInteger;
@@ -10,17 +10,18 @@ import java.math.BigInteger;
  * <li><code>c = H(y || a)</code>, whit <code>y=g^x mod p</code></li>
  * <li><code>z = (r + c*x) mod q</code></li>
  * </ul>
- * 
- * <code>x</code> is the secrete to demostrate and <code>r</code> some randommess
- * <code>p, q, g</code> are parameters of cyclic group for schemes who uses DLog problem
+ *
+ * <code>x</code> is the secrete to demostrate and <code>r</code> some
+ * randommess <code>p, q, g</code> are parameters of cyclic group for schemes
+ * who uses DLog problem
  *
  * @author gparrella
  */
 public class SchnorrNIProof implements Serializable {
 
-    private BigInteger a; // a = g^r mod p, x is the secrete to demostrate and r some randommess
-    private BigInteger c; // c = H(y || a), con y=g^x mod p
-    private BigInteger z; // z = (r + c*x) mod q
+    private final BigInteger a; // a = g^r mod p, x is the secrete to demostrate and r some randommess
+    private final BigInteger c; // c = H(y || a), con y=g^x mod p
+    private final BigInteger z; // z = (r + c*x) mod q
 
     /**
      * Creates a SchnorrNIProof by passing:
@@ -32,10 +33,12 @@ public class SchnorrNIProof implements Serializable {
      *
      * Where
      * <ul>
-     * <li><code>x</code> is the secrete to demostrate and <code>r</code> some randommess</li>
-     * <li><code>p, q, g</code> are parameters of cyclic group for schemes who uses DLog problem</li>
+     * <li><code>x</code> is the secrete to demostrate and <code>r</code> some
+     * randommess</li>
+     * <li><code>p, q, g</code> are parameters of cyclic group for schemes who
+     * uses DLog problem</li>
      * </ul>
-     * 
+     *
      * @param a
      * @param c
      * @param z

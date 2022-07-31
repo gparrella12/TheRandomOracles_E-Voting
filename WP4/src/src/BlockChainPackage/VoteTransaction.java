@@ -4,7 +4,7 @@ import java.io.Serializable;
 import src.VoterPackage.Vote;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
-import src.Utils;
+import src.Utils.Utils;
 import src.VoterPackage.VoteProof;
 
 /**

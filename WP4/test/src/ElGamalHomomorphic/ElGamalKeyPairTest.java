@@ -16,6 +16,8 @@
  */
 package src.ElGamalHomomorphic;
 
+import src.CryptographicTools.ElGamalHomomorphic.ElGamalKeyPair;
+import src.CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

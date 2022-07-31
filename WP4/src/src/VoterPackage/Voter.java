@@ -1,14 +1,10 @@
 package src.VoterPackage;
 
+import src.Utils.EasyLoadFromFile;
 import java.io.Serializable;
 import java.math.BigInteger;
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
 import java.security.PrivateKey;
 import java.security.PublicKey;
-import java.security.SecureRandom;
-import java.security.Signature;
-import java.security.SignatureException;
 import java.security.cert.CertificateEncodingException;
 import java.security.cert.X509Certificate;
 import java.util.logging.Level;
@@ -18,18 +14,18 @@ import org.bouncycastle.asn1.x500.X500Name;
 import org.bouncycastle.asn1.x500.style.BCStyle;
 import org.bouncycastle.asn1.x500.style.IETFUtils;
 import org.bouncycastle.cert.jcajce.JcaX509CertificateHolder;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import src.ElGamalHomomorphic.CyclicGroupParameters;
-import src.ElGamalHomomorphic.ElGamalCipherText;
-import src.ElGamalHomomorphic.ExponentialElGamal;
+import src.CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters;
+import src.CryptographicTools.ElGamalHomomorphic.ElGamalCipherText;
+import src.CryptographicTools.ElGamalHomomorphic.ExponentialElGamal;
+import src.CryptographicTools.SignatureScheme;
 
 /**
- * This class contains the keys for a signature scheme and the authentication 
+ * This class contains the keys for a signature scheme and the authentication
  * certificate of the voter.
- * 
+ *
  * @author fsonnessa
  */
-public class Voter implements Serializable{
+public class Voter implements Serializable {
 
     private String name;
     private final PublicKey publicSigKey;
@@ -38,12 +34,12 @@ public class Voter implements Serializable{
     private boolean voted;
 
     /**
-     * Defines a voter by his <code>name</code>, <code>private signature key</code> and <code>certificate of 
+     * Defines a voter by his <code>name</code>,
+     * <code>private signature key</code> and <code>certificate of
      * authentication</code>.
-     * 
-     * The certificate must contain the public signature key of 
-     * the Voter.
-     * 
+     *
+     * The certificate must contain the public signature key of the Voter.
+     *
      * @param name
      * @param privateSigKey
      * @param certificate
@@ -57,11 +53,11 @@ public class Voter implements Serializable{
     }
 
     /**
-     * Defines a voter by his certificate of authentication, loaded from file, 
+     * Defines a voter by his certificate of authentication, loaded from file,
      * and his private signature key.
-     * 
+     *
      * As Voter's name the value CN in certificate is used.
-     * 
+     *
      * @param certFilename
      * @param privateKeyFilename
      */
@@ -83,10 +79,12 @@ public class Voter implements Serializable{
 
     /**
      * Create the ElGamalCipherText of the preference expressed.
-     * 
+     *
      * @param preference
-     * @param votingKey voting key obtained from the smart contract for El Gamal encryption
-     * @param param CyclicGroupParameters for El Gamal Scheme specified in smart contract
+     * @param votingKey voting key obtained from the smart contract for El Gamal
+     * encryption
+     * @param param CyclicGroupParameters for El Gamal Scheme specified in smart
+     * contract
      * @return
      */
     public Vote makeVote(BigInteger preference, BigInteger votingKey, CyclicGroupParameters param) {
@@ -96,33 +94,24 @@ public class Voter implements Serializable{
 
     /**
      * Creates a signature to the integrity and non-repudiation of the Vote
+     *
      * @param v
      * @return <code>VoteProof = H(Vote)</code>
      */
     public VoteProof makeProof(Vote v) {
         return new VoteProof(v);
     }
-    
+
     /**
-     * Sign the vote and its proof with the voter's private signature key for integrity proprerty
-     * 
+     * Sign the vote and its proof with the voter's private signature key for
+     * integrity proprerty
+     *
      * @param v
      * @param vp
      * @return <code>Sign(Vote||VoteProof, privateSignKey)</code>
      */
-    public byte[] signVote(Vote v, VoteProof vp){
-        try {
-            Signature signature = Signature.getInstance("SHA256withECDSA", new BouncyCastleProvider());
-            // generate a signature
-            signature.initSign(this.privateSigKey, new SecureRandom()); // initialize signature for sign with private key K.getPrivate() and a secure random source
-            
-            signature.update(v.toString().concat(vp.toString()).getBytes());
-            return signature.sign();
-            
-        } catch (NoSuchAlgorithmException | InvalidKeyException | SignatureException ex) {
-            ex.printStackTrace();
-        }
-        return null;
+    public byte[] signVote(Vote v, VoteProof vp) {
+        return SignatureScheme.signMessage(this.privateSigKey, v.toString().concat(vp.toString()).getBytes());
     }
 
     /**
@@ -166,7 +155,8 @@ public class Voter implements Serializable{
     }
 
     /**
-     * Used by the smart contract to mark that the voter has already expressed his preference
+     * Used by the smart contract to mark that the voter has already expressed
+     * his preference
      */
     public void setVoted() {
         this.voted = true;
@@ -174,10 +164,11 @@ public class Voter implements Serializable{
 
     /**
      * String rappresentation of a Voter
+     *
      * @return
      */
     @Override
     public String toString() {
-        return "\n" + "name: " + name + "\npk: " + publicSigKey.toString() + "\nsk: " + privateSigKey.toString() + "\ncrt: " + certificate.toString() + "\nvoted: " + voted + "\n";
+        return "\nname: " + name + "\npk: " + publicSigKey.toString() + "\nsk: " + privateSigKey.toString() + "\ncrt: " + certificate.toString() + "\nvoted: " + voted + "\n";
     }
 }

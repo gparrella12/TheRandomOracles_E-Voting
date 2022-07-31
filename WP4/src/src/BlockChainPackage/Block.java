@@ -22,8 +22,8 @@ public class Block<T> implements Serializable {
     }
 
     /**
-     * Function used to print the data on the BlockChain (in our case,
-     * on a file .txt)
+     * Function used to print the data on the BlockChain (in our case, on a file
+     * .txt)
      *
      * @return
      */

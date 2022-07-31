@@ -1,4 +1,4 @@
-package src.ElGamalHomomorphic;
+package src.CryptographicTools.ElGamalHomomorphic;
 
 import java.math.BigInteger;
 import src.AuthorityPackage.Authority;

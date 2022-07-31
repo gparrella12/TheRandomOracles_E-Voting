@@ -17,34 +17,38 @@
 package src.AuthorityPackage;
 
 import java.io.Serializable;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import static src.SchnorrNIZKP.SchnorrNIZKP.getHashFunction;
-import src.Utils;
+import java.math.BigInteger;
+import src.CryptographicTools.CryptographicHash;
+import src.CryptographicTools.ElGamalHomomorphic.ElGamalCipherText;
+import src.Utils.Utils;
 
 /**
+ * This class contains a proof for a decryption share of an autority a. The
+ * decryption share is relative to the aggregate ciphertext to decrypt at the
+ * end of the election.
  *
  * @author gparrella
  */
 public class AuthorityShareProof implements Serializable {
 
-    private String proof;
+    private final String proof;
 
-    public AuthorityShareProof(Authority a) {
-        MessageDigest h = null;
-        try {
-            h = MessageDigest.getInstance(getHashFunction(), new BouncyCastleProvider());
-        } catch (NoSuchAlgorithmException ex) {
-            ex.printStackTrace();
-            System.exit(-1);
-        }
-
-        byte digest[] = new byte[h.getDigestLength()];
-        digest = h.digest(a.toString().getBytes());
-        this.proof = Utils.toHex(digest);
+    /**
+     * Create a proof for an authority a and ciphertext c. In our case, we
+     * simulate the proof with <code>H(a || c || share)</code>, with H random oracle.
+     *
+     * @param a the authority
+     * @param c a ciphertext that is the aggregate ciphertext
+     * @param share the share of the authority
+     */
+    public AuthorityShareProof(Authority a, ElGamalCipherText c, BigInteger share) {
+        this.proof = Utils.toHex(CryptographicHash.hash(a.toString().concat(c.toString()).concat(share.toString()).getBytes()));
     }
 
+    /**
+     * Returns a string representation of the proof.
+     * @return a string a string representation of the proof.
+     */
     @Override
     public String toString() {
         return proof;
