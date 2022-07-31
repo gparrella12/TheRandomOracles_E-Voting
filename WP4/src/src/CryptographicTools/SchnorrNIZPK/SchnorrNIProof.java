@@ -74,7 +74,7 @@ public class SchnorrNIProof implements Serializable {
     }
 
     /**
-     * This method prints the triple (a, c, z)
+     * This method prints the triple (a, c, z).
      *
      * @return a <code>String</code> containing the representation of (a, c, z).
      */
