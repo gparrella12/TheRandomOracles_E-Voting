@@ -26,7 +26,9 @@ import src.Utils.Utils;
 
 /**
  * This Class represents the Block that will contain the partial share of each
- * Authority with relavite decryption ZKP with the correct key.
+ * Authority, with their relative decryption ZKP, which proves that to decrypt
+ * they used the secret key associated with the public key 
+ * previously published on the blockchain.
  *
  * @author gparrella
  */
@@ -38,8 +40,13 @@ public class PartialShareBlock implements Serializable {
     private final byte[] blockSignature;
 
     /**
-     * Constructor of <code>PartialShareBlock</code> class.
+     * Creates the <code>PartialShareBlock</code>, by passing:
      *
+     * <ul>
+     * <li><code> the partial decryption share of the authority</code></li>
+     * <li><code> the authority</code></li>
+     * </ul>  
+     * 
      * @param partialShare is the partial decryption share of the authority.
      * @param a the authority
      * @param c the initial ElGamal ciphertext.
@@ -52,7 +59,7 @@ public class PartialShareBlock implements Serializable {
     }
 
     /**
-     * Function used to get the partial share.
+     * This method returns the partial share.
      *
      * @return a <code>BigInteger</code> representing the partial share.
      */
@@ -61,7 +68,7 @@ public class PartialShareBlock implements Serializable {
     }
 
     /**
-     * Function used to get the Authority name.
+     * This method returns the Authority name.
      *
      * @return a <code>String</code> representing the Authority name.
      */
@@ -70,10 +77,9 @@ public class PartialShareBlock implements Serializable {
     }
 
     /**
-     * Function used to print the informations on the BlockChain (in our case,
-     * on a file .txt)
-     *
-     * @return
+     * This method prints information of the partial share 
+     * 
+     * @return a string containing information of the partial share 
      */
     @Override
     public String toString() {

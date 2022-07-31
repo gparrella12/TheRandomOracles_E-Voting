@@ -10,7 +10,7 @@ import src.CryptographicTools.SignatureScheme;
 import src.Utils.Utils;
 
 /**
- * This class represents a block containing the information about an Authority;
+ * This class represents a block containing information about an Authority;
  * there will be an Authority Block for each Authority.
  *
  * @author fsonnessa
@@ -25,10 +25,16 @@ public class AuthorityBlock implements Serializable {
     private final byte[] blockSignature;
 
     /**
-     * Constructor of <code>AuthorityBlock</code> class.
+     * Creates an authority block by passing:
+     * <ul>
+     * <li><code>the authority</code></li>
+     * <li><code>the proof that the authority knows the secret key 
+     * associated with its public </code></li>
+     * </ul>
      *
-     * @param a the authority for which the block are created.
-     * @param proof proof of correctness of the Public Encryption Key.
+     * @param a, the authority for which the block is created.
+     * @param proof, the proof of knowledge of the secrete encryption key 
+     * relative to the public encryption key .
      */
     public AuthorityBlock(Authority a, SchnorrNIProof proof) {
         this.name = a.getName();
@@ -40,26 +46,26 @@ public class AuthorityBlock implements Serializable {
     }
 
     /**
-     * Function used to get the public Encyprion key.
+     * This method returns the public encryption key.
      *
-     * @return a <code>BigInteger</code> representing the public Encryption Key.
+     * @return a <code>BigInteger</code> representing the public encryption key.
      */
     public BigInteger getPublicEncKey() {
         return publicEncKey;
     }
 
     /**
-     * Function used to get the public Signature key.
+     * This method returns the public signature key.
      *
-     * @return a <code>PublicKey</code> object representing the public Signature
-     * Key.
+     * @return a <code>PublicKey</code> object representing the public signature
+     * key.
      */
     public PublicKey getPublicSigKey() {
         return publicSigKey;
     }
 
     /**
-     * Function used to get the certificate.
+     * This method returns the the certificate.
      *
      * @return a <code>X509Certificate</code> object representing the
      * certificate.
@@ -69,10 +75,9 @@ public class AuthorityBlock implements Serializable {
     }
 
     /**
-     * Function used to print the informations on the BlockChain (in our case,
-     * on a file .txt)
+     * This method prints information of the block     
      *
-     * @return
+     * @return a string containing information of the block  
      */
     @Override
     public String toString() {

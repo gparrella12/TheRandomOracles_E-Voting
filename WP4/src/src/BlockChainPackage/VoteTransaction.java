@@ -8,7 +8,7 @@ import src.Utils.Utils;
 import src.VoterPackage.VoteProof;
 
 /**
- * This Class represents a <code>Vote</code> transaction.
+ * This class represents a <code>Vote</code> transaction.
  *
  * @author Speranza
  */
@@ -20,11 +20,19 @@ public class VoteTransaction implements Serializable {
     private Timestamp timestamp;
 
     /**
+     * 
+     * Creates the <code>VoteTransaction</code>, by passing:
+     *
+     * <ul>
+     * <li><code> the vote of a voter</code></li>
+     * <li><code> the proof of the validity of the vote</code></li>
+     * <li><code> the signature of (vote || vote's proof) </code></li>
+     * </ul>  
      * Constructor of the <code>VoteTransaction</code> Class.
      *
-     * @param vote vote made by a voter.
-     * @param vp proof of correctness of the vote.
-     * @param sign signature.
+     * @param vote vote made by a voter
+     * @param vp proof of validity of the vote
+     * @param sign signature of (vote || vote's proof)
      */
     public VoteTransaction(Vote vote, VoteProof vp, byte[] sign) {
         this.vote = vote;
@@ -34,10 +42,9 @@ public class VoteTransaction implements Serializable {
     }
 
     /**
-     * Function used to print the informations on the BlockChain (in our case,
-     * on a file .txt)
+     * This method prints information of the vote transaction
      *
-     * @return
+     * @return a string containing information of the vote transaction
      */
     @Override
     public String toString() {

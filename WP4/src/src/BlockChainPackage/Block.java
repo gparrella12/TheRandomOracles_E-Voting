@@ -6,26 +6,28 @@ import java.io.Serializable;
  * This class represents a Block of the BlockChain.
  *
  * @author Speranza
- * @param <T> type of data that will be cointained in the Block
+ * @param <T> type of data that will be contained in the Block
  */
 public class Block<T> implements Serializable {
 
     private T data;
 
     /**
-     * Constructor of <code>Block</code> class.
+     * Creates a block by passing:
+     * <ul>
+     * <li><code>the data that will be contained in the Block</code></li>
+     * </ul>
      *
-     * @param data data that will be contained in the Block.
+     * @param data that will be contained in the Block.
      */
     public Block(T data) {
         this.data = data;
     }
 
     /**
-     * Function used to print the data on the BlockChain (in our case, on a file
-     * .txt)
+     * This method prints information of the block     
      *
-     * @return
+     * @return a string containing information of the block  
      */
     @Override
     public String toString() {
