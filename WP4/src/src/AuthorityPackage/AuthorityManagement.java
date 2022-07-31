@@ -9,7 +9,7 @@ import src.CryptographicTools.SignatureScheme;
 import src.VoterPackage.*;
 
 /**
- * This class represents the authorities and the activities they perform .
+ * This class represents the authorities and the activities they perform.
  *
  * @author Ernesto
  */
@@ -22,9 +22,9 @@ public class AuthorityManagement implements Serializable {
     /**
      * This method is for applying the singleton patter design. The reason for
      * this choice is that you want to instantiate only an object of this class,
-     * as the opposite would not make sense
+     * as the opposite would not make sense.
      *
-     * @return the instance of this class
+     * @return the instance of this class.
      */
     public static AuthorityManagement getInstance() {
         if (single_instance == null) {
@@ -46,7 +46,7 @@ public class AuthorityManagement implements Serializable {
     /**
      * This method return the voting key, i.e. PK<sub>voting</sub>
      *
-     * @return PK<sub>voting</sub>
+     * @return a <code>BigInteger</code> representing the PK<sub>voting</sub>
      */
     public BigInteger getVotingKey() {
         return this.votingKey;
@@ -82,16 +82,17 @@ public class AuthorityManagement implements Serializable {
      * @param vote of the voter
      * @param vp, proof of validity of the vote
      * @param signVote, signature of (vote || vote's proof)
-     * @return true if the vote is valid, else false
+     * @return a <code>boolean</code> that is true if the vote is valid,
+     * otherwise false
      */
     public boolean validateVote(Voter voter, Vote vote, VoteProof vp, byte[] signVote) {
         return SignatureScheme.verifySignature(voter.getPublicSigKey(), vote.toString().concat(vp.toString()).getBytes(), signVote);
     }
 
     /**
-     * This method returns the list containing all the authorities
+     * This method returns the list containing all the authorities.
      *
-     * @return authorityList
+     * @return a <code>List</code> object containing all the authorities.
      */
     public List<Authority> getAuthorityList() {
         return authorityList;
