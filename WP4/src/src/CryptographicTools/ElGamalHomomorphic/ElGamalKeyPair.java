@@ -4,13 +4,14 @@ import java.math.BigInteger;
 import java.security.SecureRandom;
 
 /**
- * This class contains a Key Pair of ElGamal encryption scheme. The ElGamal
- * encryption scheme has a key pair <code>(sk,pk)</code> such that:
+ * This class contains a Key Pair of ElGamal encryption scheme. 
+ * The ElGamal encryption scheme has a key pair <code>(sk,pk)</code> such that:
  * <ul>
- * <li><code>sk=x</code> , with <code>x</code> randomly chosen in
+ * <li><code>(secrete key) sk=x</code> , with <code>x</code> randomly chosen in
  * <code>Z_q</code>.</li>
- * <li><code>pk = g^x mod p</code>, where <code>x</code> is the secret key
- * value.
+ * 
+ * <li><code>(public key) pk = g<sup>x</sup> mod p</code></li>
+ * 
  * </ul>
  *
  * @author Ernesto
@@ -21,7 +22,8 @@ public class ElGamalKeyPair {
     private final BigInteger publicKey;
 
     /**
-     * Create an ElGamal key pair. This methods use the default parameters to
+     * Creates an ElGamal key pair. 
+     * This method uses the default parameters to
      * generate a cyclic group of order q by using an object of
      * <code>CyclicGroupParameters</code> class.
      */
@@ -42,7 +44,7 @@ public class ElGamalKeyPair {
     }
 
     /**
-     * Get the public key value of the pair.
+     * This method returns the public key value of the ElGamal pair.
      *
      * @return a BigInteger with the public key value.
      */
@@ -51,7 +53,7 @@ public class ElGamalKeyPair {
     }
 
     /**
-     * Get the secret key value of the pair.
+     * This method returns the secrete key value of the ElGamal pair.
      *
      * @return a BigInteger with the secret key value.
      */
