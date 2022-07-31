@@ -65,7 +65,7 @@ public class AuthorityBlock implements Serializable {
     }
 
     /**
-     * This method returns the the certificate.
+     * This method returns the certificate.
      *
      * @return a <code>X509Certificate</code> object representing the
      * certificate.
@@ -75,9 +75,9 @@ public class AuthorityBlock implements Serializable {
     }
 
     /**
-     * This method prints information of the block     
+     * This method prints information of the Authority Block.     
      *
-     * @return a string containing information of the block  
+     * @return a <code>String</code> containing information of the Authority Block.  
      */
     @Override
     public String toString() {
