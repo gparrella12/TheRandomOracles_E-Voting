@@ -27,8 +27,8 @@ import src.Utils.Utils;
 /**
  * This Class represents the Block that will contain the partial share of each
  * Authority, with their relative decryption ZKP, which proves that to decrypt
- * they used the secret key associated with the public key 
- * previously published on the blockchain.
+ * they have used the secret key associated with the public key previously
+ * published on the BlockChain.
  *
  * @author gparrella
  */
@@ -45,8 +45,8 @@ public class PartialShareBlock implements Serializable {
      * <ul>
      * <li><code> the partial decryption share of the authority</code></li>
      * <li><code> the authority</code></li>
-     * </ul>  
-     * 
+     * </ul>
+     *
      * @param partialShare is the partial decryption share of the authority.
      * @param a the authority
      * @param c the initial ElGamal ciphertext.
@@ -77,9 +77,10 @@ public class PartialShareBlock implements Serializable {
     }
 
     /**
-     * This method prints information of the partial share 
-     * 
-     * @return a string containing information of the partial share 
+     * This method prints information of the partial share.
+     *
+     * @return a <code>String</code> containing information of the partial
+     * share.
      */
     @Override
     public String toString() {
