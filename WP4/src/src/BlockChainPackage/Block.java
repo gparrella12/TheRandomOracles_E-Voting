@@ -25,9 +25,9 @@ public class Block<T> implements Serializable {
     }
 
     /**
-     * This method prints information of the block     
+     * This method prints information of the block.     
      *
-     * @return a string containing information of the block  
+     * @return a <code>String</code> containing information of the block.  
      */
     @Override
     public String toString() {
