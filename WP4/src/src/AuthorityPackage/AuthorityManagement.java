@@ -56,7 +56,7 @@ public class AuthorityManagement implements Serializable {
      * This method generates the PK<sub>voting</sub>, where:
      *
      * PK<sub>voting</sub>
-     * = &#928 <sub> i=1 </sub><sup>N <sub>a</sub> </sup>
+     * = &#928; <sub> i=1 </sub><sup>N<sub>a</sub></sup>
      * (PK<sub>A<sub>i</sub></sub>)
      */
     public void generateVotingKey() {
@@ -78,9 +78,9 @@ public class AuthorityManagement implements Serializable {
      *
      * signVote == SIG(vote || vote's proof)
      *
-     * @param voter
-     * @param vote of the voter
-     * @param vp, proof of validity of the vote
+     * @param voter the voter
+     * @param vote the voter's vote
+     * @param vp proof of validity of the vote
      * @param signVote, signature of (vote || vote's proof)
      * @return a <code>boolean</code> that is true if the vote is valid,
      * otherwise false

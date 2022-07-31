@@ -31,7 +31,8 @@ public class CryptographicHash {
 
     /**
      * This method returns the hash of the input
-     *
+     * 
+     * @param input the array of bytes on which compute the hash
      * @return SHA256(input)
      */
     public static byte[] hash(byte[] input) {
@@ -59,7 +60,7 @@ public class CryptographicHash {
 
     /**
      * This method sets the type of hash function to use
-     *
+     *  
      * @param hashFunction the new hash function
      */
     public static void setHashFunction(String hashFunction) {

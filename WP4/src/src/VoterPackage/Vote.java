@@ -18,7 +18,7 @@ public class Vote implements Serializable {
      * <li><code>encVote, the encrypted vote</code></li>
      * </ul>
      *
-     * @param encVote
+     * @param encVote the encrypted vote
      */
     public Vote(ElGamalCipherText encVote) {
         this.encVote = encVote;

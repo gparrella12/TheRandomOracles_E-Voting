@@ -41,10 +41,10 @@ public class SmartContract implements Serializable {
      * <li><code>bcFilename, the name of the file used to simulate the blockchain</code></li>
      * </ul>
      *
-     * @param startElection
-     * @param endElection
-     * @param am
-     * @param bcFilename
+     * @param startElection the instant from which you can vote
+     * @param endElection the instant from which you can not vote anymore
+     * @param am authority management
+     * @param bcFilename the name of the file used to simulate the blockchain
      */
     public SmartContract(LocalDateTime startElection, LocalDateTime endElection, AuthorityManagement am, String bcFilename) {
         this.blockchain = new BlockChain(bcFilename, "blockchain_serial");
@@ -85,8 +85,9 @@ public class SmartContract implements Serializable {
     }
 
     /**
-     * This method adds on the blockchain a transaction that contain if:
-     * <ul> voter
+     * This method adds on the blockchain a transaction that contains:   
+     * <ul> 
+     * <li> voter </li>
      * <li> voter's vote </li>
      * <li> vote's proof </li>
      * <li> signature of the vote and its proof </li>
@@ -102,10 +103,10 @@ public class SmartContract implements Serializable {
      * In addition, this method changes the attribute of the voter to take into
      * account that he or she has voted
      *
-     * @param voter
-     * @param vote
-     * @param vp
-     * @param signVote
+     * @param voter the voter
+     * @param vote the voter's vote
+     * @param vp the proof of the validity of the vote
+     * @param signVote the signature of (vote || vp)
      */
     public void vote(Voter voter, Vote vote, VoteProof vp, byte[] signVote) {
         if (LocalDateTime.now().isBefore(endElection) && LocalDateTime.now().isAfter(startElection)) {
@@ -126,17 +127,18 @@ public class SmartContract implements Serializable {
      * This method aggregates the ciphertexts submitted by all the voters. The
      * aggregation will ouput a ciphertext whose underlying message represents
      * the total number of votes associated with the candidate Omega_1.
-     *
-     * c<sub>voti<sub>&#937;<sub>1</sub></sub></sub> = &#928 <sub> i=1
+     *<br></br>
+     * c<sub>voti<sub> &#937; <sub>1</sub></sub></sub> = &#928; <sub> i=1
      * </sub><sup>TN </sup> (c<sub>i</sub>) = (g<sup>R</sup>, g<sup>M</sup>
      * g<sup>RK</sup>)
      *
-     * where: * R=&sum;<sub>i=1</sub><sup>TN</sup>(r<sub>i</sub>)
+     * where:<br></br>
+     * R=&sum;<sub>i=1</sub><sup>TN</sup>(r<sub>i</sub>)
      * M=&sum;<sub>i=1</sub><sup>TN</sup>(m<sub>i</sub>)
      * K=&sum;<sub>n=1</sub><sup>n<sub>a</sub></sup>(
-     * x<sub>A<sub>n</sub></sub>)</sup>
+     * x<sub>A<sub>n</sub></sub>)
      * TN= number of transactions.
-     *
+     *<br></br>
      * This aggregation is made possible by the Multiplicative Homomorphism
      * ElGamal Encryption Scheme.
      *
@@ -162,7 +164,7 @@ public class SmartContract implements Serializable {
      * <li>
      * voti<sub>&#937;<sub>1</sub></sub>
      * =
-     * (g<sup>M</sup> g<sup>RK</sup>) (&#928 <sub> i=1 </sub>
+     * (g<sup>M</sup> g<sup>RK</sup>) (&#928; <sub> i=1 </sub>
      * <sup>N<sub>a</sub></sup>
      * (d<sub>A<sub>i</sub>,
      * voti<sub>&#937;<sub>1</sub></sub></sub>))<sup>-1</sup>
@@ -181,7 +183,7 @@ public class SmartContract implements Serializable {
      * In particular, votes of Omega_2 = (Number of transactions - votes of
      * Omega_1)
      *
-     * @param aggregatedCipherText
+     * @param aggregatedCipherText the aggregate ciphertext
      */
     public void tallying(ElGamalCipherText aggregatedCipherText) {
         List<BigInteger> partialShares = new ArrayList<>();

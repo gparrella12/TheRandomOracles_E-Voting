@@ -47,10 +47,11 @@ public class CyclicGroupParameters {
      * Creates an object of this class by reading the values of the parameters,
      * previously generated, from file formatted as:
      * <code>
-     * securityParameter \n
-     * g \n
-     * p \n
-     * q \n
+     * <br></br>
+     * securityParameter <br></br>
+     * g <br></br>
+     * p <br></br>
+     * q <br></br>
      * </code>
      *
      * @param fileName is the name of the file.
@@ -61,14 +62,13 @@ public class CyclicGroupParameters {
 
     /**
      * Creates an object of this class by passing:
-     * <ul>
-     * <li><code>g, p, q and the SECURITY_PARAMETER</code></li>        * 
-     * </ul>
+     * <ul><li><code>g, p, q and the SECURITY_PARAMETER</code></li></ul>      
+     * 
      * 
      * @param g generator of cyclic group of order q
      * @param p p=2*q+1
      * @param q a prime number, such |q|= the length in bit of securityParameter
-     * @param SECURITY_PARAMETER
+     * @param SECURITY_PARAMETER the security parameter of the cyclic group
      */
     public CyclicGroupParameters(BigInteger g, BigInteger p, BigInteger q, BigInteger SECURITY_PARAMETER) {
         this.g = g;

@@ -101,7 +101,7 @@ public class EasyLoadFromFile {
     /**
      * This method returns the last loaded Private Signature Key
      *
-     * @return
+     * @return the last loaded Private Signature Key
      */
     public static PrivateKey getLastPrivSigKey() {
         return lastPrivSigKey;
