@@ -249,8 +249,9 @@ public class SmartContract implements Serializable {
     }
 
     /**
-     *
-     * @return all information of the smart contract
+     * This method prints all information of the smart contract.
+     * 
+     * @return a <code>String</code> containing all information of the smart contract.
      */
     @Override
     public String toString() {
