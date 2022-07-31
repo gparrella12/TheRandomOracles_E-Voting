@@ -34,23 +34,23 @@ public class AuthorityShareProof implements Serializable {
     private final String proof;
 
     /**
-     * This method creates a proof for an authority a and ciphertext c. 
-     * In our case, we simulate the proof with <code>H(a || c || share)</code>, 
-     * with H random oracle.
+     * This method creates a proof for an authority a and ciphertext c. In our
+     * case, we simulate the proof with <code>H(a || c || share)</code>, with H
+     * random oracle.
      *
      * @param a the authority
      * @param c the aggregate ciphertext
      * @param share the share of the authority
      */
     public AuthorityShareProof(Authority a, ElGamalCipherText c, BigInteger share) {
-        byte[] b =a.toString().concat(c.toString()).concat(share.toString()).getBytes();
+        byte[] b = a.toString().concat(c.toString()).concat(share.toString()).getBytes();
         this.proof = Utils.toHex(CryptographicHash.hash(b));
     }
 
     /**
      * This method returns a string representation of the proof.
      *
-     * @return a string a string representation of the proof.
+     * @return a <code>String</code> representation of the proof.
      */
     @Override
     public String toString() {
