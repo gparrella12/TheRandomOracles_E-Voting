@@ -79,9 +79,9 @@ public class AuthorityManagement implements Serializable {
      * signVote == SIG(vote || vote's proof)
      *
      * @param voter
-     * @param vote
-     * @param vp
-     * @param signVote
+     * @param vote of the voter
+     * @param vp, proof of validity of the vote
+     * @param signVote, signature of (vote || vote's proof)
      * @return true if the vote is valid, else false
      */
     public boolean validateVote(Voter voter, Vote vote, VoteProof vp, byte[] signVote) {
