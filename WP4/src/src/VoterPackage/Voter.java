@@ -20,8 +20,9 @@ import src.CryptographicTools.ElGamalHomomorphic.ExponentialElGamal;
 import src.CryptographicTools.SignatureScheme;
 
 /**
- * This class contains the keys for a signature scheme and the authentication
- * certificate of the voter.
+ * This class represent a voter with all his/her information, such as encryption
+ * and signatures keys, the name, and the fact that he/she has or not voted
+ *
  *
  * @author fsonnessa
  */
@@ -34,15 +35,19 @@ public class Voter implements Serializable {
     private boolean voted;
 
     /**
-     * Defines a voter by his <code>name</code>,
-     * <code>private signature key</code> and <code>certificate of
-     * authentication</code>.
+     * Creates a voter by passing:
      *
-     * The certificate must contain the public signature key of the Voter.
+     * <ul>
+     * <li><code>name, the name of the voter</code></li>
+     * <li><code>privateSigKey, the voter's private signature key</code></li>
+     * <li><code>certificate, the voter's certificate, from which
+     * can be extracted his/her public key</code></li>
+     * </ul>
      *
-     * @param name
-     * @param privateSigKey
-     * @param certificate
+     *
+     * @param name the name of the voter
+     * @param privateSigKey the private signature key of the voter
+     * @param certificate the certificate of the voter
      */
     public Voter(String name, PrivateKey privateSigKey, X509Certificate certificate) {
         this.name = name;
@@ -53,16 +58,24 @@ public class Voter implements Serializable {
     }
 
     /**
-     * Defines a voter by his certificate of authentication, loaded from file,
-     * and his private signature key.
+     * Creates a voter by passing:
      *
-     * As Voter's name the value CN in certificate is used.
+     * <ul>
+     * <li><code>certificateFileName, the name of the file from which
+     * the voter's certificate will be imported</code></li>
      *
-     * @param certFilename
-     * @param privateKeyFilename
+     * <li><code>privateSigKey, the name of the file from which
+     * the voter's private signature key will be imported</code></li>
+     * </ul>
+     *
+     * Note that as voter's name, the value CN in certificate is used.
+     *
+     * @param certificateFileName name of the file containing the certificate
+     * @param privSigKeyFileName name of the file containing the private
+     * signature key
      */
-    public Voter(String certFilename, String privateKeyFilename) {
-        this.certificate = EasyLoadFromFile.loadCrt(certFilename);
+    public Voter(String certificateFileName, String privSigKeyFileName) {
+        this.certificate = EasyLoadFromFile.loadCrt(certificateFileName);
 
         X500Name x500name = null;
         try {
@@ -74,18 +87,21 @@ public class Voter implements Serializable {
         }
 
         this.publicSigKey = certificate.getPublicKey();
-        this.privateSigKey = EasyLoadFromFile.loadPrivSigKey(privateKeyFilename);
+        this.privateSigKey = EasyLoadFromFile.loadPrivSigKey(privSigKeyFileName);
     }
 
     /**
-     * Create the ElGamalCipherText of the preference expressed.
+     * This method creates a vote object using the voter's preference, the
+     * PK<sub>voting</sub> and the parameters of a cyclic group of order q.
      *
-     * @param preference
-     * @param votingKey voting key obtained from the smart contract for El Gamal
-     * encryption
-     * @param param CyclicGroupParameters for El Gamal Scheme specified in smart
-     * contract
-     * @return
+     * Note that the exponential ElGamal encryption scheme is used
+     *
+     * @param preference the voter's preference, either for candidate 1 or for
+     * candidate 2
+     * @param votingKey the public key PK<sub>voting</sub> used for encrypt the
+     * vote
+     * @param param the parameters of a cyclic group of order q
+     * @return a <code>Vote</code> object
      */
     public Vote makeVote(BigInteger preference, BigInteger votingKey, CyclicGroupParameters param) {
         ElGamalCipherText ciphertext = ExponentialElGamal.encrypt(param, votingKey, preference);
@@ -93,79 +109,87 @@ public class Voter implements Serializable {
     }
 
     /**
-     * Creates a signature to the integrity and non-repudiation of the Vote
+     * This method creates a proof for a vote. 
+     * This proof shows that the vote is g^0 or g^1
      *
-     * @param v
-     * @return <code>VoteProof = H(Vote)</code>
+     * @param v the vote for which to create the proof
+     * @return <code>VoteProof</code> the proof of the validity of the vote
      */
     public VoteProof makeProof(Vote v) {
         return new VoteProof(v);
     }
 
     /**
-     * Sign the vote and its proof with the voter's private signature key for
-     * integrity proprerty
+     * This method signs (vote || vote's proof) using the private signature key
+     * of the vote's voter
      *
-     * @param v
-     * @param vp
-     * @return <code>Sign(Vote||VoteProof, privateSignKey)</code>
+     * @param v the vote
+     * @param vp the vote's proof
+     * @return <code>SIG(Vote||VoteProof)</code>
      */
     public byte[] signVote(Vote v, VoteProof vp) {
         return SignatureScheme.signMessage(this.privateSigKey, v.toString().concat(vp.toString()).getBytes());
     }
 
     /**
-     *
-     * @return
+     * This method returns the name of the voter
+     * 
+     * @return a string containing the name of the voter
      */
     public String getName() {
         return name;
     }
 
     /**
-     *
-     * @return
+     * This method returns the public signature key of the voter
+     * 
+     * @return the public signature key of the voter
      */
     public PublicKey getPublicSigKey() {
         return publicSigKey;
     }
 
     /**
-     *
-     * @return
+     * This method returns the private signature key of the voter
+     * 
+     * @return the private signature key of the voter
      */
     public PrivateKey getPrivateSigKey() {
         return privateSigKey;
     }
 
     /**
-     *
-     * @return
+     * This method returns the certificate of the voter
+     * 
+     * @return the certificate of the voter
      */
     public X509Certificate getCertificate() {
         return certificate;
     }
 
     /**
-     *
-     * @return
+     * This method returns the attribute of the voter that take into account if
+     * he or she has or not voted.
+     * 
+     * @return the certificate of the voter
      */
     public boolean hasVoted() {
         return voted;
     }
 
     /**
-     * Used by the smart contract to mark that the voter has already expressed
-     * his preference
+     * This method sets the attribute of the voter that take into account if
+     * he or she has or not voted.
+     * 
      */
     public void setVoted() {
         this.voted = true;
     }
 
     /**
-     * String rappresentation of a Voter
-     *
-     * @return
+     * This method prints information of the voter.
+     * 
+     * @return a string containing the voter's information
      */
     @Override
     public String toString() {

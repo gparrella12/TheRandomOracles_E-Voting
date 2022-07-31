@@ -5,8 +5,8 @@ import src.CryptographicTools.CryptographicHash;
 import src.Utils.Utils;
 
 /**
- * This class contains the digital signature for the integrity and
- * non-repudiation of the vote
+ * This class represents the proof that a vote is valid.
+ * That is, the sent vote is g<sup>0</sup> or g<sup>1</sup>
  *
  * @author fsonnessa
  */
@@ -15,9 +15,17 @@ public class VoteProof implements Serializable {
     private String proof;
 
     /**
-     * This class create a proof for a valid vote (that encrypt 0 or 1 with the
-     * correct PK). In our case, we are simulating this proof with H(v), with H
-     * random oracle.
+     * This class creates a proof for a valid vote.
+     * 
+     * The claim of the proof is the following:
+     * &exist; r : u = g<sup>r</sup>, 
+     * z= g<sup>v<sub>&Omega; <sub>j</sub></sub></sup> 
+     * (PK<sub>voting</sub>)<sup>r</sup>
+     * &and;
+     * v<sub>&Omega;<sub>j</sub></sub> &#8714; {0,1}
+     * 
+     * Here the implementation of the proof is simulated,
+     * and it simply consists of the hash of the vote
      *
      * @param v the vote
      */
@@ -28,9 +36,9 @@ public class VoteProof implements Serializable {
     }
 
     /**
-     * Returns the proof, that is the digital signature of the vote
+     * This method returns a string representation of the vote's proof.
      *
-     * @return
+     * @return a string containing the vote's proof
      */
     @Override
     public String toString() {
