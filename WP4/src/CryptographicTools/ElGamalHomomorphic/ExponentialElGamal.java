@@ -4,8 +4,8 @@ import java.math.BigInteger;
 import java.security.SecureRandom;
 
 /**
- * This class contains some static methods that allow you 
- * to encrypt and decrypt a message using the Exponential ElGamal Scheme.
+ * This class contains some static methods that allow you to encrypt and decrypt
+ * a message using the Exponential ElGamal Scheme.
  *
  * @author gparrella
  */
@@ -25,16 +25,16 @@ public class ExponentialElGamal {
         BigInteger q = param.getQ();
         BigInteger p = param.getP();
         BigInteger g = param.getG();
-        
+
         // Get a secure source of randomness
         SecureRandom sc = new SecureRandom();
 
         // r <- Z_q, r randomly chosen in Z_q
         BigInteger r = new BigInteger(securityParameter, sc).mod(q);
-        
+
         // u = g^r mod p 
         BigInteger u = g.modPow(r, p);
-        
+
         // v = g^m * pk^r mod p
         BigInteger v = g.modPow(m.mod(q), p).multiply(pk.modPow(r, p));
 
@@ -43,8 +43,8 @@ public class ExponentialElGamal {
     }
 
     /**
-     * This method decrypt message previously encrypted using 
-     * the Exponential ElGamal Scheme.
+     * This method decrypt message previously encrypted using the Exponential
+     * ElGamal Scheme.
      *
      * @param param the parameters of the cyclic group of order q used.
      * @param cipherText the ciphertext to decrypt
@@ -76,8 +76,8 @@ public class ExponentialElGamal {
     }
 
     /**
-     * This method aggregates two Exponential ElGama Ciphertext, 
-     * to exploit the multiplicative homomorphic property of the scheme.
+     * This method aggregates two Exponential ElGama Ciphertext, to exploit the
+     * multiplicative homomorphic property of the scheme.
      *
      * @param param the parameters of the cyclic group of order q used.
      * @param cipherText1 the 1st ciphertext
@@ -87,7 +87,7 @@ public class ExponentialElGamal {
     public static ElGamalCipherText aggregate(CyclicGroupParameters param, ElGamalCipherText cipherText1, ElGamalCipherText cipherText2) {
         // Get the parameters used
         BigInteger p = param.getP();
-        
+
         // Compute the new u and v values by multiplying the corresponding values of the ciphertexts
         BigInteger newU = cipherText1.getU().multiply(cipherText2.getU()).mod(p);
         BigInteger newV = cipherText1.getV().multiply(cipherText2.getV()).mod(p);
