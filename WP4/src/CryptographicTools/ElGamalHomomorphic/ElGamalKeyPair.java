@@ -46,7 +46,7 @@ public class ElGamalKeyPair {
     /**
      * This method returns the public key value of the ElGamal pair.
      *
-     * @return a BigInteger with the public key value.
+     * @return a <code>BigInteger</code> with the public key value.
      */
     public BigInteger getPublicKey() {
         return publicKey;
@@ -55,7 +55,7 @@ public class ElGamalKeyPair {
     /**
      * This method returns the secrete key value of the ElGamal pair.
      *
-     * @return a BigInteger with the secret key value.
+     * @return a <code>BigInteger</code> with the secret key value.
      */
     public BigInteger getSecretKey() {
         return secretKey;
