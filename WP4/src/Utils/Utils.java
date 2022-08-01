@@ -30,7 +30,8 @@ public class Utils {
      * This method converts an array of bytes into an Hexadecimal String
      *
      * @param data the array of bytes to convert
-     * @return the new converted hexadecimal string
+     * @return a <code>String</code> representing the new converted hexadecimal
+     * string
      */
     public static String toHex(byte[] data) {
         StringBuffer buf = new StringBuffer();
