@@ -55,7 +55,7 @@ public class SimulateProtocol {
                 String filename = "Certificati/Voters/" + voterName;
                 voter = new Voter(filename + ".crt", filename + ".p8");
                 System.out.println("\n----\nVoter: " + voter.getName() + "\tvoted = " + voter.hasVoted());
-                int preference = new Random(new SecureRandom().nextLong()).nextInt(2);
+                int preference = new SecureRandom().nextInt(2);
                 c1RealVotes += preference;
                 System.out.println("Voting...");
                 Vote vote = voter.makeVote(new BigInteger(String.valueOf(preference)), sc.getVotingKey(), param);
