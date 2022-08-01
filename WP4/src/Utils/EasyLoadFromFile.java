@@ -18,7 +18,7 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 /**
  * This class provides methods to make it easier to load a
- * <code>.crt certificate</code> and a <code>.p8 private signature key</code> 
+ * <code>.crt certificate</code> and a <code>.p8 private signature key</code>
  * from a file.
  *
  * If the load is done several times, only the last one will be stored.
@@ -35,8 +35,8 @@ public class EasyLoadFromFile {
      * with the specified name
      *
      * @param filename name of the file
-     * @return a <code>X509Certificate</code> object representing the 
-     * loaded X509Certificate
+     * @return a <code>X509Certificate</code> object representing the loaded
+     * X509Certificate
      */
     public static X509Certificate loadCrt(String filename) {
 
@@ -69,8 +69,8 @@ public class EasyLoadFromFile {
     /**
      * This method returns the last loaded X509Certificate
      *
-     * @return a <code>X509Certificate</code> object representing the 
-     * last loaded X509Certificate
+     * @return a <code>X509Certificate</code> object representing the last
+     * loaded X509Certificate
      */
     public static X509Certificate getLastCrt() {
         return lastCrt;
@@ -80,8 +80,9 @@ public class EasyLoadFromFile {
      * This method reads from a certificate, contained in a file named
      * <code>filename</code>, the private signature key
      *
-     * @param filename the name of the file 
-     * @return the private signature key
+     * @param filename the name of the file
+     * @return a <code>PrivateKey</code> object representing the private
+     * signature key
      */
     public static PrivateKey loadPrivSigKey(String filename) {
         PrivateKey key = null;
@@ -101,7 +102,8 @@ public class EasyLoadFromFile {
     /**
      * This method returns the last loaded Private Signature Key
      *
-     * @return the last loaded Private Signature Key
+     * @return a <code>PrivateKey</code> object representing the last loaded
+     * Private Signature Key
      */
     public static PrivateKey getLastPrivSigKey() {
         return lastPrivSigKey;
