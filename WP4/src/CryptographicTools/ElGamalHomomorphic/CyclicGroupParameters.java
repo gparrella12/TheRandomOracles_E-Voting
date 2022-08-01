@@ -8,13 +8,13 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * This class contains the parameters that defines a cyclic group of order q. 
- * In particular, an object of this class contains 
- * two primes <code>p</code> and <code>q</code> such that:
+ * This class contains the parameters that defines a cyclic group of order q. In
+ * particular, an object of this class contains two primes <code>p</code> and
+ * <code>q</code> such that:
  * <ul>
  * <li><code>p=2*q+1</code> </li>
- * <li><code>|q| = securityParameter bit</code>
- * (i.e. defines the length in bit of q)</li>
+ * <li><code>|q| = securityParameter bit</code> (i.e. defines the length in bit
+ * of q)</li>
  * <li><code>g</code> is a generator of the cyclic group of order
  * <code>q</code></li>
  * </ul>
@@ -25,29 +25,31 @@ public class CyclicGroupParameters {
 
     // Generator of cyclic group of order q
     private BigInteger g;
-    
+
     // The prime p = 2*q+1
     private BigInteger p;
-    
+
     // The prime q, with |q|= length in bit of securityParameter
     private BigInteger q;
-    
+
     // The security Parameter
     private BigInteger securityParameter;
-    
+
     // Single instance
     private static CyclicGroupParameters instance = null;
 
     /**
      * Get the unique instance of this class.
+     *
      * @return the instance of the class.
      */
-    public static CyclicGroupParameters getInstance(){
-        if(instance == null){
+    public static CyclicGroupParameters getInstance() {
+        if (instance == null) {
             return new CyclicGroupParameters("parameters.txt");
         }
         return instance;
     }
+
     /**
      * Creates an object of this class by reading the values of the parameters,
      * previously generated, from file formatted as:
@@ -59,7 +61,7 @@ public class CyclicGroupParameters {
      * q <br></br>
      * </code>
      *
-     * @param fileName is the name of the file.
+     * @param fileName the name of the file.
      */
     private CyclicGroupParameters(String fileName) {
         this.importFromFile(fileName);
@@ -67,9 +69,9 @@ public class CyclicGroupParameters {
 
     /**
      * Creates an object of this class by passing:
-     * <ul><li><code>g, p, q and the SECURITY_PARAMETER</code></li></ul>      
-     * 
-     * 
+     * <ul><li><code>g, p, q and the SECURITY_PARAMETER</code></li></ul>
+     *
+     *
      * @param g generator of cyclic group of order q
      * @param p p=2*q+1
      * @param q a prime number, such |q|= the length in bit of securityParameter
@@ -82,16 +84,15 @@ public class CyclicGroupParameters {
         this.securityParameter = SECURITY_PARAMETER;
     }
 
-    
-     /**
-     * This method reads the parameters from a file
-     * 
-     * @param fileName the name of the file
+    /**
+     * This method reads the parameters from a file.
+     *
+     * @param fileName the name of the file.
      */
     private void importFromFile(String fileName) {
         File file = new File(fileName);
         List<BigInteger> parameters = new ArrayList<>();
-        try(Scanner sc = new Scanner(file)) {
+        try ( Scanner sc = new Scanner(file)) {
 
             while (sc.hasNextLine()) {
                 BigInteger i = sc.nextBigInteger();
@@ -111,6 +112,7 @@ public class CyclicGroupParameters {
 
     /**
      * This method returns the <code>g</code> value.
+     *
      * @return a BigInteger with <code>g</code> value.
      */
     public BigInteger getG() {
@@ -119,23 +121,28 @@ public class CyclicGroupParameters {
 
     /**
      * This method returns the <code>p</code> value.
-     * @return a BigInteger with <code>p</code> value.
+     *
+     * @return a <code>BigInteger</code> with <code>p</code> value.
      */
     public BigInteger getP() {
         return p;
     }
 
     /**
-     *  This method returns the <code>q</code> value..
-     * @return a BigInteger with <code>q</code> value.
+     * This method returns the <code>q</code> value..
+     *
+     * @return a <code>BigInteger</code> with <code>q</code> value.
      */
     public BigInteger getQ() {
         return q;
     }
 
     /**
-     * This method returns the <code>securityParameter</code> value.     * 
-     * @return a BigInteger with <code>securityParameter</code> value.
+     * This method returns the <code>securityParameter</code> value.
+     *
+     *
+     * @return a <code>BigInteger</code> with <code>securityParameter</code>
+     * value.
      */
     public BigInteger getSecurityParameter() {
         return securityParameter;
