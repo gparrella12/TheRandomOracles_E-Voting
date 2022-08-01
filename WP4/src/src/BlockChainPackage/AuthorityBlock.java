@@ -32,8 +32,8 @@ public class AuthorityBlock implements Serializable {
      * associated with its public </code></li>
      * </ul>
      *
-     * @param a, the authority for which the block is created.
-     * @param proof, the proof of knowledge of the secrete encryption key 
+     * @param a the authority for which the block is created.
+     * @param proof the proof of knowledge of the secrete encryption key 
      * relative to the public encryption key .
      */
     public AuthorityBlock(Authority a, SchnorrNIProof proof) {
