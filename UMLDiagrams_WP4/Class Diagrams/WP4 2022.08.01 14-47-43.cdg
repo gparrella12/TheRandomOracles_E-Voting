@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="WP4">
+  <ClassDiagramComponents>
+    <Class name="Authority" package="AuthorityPackage" visibility="public" xPosition="164.0" yPosition="156.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private" isFinal="true"/>
+        <Field name="privateEncKey" type="BigInteger" visibility="private" isFinal="true"/>
+        <Field name="publicEncKey" type="BigInteger" visibility="private" isFinal="true"/>
+        <Field name="privateSigKey" type="PrivateKey" visibility="private" isFinal="true"/>
+        <Field name="publicSigKey" type="PublicKey" visibility="private" isFinal="true"/>
+        <Field name="certificate" type="X509Certificate" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPublicEncKey" returnType="BigInteger" visibility="public"/>
+        <Method name="getPrivateEncKey" returnType="BigInteger" visibility="public"/>
+        <Method name="getPublicSigKey" returnType="PublicKey" visibility="public"/>
+        <Method name="getPrivateSigKey" returnType="PrivateKey" visibility="public"/>
+        <Method name="getCertificate" returnType="X509Certificate" visibility="public"/>
+        <Method name="getName" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="AuthorityManagement" package="AuthorityPackage" visibility="public" xPosition="542.0" yPosition="247.0">
+      <Fields>
+        <Field name="single_instance" type="AuthorityManagement" visibility="private" isStatic="true"/>
+        <Field name="authorityList" type="List&lt;Authority&gt;" visibility="private" isFinal="true"/>
+        <Field name="votingKey" type="BigInteger" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="private"/>
+      </Constructors>
+      <Methods>
+        <Method name="getInstance" returnType="AuthorityManagement" visibility="public" isStatic="true"/>
+        <Method name="getVotingKey" returnType="BigInteger" visibility="public"/>
+        <Method name="generateVotingKey" returnType="void" visibility="public"/>
+        <Method name="validateVote" returnType="boolean" visibility="public">
+          <Argument type="Voter" name="voter"/>
+          <Argument type="Vote" name="vote"/>
+          <Argument type="VoteProof" name="vp"/>
+          <Argument type="byte[]" name="signVote"/>
+        </Method>
+        <Method name="getAuthorityList" returnType="List&lt;Authority&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="AuthorityShareProof" package="AuthorityPackage" visibility="public" xPosition="1825.0" yPosition="892.0">
+      <Fields>
+        <Field name="proof" type="String" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Authority" name="a"/>
+          <Argument type="ElGamalCipherText" name="c"/>
+          <Argument type="BigInteger" name="share"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="AuthorityBlock" package="BlockChainPackage" visibility="public" xPosition="1290.0" yPosition="489.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private" isFinal="true"/>
+        <Field name="publicEncKey" type="BigInteger" visibility="private" isFinal="true"/>
+        <Field name="publicSigKey" type="PublicKey" visibility="private" isFinal="true"/>
+        <Field name="certificate" type="X509Certificate" visibility="private" isFinal="true"/>
+        <Field name="proof" type="SchnorrNIProof" visibility="private" isFinal="true"/>
+        <Field name="blockSignature" type="byte[]" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Authority" name="a"/>
+          <Argument type="SchnorrNIProof" name="proof"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPublicEncKey" returnType="BigInteger" visibility="public"/>
+        <Method name="getPublicSigKey" returnType="PublicKey" visibility="public"/>
+        <Method name="getCertificate" returnType="X509Certificate" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Block" package="BlockChainPackage" visibility="public" xPosition="1022.0" yPosition="565.0">
+      <Fields>
+        <Field name="data" type="T" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="T" name="data"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="BlockChain" package="BlockChainPackage" visibility="public" xPosition="947.0" yPosition="748.0">
+      <Fields>
+        <Field name="chain" type="List&lt;Block&gt;" visibility="private"/>
+        <Field name="filename" type="String" visibility="private"/>
+        <Field name="filename_serial" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="fileName"/>
+          <Argument type="String" name="filename_serial"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="addBlock" returnType="void" visibility="public">
+          <Argument type="Block" name="block"/>
+        </Method>
+        <Method name="writeOnFile" returnType="void" visibility="private" isStatic="true">
+          <Argument type="String" name="fileName"/>
+          <Argument type="Block" name="block"/>
+        </Method>
+        <Method name="writeSerialized" returnType="void" visibility="private">
+          <Argument type="String" name="fileName"/>
+        </Method>
+        <Method name="readFromFile" returnType="List&lt;Block&gt;" visibility="private">
+          <Argument type="String" name="fileNameSerialized"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PartialShareBlock" package="BlockChainPackage" visibility="public" xPosition="1290.0" yPosition="797.0">
+      <Fields>
+        <Field name="partialShare" type="BigInteger" visibility="private" isFinal="true"/>
+        <Field name="authorityName" type="String" visibility="private" isFinal="true"/>
+        <Field name="proof" type="AuthorityShareProof" visibility="private" isFinal="true"/>
+        <Field name="blockSignature" type="byte[]" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="BigInteger" name="partialShare"/>
+          <Argument type="Authority" name="a"/>
+          <Argument type="ElGamalCipherText" name="c"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPartialShare" returnType="BigInteger" visibility="public"/>
+        <Method name="getAuthorityName" returnType="String" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SmartContract" package="BlockChainPackage" visibility="public" xPosition="38.0" yPosition="596.0">
+      <Fields>
+        <Field name="blockchain" type="BlockChain" visibility="private" isFinal="true"/>
+        <Field name="votingKey" type="BigInteger" visibility="private"/>
+        <Field name="startElection" type="LocalDateTime" visibility="private" isFinal="true"/>
+        <Field name="endElection" type="LocalDateTime" visibility="private" isFinal="true"/>
+        <Field name="manager" type="AuthorityManagement" visibility="private" isFinal="true"/>
+        <Field name="votes" type="List&lt;ElGamalCipherText&gt;" visibility="private" isFinal="true"/>
+        <Field name="resultCandidate1" type="BigInteger" visibility="private"/>
+        <Field name="resultCandidate2" type="BigInteger" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="LocalDateTime" name="startElection"/>
+          <Argument type="LocalDateTime" name="endElection"/>
+          <Argument type="AuthorityManagement" name="am"/>
+          <Argument type="String" name="bcFilename"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="blockChainInit" returnType="void" visibility="public"/>
+        <Method name="keyGeneration" returnType="void" visibility="public"/>
+        <Method name="vote" returnType="void" visibility="public">
+          <Argument type="Voter" name="voter"/>
+          <Argument type="Vote" name="vote"/>
+          <Argument type="VoteProof" name="vp"/>
+          <Argument type="byte[]" name="signVote"/>
+        </Method>
+        <Method name="aggregateCipherText" returnType="ElGamalCipherText" visibility="public"/>
+        <Method name="tallying" returnType="void" visibility="public">
+          <Argument type="ElGamalCipherText" name="aggregatedCipherText"/>
+        </Method>
+        <Method name="getVotingKey" returnType="BigInteger" visibility="public"/>
+        <Method name="getResultCandidate1" returnType="BigInteger" visibility="public"/>
+        <Method name="getResultCandidate2" returnType="BigInteger" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="VoteTransaction" package="BlockChainPackage" visibility="public" xPosition="573.0" yPosition="1605.0">
+      <Fields>
+        <Field name="vote" type="Vote" visibility="private"/>
+        <Field name="vp" type="VoteProof" visibility="private"/>
+        <Field name="sign" type="byte[]" visibility="private"/>
+        <Field name="timestamp" type="Timestamp" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Vote" name="vote"/>
+          <Argument type="VoteProof" name="vp"/>
+          <Argument type="byte[]" name="sign"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CryptographicHash" package="CryptographicTools" visibility="public" xPosition="1255.0" yPosition="26.0">
+      <Fields>
+        <Field name="hashFunction" type="String" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="hash" returnType="byte[]" visibility="public" isStatic="true">
+          <Argument type="byte[]" name="input"/>
+        </Method>
+        <Method name="getHashFunction" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="setHashFunction" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="hashFunction"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="CyclicGroupParameters" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="1671.0" yPosition="1130.0">
+      <Fields>
+        <Field name="g" type="BigInteger" visibility="private"/>
+        <Field name="p" type="BigInteger" visibility="private"/>
+        <Field name="q" type="BigInteger" visibility="private"/>
+        <Field name="securityParameter" type="BigInteger" visibility="private"/>
+        <Field name="instance" type="CyclicGroupParameters" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="private">
+          <Argument type="String" name="fileName"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="BigInteger" name="g"/>
+          <Argument type="BigInteger" name="p"/>
+          <Argument type="BigInteger" name="q"/>
+          <Argument type="BigInteger" name="SECURITY_PARAMETER"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getInstance" returnType="CyclicGroupParameters" visibility="public" isStatic="true"/>
+        <Method name="importFromFile" returnType="void" visibility="private">
+          <Argument type="String" name="fileName"/>
+        </Method>
+        <Method name="getG" returnType="BigInteger" visibility="public"/>
+        <Method name="getP" returnType="BigInteger" visibility="public"/>
+        <Method name="getQ" returnType="BigInteger" visibility="public"/>
+        <Method name="getSecurityParameter" returnType="BigInteger" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ElGamalCipherText" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="864.0" yPosition="1095.0">
+      <Fields>
+        <Field name="u" type="BigInteger" visibility="private" isFinal="true"/>
+        <Field name="v" type="BigInteger" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="BigInteger" name="u"/>
+          <Argument type="BigInteger" name="v"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getU" returnType="BigInteger" visibility="public"/>
+        <Method name="getV" returnType="BigInteger" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ElGamalKeyPair" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="1349.0" yPosition="1114.0">
+      <Fields>
+        <Field name="secretKey" type="BigInteger" visibility="private" isFinal="true"/>
+        <Field name="publicKey" type="BigInteger" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getPublicKey" returnType="BigInteger" visibility="public"/>
+        <Method name="getSecretKey" returnType="BigInteger" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ExponentialElGamal" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="1022.0" yPosition="1633.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="encrypt" returnType="ElGamalCipherText" visibility="public" isStatic="true">
+          <Argument type="CyclicGroupParameters" name="param"/>
+          <Argument type="BigInteger" name="pk"/>
+          <Argument type="BigInteger" name="m"/>
+        </Method>
+        <Method name="decrypt" returnType="BigInteger" visibility="public" isStatic="true">
+          <Argument type="CyclicGroupParameters" name="param"/>
+          <Argument type="ElGamalCipherText" name="cipherText"/>
+          <Argument type="BigInteger" name="sk"/>
+        </Method>
+        <Method name="aggregate" returnType="ElGamalCipherText" visibility="public" isStatic="true">
+          <Argument type="CyclicGroupParameters" name="param"/>
+          <Argument type="ElGamalCipherText" name="cipherText1"/>
+          <Argument type="ElGamalCipherText" name="cipherText2"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ExponentialElGamalTest" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="2518.0" yPosition="54.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="GenerateParameters" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="2284.0" yPosition="204.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ProofTest" package="CryptographicTools.SchnorrNIZPK" visibility="public" xPosition="2284.0" yPosition="54.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SchnorrNIProof" package="CryptographicTools.SchnorrNIZPK" visibility="public" xPosition="1689.0" yPosition="518.0">
+      <Fields>
+        <Field name="a" type="BigInteger" visibility="private" isFinal="true"/>
+        <Field name="c" type="BigInteger" visibility="private" isFinal="true"/>
+        <Field name="z" type="BigInteger" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="BigInteger" name="a"/>
+          <Argument type="BigInteger" name="c"/>
+          <Argument type="BigInteger" name="z"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getA" returnType="BigInteger" visibility="public"/>
+        <Method name="getC" returnType="BigInteger" visibility="public"/>
+        <Method name="getZ" returnType="BigInteger" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SchnorrNIZKP" package="CryptographicTools.SchnorrNIZPK" visibility="public" xPosition="1634.0" yPosition="247.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="makeProof" returnType="SchnorrNIProof" visibility="public" isStatic="true">
+          <Argument type="BigInteger" name="x"/>
+          <Argument type="BigInteger" name="y"/>
+          <Argument type="CyclicGroupParameters" name="param"/>
+        </Method>
+        <Method name="checkProof" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="SchnorrNIProof" name="proof"/>
+          <Argument type="BigInteger" name="y"/>
+          <Argument type="CyclicGroupParameters" name="param"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SignatureScheme" package="CryptographicTools" visibility="public" xPosition="1112.0" yPosition="247.0">
+      <Fields>
+        <Field name="algorithm" type="String" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="signMessage" returnType="byte[]" visibility="public" isStatic="true">
+          <Argument type="PrivateKey" name="key"/>
+          <Argument type="byte[]" name="message"/>
+        </Method>
+        <Method name="verifySignature" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="PublicKey" name="publicKey"/>
+          <Argument type="byte[]" name="message"/>
+          <Argument type="byte[]" name="messageSign"/>
+        </Method>
+        <Method name="getAlgorithm" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="setAlgorithm" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="a"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SimulateProtocol" package="Protocol" visibility="public" xPosition="2518.0" yPosition="350.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="EasyLoadFromFile" package="Utils" visibility="public" xPosition="1587.0" yPosition="26.0">
+      <Fields>
+        <Field name="lastCrt" type="X509Certificate" visibility="private" isStatic="true"/>
+        <Field name="lastPrivSigKey" type="PrivateKey" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="loadCrt" returnType="X509Certificate" visibility="public" isStatic="true">
+          <Argument type="String" name="filename"/>
+        </Method>
+        <Method name="getLastCrt" returnType="X509Certificate" visibility="public" isStatic="true"/>
+        <Method name="loadPrivSigKey" returnType="PrivateKey" visibility="public" isStatic="true">
+          <Argument type="String" name="filename"/>
+        </Method>
+        <Method name="getLastPrivSigKey" returnType="PrivateKey" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Utils" package="Utils" visibility="public" xPosition="1905.0" yPosition="26.0">
+      <Fields>
+        <Field name="digits" type="String" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public" isStatic="true">
+          <Argument type="byte[]" name="data"/>
+        </Method>
+        <Method name="toHex" returnType="String" visibility="public" isStatic="true">
+          <Argument type="byte[]" name="data"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TestVoter" package="VoterPackage" visibility="public" xPosition="2518.0" yPosition="204.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Vote" package="VoterPackage" visibility="public" xPosition="767.0" yPosition="1392.0">
+      <Fields>
+        <Field name="encVote" type="ElGamalCipherText" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="ElGamalCipherText" name="encVote"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getEncVote" returnType="ElGamalCipherText" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="VoteProof" package="VoterPackage" visibility="public" xPosition="201.0" yPosition="1567.0">
+      <Fields>
+        <Field name="proof" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Vote" name="v"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Voter" package="VoterPackage" visibility="public" xPosition="75.0" yPosition="1095.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="publicSigKey" type="PublicKey" visibility="private" isFinal="true"/>
+        <Field name="privateSigKey" type="PrivateKey" visibility="private" isFinal="true"/>
+        <Field name="certificate" type="X509Certificate" visibility="private"/>
+        <Field name="voted" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="PrivateKey" name="privateSigKey"/>
+          <Argument type="X509Certificate" name="certificate"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="certificateFileName"/>
+          <Argument type="String" name="privSigKeyFileName"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="makeVote" returnType="Vote" visibility="public">
+          <Argument type="BigInteger" name="preference"/>
+          <Argument type="BigInteger" name="votingKey"/>
+          <Argument type="CyclicGroupParameters" name="param"/>
+        </Method>
+        <Method name="makeProof" returnType="VoteProof" visibility="public">
+          <Argument type="Vote" name="v"/>
+        </Method>
+        <Method name="signVote" returnType="byte[]" visibility="public">
+          <Argument type="Vote" name="v"/>
+          <Argument type="VoteProof" name="vp"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getPublicSigKey" returnType="PublicKey" visibility="public"/>
+        <Method name="getPrivateSigKey" returnType="PrivateKey" visibility="public"/>
+        <Method name="getCertificate" returnType="X509Certificate" visibility="public"/>
+        <Method name="hasVoted" returnType="boolean" visibility="public"/>
+        <Method name="setVoted" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Enum name="AuthorityName" package="AuthorityPackage" visibility="public" xPosition="2078.0" yPosition="400.0">
+      <Literals>
+        <Literal name="Abruzzo"/>
+        <Literal name="Basilicata"/>
+        <Literal name="Calabria"/>
+        <Literal name="Campania"/>
+        <Literal name="Emilia_Romagna"/>
+        <Literal name="Friuli_Venezia_Giulia"/>
+        <Literal name="Lazio"/>
+        <Literal name="Liguria"/>
+        <Literal name="Lombardia"/>
+        <Literal name="Marche"/>
+        <Literal name="Molise"/>
+        <Literal name="Piemonte"/>
+        <Literal name="Puglia"/>
+        <Literal name="Sardegna"/>
+        <Literal name="Sicilia"/>
+        <Literal name="Toscana"/>
+        <Literal name="Trentino_Alto_Adige"/>
+        <Literal name="Umbria"/>
+        <Literal name="Valle_d_Aosta"/>
+        <Literal name="Veneto"/>
+        <Literal name="Ministero"/>
+      </Literals>
+    </Enum>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="encVote" source="VoterPackage.Vote" target="CryptographicTools.ElGamalHomomorphic.ElGamalCipherText" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="VoterPackage.Voter" target="VoterPackage.Vote" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="chain" source="BlockChainPackage.BlockChain" target="BlockChainPackage.Block" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Block&gt;"/>
+    <UseRelation source="AuthorityPackage.AuthorityManagement" target="AuthorityPackage.Authority" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="BlockChainPackage.BlockChain" target="BlockChainPackage.Block" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="proof" source="BlockChainPackage.PartialShareBlock" target="AuthorityPackage.AuthorityShareProof" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters" target="CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="authorityList" source="AuthorityPackage.AuthorityManagement" target="AuthorityPackage.Authority" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Authority&gt;"/>
+    <HasRelation name="blockchain" source="BlockChainPackage.SmartContract" target="BlockChainPackage.BlockChain" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="manager" source="BlockChainPackage.SmartContract" target="AuthorityPackage.AuthorityManagement" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="VoterPackage.Vote" target="CryptographicTools.ElGamalHomomorphic.ElGamalCipherText" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="BlockChainPackage.SmartContract" target="VoterPackage.Voter" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="vp" source="BlockChainPackage.VoteTransaction" target="VoterPackage.VoteProof" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="CryptographicTools.SchnorrNIZPK.SchnorrNIZKP" target="CryptographicTools.SchnorrNIZPK.SchnorrNIProof" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="votes" source="BlockChainPackage.SmartContract" target="CryptographicTools.ElGamalHomomorphic.ElGamalCipherText" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;ElGamalCipherText&gt;"/>
+    <UseRelation source="BlockChainPackage.SmartContract" target="CryptographicTools.ElGamalHomomorphic.ElGamalCipherText" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="VoterPackage.Voter" target="VoterPackage.VoteProof" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="proof" source="BlockChainPackage.AuthorityBlock" target="CryptographicTools.SchnorrNIZPK.SchnorrNIProof" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="vote" source="BlockChainPackage.VoteTransaction" target="VoterPackage.Vote" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="CryptographicTools.ElGamalHomomorphic.ExponentialElGamal" target="CryptographicTools.ElGamalHomomorphic.ElGamalCipherText" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="single_instance" source="AuthorityPackage.AuthorityManagement" target="AuthorityPackage.AuthorityManagement" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="instance" source="CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters" target="CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="AuthorityPackage.AuthorityManagement" target="VoterPackage.Voter" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="AuthorityPackage.AuthorityManagement" target="AuthorityPackage.AuthorityManagement" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
