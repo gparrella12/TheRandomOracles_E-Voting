@@ -6,8 +6,6 @@ import CryptographicTools.ElGamalHomomorphic.ExponentialElGamal;
 import CryptographicTools.SignatureScheme;
 import Utils.EasyLoadFromFile;
 import java.io.Serializable;
-import java.lang.System.Logger;
-import java.lang.System.Logger.Level;
 import java.math.BigInteger;
 import java.security.PrivateKey;
 import java.security.PublicKey;
@@ -19,11 +17,9 @@ import org.bouncycastle.asn1.x500.style.BCStyle;
 import org.bouncycastle.asn1.x500.style.IETFUtils;
 import org.bouncycastle.cert.jcajce.JcaX509CertificateHolder;
 
-
-
 /**
  * This class represent a voter with all his/her information, such as encryption
- * and signatures keys, the name, and the fact that he/she has or not voted
+ * and signatures keys, the name, and the fact that he/she has or not voted.
  *
  *
  * @author fsonnessa
@@ -111,8 +107,8 @@ public class Voter implements Serializable {
     }
 
     /**
-     * This method creates a proof for a vote. 
-     * This proof shows that the vote is g^0 or g^1
+     * This method creates a proof for a vote. This proof shows that the vote is
+     * g^0 or g^1
      *
      * @param v the vote for which to create the proof
      * @return <code>VoteProof</code> the proof of the validity of the vote
@@ -135,8 +131,8 @@ public class Voter implements Serializable {
 
     /**
      * This method returns the name of the voter
-     * 
-     * @return a string containing the name of the voter
+     *
+     * @return a <code>String</code> containing the name of the voter
      */
     public String getName() {
         return name;
@@ -144,8 +140,9 @@ public class Voter implements Serializable {
 
     /**
      * This method returns the public signature key of the voter
-     * 
-     * @return the public signature key of the voter
+     *
+     * @return a <code>PublicKey</code> object containing the public signature
+     * key of the voter.
      */
     public PublicKey getPublicSigKey() {
         return publicSigKey;
@@ -153,8 +150,9 @@ public class Voter implements Serializable {
 
     /**
      * This method returns the private signature key of the voter
-     * 
-     * @return the private signature key of the voter
+     *
+     * @return a <code>PrivateKey</code> object containing the private signature
+     * key of the voter
      */
     public PrivateKey getPrivateSigKey() {
         return privateSigKey;
@@ -162,8 +160,9 @@ public class Voter implements Serializable {
 
     /**
      * This method returns the certificate of the voter
-     * 
-     * @return the certificate of the voter
+     *
+     * @return a <code>X509Certificate</code> object containing the certificate
+     * of the voter.
      */
     public X509Certificate getCertificate() {
         return certificate;
@@ -172,7 +171,7 @@ public class Voter implements Serializable {
     /**
      * This method returns the attribute of the voter that take into account if
      * he or she has or not voted.
-     * 
+     *
      * @return the certificate of the voter
      */
     public boolean hasVoted() {
@@ -180,9 +179,9 @@ public class Voter implements Serializable {
     }
 
     /**
-     * This method sets the attribute of the voter that take into account if
-     * he or she has or not voted.
-     * 
+     * This method sets the attribute of the voter that take into account if he
+     * or she has or not voted.
+     *
      */
     public void setVoted() {
         this.voted = true;
@@ -190,8 +189,8 @@ public class Voter implements Serializable {
 
     /**
      * This method prints information of the voter.
-     * 
-     * @return a string containing the voter's information
+     *
+     * @return a <code>String</code> containing the voter's information
      */
     @Override
     public String toString() {
