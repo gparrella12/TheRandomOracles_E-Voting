@@ -39,7 +39,7 @@ public class CyclicGroupParameters {
     private static CyclicGroupParameters instance = null;
 
     /**
-     * Get the unique instance of this class.
+     * This method returns the unique instance of this class.
      *
      * @return the instance of the class.
      */
