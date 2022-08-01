@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="CryptographicTools.SchnorrNIZPK">
+  <ClassDiagramComponents>
+    <Class name="ProofTest" package="CryptographicTools.SchnorrNIZPK" visibility="public" xPosition="188.0" yPosition="14.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SchnorrNIProof" package="CryptographicTools.SchnorrNIZPK" visibility="public" xPosition="121.0" yPosition="349.0">
+      <Fields>
+        <Field name="a" type="BigInteger" visibility="private" isFinal="true"/>
+        <Field name="c" type="BigInteger" visibility="private" isFinal="true"/>
+        <Field name="z" type="BigInteger" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="BigInteger" name="a"/>
+          <Argument type="BigInteger" name="c"/>
+          <Argument type="BigInteger" name="z"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getA" returnType="BigInteger" visibility="public"/>
+        <Method name="getC" returnType="BigInteger" visibility="public"/>
+        <Method name="getZ" returnType="BigInteger" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SchnorrNIZKP" package="CryptographicTools.SchnorrNIZPK" visibility="public" xPosition="20.0" yPosition="162.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="makeProof" returnType="SchnorrNIProof" visibility="public" isStatic="true">
+          <Argument type="BigInteger" name="x"/>
+          <Argument type="BigInteger" name="y"/>
+          <Argument type="CyclicGroupParameters" name="param"/>
+        </Method>
+        <Method name="checkProof" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="SchnorrNIProof" name="proof"/>
+          <Argument type="BigInteger" name="y"/>
+          <Argument type="CyclicGroupParameters" name="param"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="CryptographicTools.SchnorrNIZPK.SchnorrNIZKP" target="CryptographicTools.SchnorrNIZPK.SchnorrNIProof" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

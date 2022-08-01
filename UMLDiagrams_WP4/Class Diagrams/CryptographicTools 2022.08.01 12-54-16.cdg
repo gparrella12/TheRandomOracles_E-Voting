@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="CryptographicTools">
+  <ClassDiagramComponents>
+    <Class name="CryptographicHash" package="CryptographicTools" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="hashFunction" type="String" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="hash" returnType="byte[]" visibility="public" isStatic="true">
+          <Argument type="byte[]" name="input"/>
+        </Method>
+        <Method name="getHashFunction" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="setHashFunction" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="hashFunction"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SignatureScheme" package="CryptographicTools" visibility="public" xPosition="363.0" yPosition="20.0">
+      <Fields>
+        <Field name="algorithm" type="String" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="signMessage" returnType="byte[]" visibility="public" isStatic="true">
+          <Argument type="PrivateKey" name="key"/>
+          <Argument type="byte[]" name="message"/>
+        </Method>
+        <Method name="verifySignature" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="PublicKey" name="publicKey"/>
+          <Argument type="byte[]" name="message"/>
+          <Argument type="byte[]" name="messageSign"/>
+        </Method>
+        <Method name="getAlgorithm" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="setAlgorithm" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="a"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

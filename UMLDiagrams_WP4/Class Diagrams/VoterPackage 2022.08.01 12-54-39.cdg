@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="VoterPackage">
+  <ClassDiagramComponents>
+    <Class name="TestVoter" package="VoterPackage" visibility="public" xPosition="511.0" yPosition="10.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Vote" package="VoterPackage" visibility="public" xPosition="79.0" yPosition="10.0">
+      <Fields>
+        <Field name="encVote" type="ElGamalCipherText" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="ElGamalCipherText" name="encVote"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getEncVote" returnType="ElGamalCipherText" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="VoteProof" package="VoterPackage" visibility="public" xPosition="330.0" yPosition="10.0">
+      <Fields>
+        <Field name="proof" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Vote" name="v"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Voter" package="VoterPackage" visibility="public" xPosition="89.0" yPosition="252.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="publicSigKey" type="PublicKey" visibility="private" isFinal="true"/>
+        <Field name="privateSigKey" type="PrivateKey" visibility="private" isFinal="true"/>
+        <Field name="certificate" type="X509Certificate" visibility="private"/>
+        <Field name="voted" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="PrivateKey" name="privateSigKey"/>
+          <Argument type="X509Certificate" name="certificate"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="certificateFileName"/>
+          <Argument type="String" name="privSigKeyFileName"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="makeVote" returnType="Vote" visibility="public">
+          <Argument type="BigInteger" name="preference"/>
+          <Argument type="BigInteger" name="votingKey"/>
+          <Argument type="CyclicGroupParameters" name="param"/>
+        </Method>
+        <Method name="makeProof" returnType="VoteProof" visibility="public">
+          <Argument type="Vote" name="v"/>
+        </Method>
+        <Method name="signVote" returnType="byte[]" visibility="public">
+          <Argument type="Vote" name="v"/>
+          <Argument type="VoteProof" name="vp"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getPublicSigKey" returnType="PublicKey" visibility="public"/>
+        <Method name="getPrivateSigKey" returnType="PrivateKey" visibility="public"/>
+        <Method name="getCertificate" returnType="X509Certificate" visibility="public"/>
+        <Method name="hasVoted" returnType="boolean" visibility="public"/>
+        <Method name="setVoted" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="VoterPackage.Voter" target="VoterPackage.Vote" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="VoterPackage.Voter" target="VoterPackage.VoteProof" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

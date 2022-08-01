@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="CryptographicTools.ElGamalHomomorphic">
+  <ClassDiagramComponents>
+    <Class name="CyclicGroupParameters" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="57.0" yPosition="36.0">
+      <Fields>
+        <Field name="g" type="BigInteger" visibility="private"/>
+        <Field name="p" type="BigInteger" visibility="private"/>
+        <Field name="q" type="BigInteger" visibility="private"/>
+        <Field name="securityParameter" type="BigInteger" visibility="private"/>
+        <Field name="instance" type="CyclicGroupParameters" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="private">
+          <Argument type="String" name="fileName"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="BigInteger" name="g"/>
+          <Argument type="BigInteger" name="p"/>
+          <Argument type="BigInteger" name="q"/>
+          <Argument type="BigInteger" name="SECURITY_PARAMETER"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getInstance" returnType="CyclicGroupParameters" visibility="public" isStatic="true"/>
+        <Method name="importFromFile" returnType="void" visibility="private">
+          <Argument type="String" name="fileName"/>
+        </Method>
+        <Method name="getG" returnType="BigInteger" visibility="public"/>
+        <Method name="getP" returnType="BigInteger" visibility="public"/>
+        <Method name="getQ" returnType="BigInteger" visibility="public"/>
+        <Method name="getSecurityParameter" returnType="BigInteger" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ElGamalCipherText" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="325.0" yPosition="685.0">
+      <Fields>
+        <Field name="u" type="BigInteger" visibility="private" isFinal="true"/>
+        <Field name="v" type="BigInteger" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="BigInteger" name="u"/>
+          <Argument type="BigInteger" name="v"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getU" returnType="BigInteger" visibility="public"/>
+        <Method name="getV" returnType="BigInteger" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ElGamalKeyPair" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="933.0" yPosition="475.0">
+      <Fields>
+        <Field name="secretKey" type="BigInteger" visibility="private" isFinal="true"/>
+        <Field name="publicKey" type="BigInteger" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getPublicKey" returnType="BigInteger" visibility="public"/>
+        <Method name="getSecretKey" returnType="BigInteger" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ExponentialElGamal" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="57.0" yPosition="475.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="encrypt" returnType="ElGamalCipherText" visibility="public" isStatic="true">
+          <Argument type="CyclicGroupParameters" name="param"/>
+          <Argument type="BigInteger" name="pk"/>
+          <Argument type="BigInteger" name="m"/>
+        </Method>
+        <Method name="decrypt" returnType="BigInteger" visibility="public" isStatic="true">
+          <Argument type="CyclicGroupParameters" name="param"/>
+          <Argument type="ElGamalCipherText" name="cipherText"/>
+          <Argument type="BigInteger" name="sk"/>
+        </Method>
+        <Method name="aggregate" returnType="ElGamalCipherText" visibility="public" isStatic="true">
+          <Argument type="CyclicGroupParameters" name="param"/>
+          <Argument type="ElGamalCipherText" name="cipherText1"/>
+          <Argument type="ElGamalCipherText" name="cipherText2"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ExponentialElGamalTest" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="758.0" yPosition="36.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="GenerateParameters" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="758.0" yPosition="173.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="CryptographicTools.ElGamalHomomorphic.ExponentialElGamal" target="CryptographicTools.ElGamalHomomorphic.ElGamalCipherText" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters" target="CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="instance" source="CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters" target="CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

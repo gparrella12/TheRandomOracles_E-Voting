@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="AuthorityPackage">
+  <ClassDiagramComponents>
+    <Class name="Authority" package="AuthorityPackage" visibility="public" xPosition="65.0" yPosition="26.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private" isFinal="true"/>
+        <Field name="privateEncKey" type="BigInteger" visibility="private" isFinal="true"/>
+        <Field name="publicEncKey" type="BigInteger" visibility="private" isFinal="true"/>
+        <Field name="privateSigKey" type="PrivateKey" visibility="private" isFinal="true"/>
+        <Field name="publicSigKey" type="PublicKey" visibility="private" isFinal="true"/>
+        <Field name="certificate" type="X509Certificate" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPublicEncKey" returnType="BigInteger" visibility="public"/>
+        <Method name="getPrivateEncKey" returnType="BigInteger" visibility="public"/>
+        <Method name="getPublicSigKey" returnType="PublicKey" visibility="public"/>
+        <Method name="getPrivateSigKey" returnType="PrivateKey" visibility="public"/>
+        <Method name="getCertificate" returnType="X509Certificate" visibility="public"/>
+        <Method name="getName" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="AuthorityManagement" package="AuthorityPackage" visibility="public" xPosition="340.0" yPosition="45.0">
+      <Fields>
+        <Field name="single_instance" type="AuthorityManagement" visibility="private" isStatic="true"/>
+        <Field name="authorityList" type="List&lt;Authority&gt;" visibility="private" isFinal="true"/>
+        <Field name="votingKey" type="BigInteger" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="private"/>
+      </Constructors>
+      <Methods>
+        <Method name="getInstance" returnType="AuthorityManagement" visibility="public" isStatic="true"/>
+        <Method name="getVotingKey" returnType="BigInteger" visibility="public"/>
+        <Method name="generateVotingKey" returnType="void" visibility="public"/>
+        <Method name="validateVote" returnType="boolean" visibility="public">
+          <Argument type="Voter" name="voter"/>
+          <Argument type="Vote" name="vote"/>
+          <Argument type="VoteProof" name="vp"/>
+          <Argument type="byte[]" name="signVote"/>
+        </Method>
+        <Method name="getAuthorityList" returnType="List&lt;Authority&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="AuthorityShareProof" package="AuthorityPackage" visibility="public" xPosition="839.0" yPosition="45.0">
+      <Fields>
+        <Field name="proof" type="String" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Authority" name="a"/>
+          <Argument type="ElGamalCipherText" name="c"/>
+          <Argument type="BigInteger" name="share"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Enum name="AuthorityName" package="AuthorityPackage" visibility="public" xPosition="897.0" yPosition="234.0">
+      <Literals>
+        <Literal name="Abruzzo"/>
+        <Literal name="Basilicata"/>
+        <Literal name="Calabria"/>
+        <Literal name="Campania"/>
+        <Literal name="Emilia_Romagna"/>
+        <Literal name="Friuli_Venezia_Giulia"/>
+        <Literal name="Lazio"/>
+        <Literal name="Liguria"/>
+        <Literal name="Lombardia"/>
+        <Literal name="Marche"/>
+        <Literal name="Molise"/>
+        <Literal name="Piemonte"/>
+        <Literal name="Puglia"/>
+        <Literal name="Sardegna"/>
+        <Literal name="Sicilia"/>
+        <Literal name="Toscana"/>
+        <Literal name="Trentino_Alto_Adige"/>
+        <Literal name="Umbria"/>
+        <Literal name="Valle_d_Aosta"/>
+        <Literal name="Veneto"/>
+        <Literal name="Ministero"/>
+      </Literals>
+    </Enum>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="AuthorityPackage.AuthorityManagement" target="AuthorityPackage.Authority" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="single_instance" source="AuthorityPackage.AuthorityManagement" target="AuthorityPackage.AuthorityManagement" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="authorityList" source="AuthorityPackage.AuthorityManagement" target="AuthorityPackage.Authority" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Authority&gt;"/>
+    <UseRelation source="AuthorityPackage.AuthorityManagement" target="AuthorityPackage.AuthorityManagement" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
