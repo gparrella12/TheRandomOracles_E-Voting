@@ -34,7 +34,7 @@ public class Authority implements Serializable {
      * certificate, previously generated, is imported and from it are read the
      * public and private signature keys.
      *
-     * @param name of the authority
+     * @param name Name of the authority
      */
     public Authority(String name) {
         this.name = name;
