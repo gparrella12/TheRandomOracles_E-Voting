@@ -88,7 +88,7 @@ public class SignatureScheme {
      * This method returns a string representation of the signature algorithm 
      * used.
      *
-     * @return a string representing the algorithm used
+     * @return a <code>String</code> representing the algorithm used.
      */
     public static String getAlgorithm() {
         return algorithm;
