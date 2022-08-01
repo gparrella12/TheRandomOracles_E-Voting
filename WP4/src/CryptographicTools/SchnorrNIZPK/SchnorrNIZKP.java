@@ -5,7 +5,6 @@ import CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters;
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-
 /**
  * This Class contains some static methods to implements the Schnorr NIZKP.
  *
@@ -27,7 +26,7 @@ public class SchnorrNIZKP {
      * @param x the secrete key associated to y
      * @param y the public key, y=g^x
      * @param param the parameters of a cyclic group of order q
-     * @return a <code> SchnorrNIProof </code> object
+     * @return a <code>SchnorrNIProof</code> object
      */
     public static SchnorrNIProof makeProof(BigInteger x, BigInteger y, CyclicGroupParameters param) {
         int securityParameter = param.getSecurityParameter().intValue();
