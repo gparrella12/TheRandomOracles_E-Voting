@@ -2,7 +2,7 @@
 
 <ClassDiagram name="CryptographicTools.ElGamalHomomorphic">
   <ClassDiagramComponents>
-    <Class name="CyclicGroupParameters" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="57.0" yPosition="36.0">
+    <Class name="CyclicGroupParameters" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="20.0" yPosition="20.0">
       <Fields>
         <Field name="g" type="BigInteger" visibility="private"/>
         <Field name="p" type="BigInteger" visibility="private"/>
@@ -13,12 +13,6 @@
       <Constructors>
         <Constructor visibility="private">
           <Argument type="String" name="fileName"/>
-        </Constructor>
-        <Constructor visibility="public">
-          <Argument type="BigInteger" name="g"/>
-          <Argument type="BigInteger" name="p"/>
-          <Argument type="BigInteger" name="q"/>
-          <Argument type="BigInteger" name="SECURITY_PARAMETER"/>
         </Constructor>
       </Constructors>
       <Methods>
@@ -32,7 +26,7 @@
         <Method name="getSecurityParameter" returnType="BigInteger" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="ElGamalCipherText" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="169.0" yPosition="646.0">
+    <Class name="ElGamalCipherText" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="320.0" yPosition="20.0">
       <Fields>
         <Field name="u" type="BigInteger" visibility="private" isFinal="true"/>
         <Field name="v" type="BigInteger" visibility="private" isFinal="true"/>
@@ -49,7 +43,7 @@
         <Method name="toString" returnType="String" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="ElGamalKeyPair" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="848.0" yPosition="401.0">
+    <Class name="ElGamalKeyPair" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="620.0" yPosition="20.0">
       <Fields>
         <Field name="secretKey" type="BigInteger" visibility="private" isFinal="true"/>
         <Field name="publicKey" type="BigInteger" visibility="private" isFinal="true"/>
@@ -62,7 +56,7 @@
         <Method name="getSecretKey" returnType="BigInteger" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="ExponentialElGamal" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="57.0" yPosition="420.0">
+    <Class name="ExponentialElGamal" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="920.0" yPosition="20.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -83,7 +77,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="ExponentialElGamalTest" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="830.0" yPosition="36.0">
+    <Class name="ExponentialElGamalTest" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="1220.0" yPosition="20.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -92,7 +86,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="GenerateParameters" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="830.0" yPosition="228.0">
+    <Class name="GenerateParameters" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="1520.0" yPosition="20.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -103,8 +97,8 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <UseRelation source="CryptographicTools.ElGamalHomomorphic.ExponentialElGamal" target="CryptographicTools.ElGamalHomomorphic.ElGamalCipherText" sourceCardinality="1..1" targetCardinality="1..1"/>
     <HasRelation name="instance" source="CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters" target="CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="CryptographicTools.ElGamalHomomorphic.ExponentialElGamal" target="CryptographicTools.ElGamalHomomorphic.ElGamalCipherText" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation source="CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters" target="CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters" sourceCardinality="1..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>
