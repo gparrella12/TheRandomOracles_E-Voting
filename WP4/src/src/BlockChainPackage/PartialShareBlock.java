@@ -47,7 +47,7 @@ public class PartialShareBlock implements Serializable {
      * <li><code> the authority</code></li>
      * </ul>
      *
-     * @param partialShare is the partial decryption share of the authority.
+     * @param partialShare the partial decryption share of the authority.
      * @param a the authority
      * @param c the initial ElGamal ciphertext.
      */
