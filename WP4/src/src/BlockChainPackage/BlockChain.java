@@ -39,7 +39,7 @@ public class BlockChain implements Serializable {
      * The content is stored in a machine readable fashion.</code></li>
      * </ul>
      *
-     * @param fileName, .txt file's name on which the content of the blockchain
+     * @param fileName .txt file's name on which the content of the blockchain
      * will be written.
      * @param filename_serial binary file's name from which the content of the
      * BlockChain will be read.
