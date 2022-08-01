@@ -44,7 +44,7 @@ public class SmartContract implements Serializable {
      * @param startElection the instant from which you can vote
      * @param endElection the instant from which you can not vote anymore
      * @param am authority management
-     * @param bcFilename the name of the file used to simulate the blockchain
+     * @param bcFilename file name used to simulate the blockchain
      */
     public SmartContract(LocalDateTime startElection, LocalDateTime endElection, AuthorityManagement am, String bcFilename) {
         this.blockchain = new BlockChain(bcFilename, "blockchain_serial");
