@@ -40,7 +40,7 @@ public class ElGamalCipherText implements Serializable {
 
     /**
      * This method returns the u value of the ciphertext (u,v)
-     * @return a BigInteger with <code>u</code> value.
+     * @return a <code>BigInteger</code> with <code>u</code> value.
      */
     public BigInteger getU() {
         return u;
@@ -48,7 +48,7 @@ public class ElGamalCipherText implements Serializable {
 
     /**
      * This method returns the v value of the ciphertext (u,v)
-     * @return a BigInteger with <code>v</code> value.
+     * @return a <code>BigInteger</code> with <code>v</code> value.
      */
     public BigInteger getV() {
         return v;
@@ -56,7 +56,7 @@ public class ElGamalCipherText implements Serializable {
 
     /**
      * This method returns a string representation of the ciphertext (u,v)
-     * @return a string that represents of the ciphertext (u,v)
+     * @return a <code>String</code> that represents of the ciphertext (u,v)
      */
     @Override
     public String toString() {
