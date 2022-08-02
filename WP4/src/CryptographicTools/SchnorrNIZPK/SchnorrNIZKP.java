@@ -2,6 +2,7 @@ package CryptographicTools.SchnorrNIZPK;
 
 import CryptographicTools.CryptographicHash;
 import CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters;
+import Utils.Utils;
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
@@ -40,9 +41,8 @@ public class SchnorrNIZKP {
         // a = g^r mod p
         BigInteger a = g.modPow(r.mod(q), p);
 
-        BigInteger toHash = new BigInteger(y.toString().concat(a.toString()));
+        BigInteger toHash = new BigInteger(Utils.append(y.toByteArray(), a.toByteArray()));
         BigInteger c = new BigInteger(CryptographicHash.hash(toHash.toByteArray())); // c = H(y || a), con y=g^x mod p  
-
         // z = r+c*x
         BigInteger z = r.add(c.multiply(x)).mod(q);
 
@@ -71,7 +71,7 @@ public class SchnorrNIZKP {
         BigInteger z = proof.getZ();
 
         // Compute the digest of y || a
-        BigInteger toHash = new BigInteger(y.toString().concat(a.toString()));
+        BigInteger toHash = new BigInteger(Utils.append(y.toByteArray(), a.toByteArray()));
 
         // c1 = H(y || a), con y=g^x mod p
         BigInteger c1 = new BigInteger(CryptographicHash.hash(toHash.toByteArray()));

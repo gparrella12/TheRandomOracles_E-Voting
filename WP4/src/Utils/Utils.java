@@ -42,4 +42,24 @@ public class Utils {
         }
         return buf.toString();
     }
+
+    /**
+     * Appends different bytes array togheter
+     *
+     * @param args the different byte array to append
+     * @return Returns appended byte array
+     */
+    public static byte[] append(byte[] ... args) {
+        int totalLenght = 0;
+        for(byte[] a  : args){
+            totalLenght += a.length;
+        }
+        byte[] c = new byte[totalLenght];
+        int index = 0;
+        for(byte[] a  : args){
+            System.arraycopy(a, 0, c, index, a.length);
+            index += a.length;
+        }
+        return c;
+    }
 }

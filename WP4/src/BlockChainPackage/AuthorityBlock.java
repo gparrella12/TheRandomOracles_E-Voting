@@ -8,6 +8,7 @@ import java.io.Serializable;
 import java.math.BigInteger;
 import java.security.PublicKey;
 import java.security.cert.X509Certificate;
+import org.apache.commons.lang3.SerializationUtils;
 
 
 
@@ -44,7 +45,7 @@ public class AuthorityBlock implements Serializable {
         this.publicSigKey = a.getPublicSigKey();
         this.certificate = a.getCertificate();
         this.proof = proof;
-        this.blockSignature = SignatureScheme.signMessage(a.getPrivateSigKey(), name.concat(publicEncKey.toString()).concat(this.publicSigKey.toString()).concat(this.proof.toString()).getBytes());
+        this.blockSignature = SignatureScheme.signMessage(a.getPrivateSigKey(),Utils.append(SerializationUtils.serialize(a),SerializationUtils.serialize(proof)));
     }
 
     /**

@@ -3,6 +3,7 @@ package VoterPackage;
 import CryptographicTools.CryptographicHash;
 import Utils.Utils;
 import java.io.Serializable;
+import org.apache.commons.lang3.SerializationUtils;
 
 /**
  * This class represents the proof that a vote is valid. That is, the sent vote
@@ -28,8 +29,8 @@ public class VoteProof implements Serializable {
      * @param v the vote
      */
     public VoteProof(Vote v) {
-
-        this.proof = Utils.toHex(CryptographicHash.hash(v.toString().getBytes()));
+        
+        this.proof = Utils.toHex(CryptographicHash.hash(SerializationUtils.serialize(v)));
 
     }
 

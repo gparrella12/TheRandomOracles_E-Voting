@@ -21,6 +21,7 @@ import CryptographicTools.ElGamalHomomorphic.ElGamalCipherText;
 import Utils.Utils;
 import java.io.Serializable;
 import java.math.BigInteger;
+import org.apache.commons.lang3.SerializationUtils;
 
 
 
@@ -45,7 +46,8 @@ public class AuthorityShareProof implements Serializable {
      * @param share the share of the authority
      */
     public AuthorityShareProof(Authority a, ElGamalCipherText c, BigInteger share) {
-        byte[] b = a.toString().concat(c.toString()).concat(share.toString()).getBytes();
+        // b = a || c || share 
+        byte[] b = Utils.append(SerializationUtils.serialize(a), SerializationUtils.serialize(c), share.toByteArray());
         this.proof = Utils.toHex(CryptographicHash.hash(b));
     }
 
