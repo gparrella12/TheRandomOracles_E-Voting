@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Utils">
+  <ClassDiagramComponents>
+    <Class name="EasyLoadFromFile" package="Utils" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="lastCrt" type="X509Certificate" visibility="private" isStatic="true"/>
+        <Field name="lastPrivSigKey" type="PrivateKey" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="loadCrt" returnType="X509Certificate" visibility="public" isStatic="true">
+          <Argument type="String" name="filename"/>
+        </Method>
+        <Method name="getLastCrt" returnType="X509Certificate" visibility="public" isStatic="true"/>
+        <Method name="loadPrivSigKey" returnType="PrivateKey" visibility="public" isStatic="true">
+          <Argument type="String" name="filename"/>
+        </Method>
+        <Method name="getLastPrivSigKey" returnType="PrivateKey" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Utils" package="Utils" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="digits" type="String" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public" isStatic="true">
+          <Argument type="byte[]" name="data"/>
+        </Method>
+        <Method name="toHex" returnType="String" visibility="public" isStatic="true">
+          <Argument type="byte[]" name="data"/>
+        </Method>
+        <Method name="append" returnType="byte[]" visibility="public" isStatic="true">
+          <Argument type="byte[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

@@ -2,7 +2,7 @@
 
 <ClassDiagram name="CryptographicTools">
   <ClassDiagramComponents>
-    <Class name="CryptographicHash" package="CryptographicTools" visibility="public" xPosition="20.0" yPosition="20.0">
+    <Class name="CryptographicHash" package="CryptographicTools" visibility="public" xPosition="82.0" yPosition="513.0">
       <Fields>
         <Field name="hashFunction" type="String" visibility="private" isStatic="true"/>
       </Fields>
@@ -17,7 +17,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="CyclicGroupParameters" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="320.0" yPosition="20.0">
+    <Class name="CyclicGroupParameters" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="1482.0" yPosition="419.0">
       <Fields>
         <Field name="g" type="BigInteger" visibility="private"/>
         <Field name="p" type="BigInteger" visibility="private"/>
@@ -47,7 +47,7 @@
         <Method name="getSecurityParameter" returnType="BigInteger" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="ElGamalCipherText" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="620.0" yPosition="20.0">
+    <Class name="ElGamalCipherText" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="997.0" yPosition="11.0">
       <Fields>
         <Field name="u" type="BigInteger" visibility="private" isFinal="true"/>
         <Field name="v" type="BigInteger" visibility="private" isFinal="true"/>
@@ -64,7 +64,7 @@
         <Method name="toString" returnType="String" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="ElGamalKeyPair" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="920.0" yPosition="20.0">
+    <Class name="ElGamalKeyPair" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="1309.0" yPosition="198.0">
       <Fields>
         <Field name="secretKey" type="BigInteger" visibility="private" isFinal="true"/>
         <Field name="publicKey" type="BigInteger" visibility="private" isFinal="true"/>
@@ -77,7 +77,7 @@
         <Method name="getSecretKey" returnType="BigInteger" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="ExponentialElGamal" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="1220.0" yPosition="20.0">
+    <Class name="ExponentialElGamal" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="1309.0" yPosition="11.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -98,7 +98,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="ExponentialElGamalTest" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="1520.0" yPosition="20.0">
+    <Class name="ExponentialElGamalTest" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="1860.0" yPosition="208.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -107,7 +107,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="GenerateParameters" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="1820.0" yPosition="20.0">
+    <Class name="GenerateParameters" package="CryptographicTools.ElGamalHomomorphic" visibility="public" xPosition="1585.0" yPosition="208.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -116,7 +116,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="ProofTest" package="CryptographicTools.SchnorrNIZPK" visibility="public" xPosition="2120.0" yPosition="20.0">
+    <Class name="ProofTest" package="CryptographicTools.SchnorrNIZPK" visibility="public" xPosition="482.0" yPosition="30.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -125,7 +125,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="SchnorrNIProof" package="CryptographicTools.SchnorrNIZPK" visibility="public" xPosition="20.0" yPosition="420.0">
+    <Class name="SchnorrNIProof" package="CryptographicTools.SchnorrNIZPK" visibility="public" xPosition="112.0" yPosition="11.0">
       <Fields>
         <Field name="a" type="BigInteger" visibility="private" isFinal="true"/>
         <Field name="c" type="BigInteger" visibility="private" isFinal="true"/>
@@ -145,7 +145,7 @@
         <Method name="toString" returnType="String" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="SchnorrNIZKP" package="CryptographicTools.SchnorrNIZPK" visibility="public" xPosition="320.0" yPosition="420.0">
+    <Class name="SchnorrNIZKP" package="CryptographicTools.SchnorrNIZPK" visibility="public" xPosition="112.0" yPosition="298.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -161,7 +161,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="SignatureScheme" package="CryptographicTools" visibility="public" xPosition="620.0" yPosition="420.0">
+    <Class name="SignatureScheme" package="CryptographicTools" visibility="public" xPosition="449.0" yPosition="513.0">
       <Fields>
         <Field name="algorithm" type="String" visibility="private" isStatic="true"/>
       </Fields>
@@ -184,9 +184,9 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <UseRelation source="CryptographicTools.SchnorrNIZPK.SchnorrNIZKP" target="CryptographicTools.SchnorrNIZPK.SchnorrNIProof" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="CryptographicTools.ElGamalHomomorphic.ExponentialElGamal" target="CryptographicTools.ElGamalHomomorphic.ElGamalCipherText" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation source="CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters" target="CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters" sourceCardinality="1..1" targetCardinality="1..1"/>
     <HasRelation name="instance" source="CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters" target="CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="CryptographicTools.SchnorrNIZPK.SchnorrNIZKP" target="CryptographicTools.SchnorrNIZPK.SchnorrNIProof" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="CryptographicTools.ElGamalHomomorphic.ExponentialElGamal" target="CryptographicTools.ElGamalHomomorphic.ElGamalCipherText" sourceCardinality="1..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>
