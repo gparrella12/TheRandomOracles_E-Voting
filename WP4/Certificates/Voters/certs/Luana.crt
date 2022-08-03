@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 27 (0x1b)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Piemonte, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Piemonte@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:42 2022 GMT
+            Not After : Aug  3 13:26:42 2023 GMT
+        Subject: CN=Luana, C=IT, ST=Italia, O=Regione Piemonte
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:1e:cb:51:a0:13:59:b5:2b:12:2d:2a:4c:ac:37:
+                    28:a9:8d:b2:ad:a7:bb:f5:d5:5b:11:d4:c4:67:54:
+                    23:cc:cd:f7:e5:f1:61:6d:da:48:a7:b4:cf:d9:14:
+                    11:a4:15:82:d4:ac:f5:21:a2:12:89:14:1a:f8:d6:
+                    4c:e2:b8:9d:b4
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:a8:3b:89:55:2a:91:24:53:8b:e5:cf:3b:62:
+         c4:8b:4d:49:a6:c0:02:87:00:4c:53:35:cc:a7:de:bb:f0:88:
+         5c:02:21:00:cf:dd:8b:a9:a4:5b:cc:a8:a4:b0:3b:e1:75:9d:
+         49:26:bc:17:78:df:28:7f:ac:7e:42:22:11:fd:69:33:94:69
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ2gAwIBAgIBGzAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBQaWVtb250ZTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNQaWVtb250ZUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjY0MloXDTIzMDgwMzEzMjY0MlowSTEOMAwGA1UEAwwFTHVhbmExCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUgUGll
+bW9udGUwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQey1GgE1m1KxItKkysNyip
+jbKtp7v11VsR1MRnVCPMzffl8WFt2kintM/ZFBGkFYLUrPUhohKJFBr41kziuJ20
+oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
+AgNJADBGAiEAqDuJVSqRJFOL5c87YsSLTUmmwAKHAExTNcyn3rvwiFwCIQDP3Yup
+pFvMqKSwO+F1nUkmvBd43yh/rH5CIhH9aTOUaQ==
+-----END CERTIFICATE-----

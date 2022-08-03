@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 45 (0x2d)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Lombardia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Lombardia@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:13 2022 GMT
+            Not After : Aug  3 13:28:13 2023 GMT
+        Subject: CN=Virgilio, C=IT, ST=Italia, O=Regione Lombardia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:5f:72:e9:7a:df:0d:dd:75:c3:0e:da:34:a6:a2:
+                    d6:21:b1:ce:9c:61:06:81:df:59:0f:19:b9:76:45:
+                    c5:78:da:bf:43:c8:35:ae:cd:91:3e:6d:a5:6c:e3:
+                    f6:10:87:e9:bc:1e:d6:fa:2e:2e:b1:d5:1c:9c:8c:
+                    de:8b:29:e0:dc
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:67:2d:fc:7c:9b:99:25:34:93:e0:22:37:83:68:
+         7e:72:6c:37:3d:df:c5:d6:9c:9e:8a:87:b8:14:2a:9d:ed:3f:
+         02:20:0d:63:4f:8a:34:c2:dd:20:d1:36:c8:6f:d5:55:47:3e:
+         ae:a6:8f:a7:fb:7a:e0:d0:a6:45:5a:a3:f0:8a:77:2b
+-----BEGIN CERTIFICATE-----
+MIIB/DCCAaOgAwIBAgIBLTAKBggqhkjOPQQDAjCBnTEaMBgGA1UEAwwRUmVnaW9u
+ZSBMb21iYXJkaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNV
+BAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1
+dGhvcml0eTEjMCEGCSqGSIb3DQEJARYUTG9tYmFyZGlhQGV2b3RpbmcuaXQwHhcN
+MjIwODAzMTMyODEzWhcNMjMwODAzMTMyODEzWjBNMREwDwYDVQQDDAhWaXJnaWxp
+bzELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEaMBgGA1UECgwRUmVnaW9u
+ZSBMb21iYXJkaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAARfcul63w3ddcMO
+2jSmotYhsc6cYQaB31kPGbl2RcV42r9DyDWuzZE+baVs4/YQh+m8Htb6Li6x1Ryc
+jN6LKeDcoyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggq
+hkjOPQQDAgNHADBEAiBnLfx8m5klNJPgIjeDaH5ybDc938XWnJ6Kh7gUKp3tPwIg
+DWNPijTC3SDRNshv1VVHPq6mj6f7euDQpkVao/CKdys=
+-----END CERTIFICATE-----

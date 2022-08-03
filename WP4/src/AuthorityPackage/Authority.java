@@ -43,9 +43,9 @@ public class Authority implements Serializable {
         ElGamalKeyPair encPair = new ElGamalKeyPair();
         this.privateEncKey = encPair.getSecretKey();
         this.publicEncKey = encPair.getPublicKey();
-        this.certificate = EasyLoadFromFile.loadCrt("Certificati/Authorities/" + name + ".crt");
+        this.certificate = EasyLoadFromFile.loadCrt("Certificates/Authorities/certs/" + name + ".crt");
         this.publicSigKey = this.certificate.getPublicKey();
-        this.privateSigKey = EasyLoadFromFile.loadPrivSigKey("Certificati/Authorities/" + name + ".p8");
+        this.privateSigKey = EasyLoadFromFile.loadPrivSigKey("Certificates/Authorities/keys/" + name + ".p8");
     }
 
     /**

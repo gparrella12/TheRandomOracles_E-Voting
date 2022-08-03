@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 30 (0x1e)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Toscana, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Toscana@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:23 2022 GMT
+            Not After : Aug  3 13:27:23 2023 GMT
+        Subject: CN=Alex, C=IT, ST=Italia, O=Regione Toscana
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:f7:8a:97:00:27:f9:90:83:26:0e:1a:a2:25:fb:
+                    77:da:95:32:f0:7b:33:1b:18:93:2d:74:a9:68:50:
+                    49:60:d5:37:a6:88:39:46:5d:23:71:b1:19:93:3e:
+                    ff:18:be:a3:e4:c3:e1:88:95:61:19:c4:e3:7a:5b:
+                    05:32:5e:90:a7
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:98:25:f9:5d:04:72:02:e6:c1:3d:42:3f:80:
+         71:e7:fd:3e:be:10:50:a7:08:cd:85:4d:56:7a:8a:85:84:b7:
+         a2:02:21:00:c5:8a:aa:78:b7:91:cc:d1:e3:d9:9a:bd:af:6d:
+         3f:3e:85:70:08:52:b5:fc:67:2e:0e:e9:ad:e5:71:ba:ef:7f
+-----BEGIN CERTIFICATE-----
+MIIB9DCCAZmgAwIBAgIBHjAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBUb3NjYW5hMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWElRvc2NhbmFAZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI3MjNaFw0yMzA4MDMxMzI3MjNaMEcxDTALBgNVBAMMBEFsZXgxCzAJBgNV
+BAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoMD1JlZ2lvbmUgVG9zY2Fu
+YTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABPeKlwAn+ZCDJg4aoiX7d9qVMvB7
+MxsYky10qWhQSWDVN6aIOUZdI3GxGZM+/xi+o+TD4YiVYRnE43pbBTJekKejIzAh
+MA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMCA0kA
+MEYCIQCYJfldBHIC5sE9Qj+Acef9Pr4QUKcIzYVNVnqKhYS3ogIhAMWKqni3kczR
+49mava9tPz6FcAhStfxnLg7preVxuu9/
+-----END CERTIFICATE-----

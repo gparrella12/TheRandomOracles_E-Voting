@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 23 (0x17)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Lombardia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Lombardia@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:53 2022 GMT
+            Not After : Aug  3 13:26:53 2023 GMT
+        Subject: CN=Williams, C=IT, ST=Italia, O=Regione Lombardia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:15:2f:2f:53:95:2e:aa:ac:61:d2:21:11:e9:f6:
+                    8f:6b:cc:a1:f9:ff:d3:8d:7c:9c:1d:05:bc:2c:3b:
+                    84:23:94:f0:1b:79:29:46:bc:3c:e7:77:c1:ee:9b:
+                    ea:0c:5d:fb:c2:ac:80:6c:d4:5c:72:de:fa:e3:a7:
+                    5e:ad:ac:45:57
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:da:67:5a:18:14:4d:a0:0b:aa:2c:99:ba:56:
+         c1:e4:12:74:c3:0e:11:6e:33:9d:cc:90:6b:dd:69:1d:d3:c3:
+         17:02:20:41:0e:bd:a0:85:ae:35:7d:fd:a3:2c:89:a8:3b:6a:
+         e4:7b:d9:f2:e6:6a:5c:66:64:c6:dc:52:f7:81:ae:da:f3
+-----BEGIN CERTIFICATE-----
+MIIB/TCCAaOgAwIBAgIBFzAKBggqhkjOPQQDAjCBnTEaMBgGA1UEAwwRUmVnaW9u
+ZSBMb21iYXJkaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNV
+BAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1
+dGhvcml0eTEjMCEGCSqGSIb3DQEJARYUTG9tYmFyZGlhQGV2b3RpbmcuaXQwHhcN
+MjIwODAzMTMyNjUzWhcNMjMwODAzMTMyNjUzWjBNMREwDwYDVQQDDAhXaWxsaWFt
+czELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEaMBgGA1UECgwRUmVnaW9u
+ZSBMb21iYXJkaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQVLy9TlS6qrGHS
+IRHp9o9rzKH5/9ONfJwdBbwsO4QjlPAbeSlGvDznd8Hum+oMXfvCrIBs1Fxy3vrj
+p16trEVXoyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggq
+hkjOPQQDAgNIADBFAiEA2mdaGBRNoAuqLJm6VsHkEnTDDhFuM53MkGvdaR3TwxcC
+IEEOvaCFrjV9/aMsiag7auR72fLmalxmZMbcUveBrtrz
+-----END CERTIFICATE-----

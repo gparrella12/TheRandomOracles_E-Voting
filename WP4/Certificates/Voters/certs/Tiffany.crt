@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 37 (0x25)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Sardegna, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sardegna@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:11 2022 GMT
+            Not After : Aug  3 13:28:11 2023 GMT
+        Subject: CN=Tiffany, C=IT, ST=Italia, O=Regione Sardegna
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:d0:8c:30:54:1b:7e:58:fb:bd:8a:c0:56:af:7c:
+                    81:d4:1f:24:37:5d:68:7f:ca:58:2e:c5:9c:f5:f3:
+                    75:2f:f1:0e:90:35:b0:e3:bc:60:bc:6d:ff:1d:76:
+                    c8:74:78:25:eb:6c:3d:cf:21:47:2c:27:02:da:95:
+                    71:b6:da:b5:6b
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:1d:eb:aa:9b:63:b2:fe:34:9d:7e:28:a1:30:8e:
+         bc:fb:bf:30:4b:15:56:0d:fd:7e:8e:49:fe:a0:79:a9:8e:12:
+         02:20:2e:0a:41:13:3e:0d:b3:20:d6:8b:c6:42:2d:0b:8c:4e:
+         8b:6a:5b:28:86:b1:8a:5f:48:fc:c2:0e:28:bc:56:31
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ+gAwIBAgIBJTAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBTYXJkZWduYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNTYXJkZWduYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjgxMVoXDTIzMDgwMzEzMjgxMVowSzEQMA4GA1UEAwwHVGlmZmFueTEL
+MAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEZMBcGA1UECgwQUmVnaW9uZSBT
+YXJkZWduYTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABNCMMFQbflj7vYrAVq98
+gdQfJDddaH/KWC7FnPXzdS/xDpA1sOO8YLxt/x12yHR4JetsPc8hRywnAtqVcbba
+tWujIzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49
+BAMCA0cAMEQCIB3rqptjsv40nX4ooTCOvPu/MEsVVg39fo5J/qB5qY4SAiAuCkET
+Pg2zINaLxkItC4xOi2pbKIaxil9I/MIOKLxWMQ==
+-----END CERTIFICATE-----

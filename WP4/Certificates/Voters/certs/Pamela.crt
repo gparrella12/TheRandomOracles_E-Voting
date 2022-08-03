@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 32 (0x20)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Sardegna, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sardegna@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:57 2022 GMT
+            Not After : Aug  3 13:27:57 2023 GMT
+        Subject: CN=Pamela, C=IT, ST=Italia, O=Regione Sardegna
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:32:29:b8:dc:b3:ba:72:4c:55:1b:82:40:7d:be:
+                    96:d2:28:68:c2:e6:16:12:07:5b:e1:6e:e6:0a:5e:
+                    82:23:ed:41:2c:3c:5f:4d:fd:94:81:99:7d:b7:8c:
+                    f9:7a:35:18:2a:e1:af:0a:8a:3d:22:a1:5f:aa:ee:
+                    c6:86:a7:81:76
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:e1:24:9f:7e:b3:ec:89:71:78:dd:2e:8f:65:
+         b9:66:7c:f6:0b:a3:bb:65:e6:69:3c:a9:1d:98:ab:ad:f7:31:
+         bc:02:20:21:09:e8:4e:7f:82:71:08:0a:1a:d6:bc:6e:84:da:
+         8a:ad:14:23:6f:61:2a:7f:d9:88:db:9d:9d:65:4c:6b:32
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ6gAwIBAgIBIDAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBTYXJkZWduYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNTYXJkZWduYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjc1N1oXDTIzMDgwMzEzMjc1N1owSjEPMA0GA1UEAwwGUGFtZWxhMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRkwFwYDVQQKDBBSZWdpb25lIFNh
+cmRlZ25hMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEMim43LO6ckxVG4JAfb6W
+0ihowuYWEgdb4W7mCl6CI+1BLDxfTf2UgZl9t4z5ejUYKuGvCoo9IqFfqu7GhqeB
+dqMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDSAAwRQIhAOEkn36z7IlxeN0uj2W5Znz2C6O7ZeZpPKkdmKut9zG8AiAhCehO
+f4JxCAoa1rxuhNqKrRQjb2Eqf9mI252dZUxrMg==
+-----END CERTIFICATE-----

@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 53 (0x35)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Valle_d_Aosta, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Valle_d_Aosta@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:42 2022 GMT
+            Not After : Aug  3 13:28:42 2023 GMT
+        Subject: CN=Darlene, C=IT, ST=Italia, O=Regione Valle_d_Aosta
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:2d:0b:c0:25:bf:34:82:36:8a:7d:61:7d:81:07:
+                    02:d9:ec:64:8c:8f:d1:1e:c1:c8:e4:d4:b4:69:aa:
+                    df:54:2b:5d:80:c4:8f:12:c3:56:bd:e2:85:c6:ca:
+                    bd:4d:f1:e7:57:fe:b7:8b:ab:b8:aa:e2:f8:4f:8a:
+                    5b:33:7a:17:02
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:91:89:61:03:36:ae:cc:73:ae:0f:da:c2:71:
+         51:6c:84:0b:43:06:bd:21:24:4d:2e:3a:8d:38:42:30:82:c4:
+         10:02:20:12:99:cd:ec:26:36:d3:aa:81:a0:3b:60:3b:bc:d3:
+         e7:a9:d5:6b:d3:68:37:d5:55:dc:3b:a1:6f:a6:32:16:84
+-----BEGIN CERTIFICATE-----
+MIICCDCCAa6gAwIBAgIBNTAKBggqhkjOPQQDAjCBpTEeMBwGA1UEAwwVUmVnaW9u
+ZSBWYWxsZV9kX0Fvc3RhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgw
+FgYDVQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3Rl
+bSBhdXRob3JpdHkxJzAlBgkqhkiG9w0BCQEWGFZhbGxlX2RfQW9zdGFAZXZvdGlu
+Zy5pdDAeFw0yMjA4MDMxMzI4NDJaFw0yMzA4MDMxMzI4NDJaMFAxEDAOBgNVBAMM
+B0RhcmxlbmUxCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExHjAcBgNVBAoM
+FVJlZ2lvbmUgVmFsbGVfZF9Bb3N0YTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IA
+BC0LwCW/NII2in1hfYEHAtnsZIyP0R7ByOTUtGmq31QrXYDEjxLDVr3ihcbKvU3x
+51f+t4uruKri+E+KWzN6FwKjIzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8E
+BTADAgEDMAoGCCqGSM49BAMCA0gAMEUCIQCRiWEDNq7Mc64P2sJxUWyEC0MGvSEk
+TS46jThCMILEEAIgEpnN7CY206qBoDtgO7zT56nVa9NoN9VV3Duhb6YyFoQ=
+-----END CERTIFICATE-----

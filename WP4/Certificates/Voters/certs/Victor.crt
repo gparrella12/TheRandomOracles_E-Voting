@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 10 (0xa)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Sicilia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sicilia@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:39 2022 GMT
+            Not After : Aug  3 13:26:39 2023 GMT
+        Subject: CN=Victor, C=IT, ST=Italia, O=Regione Sicilia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:34:57:80:d4:0d:95:ca:5d:81:90:e0:33:cc:76:
+                    b8:31:aa:68:33:fa:c6:c7:c8:5a:83:2d:8f:de:3b:
+                    06:f7:2e:98:db:b4:0b:f3:3b:63:71:2b:e0:1a:07:
+                    86:28:6c:d9:98:3a:1c:85:64:c3:3e:0a:1e:6e:3e:
+                    de:94:6b:a0:17
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:b6:4f:4a:10:31:2a:92:8a:ab:f7:dd:6b:a9:
+         fc:0b:1e:82:9b:c9:61:0b:d6:31:d5:47:23:3f:7a:ba:d7:58:
+         0e:02:21:00:d8:52:0e:b4:82:13:cb:d6:66:aa:c4:09:8d:c0:
+         06:d2:46:22:38:59:49:3d:03:90:d9:9a:8a:bb:63:a3:c3:41
+-----BEGIN CERTIFICATE-----
+MIIB9jCCAZugAwIBAgIBCjAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBTaWNpbGlhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWElNpY2lsaWFAZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI2MzlaFw0yMzA4MDMxMzI2MzlaMEkxDzANBgNVBAMMBlZpY3RvcjELMAkG
+A1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UECgwPUmVnaW9uZSBTaWNp
+bGlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAENFeA1A2Vyl2BkOAzzHa4Mapo
+M/rGx8hagy2P3jsG9y6Y27QL8ztjcSvgGgeGKGzZmDochWTDPgoebj7elGugF6Mj
+MCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0EAwID
+SQAwRgIhALZPShAxKpKKq/fda6n8Cx6Cm8lhC9Yx1UcjP3q611gOAiEA2FIOtIIT
+y9ZmqsQJjcAG0kYiOFlJPQOQ2ZqKu2Ojw0E=
+-----END CERTIFICATE-----

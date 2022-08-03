@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 3 (0x3)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Sicilia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sicilia@evoting.it
+        Validity
+            Not Before: Aug  3 13:25:56 2022 GMT
+            Not After : Aug  3 13:25:56 2023 GMT
+        Subject: CN=Penelope, C=IT, ST=Italia, O=Regione Sicilia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:aa:40:0f:d5:ed:4b:c6:41:9d:d6:d1:a0:3f:1b:
+                    ad:4f:7c:e7:d8:89:9a:57:3a:0a:2f:d9:e7:fc:3d:
+                    3b:d2:f6:20:d9:4b:d5:11:48:be:da:d9:c0:cf:f9:
+                    b0:d8:8c:0f:e6:10:c9:9a:f6:f7:c2:9b:d8:e1:cf:
+                    43:b0:fc:b9:bc
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:ea:71:99:47:3d:0a:94:a9:86:0e:99:fc:df:
+         20:f1:59:74:02:24:9b:b4:12:f8:0f:c6:70:e6:f1:d6:dd:03:
+         0a:02:20:5e:95:26:fb:fd:aa:a4:66:9f:37:b3:ac:ae:6b:7c:
+         e6:d0:4c:92:a6:c3:71:4c:6e:74:4d:b5:28:c6:38:2c:40
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZ2gAwIBAgIBAzAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBTaWNpbGlhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWElNpY2lsaWFAZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI1NTZaFw0yMzA4MDMxMzI1NTZaMEsxETAPBgNVBAMMCFBlbmVsb3BlMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQKDA9SZWdpb25lIFNp
+Y2lsaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASqQA/V7UvGQZ3W0aA/G61P
+fOfYiZpXOgov2ef8PTvS9iDZS9URSL7a2cDP+bDYjA/mEMma9vfCm9jhz0Ow/Lm8
+oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
+AgNIADBFAiEA6nGZRz0KlKmGDpn83yDxWXQCJJu0EvgPxnDm8dbdAwoCIF6VJvv9
+qqRmnzezrK5rfObQTJKmw3FMbnRNtSjGOCxA
+-----END CERTIFICATE-----

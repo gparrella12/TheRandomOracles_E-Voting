@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 11 (0xb)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Sardegna, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sardegna@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:43 2022 GMT
+            Not After : Aug  3 13:26:43 2023 GMT
+        Subject: CN=Emilia, C=IT, ST=Italia, O=Regione Sardegna
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:42:10:e1:8e:60:70:e6:46:3b:b6:c1:34:cc:17:
+                    4b:cb:aa:44:83:36:0a:de:80:0f:15:96:38:eb:3e:
+                    7f:7e:c7:b6:7f:95:ea:e2:a4:ba:bc:49:89:16:28:
+                    a1:f9:15:66:b5:8a:10:92:32:b6:66:d7:db:ef:de:
+                    75:c2:8b:23:df
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:79:ad:31:b7:3a:c7:eb:10:1b:b9:75:e6:d4:14:
+         bf:23:02:af:36:b9:03:91:8f:ed:08:ed:a5:cc:bb:a8:37:86:
+         02:21:00:d3:78:65:a9:d4:a5:b5:bd:90:72:f2:f2:5b:e7:79:
+         07:88:a3:31:f3:ab:ce:e7:91:4c:1a:85:34:84:33:39:ea
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ6gAwIBAgIBCzAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBTYXJkZWduYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNTYXJkZWduYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjY0M1oXDTIzMDgwMzEzMjY0M1owSjEPMA0GA1UEAwwGRW1pbGlhMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRkwFwYDVQQKDBBSZWdpb25lIFNh
+cmRlZ25hMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEQhDhjmBw5kY7tsE0zBdL
+y6pEgzYK3oAPFZY46z5/fse2f5Xq4qS6vEmJFiih+RVmtYoQkjK2Ztfb7951wosj
+36MjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDSAAwRQIgea0xtzrH6xAbuXXm1BS/IwKvNrkDkY/tCO2lzLuoN4YCIQDTeGWp
+1KW1vZBy8vJb53kHiKMx86vO55FMGoU0hDM56g==
+-----END CERTIFICATE-----

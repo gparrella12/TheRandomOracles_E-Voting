@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 50 (0x32)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Piemonte, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Piemonte@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:36 2022 GMT
+            Not After : Aug  3 13:27:36 2023 GMT
+        Subject: CN=Eunice, C=IT, ST=Italia, O=Regione Piemonte
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:b2:5f:70:9a:06:bf:15:7a:50:77:3b:ca:10:e7:
+                    c2:68:68:1e:73:9f:4d:58:1b:4c:98:e2:2a:06:be:
+                    c5:ca:d6:12:8d:d3:69:f4:12:76:b2:7a:00:c3:56:
+                    0d:f6:f8:27:e6:8f:bb:c5:21:d4:13:48:d1:9e:8e:
+                    e5:39:9a:70:2d
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:a6:0f:f8:8a:0b:63:04:0a:fd:e6:8b:f7:3e:
+         50:83:2a:62:3f:85:d3:3d:7b:f0:88:2b:48:10:ee:72:e2:e0:
+         8a:02:20:55:08:0d:24:3f:4e:a5:0f:ce:48:c0:3b:a0:a3:18:
+         62:3b:b5:57:82:8e:48:fc:fb:90:ed:a3:a9:27:40:89:4f
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ6gAwIBAgIBMjAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBQaWVtb250ZTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNQaWVtb250ZUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjczNloXDTIzMDgwMzEzMjczNlowSjEPMA0GA1UEAwwGRXVuaWNlMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRkwFwYDVQQKDBBSZWdpb25lIFBp
+ZW1vbnRlMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsl9wmga/FXpQdzvKEOfC
+aGgec59NWBtMmOIqBr7FytYSjdNp9BJ2snoAw1YN9vgn5o+7xSHUE0jRno7lOZpw
+LaMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDSAAwRQIhAKYP+IoLYwQK/eaL9z5QgypiP4XTPXvwiCtIEO5y4uCKAiBVCA0k
+P06lD85IwDugoxhiO7VXgo5I/PuQ7aOpJ0CJTw==
+-----END CERTIFICATE-----

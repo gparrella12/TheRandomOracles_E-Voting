@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 47 (0x2f)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Lombardia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Lombardia@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:16 2022 GMT
+            Not After : Aug  3 13:28:16 2023 GMT
+        Subject: CN=Geneva, C=IT, ST=Italia, O=Regione Lombardia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:d1:11:55:a3:9e:a0:de:d3:64:d3:d4:ff:c2:eb:
+                    d5:c5:85:ec:f2:0a:cd:b1:9a:2e:01:31:1e:10:dc:
+                    37:6b:e1:ec:26:a4:0d:ab:c3:d6:25:31:0e:8f:fc:
+                    c1:ae:7f:42:fe:ac:e5:cc:c2:8d:b0:4e:f3:eb:81:
+                    ee:1c:fb:49:fe
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:ba:89:47:dd:0a:f4:16:94:20:2a:53:07:07:
+         0f:6e:c3:ca:9c:e4:ff:60:e5:ca:b1:02:ce:43:44:97:42:18:
+         bf:02:21:00:d9:0c:ab:24:9a:61:99:57:d9:88:c7:b6:82:7e:
+         6b:c9:3a:67:72:e3:42:af:fb:2d:f4:52:85:a0:6e:e6:8b:6a
+-----BEGIN CERTIFICATE-----
+MIIB/DCCAaGgAwIBAgIBLzAKBggqhkjOPQQDAjCBnTEaMBgGA1UEAwwRUmVnaW9u
+ZSBMb21iYXJkaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNV
+BAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1
+dGhvcml0eTEjMCEGCSqGSIb3DQEJARYUTG9tYmFyZGlhQGV2b3RpbmcuaXQwHhcN
+MjIwODAzMTMyODE2WhcNMjMwODAzMTMyODE2WjBLMQ8wDQYDVQQDDAZHZW5ldmEx
+CzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGjAYBgNVBAoMEVJlZ2lvbmUg
+TG9tYmFyZGlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE0RFVo56g3tNk09T/
+wuvVxYXs8grNsZouATEeENw3a+HsJqQNq8PWJTEOj/zBrn9C/qzlzMKNsE7z64Hu
+HPtJ/qMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZI
+zj0EAwIDSQAwRgIhALqJR90K9BaUICpTBwcPbsPKnOT/YOXKsQLOQ0SXQhi/AiEA
+2QyrJJphmVfZiMe2gn5ryTpncuNCr/st9FKFoG7mi2o=
+-----END CERTIFICATE-----

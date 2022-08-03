@@ -1,0 +1,46 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 19 (0x13)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Ministero dellInterno, C=IT, ST=Italia, L=ROMA, O=E-Voting system, OU=E-Voting system authority/emailAddress=ministero@evoting.it
+        Validity
+            Not Before: Aug  3 13:24:18 2022 GMT
+            Not After : Aug  3 13:24:18 2023 GMT
+        Subject: CN=Regione Sardegna, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sardegna@evoting.it
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:94:48:4c:0a:bf:17:86:c7:3e:83:31:4c:53:14:
+                    77:23:ac:b1:35:af:52:f9:73:06:d3:b6:65:07:20:
+                    b1:43:b7:0a:5e:e8:60:b6:44:39:42:08:d3:bc:6c:
+                    b5:cd:c1:6f:cb:92:0c:66:ce:a0:95:ef:c7:71:7a:
+                    3f:07:52:b2:84
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:2
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:b6:a7:bc:31:e3:79:fc:77:4c:23:b9:d1:82:
+         29:be:d4:86:f7:6a:0b:d1:c4:08:2d:6c:bc:16:a4:85:a3:f6:
+         48:02:20:0b:40:2f:18:9c:5c:d6:6b:cb:68:42:cf:dc:f7:73:
+         8b:6d:9b:41:29:04:f2:d0:38:fc:55:10:1f:61:b5:6a:81
+-----BEGIN CERTIFICATE-----
+MIICYjCCAgigAwIBAgIBEzAKBggqhkjOPQQDAjCBsDEeMBwGA1UEAwwVTWluaXN0
+ZXJvIGRlbGxJbnRlcm5vMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMQ0w
+CwYDVQQHDARST01BMRgwFgYDVQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsM
+GUUtVm90aW5nIHN5c3RlbSBhdXRob3JpdHkxIzAhBgkqhkiG9w0BCQEWFG1pbmlz
+dGVyb0Bldm90aW5nLml0MB4XDTIyMDgwMzEzMjQxOFoXDTIzMDgwMzEzMjQxOFow
+gZsxGTAXBgNVBAMMEFJlZ2lvbmUgU2FyZGVnbmExCzAJBgNVBAYTAklUMQ8wDQYD
+VQQIDAZJdGFsaWExGDAWBgNVBAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZ
+RS1Wb3Rpbmcgc3lzdGVtIGF1dGhvcml0eTEiMCAGCSqGSIb3DQEJARYTU2FyZGVn
+bmFAZXZvdGluZy5pdDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJRITAq/F4bH
+PoMxTFMUdyOssTWvUvlzBtO2ZQcgsUO3Cl7oYLZEOUII07xstc3Bb8uSDGbOoJXv
+x3F6PwdSsoSjJjAkMA4GA1UdDwEB/wQEAwIFoDASBgNVHRMBAf8ECDAGAQH/AgEC
+MAoGCCqGSM49BAMCA0gAMEUCIQC2p7wx43n8d0wjudGCKb7UhvdqC9HECC1svBak
+haP2SAIgC0AvGJxc1mvLaELP3Pdzi22bQSkE8tA4/FUQH2G1aoE=
+-----END CERTIFICATE-----

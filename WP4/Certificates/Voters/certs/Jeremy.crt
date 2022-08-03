@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 24 (0x18)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Piemonte, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Piemonte@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:38 2022 GMT
+            Not After : Aug  3 13:26:38 2023 GMT
+        Subject: CN=Jeremy, C=IT, ST=Italia, O=Regione Piemonte
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:86:4e:68:39:e5:10:81:65:dc:7a:56:74:26:64:
+                    c7:d7:33:c0:72:39:84:1b:7d:00:5e:cb:4f:41:0b:
+                    9c:8d:ec:a5:80:65:9c:9c:2f:3b:7e:4a:c0:fa:be:
+                    46:da:4b:5a:f4:5e:65:53:2a:91:fa:59:43:dc:d1:
+                    3c:98:44:d1:1b
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:76:07:61:c6:86:65:a7:a8:df:0d:bd:86:93:c0:
+         94:1e:28:c1:55:79:c6:a5:ba:1e:6a:42:6e:16:cc:86:f3:29:
+         02:20:62:dc:84:96:89:6c:2f:92:44:5f:8c:54:40:f8:d0:cf:
+         f8:53:1f:a0:17:4f:64:4e:11:21:16:b9:d0:a4:01:08
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZ6gAwIBAgIBGDAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBQaWVtb250ZTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNQaWVtb250ZUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjYzOFoXDTIzMDgwMzEzMjYzOFowSjEPMA0GA1UEAwwGSmVyZW15MQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRkwFwYDVQQKDBBSZWdpb25lIFBp
+ZW1vbnRlMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEhk5oOeUQgWXcelZ0JmTH
+1zPAcjmEG30AXstPQQucjeylgGWcnC87fkrA+r5G2kta9F5lUyqR+llD3NE8mETR
+G6MjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDRwAwRAIgdgdhxoZlp6jfDb2Gk8CUHijBVXnGpboeakJuFsyG8ykCIGLchJaJ
+bC+SRF+MVED40M/4Ux+gF09kThEhFrnQpAEI
+-----END CERTIFICATE-----

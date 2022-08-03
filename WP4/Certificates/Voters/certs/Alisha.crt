@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 49 (0x31)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Lombardia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Lombardia@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:26 2022 GMT
+            Not After : Aug  3 13:28:26 2023 GMT
+        Subject: CN=Alisha, C=IT, ST=Italia, O=Regione Lombardia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:95:39:07:6d:0e:f9:d1:bd:62:87:e9:b3:13:56:
+                    08:51:d4:bf:7e:ff:27:5c:54:a8:68:16:c4:2b:8e:
+                    92:e0:02:ec:4d:03:a1:79:0e:10:a6:f9:98:08:62:
+                    f4:12:3c:80:24:b0:0d:ba:e6:d4:2a:2e:22:64:a0:
+                    9e:6d:3f:64:9a
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:4d:5d:32:cf:a1:7b:47:16:03:c9:df:2f:94:62:
+         52:a5:55:bf:b8:f9:7c:80:21:23:d8:3e:ef:7e:6a:23:8a:70:
+         02:20:0e:bd:07:a7:b2:c5:d6:cf:d0:7f:07:3a:e1:b4:53:da:
+         aa:c7:9f:3a:ed:76:19:a9:71:86:a8:7e:b7:e4:8b:ac
+-----BEGIN CERTIFICATE-----
+MIIB+jCCAaGgAwIBAgIBMTAKBggqhkjOPQQDAjCBnTEaMBgGA1UEAwwRUmVnaW9u
+ZSBMb21iYXJkaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNV
+BAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1
+dGhvcml0eTEjMCEGCSqGSIb3DQEJARYUTG9tYmFyZGlhQGV2b3RpbmcuaXQwHhcN
+MjIwODAzMTMyODI2WhcNMjMwODAzMTMyODI2WjBLMQ8wDQYDVQQDDAZBbGlzaGEx
+CzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGjAYBgNVBAoMEVJlZ2lvbmUg
+TG9tYmFyZGlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAElTkHbQ750b1ih+mz
+E1YIUdS/fv8nXFSoaBbEK46S4ALsTQOheQ4QpvmYCGL0EjyAJLANuubUKi4iZKCe
+bT9kmqMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZI
+zj0EAwIDRwAwRAIgTV0yz6F7RxYDyd8vlGJSpVW/uPl8gCEj2D7vfmojinACIA69
+B6eyxdbP0H8HOuG0U9qqx5867XYZqXGGqH635Ius
+-----END CERTIFICATE-----

@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 4 (0x4)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Calabria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Calabria@evoting.it
+        Validity
+            Not Before: Aug  3 13:25:48 2022 GMT
+            Not After : Aug  3 13:25:48 2023 GMT
+        Subject: CN=Moises, C=IT, ST=Italia, O=Regione Calabria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:f9:6c:f4:8e:13:6b:d9:08:16:01:f7:b5:aa:d8:
+                    73:69:94:73:b7:83:1c:27:ab:0b:24:89:cf:c0:c1:
+                    7f:8a:ce:9f:8f:9c:86:00:c1:e8:0f:06:ef:0d:73:
+                    db:04:51:51:65:10:b2:47:c1:32:36:1b:4d:22:c7:
+                    76:a9:23:4e:b4
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:af:16:94:63:b4:b7:0c:bb:04:39:1d:39:e2:
+         b8:61:70:c5:b9:c1:4e:2d:c4:c1:c2:b7:bd:46:dc:9d:b5:3a:
+         11:02:20:16:fc:a3:14:de:69:01:b1:c5:60:c1:86:d3:e6:7c:
+         3e:25:6e:41:a2:6e:d7:cb:f8:bb:22:7c:4d:93:5a:6f:cb
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ6gAwIBAgIBBDAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYWxhYnJpYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYWxhYnJpYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjU0OFoXDTIzMDgwMzEzMjU0OFowSjEPMA0GA1UEAwwGTW9pc2VzMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRkwFwYDVQQKDBBSZWdpb25lIENh
+bGFicmlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE+Wz0jhNr2QgWAfe1qthz
+aZRzt4McJ6sLJInPwMF/is6fj5yGAMHoDwbvDXPbBFFRZRCyR8EyNhtNIsd2qSNO
+tKMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDSAAwRQIhAK8WlGO0twy7BDkdOeK4YXDFucFOLcTBwre9RtydtToRAiAW/KMU
+3mkBscVgwYbT5nw+JW5Bom7Xy/i7InxNk1pvyw==
+-----END CERTIFICATE-----

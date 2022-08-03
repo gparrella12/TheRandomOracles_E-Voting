@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 19 (0x13)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Calabria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Calabria@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:48 2022 GMT
+            Not After : Aug  3 13:26:48 2023 GMT
+        Subject: CN=Savannah, C=IT, ST=Italia, O=Regione Calabria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:90:a2:dd:9a:97:19:8d:e9:c3:a1:02:d2:ef:97:
+                    2a:5e:0a:00:23:98:d0:65:d8:18:00:84:5f:fd:ba:
+                    63:95:88:50:a4:5f:17:dd:ca:25:4b:d1:fb:56:8a:
+                    25:2b:15:7d:4b:59:db:65:ef:0b:1e:70:b8:34:fb:
+                    73:bd:d3:3b:ed
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:82:ce:da:5a:20:a5:04:07:30:60:ea:30:35:
+         08:6b:fb:d3:c0:7b:87:e1:8c:14:e1:12:60:25:9b:f1:c2:ad:
+         2a:02:21:00:c5:43:68:ac:e7:d7:d4:fa:c5:a5:11:5f:7d:0a:
+         ed:c5:7f:e5:52:82:24:ce:0d:f9:64:ea:19:54:5a:bd:62:47
+-----BEGIN CERTIFICATE-----
+MIIB+zCCAaCgAwIBAgIBEzAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYWxhYnJpYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYWxhYnJpYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjY0OFoXDTIzMDgwMzEzMjY0OFowTDERMA8GA1UEAwwIU2F2YW5uYWgx
+CzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUg
+Q2FsYWJyaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASQot2alxmN6cOhAtLv
+lypeCgAjmNBl2BgAhF/9umOViFCkXxfdyiVL0ftWiiUrFX1LWdtl7wsecLg0+3O9
+0zvtoyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjO
+PQQDAgNJADBGAiEAgs7aWiClBAcwYOowNQhr+9PAe4fhjBThEmAlm/HCrSoCIQDF
+Q2is59fU+sWlEV99Cu3Ff+VSgiTODflk6hlUWr1iRw==
+-----END CERTIFICATE-----

@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 17 (0x11)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Lombardia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Lombardia@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:41 2022 GMT
+            Not After : Aug  3 13:26:41 2023 GMT
+        Subject: CN=Jackie, C=IT, ST=Italia, O=Regione Lombardia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:32:54:b9:69:60:75:10:3c:95:cc:54:f1:2b:5a:
+                    8b:80:58:b2:cd:a7:9f:8b:2e:d0:5a:bd:18:9a:a8:
+                    6c:e4:8d:e7:51:67:81:d1:93:c0:3a:8a:5d:a4:6d:
+                    b4:33:6b:c2:da:41:aa:b6:1c:cc:02:8d:9b:e5:51:
+                    12:2b:3c:83:0a
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:06:b5:d3:2c:e1:10:fe:06:8d:a1:27:08:9a:21:
+         0d:3f:e6:8b:00:6a:b7:09:5a:65:9b:50:12:2d:ed:22:58:52:
+         02:21:00:a3:e3:f1:3a:13:84:4d:bd:f1:a0:d3:1f:c3:92:bd:
+         51:7a:86:d9:3e:c5:d5:c5:65:57:cb:38:e7:58:b4:ea:26
+-----BEGIN CERTIFICATE-----
+MIIB+zCCAaGgAwIBAgIBETAKBggqhkjOPQQDAjCBnTEaMBgGA1UEAwwRUmVnaW9u
+ZSBMb21iYXJkaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNV
+BAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1
+dGhvcml0eTEjMCEGCSqGSIb3DQEJARYUTG9tYmFyZGlhQGV2b3RpbmcuaXQwHhcN
+MjIwODAzMTMyNjQxWhcNMjMwODAzMTMyNjQxWjBLMQ8wDQYDVQQDDAZKYWNraWUx
+CzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGjAYBgNVBAoMEVJlZ2lvbmUg
+TG9tYmFyZGlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEMlS5aWB1EDyVzFTx
+K1qLgFiyzaefiy7QWr0Ymqhs5I3nUWeB0ZPAOopdpG20M2vC2kGqthzMAo2b5VES
+KzyDCqMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZI
+zj0EAwIDSAAwRQIgBrXTLOEQ/gaNoScImiENP+aLAGq3CVplm1ASLe0iWFICIQCj
+4/E6E4RNvfGg0x/Dkr1ReobZPsXVxWVXyzjnWLTqJg==
+-----END CERTIFICATE-----

@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 56 (0x38)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Campania, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Campania@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:42 2022 GMT
+            Not After : Aug  3 13:28:42 2023 GMT
+        Subject: CN=Ellen, C=IT, ST=Italia, O=Regione Campania
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:13:10:c6:3c:a4:92:fd:e0:e0:fe:b5:b1:d3:c0:
+                    18:72:69:a7:5a:b2:e2:af:c8:e1:bb:1f:78:cc:c4:
+                    03:81:23:5f:09:7f:25:28:f5:61:4f:b0:61:38:29:
+                    c0:49:ba:8e:0a:7b:53:14:04:20:e9:e4:bc:86:35:
+                    a0:97:81:e2:07
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:bd:80:7b:b8:d0:86:9e:da:bb:d9:65:dc:d1:
+         d7:f9:63:d8:83:9f:af:95:ad:86:d1:a9:10:12:dd:d8:9d:36:
+         ac:02:20:6a:9a:30:52:91:0f:0c:a9:19:bf:79:a5:71:b4:73:
+         15:f0:db:33:6b:9b:f3:29:83:60:fd:cf:60:57:65:4c:b4
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZ2gAwIBAgIBODAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYW1wYW5pYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYW1wYW5pYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjg0MloXDTIzMDgwMzEzMjg0MlowSTEOMAwGA1UEAwwFRWxsZW4xCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUgQ2Ft
+cGFuaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQTEMY8pJL94OD+tbHTwBhy
+aadasuKvyOG7H3jMxAOBI18JfyUo9WFPsGE4KcBJuo4Ke1MUBCDp5LyGNaCXgeIH
+oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
+AgNIADBFAiEAvYB7uNCGntq72WXc0df5Y9iDn6+VrYbRqRAS3didNqwCIGqaMFKR
+DwypGb95pXG0cxXw2zNrm/Mpg2D9z2BXZUy0
+-----END CERTIFICATE-----

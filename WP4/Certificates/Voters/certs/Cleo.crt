@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 31 (0x1f)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Emilia_Romagna, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Emilia_Romagna@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:26 2022 GMT
+            Not After : Aug  3 13:27:26 2023 GMT
+        Subject: CN=Cleo, C=IT, ST=Italia, O=Regione Emilia_Romagna
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:89:d0:9e:d6:b4:42:e1:bd:c5:f3:3b:31:11:65:
+                    ae:8b:60:d8:41:a6:76:ae:64:6a:f0:d3:99:f9:cb:
+                    61:98:16:d0:42:8e:00:0f:6f:c7:b8:3b:da:aa:12:
+                    aa:68:24:39:d7:c3:51:b6:b2:06:62:0a:aa:e0:0b:
+                    ed:b2:01:01:cd
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:d5:5f:a2:21:f3:60:c7:95:0b:9b:04:69:00:
+         68:9c:10:e7:05:40:f2:b2:e6:41:4f:8d:d3:9b:49:a5:0a:78:
+         7b:02:20:76:e2:a9:17:0a:c5:c1:80:74:9e:3f:c5:7e:48:63:
+         02:ff:1e:60:98:47:c5:8d:75:40:33:5d:98:bb:44:19:40
+-----BEGIN CERTIFICATE-----
+MIICCDCCAa6gAwIBAgIBHzAKBggqhkjOPQQDAjCBpzEfMB0GA1UEAwwWUmVnaW9u
+ZSBFbWlsaWFfUm9tYWduYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEY
+MBYGA1UECgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0
+ZW0gYXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlFbWlsaWFfUm9tYWduYUBldm90
+aW5nLml0MB4XDTIyMDgwMzEzMjcyNloXDTIzMDgwMzEzMjcyNlowTjENMAsGA1UE
+AwwEQ2xlbzELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEfMB0GA1UECgwW
+UmVnaW9uZSBFbWlsaWFfUm9tYWduYTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IA
+BInQnta0QuG9xfM7MRFlrotg2EGmdq5kavDTmfnLYZgW0EKOAA9vx7g72qoSqmgk
+OdfDUbayBmIKquAL7bIBAc2jIzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8E
+BTADAgEDMAoGCCqGSM49BAMCA0gAMEUCIQDVX6Ih82DHlQubBGkAaJwQ5wVA8rLm
+QU+N05tJpQp4ewIgduKpFwrFwYB0nj/FfkhjAv8eYJhHxY11QDNdmLtEGUA=
+-----END CERTIFICATE-----

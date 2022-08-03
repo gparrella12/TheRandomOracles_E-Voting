@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 40 (0x28)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Basilicata, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Basilicata@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:28 2022 GMT
+            Not After : Aug  3 13:27:28 2023 GMT
+        Subject: CN=Dina, C=IT, ST=Italia, O=Regione Basilicata
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:9b:fb:32:2d:02:7b:10:62:fa:ff:62:26:8c:c3:
+                    e3:22:b3:08:af:8f:18:e1:81:b3:53:84:87:cf:dc:
+                    95:a1:87:93:05:14:5f:e1:e9:d0:a4:2b:98:b2:e9:
+                    7c:0b:46:b0:f8:a3:ac:a1:96:3d:50:7f:4d:d8:6e:
+                    19:a4:e1:a9:f2
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:e3:58:82:1c:82:c6:27:aa:09:7b:13:f6:62:
+         fa:3b:36:33:aa:03:94:9e:e5:11:05:46:3e:b1:c8:a2:d9:03:
+         ff:02:20:3f:be:f9:db:fd:9c:b2:9a:e3:b2:7d:a4:2e:d2:97:
+         f2:98:3f:ba:7f:4d:08:19:2a:50:e8:38:48:06:27:cf:0d
+-----BEGIN CERTIFICATE-----
+MIIB/DCCAaKgAwIBAgIBKDAKBggqhkjOPQQDAjCBnzEbMBkGA1UEAwwSUmVnaW9u
+ZSBCYXNpbGljYXRhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYD
+VQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBh
+dXRob3JpdHkxJDAiBgkqhkiG9w0BCQEWFUJhc2lsaWNhdGFAZXZvdGluZy5pdDAe
+Fw0yMjA4MDMxMzI3MjhaFw0yMzA4MDMxMzI3MjhaMEoxDTALBgNVBAMMBERpbmEx
+CzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGzAZBgNVBAoMElJlZ2lvbmUg
+QmFzaWxpY2F0YTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJv7Mi0CexBi+v9i
+JozD4yKzCK+PGOGBs1OEh8/claGHkwUUX+Hp0KQrmLLpfAtGsPijrKGWPVB/Tdhu
+GaThqfKjIzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqG
+SM49BAMCA0gAMEUCIQDjWIIcgsYnqgl7E/Zi+js2M6oDlJ7lEQVGPrHIotkD/wIg
+P7752/2csprjsn2kLtKX8pg/un9NCBkqUOg4SAYnzw0=
+-----END CERTIFICATE-----

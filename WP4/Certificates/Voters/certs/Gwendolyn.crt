@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 9 (0x9)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Abruzzo, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Abruzzo@evoting.it
+        Validity
+            Not Before: Aug  3 13:25:59 2022 GMT
+            Not After : Aug  3 13:25:59 2023 GMT
+        Subject: CN=Gwendolyn, C=IT, ST=Italia, O=Regione Abruzzo
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:16:e0:b5:b4:de:4a:d0:34:c7:78:16:c7:8c:43:
+                    89:a9:8f:ee:ef:cf:76:a7:21:d4:4e:a8:51:c7:70:
+                    08:37:e6:2e:00:f8:0a:33:09:3e:81:2e:c1:ab:35:
+                    e8:a3:78:d5:d0:d2:6b:2c:0e:63:04:a3:6c:3d:58:
+                    b1:df:7f:64:d7
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:14:6b:b1:42:99:7d:7d:d4:22:17:20:5f:b4:af:
+         f3:ee:f5:cb:b6:58:d6:1a:71:e8:48:74:29:4d:a6:2c:f5:ab:
+         02:21:00:fa:a6:02:ec:6a:11:f6:7c:80:c4:36:6d:96:3c:1b:
+         44:95:90:29:c8:3c:fc:0f:1e:be:c1:29:c4:91:95:d2:cf
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ6gAwIBAgIBCTAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBBYnJ1enpvMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWEkFicnV6em9AZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI1NTlaFw0yMzA4MDMxMzI1NTlaMEwxEjAQBgNVBAMMCUd3ZW5kb2x5bjEL
+MAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UECgwPUmVnaW9uZSBB
+YnJ1enpvMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEFuC1tN5K0DTHeBbHjEOJ
+qY/u7892pyHUTqhRx3AIN+YuAPgKMwk+gS7BqzXoo3jV0NJrLA5jBKNsPVix339k
+16MjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDSAAwRQIgFGuxQpl9fdQiFyBftK/z7vXLtljWGnHoSHQpTaYs9asCIQD6pgLs
+ahH2fIDENm2WPBtElZApyDz8Dx6+wSnEkZXSzw==
+-----END CERTIFICATE-----

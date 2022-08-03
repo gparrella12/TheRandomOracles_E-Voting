@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 18 (0x12)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Liguria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Liguria@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:28 2022 GMT
+            Not After : Aug  3 13:26:28 2023 GMT
+        Subject: CN=Trenton, C=IT, ST=Italia, O=Regione Liguria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:6c:cf:75:53:4a:70:d5:c3:af:92:8e:9b:57:37:
+                    d9:9f:fc:1a:1d:70:b5:7e:9e:a2:f9:77:88:eb:f1:
+                    19:17:71:5c:7e:12:92:eb:e6:1e:89:4c:61:c9:fb:
+                    71:0a:d8:62:18:b1:72:cd:b6:70:8a:4c:6a:e8:ab:
+                    f6:c7:75:86:47
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:6b:cd:6e:75:6d:40:2d:30:63:b1:92:c4:3c:20:
+         e0:98:4a:08:23:c6:8d:25:30:c8:e9:98:51:a9:b4:00:1d:43:
+         02:21:00:ec:ca:80:31:68:fe:2a:10:cc:2b:f6:39:ba:f9:cd:
+         e3:d9:5f:fc:49:18:fe:32:bd:ee:ba:85:b1:2c:d4:08:79
+-----BEGIN CERTIFICATE-----
+MIIB9jCCAZygAwIBAgIBEjAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBMaWd1cmlhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWEkxpZ3VyaWFAZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI2MjhaFw0yMzA4MDMxMzI2MjhaMEoxEDAOBgNVBAMMB1RyZW50b24xCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoMD1JlZ2lvbmUgTGln
+dXJpYTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABGzPdVNKcNXDr5KOm1c32Z/8
+Gh1wtX6eovl3iOvxGRdxXH4SkuvmHolMYcn7cQrYYhixcs22cIpMauir9sd1hkej
+IzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMC
+A0gAMEUCIGvNbnVtQC0wY7GSxDwg4JhKCCPGjSUwyOmYUam0AB1DAiEA7MqAMWj+
+KhDMK/Y5uvnN49lf/EkY/jK97rqFsSzUCHk=
+-----END CERTIFICATE-----

@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 9 (0x9)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Calabria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Calabria@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:13 2022 GMT
+            Not After : Aug  3 13:26:13 2023 GMT
+        Subject: CN=Lillian, C=IT, ST=Italia, O=Regione Calabria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:03:c9:0e:1c:2c:0b:07:c2:c8:b8:34:8e:8e:f7:
+                    a3:71:16:0c:f4:64:b8:ac:dc:d8:fa:53:dd:94:9d:
+                    87:d4:00:09:08:07:36:98:8c:be:d0:b5:ce:03:1e:
+                    a2:ed:e4:37:36:49:41:af:ac:f9:d3:ed:28:da:ac:
+                    ed:de:9b:40:8d
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:b8:6a:bc:d2:5c:fb:22:95:54:df:e4:5e:21:
+         6a:f2:0d:a9:c1:0b:79:50:8a:6c:01:ad:e0:3d:e4:21:e0:14:
+         f3:02:21:00:93:96:99:93:e1:86:78:bc:b7:ab:36:0d:73:ca:
+         20:29:42:89:9a:33:59:41:03:de:1a:98:0b:c8:6b:b9:59:b0
+-----BEGIN CERTIFICATE-----
+MIIB+jCCAZ+gAwIBAgIBCTAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYWxhYnJpYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYWxhYnJpYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjYxM1oXDTIzMDgwMzEzMjYxM1owSzEQMA4GA1UEAwwHTGlsbGlhbjEL
+MAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEZMBcGA1UECgwQUmVnaW9uZSBD
+YWxhYnJpYTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABAPJDhwsCwfCyLg0jo73
+o3EWDPRkuKzc2PpT3ZSdh9QACQgHNpiMvtC1zgMeou3kNzZJQa+s+dPtKNqs7d6b
+QI2jIzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49
+BAMCA0kAMEYCIQC4arzSXPsilVTf5F4havINqcELeVCKbAGt4D3kIeAU8wIhAJOW
+mZPhhni8t6s2DXPKIClCiZozWUED3hqYC8hruVmw
+-----END CERTIFICATE-----

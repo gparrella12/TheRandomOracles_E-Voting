@@ -2,6 +2,7 @@ package AuthorityPackage;
 
 import CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters;
 import CryptographicTools.SignatureScheme;
+import Utils.Utils;
 import VoterPackage.Vote;
 import VoterPackage.VoteProof;
 import VoterPackage.Voter;
@@ -9,6 +10,7 @@ import java.io.Serializable;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
+import org.apache.commons.lang3.SerializationUtils;
 
 
 
@@ -90,7 +92,7 @@ public class AuthorityManagement implements Serializable {
      * otherwise false
      */
     public boolean validateVote(Voter voter, Vote vote, VoteProof vp, byte[] signVote) {
-        return SignatureScheme.verifySignature(voter.getPublicSigKey(), vote.toString().concat(vp.toString()).getBytes(), signVote);
+        return SignatureScheme.verifySignature(voter.getPublicSigKey(), Utils.append(SerializationUtils.serialize(vote),SerializationUtils.serialize(vp)), signVote);
     }
 
     /**

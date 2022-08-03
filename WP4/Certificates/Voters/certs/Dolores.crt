@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 39 (0x27)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Veneto, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Veneto@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:57 2022 GMT
+            Not After : Aug  3 13:27:57 2023 GMT
+        Subject: CN=Dolores, C=IT, ST=Italia, O=Regione Veneto
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:15:90:bc:62:aa:79:15:0a:3f:cf:6a:10:50:94:
+                    da:65:18:95:e2:06:a3:18:10:a6:de:96:81:5b:45:
+                    b9:91:ae:87:1f:63:5c:37:61:5c:27:13:b2:82:45:
+                    5b:aa:00:51:ef:19:0f:1a:82:7c:2c:a5:76:2a:57:
+                    04:6a:8f:65:15
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:f3:12:1a:40:50:e9:a1:9c:98:29:8d:ae:19:
+         25:9a:e1:2e:bd:d5:65:7a:31:ad:e2:e9:d4:9d:3d:89:6a:fd:
+         02:02:21:00:fa:95:21:87:4c:3d:63:43:c8:e1:3a:0b:dd:1b:
+         59:6a:9c:a6:ea:54:76:22:50:9f:b1:28:d9:92:e5:b1:b1:92
+-----BEGIN CERTIFICATE-----
+MIIB9DCCAZmgAwIBAgIBJzAKBggqhkjOPQQDAjCBlzEXMBUGA1UEAwwOUmVnaW9u
+ZSBWZW5ldG8xCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoM
+D0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1dGhv
+cml0eTEgMB4GCSqGSIb3DQEJARYRVmVuZXRvQGV2b3RpbmcuaXQwHhcNMjIwODAz
+MTMyNzU3WhcNMjMwODAzMTMyNzU3WjBJMRAwDgYDVQQDDAdEb2xvcmVzMQswCQYD
+VQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRcwFQYDVQQKDA5SZWdpb25lIFZlbmV0
+bzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABBWQvGKqeRUKP89qEFCU2mUYleIG
+oxgQpt6WgVtFuZGuhx9jXDdhXCcTsoJFW6oAUe8ZDxqCfCyldipXBGqPZRWjIzAh
+MA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMCA0kA
+MEYCIQDzEhpAUOmhnJgpja4ZJZrhLr3VZXoxreLp1J09iWr9AgIhAPqVIYdMPWND
+yOE6C90bWWqcpupUdiJQn7Eo2ZLlsbGS
+-----END CERTIFICATE-----

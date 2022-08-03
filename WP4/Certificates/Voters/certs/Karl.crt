@@ -1,0 +1,45 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 49 (0x31)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Friuli_Venezia_Giulia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Friuli_Venezia_Giulia@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:43 2022 GMT
+            Not After : Aug  3 13:28:43 2023 GMT
+        Subject: CN=Karl, C=IT, ST=Italia, O=Regione Friuli_Venezia_Giulia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:12:ef:97:9b:7f:f5:61:06:64:ee:76:1d:64:92:
+                    f6:b7:64:8d:05:ef:ee:87:d4:ad:d4:4d:35:f8:62:
+                    07:a4:fd:11:32:a4:d1:be:73:4f:2b:1d:e8:2e:81:
+                    0d:20:bb:02:03:b5:bd:41:ad:7f:d9:37:6c:de:06:
+                    f1:06:2d:92:a7
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:a5:67:65:70:3a:66:38:2e:5e:8c:6d:5e:c3:
+         81:87:aa:da:47:80:3c:ae:3a:9f:d7:2a:44:50:a4:b3:cd:84:
+         d0:02:20:56:09:ae:ce:78:30:85:8e:c1:bd:51:49:91:aa:2e:
+         80:66:dc:4d:d6:78:ff:4c:60:da:3e:cb:af:e1:1f:4a:1f
+-----BEGIN CERTIFICATE-----
+MIICHTCCAcOgAwIBAgIBMTAKBggqhkjOPQQDAjCBtTEmMCQGA1UEAwwdUmVnaW9u
+ZSBGcml1bGlfVmVuZXppYV9HaXVsaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJ
+dGFsaWExGDAWBgNVBAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rp
+bmcgc3lzdGVtIGF1dGhvcml0eTEvMC0GCSqGSIb3DQEJARYgRnJpdWxpX1ZlbmV6
+aWFfR2l1bGlhQGV2b3RpbmcuaXQwHhcNMjIwODAzMTMyODQzWhcNMjMwODAzMTMy
+ODQzWjBVMQ0wCwYDVQQDDARLYXJsMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRh
+bGlhMSYwJAYDVQQKDB1SZWdpb25lIEZyaXVsaV9WZW5lemlhX0dpdWxpYTBZMBMG
+ByqGSM49AgEGCCqGSM49AwEHA0IABBLvl5t/9WEGZO52HWSS9rdkjQXv7ofUrdRN
+NfhiB6T9ETKk0b5zTysd6C6BDSC7AgO1vUGtf9k3bN4G8QYtkqejIzAhMA4GA1Ud
+DwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMCA0gAMEUCIQCl
+Z2VwOmY4Ll6MbV7DgYeq2keAPK46n9cqRFCks82E0AIgVgmuzngwhY7BvVFJkaou
+gGbcTdZ4/0xg2j7Lr+EfSh8=
+-----END CERTIFICATE-----

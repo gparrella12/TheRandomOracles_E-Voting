@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 27 (0x1b)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Campania, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Campania@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:55 2022 GMT
+            Not After : Aug  3 13:26:55 2023 GMT
+        Subject: CN=Sterling, C=IT, ST=Italia, O=Regione Campania
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:71:6c:2c:69:18:4a:d7:a6:34:69:36:96:81:a6:
+                    ff:31:46:b9:93:44:5b:c1:a6:d9:d3:8c:3d:54:4d:
+                    69:3d:03:50:06:75:57:5d:4f:e9:dd:71:7b:9a:b7:
+                    ab:f3:f9:33:86:2b:c3:42:f5:85:23:d4:ed:e8:00:
+                    ff:27:16:97:07
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:33:4a:9e:44:c2:cf:31:f9:96:f0:6f:ef:d7:d9:
+         6d:4b:d2:19:6d:85:af:3d:bd:4e:fb:99:60:f4:60:f2:9b:de:
+         02:20:38:82:8b:05:81:55:12:6b:36:62:e8:2a:1d:11:2d:4d:
+         ab:a1:84:a9:d8:e8:49:1b:71:86:3f:0a:f7:35:c9:6b
+-----BEGIN CERTIFICATE-----
+MIIB+TCCAaCgAwIBAgIBGzAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYW1wYW5pYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYW1wYW5pYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjY1NVoXDTIzMDgwMzEzMjY1NVowTDERMA8GA1UEAwwIU3Rlcmxpbmcx
+CzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUg
+Q2FtcGFuaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAARxbCxpGErXpjRpNpaB
+pv8xRrmTRFvBptnTjD1UTWk9A1AGdVddT+ndcXuat6vz+TOGK8NC9YUj1O3oAP8n
+FpcHoyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjO
+PQQDAgNHADBEAiAzSp5Ews8x+Zbwb+/X2W1L0hltha89vU77mWD0YPKb3gIgOIKL
+BYFVEms2YugqHREtTauhhKnY6EkbcYY/Cvc1yWs=
+-----END CERTIFICATE-----

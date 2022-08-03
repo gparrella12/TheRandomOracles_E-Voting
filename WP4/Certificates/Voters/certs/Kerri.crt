@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 29 (0x1d)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Calabria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Calabria@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:11 2022 GMT
+            Not After : Aug  3 13:27:11 2023 GMT
+        Subject: CN=Kerri, C=IT, ST=Italia, O=Regione Calabria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:99:40:c0:c0:9f:6b:44:9a:9d:ea:40:6a:b2:4c:
+                    bf:1d:db:61:f9:89:85:ed:d9:7e:84:9f:4e:36:1e:
+                    9d:4c:69:cf:71:43:7c:ee:81:da:1f:e8:af:1c:4b:
+                    20:9a:2b:40:c5:e9:da:68:eb:ab:d5:40:13:f7:8c:
+                    c6:96:7f:10:2c
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:66:e8:69:c2:c4:43:07:a1:ef:31:58:89:79:00:
+         61:b1:2b:71:ca:7d:9c:af:1b:ef:d5:05:3b:f7:6f:b5:67:4a:
+         02:21:00:b1:19:47:e2:bf:02:f5:9d:39:a7:2e:e6:91:8b:d5:
+         15:c6:cf:02:de:c2:1e:4b:be:85:f9:98:9c:1d:b6:45:56
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZ2gAwIBAgIBHTAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYWxhYnJpYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYWxhYnJpYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjcxMVoXDTIzMDgwMzEzMjcxMVowSTEOMAwGA1UEAwwFS2VycmkxCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUgQ2Fs
+YWJyaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASZQMDAn2tEmp3qQGqyTL8d
+22H5iYXt2X6En042Hp1Mac9xQ3zugdof6K8cSyCaK0DF6dpo66vVQBP3jMaWfxAs
+oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
+AgNIADBFAiBm6GnCxEMHoe8xWIl5AGGxK3HKfZyvG+/VBTv3b7VnSgIhALEZR+K/
+AvWdOacu5pGL1RXGzwLewh5LvoX5mJwdtkVW
+-----END CERTIFICATE-----

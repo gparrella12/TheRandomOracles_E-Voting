@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 7 (0x7)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Veneto, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Veneto@evoting.it
+        Validity
+            Not Before: Aug  3 13:25:54 2022 GMT
+            Not After : Aug  3 13:25:54 2023 GMT
+        Subject: CN=Luke, C=IT, ST=Italia, O=Regione Veneto
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:9c:58:94:65:cd:52:4c:b7:21:87:36:85:16:63:
+                    63:6d:e9:62:e6:1a:9d:d4:25:67:b9:5e:46:82:43:
+                    39:a6:e1:17:e0:32:89:93:ba:d9:08:22:75:6c:08:
+                    76:19:3a:ee:e1:d1:5a:31:cb:b5:f5:d3:bb:8c:9f:
+                    4a:8d:5a:c9:ee
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:c6:b5:8d:0b:51:6f:11:d9:31:d6:15:ed:cb:
+         ba:2a:62:99:50:99:e7:4e:37:a2:09:42:20:08:57:55:52:27:
+         dd:02:21:00:b1:1e:62:e0:8c:9e:05:37:8d:ad:c0:c8:a9:64:
+         33:6b:63:ad:64:18:a6:39:52:0a:58:d6:e5:95:2d:66:a2:be
+-----BEGIN CERTIFICATE-----
+MIIB8TCCAZagAwIBAgIBBzAKBggqhkjOPQQDAjCBlzEXMBUGA1UEAwwOUmVnaW9u
+ZSBWZW5ldG8xCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoM
+D0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1dGhv
+cml0eTEgMB4GCSqGSIb3DQEJARYRVmVuZXRvQGV2b3RpbmcuaXQwHhcNMjIwODAz
+MTMyNTU0WhcNMjMwODAzMTMyNTU0WjBGMQ0wCwYDVQQDDARMdWtlMQswCQYDVQQG
+EwJJVDEPMA0GA1UECAwGSXRhbGlhMRcwFQYDVQQKDA5SZWdpb25lIFZlbmV0bzBZ
+MBMGByqGSM49AgEGCCqGSM49AwEHA0IABJxYlGXNUky3IYc2hRZjY23pYuYandQl
+Z7leRoJDOabhF+AyiZO62QgidWwIdhk67uHRWjHLtfXTu4yfSo1aye6jIzAhMA4G
+A1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMCA0kAMEYC
+IQDGtY0LUW8R2THWFe3LuipimVCZ5043oglCIAhXVVIn3QIhALEeYuCMngU3ja3A
+yKlkM2tjrWQYpjlSCljW5ZUtZqK+
+-----END CERTIFICATE-----

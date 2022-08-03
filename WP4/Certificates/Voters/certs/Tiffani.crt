@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 42 (0x2a)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Lombardia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Lombardia@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:05 2022 GMT
+            Not After : Aug  3 13:28:05 2023 GMT
+        Subject: CN=Tiffani, C=IT, ST=Italia, O=Regione Lombardia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:d0:13:28:48:e3:f8:77:38:a7:a0:42:68:ca:5c:
+                    e2:f2:e3:9b:fd:53:8d:91:80:6b:d3:68:84:48:f5:
+                    b2:30:2a:de:6c:fa:36:fa:96:ce:e4:27:ff:a8:f8:
+                    8f:d5:ca:96:ed:64:07:2c:39:af:d2:f7:90:c6:f3:
+                    35:ec:de:c2:77
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:26:23:df:35:33:66:9e:f0:ab:ce:02:52:65:9e:
+         d3:6a:14:00:dd:97:90:10:ec:f9:06:d9:a4:e2:44:0e:77:b8:
+         02:21:00:9e:b7:22:01:e9:cf:13:37:01:37:21:47:34:1b:4f:
+         fa:02:24:fe:a1:87:0f:3c:af:c3:a0:8f:30:e6:e3:ad:1c
+-----BEGIN CERTIFICATE-----
+MIIB/DCCAaKgAwIBAgIBKjAKBggqhkjOPQQDAjCBnTEaMBgGA1UEAwwRUmVnaW9u
+ZSBMb21iYXJkaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNV
+BAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1
+dGhvcml0eTEjMCEGCSqGSIb3DQEJARYUTG9tYmFyZGlhQGV2b3RpbmcuaXQwHhcN
+MjIwODAzMTMyODA1WhcNMjMwODAzMTMyODA1WjBMMRAwDgYDVQQDDAdUaWZmYW5p
+MQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRowGAYDVQQKDBFSZWdpb25l
+IExvbWJhcmRpYTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABNATKEjj+Hc4p6BC
+aMpc4vLjm/1TjZGAa9NohEj1sjAq3mz6NvqWzuQn/6j4j9XKlu1kByw5r9L3kMbz
+NezewnejIzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqG
+SM49BAMCA0gAMEUCICYj3zUzZp7wq84CUmWe02oUAN2XkBDs+QbZpOJEDne4AiEA
+nrciAenPEzcBNyFHNBtP+gIk/qGHDzyvw6CPMObjrRw=
+-----END CERTIFICATE-----

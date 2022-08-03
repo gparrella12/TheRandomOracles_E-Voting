@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 9 (0x9)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Liguria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Liguria@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:06 2022 GMT
+            Not After : Aug  3 13:26:06 2023 GMT
+        Subject: CN=Ernestine, C=IT, ST=Italia, O=Regione Liguria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:f9:02:2f:a8:1c:34:1d:c4:2d:b9:f3:5c:cb:4a:
+                    44:84:e6:fe:f2:85:b9:02:b2:d3:c5:75:c2:c2:38:
+                    3a:d2:2a:00:9e:a4:95:24:46:d9:0a:13:c4:30:9e:
+                    ec:61:b9:f0:fa:ef:2f:ad:5a:e8:57:a0:2c:48:2b:
+                    0b:8b:4f:7a:aa
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:8b:15:a1:c0:d2:2b:f2:83:70:f1:86:8e:34:
+         2b:f3:48:6f:95:a0:c5:87:2f:7b:1e:b7:67:97:f9:2d:13:d2:
+         e1:02:21:00:ee:35:81:4a:e4:fb:aa:41:49:c5:15:e9:0b:06:
+         30:36:0a:3b:2e:f3:82:17:40:2e:b8:5d:61:30:5e:2c:3d:41
+-----BEGIN CERTIFICATE-----
+MIIB+TCCAZ6gAwIBAgIBCTAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBMaWd1cmlhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWEkxpZ3VyaWFAZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI2MDZaFw0yMzA4MDMxMzI2MDZaMEwxEjAQBgNVBAMMCUVybmVzdGluZTEL
+MAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UECgwPUmVnaW9uZSBM
+aWd1cmlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE+QIvqBw0HcQtufNcy0pE
+hOb+8oW5ArLTxXXCwjg60ioAnqSVJEbZChPEMJ7sYbnw+u8vrVroV6AsSCsLi096
+qqMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDSQAwRgIhAIsVocDSK/KDcPGGjjQr80hvlaDFhy97Hrdnl/ktE9LhAiEA7jWB
+SuT7qkFJxRXpCwYwNgo7LvOCF0AuuF1hMF4sPUE=
+-----END CERTIFICATE-----

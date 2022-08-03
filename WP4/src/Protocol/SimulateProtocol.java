@@ -15,8 +15,6 @@ import java.security.SecureRandom;
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
-
-
 /**
  *
  * @author fsonnessa
@@ -33,28 +31,24 @@ public class SimulateProtocol {
         CyclicGroupParameters param = CyclicGroupParameters.getInstance();
         AuthorityManagement am = AuthorityManagement.getInstance();
         SmartContract sc = new SmartContract(LocalDateTime.now(), LocalDateTime.now().plusDays(2), am, "blockchain.txt");
-        
 
         // Blockchain initialization
         sc.blockChainInit();
         System.out.println("======== BLOCKCHAIN INITIALIZATION OK ========");
-        
 
         // Key generation phase
         System.out.println("======== KEY GENERATION PHASE ========\nGenerate PK_voting...");
         sc.keyGeneration();
         System.out.println("======== KEY GENERATION OK ========");
-        
 
         // Voting Phase
         Voter voter = null;
         int c1RealVotes = 0;
         System.out.println("======== START VOTING PHASE ========");
-        try ( Scanner in = new Scanner(new BufferedReader(new FileReader("Certificati/Voters/.voters_list.txt")))) {
+        try ( Scanner in = new Scanner(new BufferedReader(new FileReader("Certificates/Voters/.voters_list.txt")))) {
             while (in.hasNext()) {
                 String voterName = in.next();
-                String filename = "Certificati/Voters/" + voterName;
-                voter = new Voter(filename + ".crt", filename + ".p8");
+                voter = new Voter("Certificates/Voters/certs/" + voterName + ".crt", "Certificates/Voters/keys/" + voterName + ".p8");
                 System.out.println("\n----\nVoter: " + voter.getName() + "\tvoted = " + voter.hasVoted());
                 int preference = new SecureRandom().nextInt(2);
                 c1RealVotes += preference;
@@ -70,7 +64,6 @@ public class SimulateProtocol {
             e.printStackTrace();
         }
         System.out.println("======== END VOTING PHASE ========");
-        
 
         // Post-Voting Phase
         System.out.println("Ciphertext aggregation...");
@@ -81,7 +74,6 @@ public class SimulateProtocol {
             throw new RuntimeException("ERROR - INVALID ELECTION RESULT");
         }
         System.out.println("\n======== RESULT ========");
-        
 
         // Printing the results
         System.out.println("Votes for candidate Omega1 =\t" + sc.getResultCandidate1());

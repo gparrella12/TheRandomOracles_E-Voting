@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 29 (0x1d)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Liguria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Liguria@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:03 2022 GMT
+            Not After : Aug  3 13:27:03 2023 GMT
+        Subject: CN=Beatrice, C=IT, ST=Italia, O=Regione Liguria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:df:07:db:13:b8:f3:ad:29:57:91:25:ff:a4:56:
+                    6e:33:94:2c:43:06:69:1d:ae:4b:86:0a:fc:36:fc:
+                    87:34:25:1c:c6:07:b2:aa:42:52:e6:4e:36:c7:08:
+                    92:43:b5:ed:76:7f:43:ce:71:36:53:a3:5f:37:c0:
+                    dc:fe:7a:05:b9
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:af:f4:b2:ec:47:17:b6:c6:07:a7:57:17:22:
+         ca:2a:22:7d:94:a2:2e:b7:24:5e:43:a1:1a:a0:54:bc:96:2d:
+         8c:02:21:00:b1:37:c4:d2:0b:a3:7c:5e:7b:e3:26:e9:52:67:
+         99:f8:71:7d:af:63:b9:c2:82:0f:87:39:d0:41:95:e5:01:ea
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ2gAwIBAgIBHTAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBMaWd1cmlhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWEkxpZ3VyaWFAZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI3MDNaFw0yMzA4MDMxMzI3MDNaMEsxETAPBgNVBAMMCEJlYXRyaWNlMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQKDA9SZWdpb25lIExp
+Z3VyaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATfB9sTuPOtKVeRJf+kVm4z
+lCxDBmkdrkuGCvw2/Ic0JRzGB7KqQlLmTjbHCJJDte12f0POcTZTo183wNz+egW5
+oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
+AgNJADBGAiEAr/Sy7EcXtsYHp1cXIsoqIn2Uoi63JF5DoRqgVLyWLYwCIQCxN8TS
+C6N8XnvjJulSZ5n4cX2vY7nCgg+HOdBBleUB6g==
+-----END CERTIFICATE-----

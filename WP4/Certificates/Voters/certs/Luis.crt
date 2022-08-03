@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 5 (0x5)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Lombardia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Lombardia@evoting.it
+        Validity
+            Not Before: Aug  3 13:25:50 2022 GMT
+            Not After : Aug  3 13:25:50 2023 GMT
+        Subject: CN=Luis, C=IT, ST=Italia, O=Regione Lombardia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:8f:4d:a4:47:6e:b7:ac:97:9c:97:4f:b3:52:f3:
+                    61:f5:f9:39:63:5f:43:bd:8b:cf:1d:0c:6a:8c:eb:
+                    83:b6:03:24:1d:e2:cc:32:fb:72:75:84:1b:6b:0c:
+                    d3:03:82:a1:52:29:13:48:d5:38:91:45:28:23:ec:
+                    9e:f0:2f:19:45
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:b4:e2:85:f6:38:47:dd:69:94:8b:88:75:b8:
+         93:36:72:f7:57:1e:1a:f9:8f:eb:3c:c9:4d:80:c9:13:2f:55:
+         a7:02:21:00:d5:9d:18:75:61:25:f7:33:32:10:01:e2:fc:8c:
+         9a:7c:7a:05:a3:bb:c7:58:88:da:2e:84:c2:81:ff:89:ff:c0
+-----BEGIN CERTIFICATE-----
+MIIB+jCCAZ+gAwIBAgIBBTAKBggqhkjOPQQDAjCBnTEaMBgGA1UEAwwRUmVnaW9u
+ZSBMb21iYXJkaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNV
+BAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1
+dGhvcml0eTEjMCEGCSqGSIb3DQEJARYUTG9tYmFyZGlhQGV2b3RpbmcuaXQwHhcN
+MjIwODAzMTMyNTUwWhcNMjMwODAzMTMyNTUwWjBJMQ0wCwYDVQQDDARMdWlzMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRowGAYDVQQKDBFSZWdpb25lIExv
+bWJhcmRpYTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABI9NpEdut6yXnJdPs1Lz
+YfX5OWNfQ72Lzx0Maozrg7YDJB3izDL7cnWEG2sM0wOCoVIpE0jVOJFFKCPsnvAv
+GUWjIzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49
+BAMCA0kAMEYCIQC04oX2OEfdaZSLiHW4kzZy91ceGvmP6zzJTYDJEy9VpwIhANWd
+GHVhJfczMhAB4vyMmnx6BaO7x1iI2i6EwoH/if/A
+-----END CERTIFICATE-----

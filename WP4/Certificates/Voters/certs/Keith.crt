@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 17 (0x11)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Puglia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Puglia@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:49 2022 GMT
+            Not After : Aug  3 13:26:49 2023 GMT
+        Subject: CN=Keith, C=IT, ST=Italia, O=Regione Puglia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:2a:79:ef:a6:b0:b2:7e:0f:7e:f9:fd:86:d3:c3:
+                    9e:06:e5:06:3f:fb:06:0f:ff:0b:f1:6e:95:eb:72:
+                    2f:a2:f5:45:49:77:1a:07:71:44:2e:b0:2e:66:e7:
+                    51:d1:2b:05:2e:23:a7:19:8f:11:31:f1:ad:0b:aa:
+                    a6:09:38:97:a1
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:81:2b:39:28:28:ab:ed:b4:70:18:d6:8c:3d:
+         f5:37:08:cb:8c:13:0a:3e:38:6f:4c:65:92:f5:03:2c:51:81:
+         f3:02:20:2a:bb:0c:a1:92:d8:2a:45:17:99:0e:4b:33:69:e6:
+         bc:cd:6e:ff:b3:bc:3f:e7:a3:f1:63:8a:df:6d:ce:df:fd
+-----BEGIN CERTIFICATE-----
+MIIB8TCCAZegAwIBAgIBETAKBggqhkjOPQQDAjCBlzEXMBUGA1UEAwwOUmVnaW9u
+ZSBQdWdsaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoM
+D0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1dGhv
+cml0eTEgMB4GCSqGSIb3DQEJARYRUHVnbGlhQGV2b3RpbmcuaXQwHhcNMjIwODAz
+MTMyNjQ5WhcNMjMwODAzMTMyNjQ5WjBHMQ4wDAYDVQQDDAVLZWl0aDELMAkGA1UE
+BhMCSVQxDzANBgNVBAgMBkl0YWxpYTEXMBUGA1UECgwOUmVnaW9uZSBQdWdsaWEw
+WTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQqee+msLJ+D375/YbTw54G5QY/+wYP
+/wvxbpXrci+i9UVJdxoHcUQusC5m51HRKwUuI6cZjxEx8a0LqqYJOJehoyMwITAO
+BgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQDAgNIADBF
+AiEAgSs5KCir7bRwGNaMPfU3CMuMEwo+OG9MZZL1AyxRgfMCICq7DKGS2CpFF5kO
+SzNp5rzNbv+zvD/no/Fjit9tzt/9
+-----END CERTIFICATE-----

@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 36 (0x24)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Piemonte, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Piemonte@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:07 2022 GMT
+            Not After : Aug  3 13:27:07 2023 GMT
+        Subject: CN=Virgil, C=IT, ST=Italia, O=Regione Piemonte
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:37:93:7e:d8:f6:61:48:ef:4d:70:94:e0:2e:b5:
+                    08:5b:4f:62:11:75:31:94:57:6c:aa:f1:31:6a:ce:
+                    59:39:7d:5c:1d:51:be:84:4c:7a:a9:49:60:a9:9c:
+                    21:06:56:8b:7e:86:74:74:4d:26:af:06:78:b6:86:
+                    38:a3:29:da:8a
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:ca:bf:41:3a:d6:6f:08:f0:b7:db:00:68:bc:
+         33:d5:a8:7e:15:e7:3c:88:9a:df:9d:6d:37:66:a5:af:e5:fc:
+         39:02:20:59:2e:0c:8e:00:0c:80:93:2e:a6:b1:74:dd:12:4d:
+         57:26:0e:a6:9c:86:91:ae:4e:45:7e:8e:21:0a:0c:d8:0b
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ6gAwIBAgIBJDAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBQaWVtb250ZTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNQaWVtb250ZUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjcwN1oXDTIzMDgwMzEzMjcwN1owSjEPMA0GA1UEAwwGVmlyZ2lsMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRkwFwYDVQQKDBBSZWdpb25lIFBp
+ZW1vbnRlMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEN5N+2PZhSO9NcJTgLrUI
+W09iEXUxlFdsqvExas5ZOX1cHVG+hEx6qUlgqZwhBlaLfoZ0dE0mrwZ4toY4oyna
+iqMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDSAAwRQIhAMq/QTrWbwjwt9sAaLwz1ah+Fec8iJrfnW03ZqWv5fw5AiBZLgyO
+AAyAky6msXTdEk1XJg6mnIaRrk5Ffo4hCgzYCw==
+-----END CERTIFICATE-----

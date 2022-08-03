@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 43 (0x2b)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Lombardia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Lombardia@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:08 2022 GMT
+            Not After : Aug  3 13:28:08 2023 GMT
+        Subject: CN=Ellis, C=IT, ST=Italia, O=Regione Lombardia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:d7:45:4b:f4:42:c2:ba:63:26:98:35:79:33:3b:
+                    3b:fd:58:9d:ab:f6:69:bc:64:2f:f2:db:f7:f7:56:
+                    c6:01:6b:ec:6e:b0:19:20:d8:08:be:26:c7:60:19:
+                    7c:3f:d9:80:72:63:f5:9b:bd:b7:5e:cd:69:f0:59:
+                    b8:c0:6a:3b:23
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:91:71:fe:dc:26:f2:43:c1:62:19:7b:c2:54:
+         39:7d:26:d2:46:60:4f:0b:02:e2:c4:a2:e3:a0:cb:6f:ec:ad:
+         2b:02:20:6d:45:e5:67:6a:8d:03:24:89:27:5f:bd:ce:54:e8:
+         39:85:6e:d3:f7:0e:ba:64:ad:58:42:a8:a7:23:07:11:26
+-----BEGIN CERTIFICATE-----
+MIIB+jCCAaCgAwIBAgIBKzAKBggqhkjOPQQDAjCBnTEaMBgGA1UEAwwRUmVnaW9u
+ZSBMb21iYXJkaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNV
+BAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1
+dGhvcml0eTEjMCEGCSqGSIb3DQEJARYUTG9tYmFyZGlhQGV2b3RpbmcuaXQwHhcN
+MjIwODAzMTMyODA4WhcNMjMwODAzMTMyODA4WjBKMQ4wDAYDVQQDDAVFbGxpczEL
+MAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEaMBgGA1UECgwRUmVnaW9uZSBM
+b21iYXJkaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATXRUv0QsK6YyaYNXkz
+Ozv9WJ2r9mm8ZC/y2/f3VsYBa+xusBkg2Ai+JsdgGXw/2YByY/WbvbdezWnwWbjA
+ajsjoyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjO
+PQQDAgNIADBFAiEAkXH+3CbyQ8FiGXvCVDl9JtJGYE8LAuLEouOgy2/srSsCIG1F
+5WdqjQMkiSdfvc5U6DmFbtP3DrpkrVhCqKcjBxEm
+-----END CERTIFICATE-----

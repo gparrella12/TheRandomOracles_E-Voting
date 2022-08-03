@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 48 (0x30)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Abruzzo, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Abruzzo@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:09 2022 GMT
+            Not After : Aug  3 13:28:09 2023 GMT
+        Subject: CN=Brianna, C=IT, ST=Italia, O=Regione Abruzzo
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:98:4b:70:8f:e5:26:fd:81:fe:ef:36:6c:04:db:
+                    23:c8:7b:2d:d2:51:b9:ff:b8:6c:71:44:ae:0c:7d:
+                    3d:ff:00:59:1d:4d:4f:ef:26:46:39:48:9c:b3:15:
+                    2a:87:d1:52:12:d0:7d:e3:79:a4:40:6d:af:66:c5:
+                    b2:eb:0c:bc:c4
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:2c:a8:e1:44:6f:f5:53:66:ce:bf:93:eb:8e:d6:
+         2f:e0:d4:1f:ce:84:3f:d9:98:ae:5b:19:46:c1:b1:fb:de:c5:
+         02:21:00:cd:7f:01:e8:a9:9f:5a:f8:70:46:e5:4e:2d:50:93:
+         87:bc:0c:c5:0f:4a:a0:fb:7f:53:d5:70:06:bf:ad:f1:ee
+-----BEGIN CERTIFICATE-----
+MIIB9jCCAZygAwIBAgIBMDAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBBYnJ1enpvMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWEkFicnV6em9AZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI4MDlaFw0yMzA4MDMxMzI4MDlaMEoxEDAOBgNVBAMMB0JyaWFubmExCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoMD1JlZ2lvbmUgQWJy
+dXp6bzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJhLcI/lJv2B/u82bATbI8h7
+LdJRuf+4bHFErgx9Pf8AWR1NT+8mRjlInLMVKofRUhLQfeN5pEBtr2bFsusMvMSj
+IzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMC
+A0gAMEUCICyo4URv9VNmzr+T647WL+DUH86EP9mYrlsZRsGx+97FAiEAzX8B6Kmf
+WvhwRuVOLVCTh7wMxQ9KoPt/U9VwBr+t8e4=
+-----END CERTIFICATE-----

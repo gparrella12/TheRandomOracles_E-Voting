@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 32 (0x20)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Sicilia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sicilia@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:27 2022 GMT
+            Not After : Aug  3 13:28:27 2023 GMT
+        Subject: CN=Mamie, C=IT, ST=Italia, O=Regione Sicilia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:65:c5:f6:bd:aa:52:ce:1e:48:4f:06:7f:14:74:
+                    a2:90:6c:35:a3:de:15:54:e8:5a:42:4a:e3:33:28:
+                    bb:9a:08:db:a3:da:12:2d:93:d0:58:1b:3a:2e:46:
+                    66:b2:f4:11:83:f8:77:0e:8f:23:c4:53:9c:cc:e1:
+                    fa:b6:5f:16:8c
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:86:93:d8:ba:45:04:a6:f0:09:e1:36:f7:31:
+         48:79:8a:0c:0b:78:67:a6:85:77:67:7c:02:16:1b:5a:9b:61:
+         d5:02:21:00:e6:af:99:29:b9:71:9d:ff:ba:01:86:0e:25:b4:
+         02:bd:96:59:59:fa:57:08:54:22:d1:b6:89:48:cf:bb:ab:1a
+-----BEGIN CERTIFICATE-----
+MIIB9TCCAZqgAwIBAgIBIDAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBTaWNpbGlhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWElNpY2lsaWFAZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI4MjdaFw0yMzA4MDMxMzI4MjdaMEgxDjAMBgNVBAMMBU1hbWllMQswCQYD
+VQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQKDA9SZWdpb25lIFNpY2ls
+aWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAARlxfa9qlLOHkhPBn8UdKKQbDWj
+3hVU6FpCSuMzKLuaCNuj2hItk9BYGzouRmay9BGD+HcOjyPEU5zM4fq2XxaMoyMw
+ITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQDAgNJ
+ADBGAiEAhpPYukUEpvAJ4Tb3MUh5igwLeGemhXdnfAIWG1qbYdUCIQDmr5kpuXGd
+/7oBhg4ltAK9lllZ+lcIVCLRtolIz7urGg==
+-----END CERTIFICATE-----

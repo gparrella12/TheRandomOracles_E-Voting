@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 21 (0x15)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Sardegna, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sardegna@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:15 2022 GMT
+            Not After : Aug  3 13:27:15 2023 GMT
+        Subject: CN=Trisha, C=IT, ST=Italia, O=Regione Sardegna
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:d6:4a:f2:5c:ec:42:41:89:31:1d:ef:cf:af:e2:
+                    e7:ec:88:0a:58:84:61:b7:ee:df:b1:46:5b:b2:9d:
+                    47:04:6f:60:8f:62:c9:a8:95:f4:5d:2b:9f:a8:72:
+                    78:51:4e:93:30:4e:4b:05:ec:11:24:19:f8:07:aa:
+                    7c:d2:50:69:e8
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:93:88:fc:40:2a:11:21:bb:55:bf:18:5a:78:
+         63:2b:7e:75:c2:a7:11:38:24:21:2d:5f:b7:48:64:30:72:23:
+         6f:02:20:29:35:9d:90:bf:1e:0a:72:85:31:e5:d9:e3:d6:00:
+         c8:04:91:91:0a:df:2e:6b:6b:a2:aa:da:b0:cc:2f:fa:f3
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ6gAwIBAgIBFTAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBTYXJkZWduYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNTYXJkZWduYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjcxNVoXDTIzMDgwMzEzMjcxNVowSjEPMA0GA1UEAwwGVHJpc2hhMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRkwFwYDVQQKDBBSZWdpb25lIFNh
+cmRlZ25hMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE1kryXOxCQYkxHe/Pr+Ln
+7IgKWIRht+7fsUZbsp1HBG9gj2LJqJX0XSufqHJ4UU6TME5LBewRJBn4B6p80lBp
+6KMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDSAAwRQIhAJOI/EAqESG7Vb8YWnhjK351wqcROCQhLV+3SGQwciNvAiApNZ2Q
+vx4KcoUx5dnj1gDIBJGRCt8ua2uiqtqwzC/68w==
+-----END CERTIFICATE-----

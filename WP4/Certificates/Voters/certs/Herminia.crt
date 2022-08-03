@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 35 (0x23)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Lombardia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Lombardia@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:48 2022 GMT
+            Not After : Aug  3 13:27:48 2023 GMT
+        Subject: CN=Herminia, C=IT, ST=Italia, O=Regione Lombardia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:23:93:e6:de:07:1d:61:d7:70:53:ee:44:ce:13:
+                    c9:6c:05:1a:22:77:62:3c:be:a9:55:6e:93:ae:69:
+                    d1:ea:24:70:19:4c:c3:a0:75:11:be:a6:1d:1c:08:
+                    b5:a8:11:2c:a7:09:36:dd:79:aa:22:0e:bd:f1:43:
+                    f4:cf:58:41:40
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:a4:23:fd:28:7b:7b:ff:70:9e:73:c7:64:10:
+         fd:b1:3e:12:ef:0a:23:e3:f0:e5:bc:43:17:9d:5a:31:92:06:
+         de:02:21:00:c1:88:43:4e:6f:ef:06:36:de:c3:dc:33:c4:8d:
+         bc:44:30:9a:74:b4:15:df:35:a9:99:3c:ae:73:7b:c6:85:eb
+-----BEGIN CERTIFICATE-----
+MIIB/jCCAaOgAwIBAgIBIzAKBggqhkjOPQQDAjCBnTEaMBgGA1UEAwwRUmVnaW9u
+ZSBMb21iYXJkaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNV
+BAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1
+dGhvcml0eTEjMCEGCSqGSIb3DQEJARYUTG9tYmFyZGlhQGV2b3RpbmcuaXQwHhcN
+MjIwODAzMTMyNzQ4WhcNMjMwODAzMTMyNzQ4WjBNMREwDwYDVQQDDAhIZXJtaW5p
+YTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEaMBgGA1UECgwRUmVnaW9u
+ZSBMb21iYXJkaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQjk+beBx1h13BT
+7kTOE8lsBRoid2I8vqlVbpOuadHqJHAZTMOgdRG+ph0cCLWoESynCTbdeaoiDr3x
+Q/TPWEFAoyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggq
+hkjOPQQDAgNJADBGAiEApCP9KHt7/3Cec8dkEP2xPhLvCiPj8OW8QxedWjGSBt4C
+IQDBiENOb+8GNt7D3DPEjbxEMJp0tBXfNamZPK5ze8aF6w==
+-----END CERTIFICATE-----

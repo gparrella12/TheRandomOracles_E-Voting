@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 42 (0x2a)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Abruzzo, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Abruzzo@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:53 2022 GMT
+            Not After : Aug  3 13:27:53 2023 GMT
+        Subject: CN=Harriet, C=IT, ST=Italia, O=Regione Abruzzo
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:2f:3b:af:a3:19:50:88:c1:33:55:0b:8f:66:f8:
+                    6f:03:ae:3b:2f:20:05:da:95:6d:7d:82:d4:1a:7e:
+                    9b:45:a0:cf:03:d8:42:e5:92:53:8b:7f:c6:80:d7:
+                    93:bb:85:5e:c0:d6:68:fe:51:a2:af:d3:79:6b:62:
+                    28:30:ee:81:9b
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:66:b1:90:d2:94:40:49:d5:b9:ec:c2:01:20:ff:
+         7d:a1:fb:a6:93:17:57:e9:7c:46:8e:48:59:a1:55:f1:d8:2c:
+         02:21:00:9f:a8:4d:ad:de:d3:ea:f9:be:b2:33:88:29:8f:76:
+         c7:f1:52:e0:16:cf:fd:5f:69:0a:01:e2:ca:e3:2c:45:c8
+-----BEGIN CERTIFICATE-----
+MIIB9jCCAZygAwIBAgIBKjAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBBYnJ1enpvMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWEkFicnV6em9AZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI3NTNaFw0yMzA4MDMxMzI3NTNaMEoxEDAOBgNVBAMMB0hhcnJpZXQxCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoMD1JlZ2lvbmUgQWJy
+dXp6bzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABC87r6MZUIjBM1ULj2b4bwOu
+Oy8gBdqVbX2C1Bp+m0WgzwPYQuWSU4t/xoDXk7uFXsDWaP5Roq/TeWtiKDDugZuj
+IzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMC
+A0gAMEUCIGaxkNKUQEnVuezCASD/faH7ppMXV+l8Ro5IWaFV8dgsAiEAn6hNrd7T
+6vm+sjOIKY92x/FS4BbP/V9pCgHiyuMsRcg=
+-----END CERTIFICATE-----

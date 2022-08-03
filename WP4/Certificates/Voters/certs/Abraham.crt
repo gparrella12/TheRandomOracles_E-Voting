@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 54 (0x36)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Liguria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Liguria@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:32 2022 GMT
+            Not After : Aug  3 13:28:32 2023 GMT
+        Subject: CN=Abraham, C=IT, ST=Italia, O=Regione Liguria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:96:44:3f:ec:69:32:99:36:ed:73:82:bd:36:b8:
+                    e2:f1:77:f4:58:63:3f:90:3c:eb:5e:10:ca:ae:36:
+                    43:e4:be:d1:2b:0d:ea:d6:1e:a9:b8:eb:b6:9c:15:
+                    65:ab:e1:94:89:b1:f2:19:fd:78:b7:b3:40:5d:7a:
+                    25:3f:39:78:db
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:c6:fe:e6:a2:87:99:38:f0:79:0f:da:58:25:
+         86:47:7c:6e:93:a5:8a:48:6e:7c:66:76:08:64:04:a9:9e:97:
+         eb:02:20:19:a8:f3:b5:2d:96:3c:ca:af:8a:95:7c:ad:0e:9a:
+         05:42:b3:ab:54:db:6e:88:d5:e0:77:8d:2a:b7:9b:89:2f
+-----BEGIN CERTIFICATE-----
+MIIB9jCCAZygAwIBAgIBNjAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBMaWd1cmlhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWEkxpZ3VyaWFAZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI4MzJaFw0yMzA4MDMxMzI4MzJaMEoxEDAOBgNVBAMMB0FicmFoYW0xCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoMD1JlZ2lvbmUgTGln
+dXJpYTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJZEP+xpMpk27XOCvTa44vF3
+9FhjP5A8614Qyq42Q+S+0SsN6tYeqbjrtpwVZavhlImx8hn9eLezQF16JT85eNuj
+IzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMC
+A0gAMEUCIQDG/uaih5k48HkP2lglhkd8bpOlikhufGZ2CGQEqZ6X6wIgGajztS2W
+PMqvipV8rQ6aBUKzq1TbbojV4HeNKrebiS8=
+-----END CERTIFICATE-----

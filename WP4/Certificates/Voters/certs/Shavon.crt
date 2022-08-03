@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 43 (0x2b)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Molise, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Molise@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:59 2022 GMT
+            Not After : Aug  3 13:27:59 2023 GMT
+        Subject: CN=Shavon, C=IT, ST=Italia, O=Regione Molise
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:89:e1:62:2a:61:14:a1:bd:dd:5d:fd:d9:bc:d2:
+                    5d:52:46:b6:8d:79:fd:1f:7a:0a:05:25:7b:3e:a2:
+                    00:ff:b5:e0:09:00:56:63:a1:d8:7f:2d:e2:69:fd:
+                    81:a9:15:9e:c9:11:af:06:ec:e3:19:a9:40:70:da:
+                    b6:5d:91:5f:c1
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:09:61:c3:81:8f:70:8f:d2:b7:11:65:fe:86:13:
+         2f:49:e9:20:9a:f3:74:f8:b3:1a:11:29:f6:03:07:0b:da:ff:
+         02:21:00:b8:bf:bb:eb:7b:02:45:a2:8d:5c:0e:c4:f6:bc:6e:
+         79:15:7b:93:64:ad:f8:68:c6:39:53:bc:e1:f4:e6:2f:83
+-----BEGIN CERTIFICATE-----
+MIIB8jCCAZigAwIBAgIBKzAKBggqhkjOPQQDAjCBlzEXMBUGA1UEAwwOUmVnaW9u
+ZSBNb2xpc2UxCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoM
+D0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1dGhv
+cml0eTEgMB4GCSqGSIb3DQEJARYRTW9saXNlQGV2b3RpbmcuaXQwHhcNMjIwODAz
+MTMyNzU5WhcNMjMwODAzMTMyNzU5WjBIMQ8wDQYDVQQDDAZTaGF2b24xCzAJBgNV
+BAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExFzAVBgNVBAoMDlJlZ2lvbmUgTW9saXNl
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEieFiKmEUob3dXf3ZvNJdUka2jXn9
+H3oKBSV7PqIA/7XgCQBWY6HYfy3iaf2BqRWeyRGvBuzjGalAcNq2XZFfwaMjMCEw
+DgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0EAwIDSAAw
+RQIgCWHDgY9wj9K3EWX+hhMvSekgmvN0+LMaESn2AwcL2v8CIQC4v7vrewJFoo1c
+DsT2vG55FXuTZK34aMY5U7zh9OYvgw==
+-----END CERTIFICATE-----

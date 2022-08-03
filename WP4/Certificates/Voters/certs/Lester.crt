@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 34 (0x22)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Calabria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Calabria@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:31 2022 GMT
+            Not After : Aug  3 13:27:31 2023 GMT
+        Subject: CN=Lester, C=IT, ST=Italia, O=Regione Calabria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:a8:dd:d1:3b:79:8d:33:8a:d2:5a:00:b9:b3:5a:
+                    39:72:15:16:ce:78:a7:6f:3e:08:79:1b:5d:13:68:
+                    2a:1f:4a:1a:23:72:62:8f:d0:d3:53:26:b0:72:f9:
+                    7a:46:b5:27:43:3c:2b:66:fb:83:67:f1:fd:8c:5b:
+                    64:61:22:31:fe
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:21:bb:ec:fc:47:c7:60:60:05:58:a0:ee:0d:57:
+         38:f0:f3:8e:ae:3b:7d:f6:36:46:61:62:ef:be:8b:a5:d7:8a:
+         02:20:4d:c8:07:5d:59:32:ab:c4:42:b3:cf:42:6e:28:0d:a7:
+         2f:f8:f9:88:32:e5:86:17:3f:b1:c3:b5:2d:28:75:e9
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZ6gAwIBAgIBIjAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYWxhYnJpYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYWxhYnJpYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjczMVoXDTIzMDgwMzEzMjczMVowSjEPMA0GA1UEAwwGTGVzdGVyMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRkwFwYDVQQKDBBSZWdpb25lIENh
+bGFicmlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEqN3RO3mNM4rSWgC5s1o5
+chUWzninbz4IeRtdE2gqH0oaI3Jij9DTUyawcvl6RrUnQzwrZvuDZ/H9jFtkYSIx
+/qMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDRwAwRAIgIbvs/EfHYGAFWKDuDVc48POOrjt99jZGYWLvvoul14oCIE3IB11Z
+MqvEQrPPQm4oDacv+PmIMuWGFz+xw7UtKHXp
+-----END CERTIFICATE-----

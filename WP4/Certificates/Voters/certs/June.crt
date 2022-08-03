@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 57 (0x39)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Calabria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Calabria@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:44 2022 GMT
+            Not After : Aug  3 13:28:44 2023 GMT
+        Subject: CN=June, C=IT, ST=Italia, O=Regione Calabria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:c5:be:e5:89:ca:f1:8d:69:d3:62:16:be:24:45:
+                    2e:c8:df:58:0a:4d:60:60:44:a8:05:f8:04:09:21:
+                    7a:ab:18:4b:b7:43:cd:3a:0a:34:c0:03:e2:35:2a:
+                    34:5c:0a:aa:d3:21:25:ff:4b:4e:2c:50:6a:f9:9d:
+                    cd:e6:bc:cd:b7
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:83:d4:8d:91:b3:b4:8d:b5:f0:a9:10:e5:b9:
+         8d:25:67:62:f0:65:ed:c8:dd:21:9a:4d:0f:69:f7:2d:46:ec:
+         49:02:20:5c:83:9c:86:c9:91:3f:d5:7e:3b:8d:86:be:b7:ed:
+         e7:9b:6f:6a:40:4b:54:a3:8c:5c:d2:37:df:8b:7d:c1:c4
+-----BEGIN CERTIFICATE-----
+MIIB9jCCAZygAwIBAgIBOTAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYWxhYnJpYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYWxhYnJpYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjg0NFoXDTIzMDgwMzEzMjg0NFowSDENMAsGA1UEAwwESnVuZTELMAkG
+A1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEZMBcGA1UECgwQUmVnaW9uZSBDYWxh
+YnJpYTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABMW+5YnK8Y1p02IWviRFLsjf
+WApNYGBEqAX4BAkheqsYS7dDzToKNMAD4jUqNFwKqtMhJf9LTixQavmdzea8zbej
+IzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMC
+A0gAMEUCIQCD1I2Rs7SNtfCpEOW5jSVnYvBl7cjdIZpND2n3LUbsSQIgXIOchsmR
+P9V+O42Gvrft55tvakBLVKOMXNI334t9wcQ=
+-----END CERTIFICATE-----

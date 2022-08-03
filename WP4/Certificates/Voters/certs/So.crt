@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 24 (0x18)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Campania, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Campania@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:45 2022 GMT
+            Not After : Aug  3 13:26:45 2023 GMT
+        Subject: CN=So, C=IT, ST=Italia, O=Regione Campania
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:13:29:f7:05:70:ee:6d:e4:1a:ea:82:94:44:d3:
+                    99:19:30:bb:5e:47:56:95:47:11:82:42:61:83:ed:
+                    aa:b0:1a:c6:4e:a4:5a:6c:ea:be:cf:4f:e1:e9:7c:
+                    5a:64:d7:87:b0:cf:0b:d8:41:ae:16:05:f9:81:2b:
+                    71:d3:fb:a5:44
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:ed:9e:c8:eb:0d:ed:61:e4:39:c1:05:77:f7:
+         2f:9b:dd:72:d0:a4:2a:fd:6d:f0:cd:69:5f:42:1c:17:8d:15:
+         1d:02:20:2d:e5:cc:ae:86:f8:d9:ba:14:05:86:91:f8:e7:f7:
+         74:2c:cc:c6:02:66:e6:be:e7:bf:4f:15:98:e3:af:9e:8f
+-----BEGIN CERTIFICATE-----
+MIIB9DCCAZqgAwIBAgIBGDAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYW1wYW5pYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYW1wYW5pYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjY0NVoXDTIzMDgwMzEzMjY0NVowRjELMAkGA1UEAwwCU28xCzAJBgNV
+BAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUgQ2FtcGFu
+aWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQTKfcFcO5t5BrqgpRE05kZMLte
+R1aVRxGCQmGD7aqwGsZOpFps6r7PT+HpfFpk14ewzwvYQa4WBfmBK3HT+6VEoyMw
+ITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQDAgNI
+ADBFAiEA7Z7I6w3tYeQ5wQV39y+b3XLQpCr9bfDNaV9CHBeNFR0CIC3lzK6G+Nm6
+FAWGkfjn93QszMYCZua+579PFZjjr56P
+-----END CERTIFICATE-----

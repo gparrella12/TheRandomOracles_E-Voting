@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 16 (0x10)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Piemonte, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Piemonte@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:14 2022 GMT
+            Not After : Aug  3 13:26:14 2023 GMT
+        Subject: CN=Carol, C=IT, ST=Italia, O=Regione Piemonte
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:f5:2f:9f:ea:e4:2c:a0:f0:fc:ac:ee:a2:db:17:
+                    4e:ac:25:b6:a0:46:94:f6:ac:0e:f2:dc:a7:19:10:
+                    6b:99:43:2f:9f:95:5a:67:ea:01:f4:bd:16:b0:57:
+                    d3:5b:95:51:f7:41:b0:22:92:f1:a1:eb:35:a3:e2:
+                    6a:21:d1:d5:b5
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:64:2a:89:f1:62:ec:f1:47:54:d8:32:86:4e:58:
+         db:75:10:11:67:cc:a2:71:a3:04:00:a9:d9:c8:90:89:3b:aa:
+         02:20:7b:71:e0:3a:68:77:ae:c9:d2:3a:72:8b:fd:b7:a5:c5:
+         e5:80:d7:d8:df:5d:3b:b2:1e:f7:40:42:83:6f:33:0e
+-----BEGIN CERTIFICATE-----
+MIIB9jCCAZ2gAwIBAgIBEDAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBQaWVtb250ZTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNQaWVtb250ZUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjYxNFoXDTIzMDgwMzEzMjYxNFowSTEOMAwGA1UEAwwFQ2Fyb2wxCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUgUGll
+bW9udGUwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAT1L5/q5Cyg8Pys7qLbF06s
+JbagRpT2rA7y3KcZEGuZQy+flVpn6gH0vRawV9NblVH3QbAikvGh6zWj4moh0dW1
+oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
+AgNHADBEAiBkKonxYuzxR1TYMoZOWNt1EBFnzKJxowQAqdnIkIk7qgIge3HgOmh3
+rsnSOnKL/belxeWA19jfXTuyHvdAQoNvMw4=
+-----END CERTIFICATE-----

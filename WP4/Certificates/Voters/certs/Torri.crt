@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 5 (0x5)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Basilicata, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Basilicata@evoting.it
+        Validity
+            Not Before: Aug  3 13:25:47 2022 GMT
+            Not After : Aug  3 13:25:47 2023 GMT
+        Subject: CN=Torri, C=IT, ST=Italia, O=Regione Basilicata
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:1f:38:c1:ea:ca:5c:6c:a3:18:ae:e9:12:fa:40:
+                    4f:fc:27:1d:5e:84:1f:5c:3a:9d:90:60:de:1b:4c:
+                    28:45:18:6c:b7:76:30:db:cb:c8:8e:d3:59:24:49:
+                    90:07:db:12:b4:fe:58:f8:6b:de:21:7a:96:be:85:
+                    06:b4:bb:90:5b
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:0b:30:e3:77:4c:79:74:a0:04:a7:9f:98:31:ed:
+         ae:95:ae:39:89:cb:ab:34:a5:fa:85:ae:10:e8:e1:68:c8:cc:
+         02:20:7c:46:76:30:36:e4:50:bb:22:40:a3:31:13:02:85:f9:
+         36:27:2d:25:54:7c:47:03:ac:73:d4:5a:3a:38:14:2f
+-----BEGIN CERTIFICATE-----
+MIIB/DCCAaOgAwIBAgIBBTAKBggqhkjOPQQDAjCBnzEbMBkGA1UEAwwSUmVnaW9u
+ZSBCYXNpbGljYXRhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYD
+VQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBh
+dXRob3JpdHkxJDAiBgkqhkiG9w0BCQEWFUJhc2lsaWNhdGFAZXZvdGluZy5pdDAe
+Fw0yMjA4MDMxMzI1NDdaFw0yMzA4MDMxMzI1NDdaMEsxDjAMBgNVBAMMBVRvcnJp
+MQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRswGQYDVQQKDBJSZWdpb25l
+IEJhc2lsaWNhdGEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQfOMHqylxsoxiu
+6RL6QE/8Jx1ehB9cOp2QYN4bTChFGGy3djDby8iO01kkSZAH2xK0/lj4a94hepa+
+hQa0u5BboyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggq
+hkjOPQQDAgNHADBEAiALMON3THl0oASnn5gx7a6VrjmJy6s0pfqFrhDo4WjIzAIg
+fEZ2MDbkULsiQKMxEwKF+TYnLSVUfEcDrHPUWjo4FC8=
+-----END CERTIFICATE-----

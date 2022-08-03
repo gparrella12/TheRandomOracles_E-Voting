@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 12 (0xc)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Sardegna, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sardegna@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:44 2022 GMT
+            Not After : Aug  3 13:26:44 2023 GMT
+        Subject: CN=Henry, C=IT, ST=Italia, O=Regione Sardegna
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:14:31:c5:08:6a:1d:2f:47:34:64:0f:c3:eb:bd:
+                    02:8a:7e:7a:0e:85:a4:5c:b8:4c:bb:ca:31:d8:f9:
+                    95:37:2d:38:09:91:91:94:3b:9c:c1:89:8d:31:e8:
+                    48:67:e7:0c:76:e4:20:3e:c3:1c:3d:a5:e9:af:58:
+                    64:ea:1a:2c:ed
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:81:ec:11:36:4d:2d:6e:7b:4e:33:55:0e:cc:
+         3d:5b:37:3f:ac:00:b7:2f:6f:59:ff:f1:66:a8:a5:11:6b:3d:
+         a2:02:20:37:bc:c1:b2:a0:be:eb:4e:8f:95:13:f9:82:24:0b:
+         aa:95:9a:4d:47:78:bc:9d:94:2a:c0:25:db:34:8d:df:36
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZ2gAwIBAgIBDDAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBTYXJkZWduYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNTYXJkZWduYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjY0NFoXDTIzMDgwMzEzMjY0NFowSTEOMAwGA1UEAwwFSGVucnkxCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUgU2Fy
+ZGVnbmEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQUMcUIah0vRzRkD8PrvQKK
+fnoOhaRcuEy7yjHY+ZU3LTgJkZGUO5zBiY0x6Ehn5wx25CA+wxw9pemvWGTqGizt
+oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
+AgNIADBFAiEAgewRNk0tbntOM1UOzD1bNz+sALcvb1n/8WaopRFrPaICIDe8wbKg
+vutOj5UT+YIkC6qVmk1HeLydlCrAJds0jd82
+-----END CERTIFICATE-----

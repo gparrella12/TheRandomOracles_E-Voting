@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 8 (0x8)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Abruzzo, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Abruzzo@evoting.it
+        Validity
+            Not Before: Aug  3 13:25:58 2022 GMT
+            Not After : Aug  3 13:25:58 2023 GMT
+        Subject: CN=Katharina, C=IT, ST=Italia, O=Regione Abruzzo
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:92:66:2c:f3:40:c9:5d:1b:56:d0:ea:8a:06:7e:
+                    58:b4:a6:cc:a5:ff:f8:8b:be:ee:34:03:6e:45:c4:
+                    55:e0:f1:e4:dd:31:10:04:42:9a:06:b0:2d:91:2f:
+                    9e:81:b9:b5:bd:df:ec:fa:ca:53:83:20:09:21:a2:
+                    78:39:8c:52:b1
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:e1:98:dd:b7:12:98:b1:76:c3:a0:a2:d8:e0:
+         51:75:2a:a2:5b:fe:2e:d9:6c:90:3e:17:df:ed:f7:2b:76:1b:
+         4b:02:20:08:d0:82:22:2c:17:15:c5:2c:25:09:f0:8d:66:a9:
+         5f:78:f1:01:24:35:9e:27:bd:ed:50:43:54:07:ea:a6:4d
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ6gAwIBAgIBCDAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBBYnJ1enpvMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWEkFicnV6em9AZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI1NThaFw0yMzA4MDMxMzI1NThaMEwxEjAQBgNVBAMMCUthdGhhcmluYTEL
+MAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UECgwPUmVnaW9uZSBB
+YnJ1enpvMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEkmYs80DJXRtW0OqKBn5Y
+tKbMpf/4i77uNANuRcRV4PHk3TEQBEKaBrAtkS+egbm1vd/s+spTgyAJIaJ4OYxS
+saMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDSAAwRQIhAOGY3bcSmLF2w6Ci2OBRdSqiW/4u2WyQPhff7fcrdhtLAiAI0IIi
+LBcVxSwlCfCNZqlfePEBJDWeJ73tUENUB+qmTQ==
+-----END CERTIFICATE-----

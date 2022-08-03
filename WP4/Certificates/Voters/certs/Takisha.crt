@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 22 (0x16)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Molise, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Molise@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:51 2022 GMT
+            Not After : Aug  3 13:26:51 2023 GMT
+        Subject: CN=Takisha, C=IT, ST=Italia, O=Regione Molise
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:a7:8d:3d:46:b5:67:75:85:ab:9e:46:17:e8:c3:
+                    63:30:bb:96:86:80:82:96:4c:d6:98:a2:2e:df:d6:
+                    49:b1:5f:40:4d:4f:5f:a7:2e:0e:82:d6:47:53:84:
+                    d2:1c:f7:a2:0c:0a:75:0d:c8:34:b7:41:b2:30:be:
+                    5b:e5:02:01:63
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:da:8a:a7:c5:90:66:97:0b:ef:82:25:e1:15:
+         cb:1b:ac:45:fe:79:bd:c2:76:4f:9f:63:cd:14:95:e6:e1:37:
+         26:02:21:00:95:48:0f:d7:ca:dc:0d:2e:fc:8d:cb:14:52:5c:
+         bc:7f:77:87:8e:0a:a5:b8:5f:34:c9:b2:8c:43:c9:83:66:c5
+-----BEGIN CERTIFICATE-----
+MIIB9DCCAZmgAwIBAgIBFjAKBggqhkjOPQQDAjCBlzEXMBUGA1UEAwwOUmVnaW9u
+ZSBNb2xpc2UxCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoM
+D0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1dGhv
+cml0eTEgMB4GCSqGSIb3DQEJARYRTW9saXNlQGV2b3RpbmcuaXQwHhcNMjIwODAz
+MTMyNjUxWhcNMjMwODAzMTMyNjUxWjBJMRAwDgYDVQQDDAdUYWtpc2hhMQswCQYD
+VQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRcwFQYDVQQKDA5SZWdpb25lIE1vbGlz
+ZTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABKeNPUa1Z3WFq55GF+jDYzC7loaA
+gpZM1piiLt/WSbFfQE1PX6cuDoLWR1OE0hz3ogwKdQ3INLdBsjC+W+UCAWOjIzAh
+MA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMCA0kA
+MEYCIQDaiqfFkGaXC++CJeEVyxusRf55vcJ2T59jzRSV5uE3JgIhAJVID9fK3A0u
+/I3LFFJcvH93h44KpbhfNMmyjEPJg2bF
+-----END CERTIFICATE-----

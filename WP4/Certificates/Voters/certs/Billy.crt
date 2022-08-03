@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 7 (0x7)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Calabria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Calabria@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:06 2022 GMT
+            Not After : Aug  3 13:26:06 2023 GMT
+        Subject: CN=Billy, C=IT, ST=Italia, O=Regione Calabria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:ad:cf:ce:f9:ed:d2:ac:90:a4:d7:1a:47:f6:a6:
+                    69:7e:70:30:42:37:2f:0e:1c:0c:f8:d7:97:62:fa:
+                    fd:45:35:ae:0e:71:19:8a:5b:da:ea:b8:e0:d3:80:
+                    cd:f2:fc:cd:cc:8b:b7:62:48:de:a8:2d:64:79:a4:
+                    96:8e:b9:ab:fc
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:3d:74:32:82:bd:49:d0:a7:29:7c:43:1b:87:c1:
+         19:39:2a:9b:e9:38:02:9d:ce:95:55:61:c2:45:fb:86:d3:eb:
+         02:21:00:e2:cd:c3:ce:d1:94:c0:fd:6d:c3:5a:aa:d7:79:25:
+         cd:08:fc:a2:02:12:5b:38:0d:0e:eb:a0:04:02:03:01:5e
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZ2gAwIBAgIBBzAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYWxhYnJpYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYWxhYnJpYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjYwNloXDTIzMDgwMzEzMjYwNlowSTEOMAwGA1UEAwwFQmlsbHkxCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUgQ2Fs
+YWJyaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAStz8757dKskKTXGkf2pml+
+cDBCNy8OHAz415di+v1FNa4OcRmKW9rquODTgM3y/M3Mi7diSN6oLWR5pJaOuav8
+oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
+AgNIADBFAiA9dDKCvUnQpyl8QxuHwRk5KpvpOAKdzpVVYcJF+4bT6wIhAOLNw87R
+lMD9bcNaqtd5Jc0I/KICEls4DQ7roAQCAwFe
+-----END CERTIFICATE-----

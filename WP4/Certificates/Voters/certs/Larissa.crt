@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 58 (0x3a)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Campania, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Campania@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:45 2022 GMT
+            Not After : Aug  3 13:28:45 2023 GMT
+        Subject: CN=Larissa, C=IT, ST=Italia, O=Regione Campania
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:2c:c8:39:5d:23:05:9b:c0:33:14:e6:b7:d4:a1:
+                    66:1c:99:8e:ac:1c:2f:95:e9:d7:73:fe:bc:f8:be:
+                    1c:09:aa:b3:86:d6:73:e4:be:d8:ec:ef:be:93:e8:
+                    58:b5:de:c6:7f:4f:8a:8a:b5:b7:f5:4b:2e:30:01:
+                    88:1f:f0:67:27
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:4c:73:c3:73:ad:56:e5:d1:cd:29:6c:cc:b6:5a:
+         8d:e0:d1:ab:3d:66:b1:74:1a:ba:d2:b9:81:21:ea:7c:08:5e:
+         02:21:00:b6:c6:5f:e0:a4:f7:31:2f:1c:c4:f0:d6:2f:74:1c:
+         fe:bf:e6:db:bf:6b:19:39:f7:48:1a:d0:2b:54:d0:6b:a5
+-----BEGIN CERTIFICATE-----
+MIIB+TCCAZ+gAwIBAgIBOjAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYW1wYW5pYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYW1wYW5pYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjg0NVoXDTIzMDgwMzEzMjg0NVowSzEQMA4GA1UEAwwHTGFyaXNzYTEL
+MAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEZMBcGA1UECgwQUmVnaW9uZSBD
+YW1wYW5pYTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABCzIOV0jBZvAMxTmt9Sh
+ZhyZjqwcL5Xp13P+vPi+HAmqs4bWc+S+2OzvvpPoWLXexn9Pioq1t/VLLjABiB/w
+ZyejIzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49
+BAMCA0gAMEUCIExzw3OtVuXRzSlszLZajeDRqz1msXQautK5gSHqfAheAiEAtsZf
+4KT3MS8cxPDWL3Qc/r/m279rGTn3SBrQK1TQa6U=
+-----END CERTIFICATE-----

@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 20 (0x14)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Abruzzo, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Abruzzo@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:36 2022 GMT
+            Not After : Aug  3 13:26:36 2023 GMT
+        Subject: CN=Cecelia, C=IT, ST=Italia, O=Regione Abruzzo
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:3a:f5:24:77:20:cc:92:6b:ea:6d:1e:73:3d:85:
+                    4a:65:b8:3d:39:4c:b1:5b:d3:20:43:1f:a8:e9:1d:
+                    67:3f:3e:4f:1e:66:12:5e:69:8e:12:29:ef:e0:6e:
+                    04:b5:12:92:3d:d1:7c:5c:66:59:63:20:99:99:ac:
+                    eb:02:b3:eb:0e
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:f3:d6:88:d7:74:3d:9a:3f:9b:4d:93:96:30:
+         52:89:24:93:a1:d9:9a:aa:03:5d:b7:7b:02:c1:be:2a:c1:64:
+         30:02:20:08:88:36:6b:1a:f5:8c:81:aa:f3:53:d5:a4:0b:fd:
+         d3:75:7f:d2:c8:35:1a:73:f7:16:77:fb:50:c7:c5:4a:f3
+-----BEGIN CERTIFICATE-----
+MIIB9jCCAZygAwIBAgIBFDAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBBYnJ1enpvMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWEkFicnV6em9AZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI2MzZaFw0yMzA4MDMxMzI2MzZaMEoxEDAOBgNVBAMMB0NlY2VsaWExCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoMD1JlZ2lvbmUgQWJy
+dXp6bzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABDr1JHcgzJJr6m0ecz2FSmW4
+PTlMsVvTIEMfqOkdZz8+Tx5mEl5pjhIp7+BuBLUSkj3RfFxmWWMgmZms6wKz6w6j
+IzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMC
+A0gAMEUCIQDz1ojXdD2aP5tNk5YwUokkk6HZmqoDXbd7AsG+KsFkMAIgCIg2axr1
+jIGq81PVpAv903V/0sg1GnP3Fnf7UMfFSvM=
+-----END CERTIFICATE-----

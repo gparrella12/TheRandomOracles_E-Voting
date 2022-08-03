@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 56 (0x38)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Piemonte, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Piemonte@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:59 2022 GMT
+            Not After : Aug  3 13:27:59 2023 GMT
+        Subject: CN=Alejandro, C=IT, ST=Italia, O=Regione Piemonte
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:8a:aa:c4:29:da:aa:5c:62:21:2e:90:10:09:dd:
+                    c3:4d:50:1e:bf:4b:f5:3f:01:9c:13:64:36:2c:6e:
+                    5d:f5:4b:2b:4b:7a:05:64:39:82:3f:95:ef:05:0b:
+                    ac:88:cb:81:f9:f3:ef:90:f1:b4:60:6f:ca:1e:de:
+                    31:f5:72:de:79
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:d3:3e:4c:b9:85:ab:ab:35:e8:b6:4b:ef:92:
+         6b:4c:e3:93:32:10:d6:79:81:ce:a0:8a:8d:37:32:6a:0c:5a:
+         97:02:20:05:c9:50:de:f6:29:76:43:cb:74:62:b9:5d:41:97:
+         87:6d:4f:72:82:5f:00:18:a4:c4:51:48:3a:7d:28:5b:2d
+-----BEGIN CERTIFICATE-----
+MIIB+zCCAaGgAwIBAgIBODAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBQaWVtb250ZTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNQaWVtb250ZUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjc1OVoXDTIzMDgwMzEzMjc1OVowTTESMBAGA1UEAwwJQWxlamFuZHJv
+MQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRkwFwYDVQQKDBBSZWdpb25l
+IFBpZW1vbnRlMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEiqrEKdqqXGIhLpAQ
+Cd3DTVAev0v1PwGcE2Q2LG5d9UsrS3oFZDmCP5XvBQusiMuB+fPvkPG0YG/KHt4x
+9XLeeaMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZI
+zj0EAwIDSAAwRQIhANM+TLmFq6s16LZL75JrTOOTMhDWeYHOoIqNNzJqDFqXAiAF
+yVDe9il2Q8t0YrldQZeHbU9ygl8AGKTEUUg6fShbLQ==
+-----END CERTIFICATE-----

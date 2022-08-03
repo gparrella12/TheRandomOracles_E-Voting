@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 60 (0x3c)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Calabria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Calabria@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:49 2022 GMT
+            Not After : Aug  3 13:28:49 2023 GMT
+        Subject: CN=Edmond, C=IT, ST=Italia, O=Regione Calabria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:a1:42:4f:13:39:39:12:a1:dd:9a:57:5d:5b:0f:
+                    20:21:1c:b3:15:fa:2c:b4:56:9d:69:ba:ea:22:ef:
+                    75:9a:5f:c0:4c:2d:54:54:56:87:25:68:1c:7b:1d:
+                    65:f3:b0:c1:7a:24:60:3a:d0:1f:23:3d:cb:07:b6:
+                    58:fe:b5:7d:45
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:54:a3:ec:41:b2:32:26:5d:77:e3:f0:b1:95:9f:
+         5a:e3:dd:1c:40:41:03:25:1e:0b:94:92:77:92:12:df:8f:87:
+         02:21:00:ac:bc:9e:db:68:56:cc:5a:bc:f7:1d:c6:56:34:5d:
+         06:51:47:ed:67:5d:b9:05:ea:47:08:66:94:67:23:57:77
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ6gAwIBAgIBPDAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYWxhYnJpYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYWxhYnJpYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjg0OVoXDTIzMDgwMzEzMjg0OVowSjEPMA0GA1UEAwwGRWRtb25kMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRkwFwYDVQQKDBBSZWdpb25lIENh
+bGFicmlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEoUJPEzk5EqHdmlddWw8g
+IRyzFfostFadabrqIu91ml/ATC1UVFaHJWgcex1l87DBeiRgOtAfIz3LB7ZY/rV9
+RaMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDSAAwRQIgVKPsQbIyJl134/CxlZ9a490cQEEDJR4LlJJ3khLfj4cCIQCsvJ7b
+aFbMWrz3HcZWNF0GUUftZ125BepHCGaUZyNXdw==
+-----END CERTIFICATE-----

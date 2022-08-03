@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 22 (0x16)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Lombardia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Lombardia@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:53 2022 GMT
+            Not After : Aug  3 13:26:53 2023 GMT
+        Subject: CN=Bruno, C=IT, ST=Italia, O=Regione Lombardia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:01:70:d1:ca:7c:84:f3:af:41:3c:97:ec:9b:6d:
+                    95:08:fc:00:ae:fe:c8:6a:eb:b2:6f:39:d5:04:8c:
+                    57:50:d7:81:17:c5:c9:6c:57:6e:d0:65:39:33:1c:
+                    17:9d:cf:88:61:f2:d9:1a:c8:1b:3d:62:5a:78:87:
+                    e5:ba:36:f8:4c
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:42:d9:4e:98:35:7c:3a:e0:7e:a2:b4:8f:19:a3:
+         09:ae:12:75:2e:e2:bc:1b:63:f8:4e:89:bd:89:81:ec:6a:f4:
+         02:21:00:8f:0d:0b:98:6c:f5:b3:c3:40:82:53:f8:d4:6c:28:
+         79:33:0b:2c:b5:59:e7:65:91:62:f5:9c:68:2b:02:ae:73
+-----BEGIN CERTIFICATE-----
+MIIB+jCCAaCgAwIBAgIBFjAKBggqhkjOPQQDAjCBnTEaMBgGA1UEAwwRUmVnaW9u
+ZSBMb21iYXJkaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNV
+BAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1
+dGhvcml0eTEjMCEGCSqGSIb3DQEJARYUTG9tYmFyZGlhQGV2b3RpbmcuaXQwHhcN
+MjIwODAzMTMyNjUzWhcNMjMwODAzMTMyNjUzWjBKMQ4wDAYDVQQDDAVCcnVubzEL
+MAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEaMBgGA1UECgwRUmVnaW9uZSBM
+b21iYXJkaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQBcNHKfITzr0E8l+yb
+bZUI/ACu/shq67JvOdUEjFdQ14EXxclsV27QZTkzHBedz4hh8tkayBs9Ylp4h+W6
+NvhMoyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjO
+PQQDAgNIADBFAiBC2U6YNXw64H6itI8ZowmuEnUu4rwbY/hOib2Jgexq9AIhAI8N
+C5hs9bPDQIJT+NRsKHkzCyy1WedlkWL1nGgrAq5z
+-----END CERTIFICATE-----

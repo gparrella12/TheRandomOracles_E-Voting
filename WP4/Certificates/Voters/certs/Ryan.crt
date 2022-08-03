@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 58 (0x3a)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Calabria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Calabria@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:45 2022 GMT
+            Not After : Aug  3 13:28:45 2023 GMT
+        Subject: CN=Ryan, C=IT, ST=Italia, O=Regione Calabria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:ed:1c:b4:29:93:58:75:a3:9d:e7:84:e6:61:01:
+                    e6:e8:0f:88:eb:74:92:74:24:7e:5a:c2:bf:db:47:
+                    dc:8e:3a:5e:e9:10:6e:b5:25:84:40:f3:47:be:26:
+                    c0:ce:29:0e:f2:7e:50:ec:72:02:06:23:5f:07:1d:
+                    ed:fb:2b:8c:9a
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:81:2e:91:c2:df:1b:bc:c9:24:0e:a1:90:e8:
+         cd:ed:95:f5:63:41:01:90:66:47:1d:60:b7:3f:1e:c3:47:3d:
+         43:02:21:00:d1:6c:01:e5:d0:b6:b6:f7:6a:31:ec:22:1d:fd:
+         7d:f6:ad:22:48:c7:7c:db:8f:98:7e:07:46:fb:7b:7b:95:b4
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZygAwIBAgIBOjAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYWxhYnJpYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYWxhYnJpYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjg0NVoXDTIzMDgwMzEzMjg0NVowSDENMAsGA1UEAwwEUnlhbjELMAkG
+A1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEZMBcGA1UECgwQUmVnaW9uZSBDYWxh
+YnJpYTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABO0ctCmTWHWjneeE5mEB5ugP
+iOt0knQkflrCv9tH3I46XukQbrUlhEDzR74mwM4pDvJ+UOxyAgYjXwcd7fsrjJqj
+IzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMC
+A0kAMEYCIQCBLpHC3xu8ySQOoZDoze2V9WNBAZBmRx1gtz8ew0c9QwIhANFsAeXQ
+trb3ajHsIh39ffatIkjHfNuPmH4HRvt7e5W0
+-----END CERTIFICATE-----

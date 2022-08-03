@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 23 (0x17)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Toscana, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Toscana@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:44 2022 GMT
+            Not After : Aug  3 13:26:44 2023 GMT
+        Subject: CN=Bradley, C=IT, ST=Italia, O=Regione Toscana
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:1f:42:f5:c0:57:65:a1:4f:3c:5c:a2:d6:e9:f7:
+                    de:9c:ee:e7:94:60:9c:2d:97:60:e2:ae:ce:c4:be:
+                    96:ea:d3:21:b9:d0:6c:ea:c7:58:af:2f:fa:94:4b:
+                    c8:3c:49:e7:2e:6a:74:ca:76:89:ce:a0:bb:b0:ac:
+                    63:f2:d4:32:0d
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:f7:46:ff:2c:69:61:56:17:52:d6:8e:73:5d:
+         e7:94:b8:9a:ee:9f:09:01:41:f6:91:bf:b4:a4:5d:9c:79:66:
+         67:02:21:00:e1:8a:fb:12:6a:ad:29:da:5c:0b:4c:1e:b9:8a:
+         f0:70:06:54:f0:a6:65:88:b9:3b:f2:2c:3e:03:bb:81:5a:f1
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZygAwIBAgIBFzAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBUb3NjYW5hMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWElRvc2NhbmFAZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI2NDRaFw0yMzA4MDMxMzI2NDRaMEoxEDAOBgNVBAMMB0JyYWRsZXkxCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoMD1JlZ2lvbmUgVG9z
+Y2FuYTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABB9C9cBXZaFPPFyi1un33pzu
+55RgnC2XYOKuzsS+lurTIbnQbOrHWK8v+pRLyDxJ5y5qdMp2ic6gu7CsY/LUMg2j
+IzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMC
+A0kAMEYCIQD3Rv8saWFWF1LWjnNd55S4mu6fCQFB9pG/tKRdnHlmZwIhAOGK+xJq
+rSnaXAtMHrmK8HAGVPCmZYi5O/IsPgO7gVrx
+-----END CERTIFICATE-----

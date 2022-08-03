@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 28 (0x1c)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Sardegna, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sardegna@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:49 2022 GMT
+            Not After : Aug  3 13:27:49 2023 GMT
+        Subject: CN=David, C=IT, ST=Italia, O=Regione Sardegna
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:e8:eb:6a:fb:bf:dc:97:b7:33:f1:e4:f9:61:82:
+                    7f:dd:8b:40:ab:66:10:ca:c4:ff:e2:ff:35:b0:cc:
+                    18:45:20:20:a8:2e:45:68:c0:a2:6c:6a:b0:d8:3d:
+                    1a:2a:a4:8d:61:cb:6b:4c:09:60:b3:41:ab:c7:81:
+                    19:04:0f:9e:5b
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:ff:f2:9b:a8:bf:e9:16:47:de:0e:23:38:9b:
+         fe:eb:15:dd:c4:b3:57:2c:08:47:c6:c9:f1:f3:ac:a0:8c:cf:
+         2d:02:20:1a:cb:df:99:53:26:b7:cc:6a:b3:64:60:40:5a:38:
+         f1:0a:5c:d0:41:e6:dd:21:84:77:3b:d6:c3:d8:e5:8b:2b
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZ2gAwIBAgIBHDAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBTYXJkZWduYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNTYXJkZWduYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjc0OVoXDTIzMDgwMzEzMjc0OVowSTEOMAwGA1UEAwwFRGF2aWQxCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUgU2Fy
+ZGVnbmEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATo62r7v9yXtzPx5Plhgn/d
+i0CrZhDKxP/i/zWwzBhFICCoLkVowKJsarDYPRoqpI1hy2tMCWCzQavHgRkED55b
+oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
+AgNIADBFAiEA//KbqL/pFkfeDiM4m/7rFd3Es1csCEfGyfHzrKCMzy0CIBrL35lT
+JrfMarNkYEBaOPEKXNBB5t0hhHc71sPY5Ysr
+-----END CERTIFICATE-----

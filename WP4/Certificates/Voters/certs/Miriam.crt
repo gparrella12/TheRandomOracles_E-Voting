@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 28 (0x1c)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Sicilia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sicilia@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:01 2022 GMT
+            Not After : Aug  3 13:28:01 2023 GMT
+        Subject: CN=Miriam, C=IT, ST=Italia, O=Regione Sicilia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:f8:2e:cb:dd:1c:74:a0:10:77:c8:fe:35:97:af:
+                    74:05:59:bf:4c:3b:28:09:aa:30:72:41:eb:e7:04:
+                    ad:63:47:d5:3e:8c:e8:8e:a7:d7:f5:8b:fb:42:d1:
+                    69:cd:24:b6:73:da:78:52:a1:a5:72:12:85:3f:10:
+                    00:d4:7f:14:f6
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:e1:8e:7a:73:d2:9a:6f:08:52:16:f9:54:4f:
+         5f:27:28:b5:5b:e0:68:29:fb:1b:f0:77:10:01:83:d4:ab:87:
+         67:02:20:33:b4:69:33:32:d5:06:ab:5b:1c:af:ce:d8:44:f0:
+         3f:15:f2:6a:a1:72:4d:03:19:85:2d:de:65:0c:8e:36:1f
+-----BEGIN CERTIFICATE-----
+MIIB9TCCAZugAwIBAgIBHDAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBTaWNpbGlhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWElNpY2lsaWFAZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI4MDFaFw0yMzA4MDMxMzI4MDFaMEkxDzANBgNVBAMMBk1pcmlhbTELMAkG
+A1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UECgwPUmVnaW9uZSBTaWNp
+bGlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE+C7L3Rx0oBB3yP41l690BVm/
+TDsoCaowckHr5wStY0fVPozojqfX9Yv7QtFpzSS2c9p4UqGlchKFPxAA1H8U9qMj
+MCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0EAwID
+SAAwRQIhAOGOenPSmm8IUhb5VE9fJyi1W+BoKfsb8HcQAYPUq4dnAiAztGkzMtUG
+q1scr87YRPA/FfJqoXJNAxmFLd5lDI42Hw==
+-----END CERTIFICATE-----

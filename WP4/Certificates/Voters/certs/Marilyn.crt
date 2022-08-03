@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 33 (0x21)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Umbria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Umbria@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:30 2022 GMT
+            Not After : Aug  3 13:28:30 2023 GMT
+        Subject: CN=Marilyn, C=IT, ST=Italia, O=Regione Umbria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:8f:8a:70:f1:c5:d3:b1:7a:5c:2f:51:ef:9a:e3:
+                    33:9a:da:49:f1:ca:e6:71:92:1f:6b:24:f2:14:93:
+                    08:a4:df:08:8a:79:11:f8:ec:db:ca:8d:f2:1e:a4:
+                    79:67:cf:04:35:6b:09:00:b8:b2:32:05:61:94:83:
+                    55:f5:7a:6e:94
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:d6:0a:18:7f:31:f9:9a:0d:18:76:d4:47:e4:
+         a3:6b:0c:de:ef:a4:c6:79:4c:5e:a2:5c:48:53:aa:c1:8b:a6:
+         94:02:21:00:99:c0:0f:ed:a5:e1:f3:6e:6f:22:05:38:46:2b:
+         ba:ae:c9:f6:14:a0:d7:91:48:83:f0:3f:23:5d:b1:64:f1:37
+-----BEGIN CERTIFICATE-----
+MIIB9DCCAZmgAwIBAgIBITAKBggqhkjOPQQDAjCBlzEXMBUGA1UEAwwOUmVnaW9u
+ZSBVbWJyaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoM
+D0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1dGhv
+cml0eTEgMB4GCSqGSIb3DQEJARYRVW1icmlhQGV2b3RpbmcuaXQwHhcNMjIwODAz
+MTMyODMwWhcNMjMwODAzMTMyODMwWjBJMRAwDgYDVQQDDAdNYXJpbHluMQswCQYD
+VQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRcwFQYDVQQKDA5SZWdpb25lIFVtYnJp
+YTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABI+KcPHF07F6XC9R75rjM5raSfHK
+5nGSH2sk8hSTCKTfCIp5Efjs28qN8h6keWfPBDVrCQC4sjIFYZSDVfV6bpSjIzAh
+MA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMCA0kA
+MEYCIQDWChh/MfmaDRh21Efko2sM3u+kxnlMXqJcSFOqwYumlAIhAJnAD+2l4fNu
+byIFOEYruq7J9hSg15FIg/A/I12xZPE3
+-----END CERTIFICATE-----

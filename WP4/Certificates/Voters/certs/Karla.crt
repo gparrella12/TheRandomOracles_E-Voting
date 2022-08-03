@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 28 (0x1c)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Basilicata, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Basilicata@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:51 2022 GMT
+            Not After : Aug  3 13:26:51 2023 GMT
+        Subject: CN=Karla, C=IT, ST=Italia, O=Regione Basilicata
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:ee:5b:fd:1e:c9:da:d2:2a:c8:4d:53:cf:2f:94:
+                    84:27:cc:85:5d:da:f6:4b:bd:0f:88:b4:f6:20:88:
+                    af:0f:6f:f1:f4:5c:1a:7d:bc:b0:70:51:78:15:4d:
+                    cf:cd:81:04:f3:cb:b5:87:48:4d:70:8d:40:88:73:
+                    c3:c6:db:31:eb
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:31:6c:c6:e3:7d:aa:c8:3a:f2:22:fe:4d:1f:86:
+         44:e7:f7:df:6f:a7:af:6a:e0:be:fa:56:48:e0:d9:4a:c2:94:
+         02:21:00:e5:03:61:72:64:5e:a7:2c:a1:9b:34:b1:3a:65:bb:
+         eb:93:60:b7:cb:59:d0:ed:11:7e:63:0e:b5:bb:42:39:8e
+-----BEGIN CERTIFICATE-----
+MIIB/TCCAaOgAwIBAgIBHDAKBggqhkjOPQQDAjCBnzEbMBkGA1UEAwwSUmVnaW9u
+ZSBCYXNpbGljYXRhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYD
+VQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBh
+dXRob3JpdHkxJDAiBgkqhkiG9w0BCQEWFUJhc2lsaWNhdGFAZXZvdGluZy5pdDAe
+Fw0yMjA4MDMxMzI2NTFaFw0yMzA4MDMxMzI2NTFaMEsxDjAMBgNVBAMMBUthcmxh
+MQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRswGQYDVQQKDBJSZWdpb25l
+IEJhc2lsaWNhdGEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATuW/0eydrSKshN
+U88vlIQnzIVd2vZLvQ+ItPYgiK8Pb/H0XBp9vLBwUXgVTc/NgQTzy7WHSE1wjUCI
+c8PG2zHroyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggq
+hkjOPQQDAgNIADBFAiAxbMbjfarIOvIi/k0fhkTn999vp69q4L76Vkjg2UrClAIh
+AOUDYXJkXqcsoZs0sTplu+uTYLfLWdDtEX5jDrW7QjmO
+-----END CERTIFICATE-----

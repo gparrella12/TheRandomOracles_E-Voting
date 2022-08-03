@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 30 (0x1e)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Basilicata, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Basilicata@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:59 2022 GMT
+            Not After : Aug  3 13:26:59 2023 GMT
+        Subject: CN=Janet, C=IT, ST=Italia, O=Regione Basilicata
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:94:ee:27:04:02:c9:a2:06:64:87:d2:28:17:cc:
+                    a2:35:8c:94:3f:d2:b9:37:e6:43:41:74:a7:f6:f2:
+                    d0:33:c3:73:8a:d1:f9:6a:42:a0:c5:7b:2b:1b:98:
+                    ec:b9:91:7b:09:96:d3:fe:82:e9:e7:f3:4e:50:30:
+                    50:38:33:26:5a
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:a3:72:04:93:4f:98:49:4b:2e:56:29:c3:d8:
+         6c:85:b7:f0:83:92:88:ab:7e:95:00:c7:6c:f8:6a:26:e4:04:
+         f0:02:21:00:f7:3e:e8:6e:74:10:e6:ec:c5:4e:3d:1c:ec:fe:
+         fb:ce:28:c7:e1:7c:8f:a8:13:e3:4e:23:71:a9:2c:a1:f9:92
+-----BEGIN CERTIFICATE-----
+MIIB/jCCAaOgAwIBAgIBHjAKBggqhkjOPQQDAjCBnzEbMBkGA1UEAwwSUmVnaW9u
+ZSBCYXNpbGljYXRhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYD
+VQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBh
+dXRob3JpdHkxJDAiBgkqhkiG9w0BCQEWFUJhc2lsaWNhdGFAZXZvdGluZy5pdDAe
+Fw0yMjA4MDMxMzI2NTlaFw0yMzA4MDMxMzI2NTlaMEsxDjAMBgNVBAMMBUphbmV0
+MQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRswGQYDVQQKDBJSZWdpb25l
+IEJhc2lsaWNhdGEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASU7icEAsmiBmSH
+0igXzKI1jJQ/0rk35kNBdKf28tAzw3OK0flqQqDFeysbmOy5kXsJltP+gunn805Q
+MFA4MyZaoyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggq
+hkjOPQQDAgNJADBGAiEAo3IEk0+YSUsuVinD2GyFt/CDkoirfpUAx2z4aibkBPAC
+IQD3PuhudBDm7MVOPRzs/vvOKMfhfI+oE+NOI3GpLKH5kg==
+-----END CERTIFICATE-----

@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 20 (0x14)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Sardegna, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sardegna@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:15 2022 GMT
+            Not After : Aug  3 13:27:15 2023 GMT
+        Subject: CN=Hattie, C=IT, ST=Italia, O=Regione Sardegna
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:29:13:6b:e3:25:48:80:64:f3:d3:4e:18:76:50:
+                    e1:b4:68:51:3b:fa:1c:93:7d:78:11:3e:1c:6a:ad:
+                    38:8b:06:90:82:80:d1:9a:4e:93:5d:98:11:62:31:
+                    87:4a:24:92:f4:c4:ec:57:34:87:93:51:c9:87:9b:
+                    cb:7d:fd:ed:c6
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:c9:d6:7c:01:78:7f:89:70:20:59:1e:60:16:
+         fb:97:8c:dc:34:ce:92:89:86:82:7b:31:3d:f5:cf:cf:6a:fe:
+         52:02:21:00:cd:ac:d8:e1:8b:87:6d:ec:c1:02:1e:f5:89:72:
+         b1:4b:cd:b8:d0:8e:5e:48:1b:2c:f5:4c:62:eb:a8:ca:c8:c8
+-----BEGIN CERTIFICATE-----
+MIIB+TCCAZ6gAwIBAgIBFDAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBTYXJkZWduYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNTYXJkZWduYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjcxNVoXDTIzMDgwMzEzMjcxNVowSjEPMA0GA1UEAwwGSGF0dGllMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRkwFwYDVQQKDBBSZWdpb25lIFNh
+cmRlZ25hMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEKRNr4yVIgGTz004YdlDh
+tGhRO/ock314ET4caq04iwaQgoDRmk6TXZgRYjGHSiSS9MTsVzSHk1HJh5vLff3t
+xqMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDSQAwRgIhAMnWfAF4f4lwIFkeYBb7l4zcNM6SiYaCezE99c/Pav5SAiEAzazY
+4YuHbezBAh71iXKxS8240I5eSBss9Uxi66jKyMg=
+-----END CERTIFICATE-----

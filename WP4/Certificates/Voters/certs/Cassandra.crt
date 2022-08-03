@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 4 (0x4)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Sicilia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sicilia@evoting.it
+        Validity
+            Not Before: Aug  3 13:25:58 2022 GMT
+            Not After : Aug  3 13:25:58 2023 GMT
+        Subject: CN=Cassandra, C=IT, ST=Italia, O=Regione Sicilia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:f6:dc:ed:28:98:2b:cf:ba:3c:d6:d6:c9:d9:cb:
+                    6e:2f:23:73:fd:24:3b:41:a7:e7:cb:37:43:5b:c3:
+                    b9:08:03:cb:3e:e3:4d:cb:fa:4c:01:ec:09:24:65:
+                    03:57:a2:8d:15:2b:45:0b:f4:ab:8c:59:48:c1:85:
+                    bd:b1:36:c1:3c
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:af:0d:b5:cf:25:02:b1:d3:c8:ec:e8:ad:70:
+         bb:75:73:4c:b0:9d:28:78:99:25:5a:eb:c7:ca:ef:61:23:92:
+         bb:02:21:00:8b:4c:ce:d8:77:a9:65:18:a3:b0:e5:ea:a9:f8:
+         6b:07:71:94:9c:a3:53:bd:3c:9b:cd:89:63:a6:1d:05:ed:40
+-----BEGIN CERTIFICATE-----
+MIIB+TCCAZ6gAwIBAgIBBDAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBTaWNpbGlhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWElNpY2lsaWFAZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI1NThaFw0yMzA4MDMxMzI1NThaMEwxEjAQBgNVBAMMCUNhc3NhbmRyYTEL
+MAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UECgwPUmVnaW9uZSBT
+aWNpbGlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE9tztKJgrz7o81tbJ2ctu
+LyNz/SQ7QafnyzdDW8O5CAPLPuNNy/pMAewJJGUDV6KNFStFC/SrjFlIwYW9sTbB
+PKMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDSQAwRgIhAK8Ntc8lArHTyOzorXC7dXNMsJ0oeJklWuvHyu9hI5K7AiEAi0zO
+2HepZRijsOXqqfhrB3GUnKNTvTybzYljph0F7UA=
+-----END CERTIFICATE-----

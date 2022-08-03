@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 51 (0x33)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Liguria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Liguria@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:25 2022 GMT
+            Not After : Aug  3 13:28:25 2023 GMT
+        Subject: CN=Madeline, C=IT, ST=Italia, O=Regione Liguria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:bf:29:af:90:64:13:c1:cb:bc:fe:1d:64:a0:b9:
+                    0d:2f:49:a4:75:f1:e3:f2:12:e9:c3:2d:1b:91:98:
+                    18:f1:ff:9c:51:13:e5:6a:92:71:b6:a8:e2:39:5a:
+                    3d:9c:59:78:5b:e9:0d:17:1e:e8:8d:f7:4c:47:93:
+                    62:ac:91:cf:ad
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:fe:f8:0f:98:ac:72:e8:3c:80:65:b8:c9:2d:
+         9a:42:a9:e8:dd:4f:5e:14:5c:35:66:fa:a8:31:34:ee:8c:10:
+         2f:02:20:0e:04:67:9b:70:5f:89:0a:7a:82:50:3b:50:aa:b1:
+         02:20:8d:17:fb:4b:e4:0f:e3:69:b6:f9:a8:bc:a0:92:e9
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZ2gAwIBAgIBMzAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBMaWd1cmlhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWEkxpZ3VyaWFAZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI4MjVaFw0yMzA4MDMxMzI4MjVaMEsxETAPBgNVBAMMCE1hZGVsaW5lMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQKDA9SZWdpb25lIExp
+Z3VyaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAS/Ka+QZBPBy7z+HWSguQ0v
+SaR18ePyEunDLRuRmBjx/5xRE+VqknG2qOI5Wj2cWXhb6Q0XHuiN90xHk2Kskc+t
+oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
+AgNIADBFAiEA/vgPmKxy6DyAZbjJLZpCqejdT14UXDVm+qgxNO6MEC8CIA4EZ5tw
+X4kKeoJQO1CqsQIgjRf7S+QP42m2+ai8oJLp
+-----END CERTIFICATE-----

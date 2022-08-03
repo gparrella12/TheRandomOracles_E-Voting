@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 49 (0x31)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Basilicata, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Basilicata@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:27 2022 GMT
+            Not After : Aug  3 13:28:27 2023 GMT
+        Subject: CN=Maxine, C=IT, ST=Italia, O=Regione Basilicata
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:bb:bc:11:99:16:07:9c:9c:05:f7:aa:15:53:22:
+                    22:13:3f:22:f2:57:ed:ff:63:bc:e8:6e:33:a6:57:
+                    fc:b7:c1:2f:30:13:97:44:29:49:9e:bc:52:6f:96:
+                    af:b4:e9:a4:96:d0:4c:2d:de:19:d3:57:09:ce:fc:
+                    87:37:3e:da:3f
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:1f:b3:0f:06:ab:2b:05:30:bd:69:71:56:0f:26:
+         6b:cc:ff:d7:1b:4b:38:00:3c:29:28:cd:79:71:87:b5:e6:51:
+         02:20:0c:37:13:a3:2a:88:00:94:ce:63:fd:89:c6:4c:e0:80:
+         e6:98:d0:1b:db:1d:78:c3:d7:e7:22:3c:9f:91:e8:83
+-----BEGIN CERTIFICATE-----
+MIIB/TCCAaSgAwIBAgIBMTAKBggqhkjOPQQDAjCBnzEbMBkGA1UEAwwSUmVnaW9u
+ZSBCYXNpbGljYXRhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYD
+VQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBh
+dXRob3JpdHkxJDAiBgkqhkiG9w0BCQEWFUJhc2lsaWNhdGFAZXZvdGluZy5pdDAe
+Fw0yMjA4MDMxMzI4MjdaFw0yMzA4MDMxMzI4MjdaMEwxDzANBgNVBAMMBk1heGlu
+ZTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEbMBkGA1UECgwSUmVnaW9u
+ZSBCYXNpbGljYXRhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEu7wRmRYHnJwF
+96oVUyIiEz8i8lft/2O86G4zplf8t8EvMBOXRClJnrxSb5avtOmkltBMLd4Z01cJ
+zvyHNz7aP6MjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYI
+KoZIzj0EAwIDRwAwRAIgH7MPBqsrBTC9aXFWDyZrzP/XG0s4ADwpKM15cYe15lEC
+IAw3E6MqiACUzmP9icZM4IDmmNAb2x14w9fnIjyfkeiD
+-----END CERTIFICATE-----

@@ -5,12 +5,14 @@ import CryptographicTools.ElGamalHomomorphic.ElGamalCipherText;
 import CryptographicTools.ElGamalHomomorphic.ExponentialElGamal;
 import CryptographicTools.SignatureScheme;
 import Utils.EasyLoadFromFile;
+import Utils.Utils;
 import java.io.Serializable;
 import java.math.BigInteger;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.security.cert.CertificateEncodingException;
 import java.security.cert.X509Certificate;
+import org.apache.commons.lang3.SerializationUtils;
 import org.bouncycastle.asn1.x500.RDN;
 import org.bouncycastle.asn1.x500.X500Name;
 import org.bouncycastle.asn1.x500.style.BCStyle;
@@ -126,7 +128,7 @@ public class Voter implements Serializable {
      * @return <code>SIG(Vote||VoteProof)</code>
      */
     public byte[] signVote(Vote v, VoteProof vp) {
-        return SignatureScheme.signMessage(this.privateSigKey, v.toString().concat(vp.toString()).getBytes());
+        return SignatureScheme.signMessage(this.privateSigKey, Utils.append(SerializationUtils.serialize(v),SerializationUtils.serialize(vp)));
     }
 
     /**

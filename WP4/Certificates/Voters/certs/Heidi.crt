@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 3 (0x3)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Calabria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Calabria@evoting.it
+        Validity
+            Not Before: Aug  3 13:25:46 2022 GMT
+            Not After : Aug  3 13:25:46 2023 GMT
+        Subject: CN=Heidi, C=IT, ST=Italia, O=Regione Calabria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:3a:33:c8:2b:34:60:94:c5:74:c8:8d:53:b3:eb:
+                    bb:53:50:3c:b1:4e:ba:1a:45:a1:5f:07:51:e0:d0:
+                    8b:a5:f4:d8:b5:3e:59:29:78:b7:ec:dc:be:82:3b:
+                    6b:36:db:dc:90:64:06:15:88:74:3a:79:bf:4b:7a:
+                    de:04:4f:2e:2d
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:8a:04:49:d0:09:6e:c6:3d:30:af:c0:62:9e:
+         35:f0:a8:72:a3:91:69:2b:17:6c:e3:c6:d8:6b:d6:3c:67:03:
+         8a:02:21:00:94:b5:4f:75:cb:38:8d:b1:04:4c:a4:fd:12:ca:
+         e0:0f:d9:97:1f:51:03:94:d3:9b:c6:4f:82:1b:8a:00:1f:72
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ2gAwIBAgIBAzAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYWxhYnJpYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYWxhYnJpYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjU0NloXDTIzMDgwMzEzMjU0NlowSTEOMAwGA1UEAwwFSGVpZGkxCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUgQ2Fs
+YWJyaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQ6M8grNGCUxXTIjVOz67tT
+UDyxTroaRaFfB1Hg0Iul9Ni1PlkpeLfs3L6CO2s229yQZAYViHQ6eb9Let4ETy4t
+oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
+AgNJADBGAiEAigRJ0Aluxj0wr8BinjXwqHKjkWkrF2zjxthr1jxnA4oCIQCUtU91
+yziNsQRMpP0SyuAP2ZcfUQOU05vGT4IbigAfcg==
+-----END CERTIFICATE-----

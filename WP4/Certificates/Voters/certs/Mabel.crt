@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 15 (0xf)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Campania, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Campania@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:15 2022 GMT
+            Not After : Aug  3 13:26:15 2023 GMT
+        Subject: CN=Mabel, C=IT, ST=Italia, O=Regione Campania
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:0d:5e:1d:71:d9:dc:73:65:f1:76:b0:b8:b4:b6:
+                    e6:54:f7:da:38:ca:a0:da:14:9b:51:75:b8:37:65:
+                    be:7e:be:c5:38:84:a3:4d:83:c2:7d:af:03:67:32:
+                    51:18:b1:7d:fd:65:80:2d:2e:f2:5b:de:ce:4e:e3:
+                    36:a1:6a:e3:cf
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:bd:32:65:f9:e2:96:0a:d5:81:ab:4c:95:80:
+         ef:0e:1d:66:21:a3:a6:23:eb:08:ec:19:d8:e8:4d:d0:42:2e:
+         6a:02:20:14:87:58:8f:a7:c7:2e:e2:28:83:9b:2a:19:34:a8:
+         d0:84:5e:45:eb:2c:25:df:6e:25:b9:1a:14:8b:17:bd:86
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZ2gAwIBAgIBDzAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYW1wYW5pYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYW1wYW5pYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjYxNVoXDTIzMDgwMzEzMjYxNVowSTEOMAwGA1UEAwwFTWFiZWwxCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUgQ2Ft
+cGFuaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQNXh1x2dxzZfF2sLi0tuZU
+99o4yqDaFJtRdbg3Zb5+vsU4hKNNg8J9rwNnMlEYsX39ZYAtLvJb3s5O4zahauPP
+oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
+AgNIADBFAiEAvTJl+eKWCtWBq0yVgO8OHWYho6Yj6wjsGdjoTdBCLmoCIBSHWI+n
+xy7iKIObKhk0qNCEXkXrLCXfbiW5GhSLF72G
+-----END CERTIFICATE-----

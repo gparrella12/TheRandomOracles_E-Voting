@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 2 (0x2)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Lombardia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Lombardia@evoting.it
+        Validity
+            Not Before: Aug  3 13:25:43 2022 GMT
+            Not After : Aug  3 13:25:43 2023 GMT
+        Subject: CN=Stacey, C=IT, ST=Italia, O=Regione Lombardia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:f6:57:0b:e2:f3:06:e4:c5:58:91:90:48:94:7c:
+                    6e:4c:45:24:94:84:7c:e7:88:73:ef:a4:bb:c8:6f:
+                    d6:ab:f7:74:3e:ae:ff:7f:8b:d9:11:35:07:f5:ae:
+                    81:a6:c6:37:67:4e:a2:df:eb:2e:39:af:ca:3d:72:
+                    e3:72:71:0e:aa
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:c1:52:b4:9b:ec:46:03:48:5c:3d:9e:4b:37:
+         36:b5:f6:23:dc:ff:0b:f7:0d:0a:a7:58:ef:18:c6:b3:8c:1e:
+         80:02:21:00:ad:f2:a4:bc:f9:ca:88:51:24:32:fb:ce:a0:b0:
+         0a:8e:46:ce:11:39:37:51:bb:2c:13:f9:8c:89:c9:fd:5e:96
+-----BEGIN CERTIFICATE-----
+MIIB/DCCAaGgAwIBAgIBAjAKBggqhkjOPQQDAjCBnTEaMBgGA1UEAwwRUmVnaW9u
+ZSBMb21iYXJkaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNV
+BAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1
+dGhvcml0eTEjMCEGCSqGSIb3DQEJARYUTG9tYmFyZGlhQGV2b3RpbmcuaXQwHhcN
+MjIwODAzMTMyNTQzWhcNMjMwODAzMTMyNTQzWjBLMQ8wDQYDVQQDDAZTdGFjZXkx
+CzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGjAYBgNVBAoMEVJlZ2lvbmUg
+TG9tYmFyZGlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE9lcL4vMG5MVYkZBI
+lHxuTEUklIR854hz76S7yG/Wq/d0Pq7/f4vZETUH9a6BpsY3Z06i3+suOa/KPXLj
+cnEOqqMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZI
+zj0EAwIDSQAwRgIhAMFStJvsRgNIXD2eSzc2tfYj3P8L9w0Kp1jvGMazjB6AAiEA
+rfKkvPnKiFEkMvvOoLAKjkbOETk3UbssE/mMicn9XpY=
+-----END CERTIFICATE-----

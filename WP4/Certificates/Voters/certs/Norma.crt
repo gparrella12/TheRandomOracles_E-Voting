@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 48 (0x30)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Campania, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Campania@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:09 2022 GMT
+            Not After : Aug  3 13:28:09 2023 GMT
+        Subject: CN=Norma, C=IT, ST=Italia, O=Regione Campania
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:d8:7c:d9:70:2c:31:90:02:0d:cd:f9:35:24:0d:
+                    4c:5c:63:3e:44:30:2b:4e:52:5a:0e:9c:4c:9c:f0:
+                    0e:54:cb:7b:77:c9:62:61:7d:c3:82:ee:5e:41:02:
+                    5a:e3:08:d9:f4:5f:cd:3e:d6:c3:6a:b1:8a:97:95:
+                    04:d1:6f:32:85
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:99:b3:97:d3:16:52:af:58:28:ce:d0:c3:f0:
+         66:4a:84:a8:1a:e2:3d:28:40:37:60:c3:d0:11:eb:f6:7d:ca:
+         3e:02:20:2f:4d:37:18:5d:70:3c:84:47:5a:77:5b:42:7b:22:
+         c5:9d:3a:7f:07:82:55:3e:de:bb:7c:b6:55:23:bd:3f:9f
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZ2gAwIBAgIBMDAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYW1wYW5pYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYW1wYW5pYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjgwOVoXDTIzMDgwMzEzMjgwOVowSTEOMAwGA1UEAwwFTm9ybWExCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUgQ2Ft
+cGFuaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATYfNlwLDGQAg3N+TUkDUxc
+Yz5EMCtOUloOnEyc8A5Uy3t3yWJhfcOC7l5BAlrjCNn0X80+1sNqsYqXlQTRbzKF
+oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
+AgNIADBFAiEAmbOX0xZSr1goztDD8GZKhKga4j0oQDdgw9AR6/Z9yj4CIC9NNxhd
+cDyER1p3W0J7IsWdOn8HglU+3rt8tlUjvT+f
+-----END CERTIFICATE-----

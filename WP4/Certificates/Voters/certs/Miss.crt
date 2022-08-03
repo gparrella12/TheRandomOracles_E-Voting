@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 30 (0x1e)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Piemonte, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Piemonte@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:54 2022 GMT
+            Not After : Aug  3 13:26:54 2023 GMT
+        Subject: CN=Miss, C=IT, ST=Italia, O=Regione Piemonte
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:82:ba:fc:ac:67:77:82:76:cb:3f:e7:c6:a6:ff:
+                    4f:72:12:9b:ed:5a:00:f4:8e:55:ff:2c:4d:7b:e5:
+                    53:12:57:b5:7f:c7:03:f5:3c:fc:b8:c3:68:b1:2a:
+                    e9:cf:c2:80:e3:bd:57:19:50:6f:f0:2b:54:6c:3b:
+                    24:46:c6:70:54
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:dc:b8:c6:42:9e:0b:f4:2a:e0:6a:f0:0e:e1:
+         76:01:3c:1f:3e:ea:bb:be:7f:17:c5:df:8f:ba:f7:d4:53:b0:
+         25:02:20:0f:c2:a6:ad:f1:93:3f:9d:fa:e7:1d:ee:e3:05:54:
+         03:e1:01:22:e0:6d:1c:57:b6:05:ea:94:22:2a:51:49:20
+-----BEGIN CERTIFICATE-----
+MIIB9jCCAZygAwIBAgIBHjAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBQaWVtb250ZTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNQaWVtb250ZUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjY1NFoXDTIzMDgwMzEzMjY1NFowSDENMAsGA1UEAwwETWlzczELMAkG
+A1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEZMBcGA1UECgwQUmVnaW9uZSBQaWVt
+b250ZTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABIK6/Kxnd4J2yz/nxqb/T3IS
+m+1aAPSOVf8sTXvlUxJXtX/HA/U8/LjDaLEq6c/CgOO9VxlQb/ArVGw7JEbGcFSj
+IzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMC
+A0gAMEUCIQDcuMZCngv0KuBq8A7hdgE8Hz7qu75/F8Xfj7r31FOwJQIgD8KmrfGT
+P5365x3u4wVUA+EBIuBtHFe2BeqUIipRSSA=
+-----END CERTIFICATE-----

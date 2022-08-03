@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 16 (0x10)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Basilicata, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Basilicata@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:17 2022 GMT
+            Not After : Aug  3 13:26:17 2023 GMT
+        Subject: CN=Allan, C=IT, ST=Italia, O=Regione Basilicata
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:77:26:14:ee:c0:f8:61:b4:ab:b7:1b:29:d5:fe:
+                    c2:94:9f:c3:56:ee:8a:5e:1c:c8:e0:db:d1:a8:c9:
+                    f1:d5:ee:31:7a:f2:2b:5a:c0:0c:10:85:4b:5c:5d:
+                    c7:7c:05:70:3d:e6:6b:20:30:15:0f:f2:73:de:be:
+                    82:c1:e5:f7:0d
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:2c:cd:b0:96:79:6e:b3:46:e7:1c:ac:84:03:f5:
+         34:5d:b6:8d:a1:63:cc:e3:fc:9e:14:00:0e:1a:a1:ef:8e:6a:
+         02:21:00:d2:41:89:ef:12:dc:37:8f:7d:fb:c4:b4:02:87:dc:
+         db:2a:f4:32:19:d1:e8:a2:fd:33:e9:b2:e5:40:c7:38:7c
+-----BEGIN CERTIFICATE-----
+MIIB/TCCAaOgAwIBAgIBEDAKBggqhkjOPQQDAjCBnzEbMBkGA1UEAwwSUmVnaW9u
+ZSBCYXNpbGljYXRhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYD
+VQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBh
+dXRob3JpdHkxJDAiBgkqhkiG9w0BCQEWFUJhc2lsaWNhdGFAZXZvdGluZy5pdDAe
+Fw0yMjA4MDMxMzI2MTdaFw0yMzA4MDMxMzI2MTdaMEsxDjAMBgNVBAMMBUFsbGFu
+MQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRswGQYDVQQKDBJSZWdpb25l
+IEJhc2lsaWNhdGEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAR3JhTuwPhhtKu3
+GynV/sKUn8NW7opeHMjg29GoyfHV7jF68itawAwQhUtcXcd8BXA95msgMBUP8nPe
+voLB5fcNoyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggq
+hkjOPQQDAgNIADBFAiAszbCWeW6zRuccrIQD9TRdto2hY8zj/J4UAA4aoe+OagIh
+ANJBie8S3DePffvEtAKH3Nsq9DIZ0eii/TPpsuVAxzh8
+-----END CERTIFICATE-----

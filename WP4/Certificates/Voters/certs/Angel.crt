@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 11 (0xb)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Lombardia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Lombardia@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:16 2022 GMT
+            Not After : Aug  3 13:26:16 2023 GMT
+        Subject: CN=Angel, C=IT, ST=Italia, O=Regione Lombardia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:31:10:c4:99:d0:90:57:dd:4d:c5:d0:c3:d6:72:
+                    62:d9:38:41:6f:f1:c5:8a:4c:89:71:57:3d:92:27:
+                    f5:4e:dd:d9:bb:e9:66:4c:77:b1:5f:6c:ce:94:3d:
+                    b1:aa:4a:d9:90:ba:6c:08:e8:03:88:03:99:6d:3f:
+                    7c:e5:ec:1b:71
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:02:ee:d2:ad:42:09:3f:ce:56:7f:e0:cf:c6:76:
+         f5:07:df:30:08:3c:b1:30:5b:f1:ec:12:b8:cc:13:e4:c3:44:
+         02:20:56:0b:c0:b3:df:59:81:7f:af:c9:2d:b9:3b:16:af:44:
+         9c:29:58:b8:6d:a5:25:b8:30:4a:c2:2c:3b:47:96:f9
+-----BEGIN CERTIFICATE-----
+MIIB+TCCAaCgAwIBAgIBCzAKBggqhkjOPQQDAjCBnTEaMBgGA1UEAwwRUmVnaW9u
+ZSBMb21iYXJkaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNV
+BAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1
+dGhvcml0eTEjMCEGCSqGSIb3DQEJARYUTG9tYmFyZGlhQGV2b3RpbmcuaXQwHhcN
+MjIwODAzMTMyNjE2WhcNMjMwODAzMTMyNjE2WjBKMQ4wDAYDVQQDDAVBbmdlbDEL
+MAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEaMBgGA1UECgwRUmVnaW9uZSBM
+b21iYXJkaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQxEMSZ0JBX3U3F0MPW
+cmLZOEFv8cWKTIlxVz2SJ/VO3dm76WZMd7FfbM6UPbGqStmQumwI6AOIA5ltP3zl
+7BtxoyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjO
+PQQDAgNHADBEAiAC7tKtQgk/zlZ/4M/GdvUH3zAIPLEwW/HsErjME+TDRAIgVgvA
+s99ZgX+vyS25OxavRJwpWLhtpSW4MErCLDtHlvk=
+-----END CERTIFICATE-----

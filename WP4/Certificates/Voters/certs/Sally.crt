@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 47 (0x2f)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Abruzzo, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Abruzzo@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:06 2022 GMT
+            Not After : Aug  3 13:28:06 2023 GMT
+        Subject: CN=Sally, C=IT, ST=Italia, O=Regione Abruzzo
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:04:49:f1:c5:42:29:9a:1a:17:3a:e8:cf:73:2c:
+                    ed:22:ee:ac:ae:5b:00:8f:ec:a8:79:20:cc:51:84:
+                    ed:e1:d9:ea:48:62:2d:b7:9b:f5:ac:47:29:a4:88:
+                    43:da:78:d7:1c:2f:4e:65:96:73:35:ed:7f:d5:ff:
+                    55:65:f2:79:ed
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:eb:5a:09:40:a0:3a:df:28:6c:8a:ba:76:d9:
+         d3:c4:24:f5:4a:8c:6f:33:2e:57:cf:66:06:bf:3f:fe:e5:10:
+         74:02:20:2c:b8:bd:8f:69:6c:49:c7:01:fa:b1:85:83:dd:f4:
+         1a:6c:4d:20:1f:f7:c5:78:5a:bc:8f:7f:5c:a6:54:20:68
+-----BEGIN CERTIFICATE-----
+MIIB9DCCAZqgAwIBAgIBLzAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBBYnJ1enpvMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWEkFicnV6em9AZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI4MDZaFw0yMzA4MDMxMzI4MDZaMEgxDjAMBgNVBAMMBVNhbGx5MQswCQYD
+VQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQKDA9SZWdpb25lIEFicnV6
+em8wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQESfHFQimaGhc66M9zLO0i7qyu
+WwCP7Kh5IMxRhO3h2epIYi23m/WsRymkiEPaeNccL05llnM17X/V/1Vl8nntoyMw
+ITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQDAgNI
+ADBFAiEA61oJQKA63yhsirp22dPEJPVKjG8zLlfPZga/P/7lEHQCICy4vY9pbEnH
+AfqxhYPd9BpsTSAf98V4WryPf1ymVCBo
+-----END CERTIFICATE-----

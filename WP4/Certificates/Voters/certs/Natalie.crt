@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 30 (0x1e)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Sicilia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sicilia@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:16 2022 GMT
+            Not After : Aug  3 13:28:16 2023 GMT
+        Subject: CN=Natalie, C=IT, ST=Italia, O=Regione Sicilia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:88:f0:99:fe:6e:a5:47:34:bd:76:b3:c1:aa:11:
+                    bb:37:0e:b7:0d:16:01:82:7d:82:c4:9c:17:05:36:
+                    68:af:3b:bb:2c:20:3d:13:da:3f:cf:ea:b4:9e:2e:
+                    55:a1:6b:47:5e:5e:a5:51:41:e7:8b:c0:6e:ff:6a:
+                    c1:8f:38:9b:69
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:17:65:3a:c8:75:3e:cb:16:f8:84:f6:bd:68:e3:
+         57:37:ea:70:89:99:49:a4:9f:ec:5e:40:ea:17:98:3f:12:a6:
+         02:21:00:b6:e9:61:1d:9d:08:3c:03:1e:d7:db:8b:82:06:d0:
+         82:db:d2:54:18:d9:d6:a1:33:ff:89:e2:0f:f1:df:df:ca
+-----BEGIN CERTIFICATE-----
+MIIB9jCCAZygAwIBAgIBHjAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBTaWNpbGlhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWElNpY2lsaWFAZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI4MTZaFw0yMzA4MDMxMzI4MTZaMEoxEDAOBgNVBAMMB05hdGFsaWUxCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoMD1JlZ2lvbmUgU2lj
+aWxpYTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABIjwmf5upUc0vXazwaoRuzcO
+tw0WAYJ9gsScFwU2aK87uywgPRPaP8/qtJ4uVaFrR15epVFB54vAbv9qwY84m2mj
+IzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMC
+A0gAMEUCIBdlOsh1PssW+IT2vWjjVzfqcImZSaSf7F5A6heYPxKmAiEAtulhHZ0I
+PAMe19uLggbQgtvSVBjZ1qEz/4niD/Hf38o=
+-----END CERTIFICATE-----

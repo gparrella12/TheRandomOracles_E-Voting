@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 6 (0x6)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Basilicata, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Basilicata@evoting.it
+        Validity
+            Not Before: Aug  3 13:25:51 2022 GMT
+            Not After : Aug  3 13:25:51 2023 GMT
+        Subject: CN=Donnie, C=IT, ST=Italia, O=Regione Basilicata
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:8d:f2:db:6a:68:4a:75:b1:64:23:3a:c4:17:94:
+                    8c:2b:aa:75:72:e1:9c:56:9e:a8:04:29:13:0c:15:
+                    79:58:6e:db:4d:5d:a9:4d:f3:12:11:54:a9:f9:87:
+                    c6:17:d3:ae:12:2a:79:eb:2f:89:d0:32:d6:36:2b:
+                    ae:a1:4b:e1:03
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:f2:c4:ae:b1:d5:bf:c0:62:97:08:ee:1c:b9:
+         01:25:64:99:f6:06:6f:1c:35:f8:3e:11:4b:58:99:e8:6b:42:
+         60:02:21:00:a8:dd:bf:3b:5c:e1:3b:3a:c3:68:cd:52:c2:a3:
+         4a:7b:57:3c:09:17:f7:51:85:dd:96:75:78:7e:75:ee:e2:00
+-----BEGIN CERTIFICATE-----
+MIIB/zCCAaSgAwIBAgIBBjAKBggqhkjOPQQDAjCBnzEbMBkGA1UEAwwSUmVnaW9u
+ZSBCYXNpbGljYXRhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYD
+VQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBh
+dXRob3JpdHkxJDAiBgkqhkiG9w0BCQEWFUJhc2lsaWNhdGFAZXZvdGluZy5pdDAe
+Fw0yMjA4MDMxMzI1NTFaFw0yMzA4MDMxMzI1NTFaMEwxDzANBgNVBAMMBkRvbm5p
+ZTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEbMBkGA1UECgwSUmVnaW9u
+ZSBCYXNpbGljYXRhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjfLbamhKdbFk
+IzrEF5SMK6p1cuGcVp6oBCkTDBV5WG7bTV2pTfMSEVSp+YfGF9OuEip56y+J0DLW
+NiuuoUvhA6MjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYI
+KoZIzj0EAwIDSQAwRgIhAPLErrHVv8BilwjuHLkBJWSZ9gZvHDX4PhFLWJnoa0Jg
+AiEAqN2/O1zhOzrDaM1SwqNKe1c8CRf3UYXdlnV4fnXu4gA=
+-----END CERTIFICATE-----

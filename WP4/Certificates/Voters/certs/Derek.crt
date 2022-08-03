@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 4 (0x4)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Basilicata, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Basilicata@evoting.it
+        Validity
+            Not Before: Aug  3 13:25:47 2022 GMT
+            Not After : Aug  3 13:25:47 2023 GMT
+        Subject: CN=Derek, C=IT, ST=Italia, O=Regione Basilicata
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:99:0e:33:bc:94:d8:c2:b5:5b:29:f9:3a:ac:c2:
+                    91:20:e7:8a:d0:a7:95:5c:9c:c9:f4:8b:ba:51:af:
+                    99:f4:ff:43:02:45:ec:2a:2e:82:b4:ec:de:1b:9a:
+                    a9:91:f2:1f:85:81:05:e6:48:25:00:84:4b:37:0a:
+                    ec:84:ca:aa:da
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:0d:22:5f:5c:e3:aa:09:cd:0e:9b:64:9a:75:2b:
+         9c:c2:66:0a:7e:93:21:a5:2a:3e:9b:0b:fa:90:4c:70:0a:7e:
+         02:21:00:93:74:a1:42:19:a0:b8:30:69:6b:1f:b6:48:53:b9:
+         63:77:99:c8:24:b1:b2:e3:86:1c:f6:0f:c0:b4:59:ed:e5
+-----BEGIN CERTIFICATE-----
+MIIB/TCCAaOgAwIBAgIBBDAKBggqhkjOPQQDAjCBnzEbMBkGA1UEAwwSUmVnaW9u
+ZSBCYXNpbGljYXRhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYD
+VQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBh
+dXRob3JpdHkxJDAiBgkqhkiG9w0BCQEWFUJhc2lsaWNhdGFAZXZvdGluZy5pdDAe
+Fw0yMjA4MDMxMzI1NDdaFw0yMzA4MDMxMzI1NDdaMEsxDjAMBgNVBAMMBURlcmVr
+MQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRswGQYDVQQKDBJSZWdpb25l
+IEJhc2lsaWNhdGEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASZDjO8lNjCtVsp
++TqswpEg54rQp5VcnMn0i7pRr5n0/0MCRewqLoK07N4bmqmR8h+FgQXmSCUAhEs3
+CuyEyqraoyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggq
+hkjOPQQDAgNIADBFAiANIl9c46oJzQ6bZJp1K5zCZgp+kyGlKj6bC/qQTHAKfgIh
+AJN0oUIZoLgwaWsftkhTuWN3mcgksbLjhhz2D8C0We3l
+-----END CERTIFICATE-----

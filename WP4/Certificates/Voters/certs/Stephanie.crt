@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 34 (0x22)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Piemonte, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Piemonte@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:03 2022 GMT
+            Not After : Aug  3 13:27:03 2023 GMT
+        Subject: CN=Stephanie, C=IT, ST=Italia, O=Regione Piemonte
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:de:6a:57:9e:d2:b9:72:8a:82:2f:ca:e3:f8:f3:
+                    26:3a:33:1f:b8:8c:d7:63:27:67:4c:6c:f0:c2:24:
+                    ce:39:fd:27:0c:08:be:ce:9e:dd:da:1f:21:48:0a:
+                    e4:32:6c:9e:cf:15:42:dc:c7:4e:0b:d7:bf:48:54:
+                    17:42:9c:77:0f
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:e2:52:30:bb:85:54:93:32:46:0e:ef:bc:3d:
+         c3:50:28:fa:df:6f:d6:34:a6:2b:75:73:b0:6b:49:4b:41:d0:
+         e4:02:20:69:d8:d0:f4:67:8b:c8:98:3a:fc:31:4d:24:71:75:
+         54:4d:50:09:48:07:75:5c:42:80:1d:73:1f:fa:cf:30:8c
+-----BEGIN CERTIFICATE-----
+MIIB+zCCAaGgAwIBAgIBIjAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBQaWVtb250ZTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNQaWVtb250ZUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjcwM1oXDTIzMDgwMzEzMjcwM1owTTESMBAGA1UEAwwJU3RlcGhhbmll
+MQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRkwFwYDVQQKDBBSZWdpb25l
+IFBpZW1vbnRlMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE3mpXntK5coqCL8rj
++PMmOjMfuIzXYydnTGzwwiTOOf0nDAi+zp7d2h8hSArkMmyezxVC3MdOC9e/SFQX
+Qpx3D6MjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZI
+zj0EAwIDSAAwRQIhAOJSMLuFVJMyRg7vvD3DUCj632/WNKYrdXOwa0lLQdDkAiBp
+2ND0Z4vImDr8MU0kcXVUTVAJSAd1XEKAHXMf+s8wjA==
+-----END CERTIFICATE-----

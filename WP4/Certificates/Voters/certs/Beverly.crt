@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 18 (0x12)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Calabria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Calabria@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:44 2022 GMT
+            Not After : Aug  3 13:26:44 2023 GMT
+        Subject: CN=Beverly, C=IT, ST=Italia, O=Regione Calabria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:d4:76:88:54:64:ca:4b:7d:85:b6:0c:e9:80:be:
+                    67:16:9a:88:ff:0b:59:71:01:56:7d:13:42:8e:c1:
+                    36:62:c6:f7:aa:1e:3a:b1:d2:35:a7:6f:60:95:75:
+                    e9:13:ca:26:10:8e:c7:0c:54:23:36:1b:67:c7:33:
+                    0e:86:fd:71:b2
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:73:85:b9:da:7c:e2:1a:36:b8:ea:dc:a2:5c:21:
+         0d:1b:15:45:33:36:17:75:d1:f3:8e:3e:3a:c6:e8:51:28:b0:
+         02:21:00:9b:fc:bb:c9:de:a3:03:b3:94:3a:26:e1:39:2e:90:
+         6f:eb:c3:8a:f8:3d:62:3c:b1:ef:c4:8f:d6:52:62:98:eb
+-----BEGIN CERTIFICATE-----
+MIIB+TCCAZ+gAwIBAgIBEjAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYWxhYnJpYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYWxhYnJpYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjY0NFoXDTIzMDgwMzEzMjY0NFowSzEQMA4GA1UEAwwHQmV2ZXJseTEL
+MAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEZMBcGA1UECgwQUmVnaW9uZSBD
+YWxhYnJpYTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABNR2iFRkykt9hbYM6YC+
+ZxaaiP8LWXEBVn0TQo7BNmLG96oeOrHSNadvYJV16RPKJhCOxwxUIzYbZ8czDob9
+cbKjIzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49
+BAMCA0gAMEUCIHOFudp84ho2uOrcolwhDRsVRTM2F3XR844+OsboUSiwAiEAm/y7
+yd6jA7OUOibhOS6Qb+vDivg9Yjyx78SP1lJimOs=
+-----END CERTIFICATE-----

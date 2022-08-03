@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 33 (0x21)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Toscana, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Toscana@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:35 2022 GMT
+            Not After : Aug  3 13:27:35 2023 GMT
+        Subject: CN=Brunilda, C=IT, ST=Italia, O=Regione Toscana
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:03:6b:85:8d:57:f8:4b:69:e2:8d:84:f0:cf:1a:
+                    4b:21:fd:e0:fa:0d:9f:97:a0:17:71:56:c5:ed:5d:
+                    0f:dc:47:a3:b6:89:2b:d0:13:c9:94:1b:6b:06:ec:
+                    44:c6:a4:a3:fb:4e:c4:44:f0:87:8b:12:bb:5a:d0:
+                    16:0b:57:64:5a
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:ce:06:3b:57:de:77:26:b6:50:92:2a:15:70:
+         86:ba:75:6e:38:d7:d4:ea:b5:d3:cf:86:f9:90:53:15:58:a7:
+         8d:02:20:7f:87:e6:41:8f:7e:48:63:84:1b:c4:64:dd:8b:84:
+         37:d8:f6:fd:e9:47:bf:a2:72:3d:e6:7c:87:e5:c4:a3:cc
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZ2gAwIBAgIBITAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBUb3NjYW5hMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWElRvc2NhbmFAZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI3MzVaFw0yMzA4MDMxMzI3MzVaMEsxETAPBgNVBAMMCEJydW5pbGRhMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQKDA9SZWdpb25lIFRv
+c2NhbmEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQDa4WNV/hLaeKNhPDPGksh
+/eD6DZ+XoBdxVsXtXQ/cR6O2iSvQE8mUG2sG7ETGpKP7TsRE8IeLErta0BYLV2Ra
+oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
+AgNIADBFAiEAzgY7V953JrZQkioVcIa6dW4419TqtdPPhvmQUxVYp40CIH+H5kGP
+fkhjhBvEZN2LhDfY9v3pR7+icj3mfIflxKPM
+-----END CERTIFICATE-----

@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 34 (0x22)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Marche, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Marche@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:36 2022 GMT
+            Not After : Aug  3 13:27:36 2023 GMT
+        Subject: CN=Dennis, C=IT, ST=Italia, O=Regione Marche
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:97:a1:69:de:7e:f9:38:73:fd:5e:cd:f4:38:4a:
+                    12:31:83:0e:90:11:64:e2:3e:e3:e1:37:54:8d:58:
+                    6b:0d:ba:00:86:4a:bb:3f:bf:f2:8b:1b:73:ec:dc:
+                    eb:6b:3f:b9:f8:f3:68:53:b3:e4:d7:4a:ad:94:92:
+                    ad:15:1a:19:a3
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:b6:fa:f0:c9:2a:d1:2b:29:04:f2:da:f3:b8:
+         9f:8b:b1:5a:c9:1d:91:1c:c2:ba:9c:2e:21:79:6d:98:a0:b0:
+         a2:02:21:00:9b:d9:10:31:ca:74:dd:7f:65:43:cb:58:42:13:
+         6a:5a:63:68:3c:a3:3e:06:f6:e7:b7:e7:cd:98:7e:64:13:24
+-----BEGIN CERTIFICATE-----
+MIIB8zCCAZigAwIBAgIBIjAKBggqhkjOPQQDAjCBlzEXMBUGA1UEAwwOUmVnaW9u
+ZSBNYXJjaGUxCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoM
+D0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1dGhv
+cml0eTEgMB4GCSqGSIb3DQEJARYRTWFyY2hlQGV2b3RpbmcuaXQwHhcNMjIwODAz
+MTMyNzM2WhcNMjMwODAzMTMyNzM2WjBIMQ8wDQYDVQQDDAZEZW5uaXMxCzAJBgNV
+BAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExFzAVBgNVBAoMDlJlZ2lvbmUgTWFyY2hl
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEl6Fp3n75OHP9Xs30OEoSMYMOkBFk
+4j7j4TdUjVhrDboAhkq7P7/yixtz7Nzraz+5+PNoU7Pk10qtlJKtFRoZo6MjMCEw
+DgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0EAwIDSQAw
+RgIhALb68Mkq0SspBPLa87ifi7FayR2RHMK6nC4heW2YoLCiAiEAm9kQMcp03X9l
+Q8tYQhNqWmNoPKM+Bvbnt+fNmH5kEyQ=
+-----END CERTIFICATE-----

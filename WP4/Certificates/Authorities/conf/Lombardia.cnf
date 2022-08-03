@@ -1,0 +1,46 @@
+# OpenSSL node configuration file
+[ ca ]
+default_ca = CA_default
+[ CA_default ]
+default_days = 365
+database = ../Authorities/conf/index_Lombardia.txt
+serial = ../Authorities/conf/serial_Lombardia.txt
+default_md = sha256
+copy_extensions = copy
+unique_subject = no
+
+[ req ]
+prompt=no
+distinguished_name = distinguished_name
+req_extensions = extensions
+default_md       = sha256 
+    
+[ distinguished_name ]
+countryName         = IT
+stateOrProvinceName         = Italia
+localityName                = Lombardia
+organizationName = E-Voting system
+organizationalUnitName = E-Voting system authority
+commonName = Regione Lombardia
+emailAddress         =Lombardia@evoting.it
+
+[ extensions ]
+keyUsage = critical,digitalSignature,nonRepudiation,keyEncipherment,keyCertSign
+basicConstraints = critical,CA:true,pathlen:2
+# Used to sign node certificates.
+[ signing_node_req ]
+keyUsage = critical,digitalSignature,keyEncipherment
+
+# Common policy for nodes and users.
+[ signing_policy ]
+organizationName = supplied
+commonName = optional
+countryName = optional
+stateOrProvinceName = optional
+organizationName = optional
+organizationalUnitName = optional
+emailAddress = optional
+
+# Used to sign client certificates.
+[ signing_client_req ]
+keyUsage = critical,digitalSignature,keyEncipherment

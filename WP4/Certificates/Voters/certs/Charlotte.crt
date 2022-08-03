@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 50 (0x32)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Liguria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Liguria@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:23 2022 GMT
+            Not After : Aug  3 13:28:23 2023 GMT
+        Subject: CN=Charlotte, C=IT, ST=Italia, O=Regione Liguria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:d6:90:1f:4a:d1:f9:8b:a3:51:77:eb:44:e2:44:
+                    e0:b6:f6:13:d9:f1:fe:ec:da:5a:79:24:2d:4e:1f:
+                    62:f6:da:fc:ce:61:8c:ce:d4:62:16:32:7d:cc:50:
+                    5d:57:03:4b:32:fb:c6:39:4d:80:bc:f2:c5:62:4a:
+                    23:e7:82:56:12
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:3a:65:37:0a:42:e0:bb:a5:e8:ea:3b:53:16:6f:
+         ab:71:c4:3c:12:80:84:5f:37:5d:90:78:3b:65:1b:b2:4f:e9:
+         02:21:00:e9:52:e8:6a:6f:2d:a1:f0:e3:d3:62:b7:54:16:8a:
+         81:3d:f9:59:c7:e7:26:05:f5:15:0f:b7:5b:ae:9b:55:7a
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ6gAwIBAgIBMjAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBMaWd1cmlhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWEkxpZ3VyaWFAZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI4MjNaFw0yMzA4MDMxMzI4MjNaMEwxEjAQBgNVBAMMCUNoYXJsb3R0ZTEL
+MAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UECgwPUmVnaW9uZSBM
+aWd1cmlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE1pAfStH5i6NRd+tE4kTg
+tvYT2fH+7NpaeSQtTh9i9tr8zmGMztRiFjJ9zFBdVwNLMvvGOU2AvPLFYkoj54JW
+EqMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDSAAwRQIgOmU3CkLgu6Xo6jtTFm+rccQ8EoCEXzddkHg7ZRuyT+kCIQDpUuhq
+by2h8OPTYrdUFoqBPflZx+cmBfUVD7dbrptVeg==
+-----END CERTIFICATE-----

@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 54 (0x36)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Calabria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Calabria@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:32 2022 GMT
+            Not After : Aug  3 13:28:32 2023 GMT
+        Subject: CN=Desiree, C=IT, ST=Italia, O=Regione Calabria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:78:7b:cf:fa:8e:62:4b:bc:6e:cb:32:f3:fc:38:
+                    eb:9b:f8:e1:f6:51:22:e4:66:81:16:62:bd:d5:e9:
+                    76:14:a4:81:cb:71:37:de:b0:78:0d:34:ee:a4:66:
+                    1e:65:f3:61:4c:a6:bb:a6:f8:fc:11:68:88:74:c9:
+                    6b:cf:43:90:15
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:0e:03:8d:18:49:28:a7:84:00:52:41:80:19:c6:
+         ea:59:bc:dc:cc:97:5c:8f:70:d8:29:cc:9b:65:79:78:4c:b4:
+         02:21:00:9d:e6:b8:de:fb:f7:94:fb:76:18:6f:78:2e:c4:b3:
+         fd:67:08:2c:cc:d7:18:79:38:24:b4:7f:6c:94:bc:e5:3b
+-----BEGIN CERTIFICATE-----
+MIIB+TCCAZ+gAwIBAgIBNjAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYWxhYnJpYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYWxhYnJpYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjgzMloXDTIzMDgwMzEzMjgzMlowSzEQMA4GA1UEAwwHRGVzaXJlZTEL
+MAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEZMBcGA1UECgwQUmVnaW9uZSBD
+YWxhYnJpYTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABHh7z/qOYku8bssy8/w4
+65v44fZRIuRmgRZivdXpdhSkgctxN96weA007qRmHmXzYUymu6b4/BFoiHTJa89D
+kBWjIzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49
+BAMCA0gAMEUCIA4DjRhJKKeEAFJBgBnG6lm83MyXXI9w2CnMm2V5eEy0AiEAnea4
+3vv3lPt2GG94LsSz/WcILMzXGHk4JLR/bJS85Ts=
+-----END CERTIFICATE-----

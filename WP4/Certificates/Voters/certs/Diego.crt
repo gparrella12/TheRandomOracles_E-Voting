@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 57 (0x39)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Piemonte, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Piemonte@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:07 2022 GMT
+            Not After : Aug  3 13:28:07 2023 GMT
+        Subject: CN=Diego, C=IT, ST=Italia, O=Regione Piemonte
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:d0:4c:4c:42:23:00:21:c2:28:0c:bb:9e:41:89:
+                    b9:51:d2:6e:db:4c:7e:3c:60:af:c9:6a:ce:d8:7e:
+                    f2:ce:a4:5b:85:0d:6e:33:49:d7:ef:13:a9:89:73:
+                    d9:44:18:24:95:3d:38:f3:d1:ae:3f:b7:02:77:32:
+                    24:18:03:00:11
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:88:c3:52:8d:ad:1b:7f:b0:76:42:21:d3:74:
+         01:a9:98:22:a1:bc:8f:3d:29:b4:fb:2a:05:0e:b2:f1:2f:39:
+         c0:02:20:2c:e7:3c:d3:b3:1f:9a:14:18:70:ec:7b:62:cc:a4:
+         47:8c:71:a7:bd:ac:df:78:34:49:85:cc:b8:72:60:64:0a
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZ2gAwIBAgIBOTAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBQaWVtb250ZTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNQaWVtb250ZUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjgwN1oXDTIzMDgwMzEzMjgwN1owSTEOMAwGA1UEAwwFRGllZ28xCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUgUGll
+bW9udGUwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATQTExCIwAhwigMu55BiblR
+0m7bTH48YK/Jas7YfvLOpFuFDW4zSdfvE6mJc9lEGCSVPTjz0a4/twJ3MiQYAwAR
+oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
+AgNIADBFAiEAiMNSja0bf7B2QiHTdAGpmCKhvI89KbT7KgUOsvEvOcACICznPNOz
+H5oUGHDse2LMpEeMcae9rN94NEmFzLhyYGQK
+-----END CERTIFICATE-----

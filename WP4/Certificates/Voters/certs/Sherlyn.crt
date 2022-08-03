@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 10 (0xa)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Lombardia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Lombardia@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:05 2022 GMT
+            Not After : Aug  3 13:26:05 2023 GMT
+        Subject: CN=Sherlyn, C=IT, ST=Italia, O=Regione Lombardia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:08:78:10:df:7c:13:e7:04:08:df:26:2e:82:99:
+                    07:c5:a0:8b:87:ad:a1:f6:6c:e2:71:1c:67:b1:d1:
+                    5d:18:9b:db:84:c7:3a:74:fe:15:1b:64:e5:f0:cf:
+                    f5:6c:3e:63:59:54:08:02:69:bd:b9:ef:f7:cf:12:
+                    d4:a6:85:a2:1f
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:d1:7f:7d:9a:72:5d:6b:fa:07:f6:75:ee:33:
+         1e:a2:3e:0f:1b:4b:26:65:1c:3f:f1:5f:78:f7:69:54:ae:3d:
+         b3:02:20:4c:b8:99:0a:ff:cc:2d:30:87:b0:4e:ba:a8:05:c4:
+         f6:f5:29:ae:a6:d5:41:ac:f4:4a:93:dd:ea:18:50:19:96
+-----BEGIN CERTIFICATE-----
+MIIB/DCCAaKgAwIBAgIBCjAKBggqhkjOPQQDAjCBnTEaMBgGA1UEAwwRUmVnaW9u
+ZSBMb21iYXJkaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNV
+BAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1
+dGhvcml0eTEjMCEGCSqGSIb3DQEJARYUTG9tYmFyZGlhQGV2b3RpbmcuaXQwHhcN
+MjIwODAzMTMyNjA1WhcNMjMwODAzMTMyNjA1WjBMMRAwDgYDVQQDDAdTaGVybHlu
+MQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRowGAYDVQQKDBFSZWdpb25l
+IExvbWJhcmRpYTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABAh4EN98E+cECN8m
+LoKZB8Wgi4etofZs4nEcZ7HRXRib24THOnT+FRtk5fDP9Ww+Y1lUCAJpvbnv988S
+1KaFoh+jIzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqG
+SM49BAMCA0gAMEUCIQDRf32acl1r+gf2de4zHqI+DxtLJmUcP/FfePdpVK49swIg
+TLiZCv/MLTCHsE66qAXE9vUprqbVQaz0SpPd6hhQGZY=
+-----END CERTIFICATE-----

@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 52 (0x34)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Calabria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Calabria@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:28 2022 GMT
+            Not After : Aug  3 13:28:28 2023 GMT
+        Subject: CN=Scott, C=IT, ST=Italia, O=Regione Calabria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:22:e5:e8:e4:4e:83:0b:f6:8e:d6:65:95:ca:de:
+                    9b:e9:47:af:4b:fd:70:6b:9a:17:23:47:e6:7c:9b:
+                    93:d3:4b:ff:e0:aa:83:3d:ba:80:9a:7c:df:e4:1c:
+                    06:1f:6b:94:f2:95:d2:3e:31:74:b1:e7:28:8b:46:
+                    02:88:97:20:6f
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:97:07:55:0a:c0:3d:7f:1a:4a:67:f6:49:1a:
+         9b:86:e6:97:4c:e4:25:12:b9:a6:e2:cd:f6:93:f0:09:f2:87:
+         f1:02:21:00:e8:91:e0:0b:d3:12:2e:48:7d:85:5b:07:f0:6f:
+         1d:c2:8a:68:cd:92:a7:c9:df:af:a5:68:c5:81:ae:5b:36:08
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ2gAwIBAgIBNDAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYWxhYnJpYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYWxhYnJpYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjgyOFoXDTIzMDgwMzEzMjgyOFowSTEOMAwGA1UEAwwFU2NvdHQxCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUgQ2Fs
+YWJyaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQi5ejkToML9o7WZZXK3pvp
+R69L/XBrmhcjR+Z8m5PTS//gqoM9uoCafN/kHAYfa5TyldI+MXSx5yiLRgKIlyBv
+oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
+AgNJADBGAiEAlwdVCsA9fxpKZ/ZJGpuG5pdM5CUSuabizfaT8Anyh/ECIQDokeAL
+0xIuSH2FWwfwbx3CimjNkqfJ36+laMWBrls2CA==
+-----END CERTIFICATE-----

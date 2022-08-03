@@ -28,7 +28,7 @@ public class AuthorityTest {
 
     private static List<Authority> authorities = new ArrayList<>();
     private Authority a;
-    int i = 0;
+    int i = 8;
 
     public AuthorityTest() {
     }
@@ -141,7 +141,7 @@ public class AuthorityTest {
         // Read the authority Certificate
         InputStream in = null;
         try {
-            in = new FileInputStream("Certificati/Authorities/Ministero.crt");
+            in = new FileInputStream("Certificates/Authorities/certs/Ministero.crt");
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
         }

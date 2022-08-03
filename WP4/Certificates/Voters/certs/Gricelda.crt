@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 11 (0xb)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Calabria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Calabria@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:15 2022 GMT
+            Not After : Aug  3 13:26:15 2023 GMT
+        Subject: CN=Gricelda, C=IT, ST=Italia, O=Regione Calabria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:5f:c3:58:93:d3:a5:e4:cd:b5:55:23:64:cf:53:
+                    2a:3b:49:c0:ea:dc:c9:ff:de:59:c6:d2:80:4d:4d:
+                    f1:8d:44:a8:9a:a3:87:d0:06:dd:18:f9:13:93:56:
+                    f8:ea:eb:c5:20:1d:2b:d8:8d:6d:f2:88:f4:a2:36:
+                    c5:89:49:5f:19
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:f1:d7:58:b4:43:15:1d:83:42:ab:9d:b8:1a:
+         49:29:1c:1d:62:15:14:a4:18:cb:85:59:c4:1b:23:81:19:25:
+         6c:02:20:42:03:43:2a:92:a9:95:00:0f:c7:cc:aa:20:06:f6:
+         54:c0:5e:1a:e8:ca:96:96:36:80:b7:19:8f:92:37:c9:8c
+-----BEGIN CERTIFICATE-----
+MIIB+jCCAaCgAwIBAgIBCzAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYWxhYnJpYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYWxhYnJpYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjYxNVoXDTIzMDgwMzEzMjYxNVowTDERMA8GA1UEAwwIR3JpY2VsZGEx
+CzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUg
+Q2FsYWJyaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAARfw1iT06XkzbVVI2TP
+Uyo7ScDq3Mn/3lnG0oBNTfGNRKiao4fQBt0Y+ROTVvjq68UgHSvYjW3yiPSiNsWJ
+SV8ZoyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjO
+PQQDAgNIADBFAiEA8ddYtEMVHYNCq524GkkpHB1iFRSkGMuFWcQbI4EZJWwCIEID
+QyqSqZUAD8fMqiAG9lTAXhroypaWNoC3GY+SN8mM
+-----END CERTIFICATE-----

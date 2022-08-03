@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 55 (0x37)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Campania, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Campania@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:35 2022 GMT
+            Not After : Aug  3 13:28:35 2023 GMT
+        Subject: CN=Teresa, C=IT, ST=Italia, O=Regione Campania
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:f9:8e:4e:2c:ff:37:c7:f8:ed:f2:24:ee:15:26:
+                    ad:f4:1c:99:5e:ae:2b:bf:8c:56:07:96:98:06:41:
+                    4c:29:ff:f4:be:15:ad:e4:dd:cc:f3:5c:ad:55:1a:
+                    6f:77:17:a7:2b:4e:68:3b:88:88:cd:54:19:fa:13:
+                    a0:55:3e:7b:00
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:3e:5f:05:f1:68:d4:e2:44:2a:49:d3:fe:57:cf:
+         96:b7:18:6b:2a:5b:bf:62:4a:ce:dc:31:b7:5f:b7:8f:4e:6e:
+         02:21:00:ba:c2:07:ea:ae:be:fa:bd:d0:52:5e:24:87:8a:3e:
+         88:1b:51:e6:f1:2e:0c:35:7e:1d:2b:03:c0:6c:94:de:a9
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ6gAwIBAgIBNzAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYW1wYW5pYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYW1wYW5pYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjgzNVoXDTIzMDgwMzEzMjgzNVowSjEPMA0GA1UEAwwGVGVyZXNhMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRkwFwYDVQQKDBBSZWdpb25lIENh
+bXBhbmlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE+Y5OLP83x/jt8iTuFSat
+9ByZXq4rv4xWB5aYBkFMKf/0vhWt5N3M81ytVRpvdxenK05oO4iIzVQZ+hOgVT57
+AKMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDSAAwRQIgPl8F8WjU4kQqSdP+V8+WtxhrKlu/YkrO3DG3X7ePTm4CIQC6wgfq
+rr76vdBSXiSHij6IG1Hm8S4MNX4dKwPAbJTeqQ==
+-----END CERTIFICATE-----

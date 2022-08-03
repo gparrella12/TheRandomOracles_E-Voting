@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 33 (0x21)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Lombardia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Lombardia@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:31 2022 GMT
+            Not After : Aug  3 13:27:31 2023 GMT
+        Subject: CN=Patti, C=IT, ST=Italia, O=Regione Lombardia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:27:2b:6e:6f:c7:8a:78:35:24:84:d4:c9:15:f6:
+                    14:06:4b:b4:11:73:d9:ae:08:cd:92:da:98:97:d8:
+                    53:a7:fd:e3:56:24:0d:6d:62:57:2e:b6:9e:85:ab:
+                    bc:31:b5:d6:38:5b:20:80:0c:bf:d7:18:5e:59:71:
+                    f0:8e:42:af:20
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:b8:96:ba:7e:2c:0f:65:5c:10:a2:d5:f4:f2:
+         67:f3:b3:81:ab:2e:d5:80:c4:63:de:8b:98:29:1b:fe:49:db:
+         d9:02:20:06:97:d1:f7:fa:88:56:2c:d9:8f:be:08:a9:49:f6:
+         25:bf:a2:8e:bb:71:17:3d:29:78:1f:3e:ca:77:37:22:81
+-----BEGIN CERTIFICATE-----
+MIIB+jCCAaCgAwIBAgIBITAKBggqhkjOPQQDAjCBnTEaMBgGA1UEAwwRUmVnaW9u
+ZSBMb21iYXJkaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNV
+BAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1
+dGhvcml0eTEjMCEGCSqGSIb3DQEJARYUTG9tYmFyZGlhQGV2b3RpbmcuaXQwHhcN
+MjIwODAzMTMyNzMxWhcNMjMwODAzMTMyNzMxWjBKMQ4wDAYDVQQDDAVQYXR0aTEL
+MAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEaMBgGA1UECgwRUmVnaW9uZSBM
+b21iYXJkaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQnK25vx4p4NSSE1MkV
+9hQGS7QRc9muCM2S2piX2FOn/eNWJA1tYlcutp6Fq7wxtdY4WyCADL/XGF5ZcfCO
+Qq8goyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjO
+PQQDAgNIADBFAiEAuJa6fiwPZVwQotX08mfzs4GrLtWAxGPei5gpG/5J29kCIAaX
+0ff6iFYs2Y++CKlJ9iW/oo67cRc9KXgfPsp3NyKB
+-----END CERTIFICATE-----

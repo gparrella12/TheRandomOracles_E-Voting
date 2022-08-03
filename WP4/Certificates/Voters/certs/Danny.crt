@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 49 (0x31)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Campania, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Campania@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:12 2022 GMT
+            Not After : Aug  3 13:28:12 2023 GMT
+        Subject: CN=Danny, C=IT, ST=Italia, O=Regione Campania
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:bf:5c:8c:e1:0f:4f:18:79:46:dc:d3:61:c2:4a:
+                    f1:9a:a6:29:e3:c0:4e:75:ae:1f:6e:f1:8d:62:26:
+                    c3:a2:a6:10:f5:26:52:c8:97:76:f7:3d:b6:86:57:
+                    1f:bd:1d:13:09:80:5e:74:0a:2b:4c:35:29:2a:eb:
+                    ef:a7:00:89:6c
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:ca:69:95:73:81:9e:ed:1a:41:82:39:d3:45:
+         a7:86:89:35:fe:5d:b4:dc:87:22:86:e6:01:7a:ec:74:cd:6e:
+         80:02:20:0b:55:2b:02:81:6f:81:e6:3c:d5:b3:ae:e4:bc:36:
+         b0:9d:d6:fe:e5:3c:5b:f6:8c:c1:db:d1:e8:bf:76:17:f1
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZ2gAwIBAgIBMTAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYW1wYW5pYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYW1wYW5pYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjgxMloXDTIzMDgwMzEzMjgxMlowSTEOMAwGA1UEAwwFRGFubnkxCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUgQ2Ft
+cGFuaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAS/XIzhD08YeUbc02HCSvGa
+pinjwE51rh9u8Y1iJsOiphD1JlLIl3b3PbaGVx+9HRMJgF50CitMNSkq6++nAIls
+oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
+AgNIADBFAiEAymmVc4Ge7RpBgjnTRaeGiTX+XbTchyKG5gF67HTNboACIAtVKwKB
+b4HmPNWzruS8NrCd1v7lPFv2jMHb0ei/dhfx
+-----END CERTIFICATE-----

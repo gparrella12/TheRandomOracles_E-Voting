@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 37 (0x25)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Toscana, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Toscana@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:49 2022 GMT
+            Not After : Aug  3 13:27:49 2023 GMT
+        Subject: CN=Eva, C=IT, ST=Italia, O=Regione Toscana
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:54:41:8e:fa:a1:62:f0:1e:72:a4:e5:10:ef:f0:
+                    b4:ad:35:4a:39:cd:d3:97:15:62:58:ed:bd:4f:6a:
+                    1e:33:39:1f:5e:10:4f:ac:83:4d:a3:d8:06:ba:0c:
+                    07:45:4e:e2:00:67:97:af:da:2a:2c:a3:10:45:4c:
+                    c3:3a:e1:c0:db
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:94:5a:92:a5:e2:e1:54:55:27:b9:dc:cb:c4:
+         14:2a:8c:31:b4:f1:7d:6c:d9:45:e2:12:89:49:77:69:be:8a:
+         c6:02:20:1d:d4:5c:0e:ff:af:18:1a:a9:a8:b3:27:33:07:08:
+         ac:87:09:a8:99:d9:01:d4:00:41:b3:ea:e6:ee:39:ee:12
+-----BEGIN CERTIFICATE-----
+MIIB8jCCAZigAwIBAgIBJTAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBUb3NjYW5hMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWElRvc2NhbmFAZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI3NDlaFw0yMzA4MDMxMzI3NDlaMEYxDDAKBgNVBAMMA0V2YTELMAkGA1UE
+BhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UECgwPUmVnaW9uZSBUb3NjYW5h
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEVEGO+qFi8B5ypOUQ7/C0rTVKOc3T
+lxViWO29T2oeMzkfXhBPrINNo9gGugwHRU7iAGeXr9oqLKMQRUzDOuHA26MjMCEw
+DgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0EAwIDSAAw
+RQIhAJRakqXi4VRVJ7ncy8QUKowxtPF9bNlF4hKJSXdpvorGAiAd1FwO/68YGqmo
+syczBwishwmomdkB1ABBs+rm7jnuEg==
+-----END CERTIFICATE-----

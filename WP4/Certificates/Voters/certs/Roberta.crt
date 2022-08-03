@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 43 (0x2b)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Piemonte, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Piemonte@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:24 2022 GMT
+            Not After : Aug  3 13:27:24 2023 GMT
+        Subject: CN=Roberta, C=IT, ST=Italia, O=Regione Piemonte
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:3d:27:cc:c4:84:4a:eb:a9:f6:24:a9:b1:34:ce:
+                    4a:cf:99:bb:f0:77:a4:18:11:8f:39:44:bd:f9:61:
+                    6f:0f:5b:e3:ba:33:e3:05:26:86:a6:db:af:55:13:
+                    f5:46:e0:a4:82:b5:87:93:88:03:9e:60:be:15:28:
+                    9f:66:77:f9:9b
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:61:17:df:5f:9f:f2:64:e7:67:3e:a0:77:2d:e7:
+         ec:9a:b9:93:44:f3:b3:da:c4:fa:9a:f9:43:51:1f:9c:d1:43:
+         02:21:00:ad:03:37:58:f9:92:e5:18:c1:77:30:be:a7:35:c2:
+         c4:8b:30:1b:6d:c1:93:84:d6:ac:0c:d6:e0:9f:33:d6:fa
+-----BEGIN CERTIFICATE-----
+MIIB+TCCAZ+gAwIBAgIBKzAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBQaWVtb250ZTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNQaWVtb250ZUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjcyNFoXDTIzMDgwMzEzMjcyNFowSzEQMA4GA1UEAwwHUm9iZXJ0YTEL
+MAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEZMBcGA1UECgwQUmVnaW9uZSBQ
+aWVtb250ZTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABD0nzMSESuup9iSpsTTO
+Ss+Zu/B3pBgRjzlEvflhbw9b47oz4wUmhqbbr1UT9UbgpIK1h5OIA55gvhUon2Z3
++ZujIzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49
+BAMCA0gAMEUCIGEX31+f8mTnZz6gdy3n7Jq5k0Tzs9rE+pr5Q1EfnNFDAiEArQM3
+WPmS5RjBdzC+pzXCxIswG23Bk4TWrAzW4J8z1vo=
+-----END CERTIFICATE-----

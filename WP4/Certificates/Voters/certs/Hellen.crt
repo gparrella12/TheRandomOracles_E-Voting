@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 23 (0x17)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Campania, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Campania@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:38 2022 GMT
+            Not After : Aug  3 13:26:38 2023 GMT
+        Subject: CN=Hellen, C=IT, ST=Italia, O=Regione Campania
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:f9:a4:16:32:06:11:34:af:38:fc:b6:e2:5d:3a:
+                    4e:00:3a:2e:5a:56:bc:bb:87:e6:04:3b:31:fd:09:
+                    1c:a9:d8:a9:98:33:25:79:61:8c:37:ec:4e:12:b7:
+                    56:a9:7d:9b:18:ce:0c:7b:d5:54:ed:5f:b3:38:bb:
+                    8d:1d:0d:c8:ca
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:64:14:f2:a9:43:8f:71:c7:d4:40:aa:bd:5a:6e:
+         2c:39:04:76:a7:5f:81:0f:c9:89:4a:0e:3f:66:5a:0b:2e:af:
+         02:21:00:97:0e:2b:1d:2b:fe:f6:a1:3c:32:8f:72:83:e0:39:
+         f6:83:0c:2e:3d:06:c0:8e:50:f6:89:a3:6d:9c:5c:d4:4e
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ6gAwIBAgIBFzAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYW1wYW5pYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYW1wYW5pYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjYzOFoXDTIzMDgwMzEzMjYzOFowSjEPMA0GA1UEAwwGSGVsbGVuMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRkwFwYDVQQKDBBSZWdpb25lIENh
+bXBhbmlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE+aQWMgYRNK84/LbiXTpO
+ADouWla8u4fmBDsx/QkcqdipmDMleWGMN+xOErdWqX2bGM4Me9VU7V+zOLuNHQ3I
+yqMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDSAAwRQIgZBTyqUOPccfUQKq9Wm4sOQR2p1+BD8mJSg4/ZloLLq8CIQCXDisd
+K/72oTwyj3KD4Dn2gwwuPQbAjlD2iaNtnFzUTg==
+-----END CERTIFICATE-----

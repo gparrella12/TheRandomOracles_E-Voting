@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 13 (0xd)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Abruzzo, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Abruzzo@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:26 2022 GMT
+            Not After : Aug  3 13:26:26 2023 GMT
+        Subject: CN=Terrell, C=IT, ST=Italia, O=Regione Abruzzo
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:94:55:30:63:0f:2b:fd:68:97:d0:57:60:bf:34:
+                    05:b7:5c:01:c5:78:e2:07:af:40:5d:88:59:3c:f9:
+                    9d:80:34:2f:78:81:99:be:2b:f1:f2:3f:7e:2f:3f:
+                    89:a8:b9:3f:13:17:63:4c:bf:fa:cf:97:89:53:66:
+                    dc:f2:41:76:0e
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:97:ac:b3:89:ae:89:e0:4c:98:52:33:5b:1b:
+         2e:bf:61:d5:11:94:be:d8:37:c1:c1:20:4d:fe:a6:97:16:10:
+         a9:02:21:00:da:28:fa:e2:a8:13:5c:74:30:8e:71:b3:5e:91:
+         e4:63:7d:d6:ec:ef:36:f8:14:de:ca:be:7f:4d:46:a6:98:7d
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZygAwIBAgIBDTAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBBYnJ1enpvMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWEkFicnV6em9AZXZvdGluZy5pdDAeFw0yMjA4
+MDMxMzI2MjZaFw0yMzA4MDMxMzI2MjZaMEoxEDAOBgNVBAMMB1RlcnJlbGwxCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoMD1JlZ2lvbmUgQWJy
+dXp6bzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJRVMGMPK/1ol9BXYL80Bbdc
+AcV44gevQF2IWTz5nYA0L3iBmb4r8fI/fi8/iai5PxMXY0y/+s+XiVNm3PJBdg6j
+IzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMC
+A0kAMEYCIQCXrLOJrongTJhSM1sbLr9h1RGUvtg3wcEgTf6mlxYQqQIhANoo+uKo
+E1x0MI5xs16R5GN91uzvNvgU3sq+f01Gpph9
+-----END CERTIFICATE-----

@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 15 (0xf)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Valle_d_Aosta, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Valle_d_Aosta@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:25 2022 GMT
+            Not After : Aug  3 13:26:25 2023 GMT
+        Subject: CN=Lizabeth, C=IT, ST=Italia, O=Regione Valle_d_Aosta
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:c5:f1:cd:e4:10:65:ca:1a:c4:dd:b0:29:98:e6:
+                    5d:34:3e:e5:14:de:cb:57:8b:fb:39:47:27:47:0f:
+                    16:62:ac:af:c0:54:77:b7:dc:5f:af:69:79:27:f1:
+                    93:e4:41:60:e7:77:5f:b3:af:07:55:24:ec:94:1f:
+                    e5:bf:70:01:5e
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:7d:f4:91:bc:cf:5b:e6:92:63:7d:dd:17:a1:5f:
+         1f:25:dd:22:72:04:ae:ab:37:e3:dd:12:eb:18:c3:72:62:41:
+         02:21:00:a0:c6:ae:10:85:ad:48:38:7e:47:bc:ed:14:48:cd:
+         f0:83:37:c9:4e:ae:3d:d8:00:5b:98:3c:15:8b:8a:45:4c
+-----BEGIN CERTIFICATE-----
+MIICCTCCAa+gAwIBAgIBDzAKBggqhkjOPQQDAjCBpTEeMBwGA1UEAwwVUmVnaW9u
+ZSBWYWxsZV9kX0Fvc3RhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgw
+FgYDVQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3Rl
+bSBhdXRob3JpdHkxJzAlBgkqhkiG9w0BCQEWGFZhbGxlX2RfQW9zdGFAZXZvdGlu
+Zy5pdDAeFw0yMjA4MDMxMzI2MjVaFw0yMzA4MDMxMzI2MjVaMFExETAPBgNVBAMM
+CExpemFiZXRoMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMR4wHAYDVQQK
+DBVSZWdpb25lIFZhbGxlX2RfQW9zdGEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNC
+AATF8c3kEGXKGsTdsCmY5l00PuUU3stXi/s5RydHDxZirK/AVHe33F+vaXkn8ZPk
+QWDnd1+zrwdVJOyUH+W/cAFeoyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/
+BAUwAwIBAzAKBggqhkjOPQQDAgNIADBFAiB99JG8z1vmkmN93RehXx8l3SJyBK6r
+N+PdEusYw3JiQQIhAKDGrhCFrUg4fke87RRIzfCDN8lOrj3YAFuYPBWLikVM
+-----END CERTIFICATE-----

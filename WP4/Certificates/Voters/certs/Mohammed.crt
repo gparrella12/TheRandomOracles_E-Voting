@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 39 (0x27)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Sardegna, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sardegna@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:22 2022 GMT
+            Not After : Aug  3 13:28:22 2023 GMT
+        Subject: CN=Mohammed, C=IT, ST=Italia, O=Regione Sardegna
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:a6:07:5f:ab:23:64:cf:b6:08:21:24:aa:68:2d:
+                    a7:01:19:94:60:85:ad:36:98:64:42:b2:c6:4e:a3:
+                    0f:56:de:bd:08:80:08:3c:50:02:87:ac:5e:ed:18:
+                    76:23:f2:3e:b1:3f:72:09:10:21:b1:76:4c:79:7a:
+                    38:b5:fb:44:b7
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:89:72:9d:06:00:88:de:bd:7b:e1:12:f1:74:
+         b6:a1:26:30:80:04:2b:42:a7:5d:a3:b0:2b:05:36:59:15:c1:
+         ae:02:21:00:81:39:b6:16:2a:a9:fd:b8:fc:b5:c7:a2:0c:d0:
+         b6:49:fe:bb:95:f2:74:2b:24:ca:37:86:61:a8:9d:c2:82:40
+-----BEGIN CERTIFICATE-----
+MIIB+zCCAaCgAwIBAgIBJzAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBTYXJkZWduYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNTYXJkZWduYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjgyMloXDTIzMDgwMzEzMjgyMlowTDERMA8GA1UEAwwITW9oYW1tZWQx
+CzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUg
+U2FyZGVnbmEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASmB1+rI2TPtgghJKpo
+LacBGZRgha02mGRCssZOow9W3r0IgAg8UAKHrF7tGHYj8j6xP3IJECGxdkx5eji1
++0S3oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjO
+PQQDAgNJADBGAiEAiXKdBgCI3r174RLxdLahJjCABCtCp12jsCsFNlkVwa4CIQCB
+ObYWKqn9uPy1x6IM0LZJ/ruV8nQrJMo3hmGoncKCQA==
+-----END CERTIFICATE-----

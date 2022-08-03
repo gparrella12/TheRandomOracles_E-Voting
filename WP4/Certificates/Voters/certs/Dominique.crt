@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 39 (0x27)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Umbria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Umbria@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:43 2022 GMT
+            Not After : Aug  3 13:28:43 2023 GMT
+        Subject: CN=Dominique, C=IT, ST=Italia, O=Regione Umbria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:2f:73:66:40:86:79:51:b6:c7:87:2d:c9:fc:0c:
+                    86:fe:5d:ae:bd:90:06:04:81:0b:ae:61:7c:7d:0c:
+                    a2:59:e2:2f:68:73:04:11:d5:5e:d4:a4:05:9c:6d:
+                    29:fa:f5:88:c0:a4:ba:05:a0:5a:6b:55:e7:61:2a:
+                    c7:fa:10:1a:85
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:96:23:99:89:31:8a:7e:98:3e:63:2f:e0:a8:
+         86:f0:f0:85:ad:20:42:a3:24:16:03:60:04:d5:3b:40:21:16:
+         71:02:21:00:e4:34:4c:dc:f7:ed:9d:f0:88:ac:57:ba:b6:ad:
+         a0:27:9f:53:94:c8:e0:cb:d7:05:4b:cc:67:55:9f:06:96:53
+-----BEGIN CERTIFICATE-----
+MIIB9jCCAZugAwIBAgIBJzAKBggqhkjOPQQDAjCBlzEXMBUGA1UEAwwOUmVnaW9u
+ZSBVbWJyaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoM
+D0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1dGhv
+cml0eTEgMB4GCSqGSIb3DQEJARYRVW1icmlhQGV2b3RpbmcuaXQwHhcNMjIwODAz
+MTMyODQzWhcNMjMwODAzMTMyODQzWjBLMRIwEAYDVQQDDAlEb21pbmlxdWUxCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExFzAVBgNVBAoMDlJlZ2lvbmUgVW1i
+cmlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEL3NmQIZ5UbbHhy3J/AyG/l2u
+vZAGBIELrmF8fQyiWeIvaHMEEdVe1KQFnG0p+vWIwKS6BaBaa1XnYSrH+hAahaMj
+MCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0EAwID
+SQAwRgIhAJYjmYkxin6YPmMv4KiG8PCFrSBCoyQWA2AE1TtAIRZxAiEA5DRM3Pft
+nfCIrFe6tq2gJ59TlMjgy9cFS8xnVZ8GllM=
+-----END CERTIFICATE-----

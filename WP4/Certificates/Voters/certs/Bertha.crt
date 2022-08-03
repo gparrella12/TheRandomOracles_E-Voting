@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 41 (0x29)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Sardegna, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sardegna@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:35 2022 GMT
+            Not After : Aug  3 13:28:35 2023 GMT
+        Subject: CN=Bertha, C=IT, ST=Italia, O=Regione Sardegna
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:46:f2:43:ce:aa:67:54:af:02:9a:e1:78:18:f3:
+                    37:8e:d0:46:42:49:65:a0:d6:7e:c4:ee:e5:88:b7:
+                    73:c5:81:e4:a6:28:cd:c7:ff:03:74:15:e1:48:6d:
+                    6e:44:41:a6:d1:e8:2b:63:b6:f3:fe:b8:27:cf:90:
+                    2a:3d:d8:86:a2
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:4e:3c:e1:4c:50:df:a8:b4:86:e2:63:51:69:47:
+         ff:eb:c4:5b:69:2c:e4:9b:1e:8c:e2:3b:4a:f2:c8:8c:bd:25:
+         02:21:00:f2:d6:16:25:de:ac:69:32:ca:e9:8c:05:97:09:48:
+         b7:4f:78:f3:e8:d6:cd:53:50:b2:64:16:11:4b:2d:d1:63
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ6gAwIBAgIBKTAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBTYXJkZWduYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNTYXJkZWduYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjgzNVoXDTIzMDgwMzEzMjgzNVowSjEPMA0GA1UEAwwGQmVydGhhMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRkwFwYDVQQKDBBSZWdpb25lIFNh
+cmRlZ25hMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAERvJDzqpnVK8CmuF4GPM3
+jtBGQklloNZ+xO7liLdzxYHkpijNx/8DdBXhSG1uREGm0egrY7bz/rgnz5AqPdiG
+oqMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDSAAwRQIgTjzhTFDfqLSG4mNRaUf/68RbaSzkmx6M4jtK8siMvSUCIQDy1hYl
+3qxpMsrpjAWXCUi3T3jz6NbNU1CyZBYRSy3RYw==
+-----END CERTIFICATE-----

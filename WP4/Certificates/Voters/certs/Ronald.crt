@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 8 (0x8)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Basilicata, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Basilicata@evoting.it
+        Validity
+            Not Before: Aug  3 13:25:57 2022 GMT
+            Not After : Aug  3 13:25:57 2023 GMT
+        Subject: CN=Ronald, C=IT, ST=Italia, O=Regione Basilicata
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:f8:bd:a7:0b:e1:6d:77:c7:9c:a3:6a:1e:70:a7:
+                    af:ff:5e:6a:a8:dd:00:08:c8:e7:a0:79:19:1d:c4:
+                    27:c8:0c:2b:3e:9b:ee:37:24:9d:42:a7:a6:78:fb:
+                    49:9a:54:a5:9a:b3:c6:91:af:c4:61:a6:46:fa:06:
+                    a6:c2:3b:ec:c7
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:41:94:46:59:f9:80:55:1e:ee:e3:fc:8d:3b:fb:
+         f7:d3:97:1f:ad:d0:83:fd:bd:dc:6e:78:8b:2e:03:c4:50:f0:
+         02:21:00:db:f3:de:3f:8d:16:cc:ac:1e:4e:2b:4b:84:e9:30:
+         55:3d:d5:61:12:84:17:b2:a6:48:3b:80:34:f9:4f:d6:04
+-----BEGIN CERTIFICATE-----
+MIIB/jCCAaSgAwIBAgIBCDAKBggqhkjOPQQDAjCBnzEbMBkGA1UEAwwSUmVnaW9u
+ZSBCYXNpbGljYXRhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYD
+VQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBh
+dXRob3JpdHkxJDAiBgkqhkiG9w0BCQEWFUJhc2lsaWNhdGFAZXZvdGluZy5pdDAe
+Fw0yMjA4MDMxMzI1NTdaFw0yMzA4MDMxMzI1NTdaMEwxDzANBgNVBAMMBlJvbmFs
+ZDELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEbMBkGA1UECgwSUmVnaW9u
+ZSBCYXNpbGljYXRhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE+L2nC+Ftd8ec
+o2oecKev/15qqN0ACMjnoHkZHcQnyAwrPpvuNySdQqemePtJmlSlmrPGka/EYaZG
++gamwjvsx6MjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYI
+KoZIzj0EAwIDSAAwRQIgQZRGWfmAVR7u4/yNO/v305cfrdCD/b3cbniLLgPEUPAC
+IQDb894/jRbMrB5OK0uE6TBVPdVhEoQXsqZIO4A0+U/WBA==
+-----END CERTIFICATE-----

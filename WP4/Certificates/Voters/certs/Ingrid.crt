@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 55 (0x37)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Basilicata, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Basilicata@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:43 2022 GMT
+            Not After : Aug  3 13:28:43 2023 GMT
+        Subject: CN=Ingrid, C=IT, ST=Italia, O=Regione Basilicata
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:e3:f7:98:9f:9e:bd:4b:19:dc:7d:ce:05:9b:f2:
+                    11:19:3a:21:b0:99:40:14:3b:c3:51:cd:71:25:0f:
+                    db:bf:ff:d5:60:97:50:6f:24:5c:65:5b:72:c9:51:
+                    56:32:a9:f3:1d:42:a3:a7:28:99:c5:e0:a8:2c:41:
+                    f7:4d:85:c9:41
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:d3:2b:28:c1:7e:be:f6:00:c7:17:c7:ad:95:
+         4a:43:49:c5:a3:36:1d:3e:a9:e8:f8:1a:96:15:42:f0:44:7c:
+         13:02:20:43:a9:a1:cc:5e:c1:d4:13:46:80:22:ed:25:91:0e:
+         1b:9b:bb:1d:ee:af:4f:cc:46:26:39:d0:bf:bc:cc:ab:07
+-----BEGIN CERTIFICATE-----
+MIIB/jCCAaSgAwIBAgIBNzAKBggqhkjOPQQDAjCBnzEbMBkGA1UEAwwSUmVnaW9u
+ZSBCYXNpbGljYXRhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYD
+VQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBh
+dXRob3JpdHkxJDAiBgkqhkiG9w0BCQEWFUJhc2lsaWNhdGFAZXZvdGluZy5pdDAe
+Fw0yMjA4MDMxMzI4NDNaFw0yMzA4MDMxMzI4NDNaMEwxDzANBgNVBAMMBkluZ3Jp
+ZDELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEbMBkGA1UECgwSUmVnaW9u
+ZSBCYXNpbGljYXRhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE4/eYn569Sxnc
+fc4Fm/IRGTohsJlAFDvDUc1xJQ/bv//VYJdQbyRcZVtyyVFWMqnzHUKjpyiZxeCo
+LEH3TYXJQaMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYI
+KoZIzj0EAwIDSAAwRQIhANMrKMF+vvYAxxfHrZVKQ0nFozYdPqno+BqWFULwRHwT
+AiBDqaHMXsHUE0aAIu0lkQ4bm7sd7q9PzEYmOdC/vMyrBw==
+-----END CERTIFICATE-----

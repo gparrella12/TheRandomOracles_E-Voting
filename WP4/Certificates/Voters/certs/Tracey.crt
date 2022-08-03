@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 38 (0x26)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Basilicata, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Basilicata@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:27 2022 GMT
+            Not After : Aug  3 13:27:27 2023 GMT
+        Subject: CN=Tracey, C=IT, ST=Italia, O=Regione Basilicata
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:ce:ae:1c:e3:70:0d:09:87:00:ca:ea:fc:5f:28:
+                    63:7c:2d:0e:00:12:05:ce:ab:f9:5d:4a:0c:2d:b0:
+                    7a:00:64:b3:e6:8e:04:ab:68:33:e0:28:8d:3b:5f:
+                    99:9f:0e:e1:31:6a:04:c2:aa:76:3f:a1:58:f0:a7:
+                    cc:ca:4f:b2:ca
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:b1:a7:e4:3d:df:a0:9f:26:01:5f:0a:21:ce:
+         c0:7b:03:a5:62:56:a9:ce:79:87:97:4b:49:d9:a7:b3:ed:f5:
+         c2:02:21:00:c8:2c:2d:c6:84:48:8a:64:1d:ff:13:d2:61:40:
+         07:be:dd:42:99:8b:04:9c:7c:a1:4c:0e:e5:93:50:6a:f4:a6
+-----BEGIN CERTIFICATE-----
+MIIB/zCCAaSgAwIBAgIBJjAKBggqhkjOPQQDAjCBnzEbMBkGA1UEAwwSUmVnaW9u
+ZSBCYXNpbGljYXRhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYD
+VQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBh
+dXRob3JpdHkxJDAiBgkqhkiG9w0BCQEWFUJhc2lsaWNhdGFAZXZvdGluZy5pdDAe
+Fw0yMjA4MDMxMzI3MjdaFw0yMzA4MDMxMzI3MjdaMEwxDzANBgNVBAMMBlRyYWNl
+eTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEbMBkGA1UECgwSUmVnaW9u
+ZSBCYXNpbGljYXRhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEzq4c43ANCYcA
+yur8XyhjfC0OABIFzqv5XUoMLbB6AGSz5o4Eq2gz4CiNO1+Znw7hMWoEwqp2P6FY
+8KfMyk+yyqMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYI
+KoZIzj0EAwIDSQAwRgIhALGn5D3foJ8mAV8KIc7AewOlYlapznmHl0tJ2aez7fXC
+AiEAyCwtxoRIimQd/xPSYUAHvt1CmYsEnHyhTA7lk1Bq9KY=
+-----END CERTIFICATE-----

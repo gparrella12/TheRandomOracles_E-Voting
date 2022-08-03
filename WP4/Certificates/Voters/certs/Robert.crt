@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 26 (0x1a)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Umbria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Umbria@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:42 2022 GMT
+            Not After : Aug  3 13:27:42 2023 GMT
+        Subject: CN=Robert, C=IT, ST=Italia, O=Regione Umbria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:91:ab:1d:25:c6:05:e6:d5:c4:f6:77:f0:1e:aa:
+                    27:c4:a7:10:0e:f6:c9:51:37:83:dc:91:2a:83:b5:
+                    97:f5:3d:3d:ab:bc:6e:a1:fb:2b:a0:31:60:da:1f:
+                    47:35:ee:13:b1:57:2f:2d:c1:be:43:80:1f:21:35:
+                    a0:d7:79:78:50
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:a8:44:fb:b1:53:55:5a:31:10:b2:95:3f:c0:
+         d3:a2:20:87:30:32:f4:4d:fb:7d:ab:34:82:89:06:8b:d4:2f:
+         45:02:21:00:f4:c3:e5:0c:68:ce:87:4c:23:1d:fb:cc:bc:5f:
+         cd:94:a1:dd:e2:2b:c2:7d:bc:4b:92:30:a9:61:12:de:af:9e
+-----BEGIN CERTIFICATE-----
+MIIB8zCCAZigAwIBAgIBGjAKBggqhkjOPQQDAjCBlzEXMBUGA1UEAwwOUmVnaW9u
+ZSBVbWJyaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoM
+D0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1dGhv
+cml0eTEgMB4GCSqGSIb3DQEJARYRVW1icmlhQGV2b3RpbmcuaXQwHhcNMjIwODAz
+MTMyNzQyWhcNMjMwODAzMTMyNzQyWjBIMQ8wDQYDVQQDDAZSb2JlcnQxCzAJBgNV
+BAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExFzAVBgNVBAoMDlJlZ2lvbmUgVW1icmlh
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEkasdJcYF5tXE9nfwHqonxKcQDvbJ
+UTeD3JEqg7WX9T09q7xuofsroDFg2h9HNe4TsVcvLcG+Q4AfITWg13l4UKMjMCEw
+DgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0EAwIDSQAw
+RgIhAKhE+7FTVVoxELKVP8DToiCHMDL0Tft9qzSCiQaL1C9FAiEA9MPlDGjOh0wj
+HfvMvF/NlKHd4ivCfbxLkjCpYRLer54=
+-----END CERTIFICATE-----

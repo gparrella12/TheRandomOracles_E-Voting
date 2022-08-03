@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 15 (0xf)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Sardegna, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sardegna@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:59 2022 GMT
+            Not After : Aug  3 13:26:59 2023 GMT
+        Subject: CN=Mable, C=IT, ST=Italia, O=Regione Sardegna
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:ae:32:be:eb:ae:73:f5:f2:92:10:82:af:bf:e8:
+                    54:9c:f8:52:d7:e4:28:f0:3e:16:1e:51:9c:11:16:
+                    52:a6:e8:70:bf:e0:01:fe:eb:a7:ef:0c:a6:79:5c:
+                    5d:db:97:db:e5:e8:1d:f9:27:46:7b:d9:8c:b9:ac:
+                    96:99:7b:c6:fe
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:67:73:38:b4:4b:b1:58:5f:77:91:9b:e5:e6:36:
+         b1:7b:ca:91:5c:3d:6b:1d:ca:13:ff:07:d0:ed:08:3e:75:40:
+         02:21:00:8f:0a:91:3e:87:cd:45:d4:94:21:cf:1b:a7:80:53:
+         ad:52:8b:ef:81:6f:ee:bc:55:4c:e6:54:ee:3f:76:dc:0e
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZ2gAwIBAgIBDzAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBTYXJkZWduYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNTYXJkZWduYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjY1OVoXDTIzMDgwMzEzMjY1OVowSTEOMAwGA1UEAwwFTWFibGUxCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUgU2Fy
+ZGVnbmEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASuMr7rrnP18pIQgq+/6FSc
++FLX5CjwPhYeUZwRFlKm6HC/4AH+66fvDKZ5XF3bl9vl6B35J0Z72Yy5rJaZe8b+
+oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
+AgNIADBFAiBnczi0S7FYX3eRm+XmNrF7ypFcPWsdyhP/B9DtCD51QAIhAI8KkT6H
+zUXUlCHPG6eAU61Si++Bb+68VUzmVO4/dtwO
+-----END CERTIFICATE-----

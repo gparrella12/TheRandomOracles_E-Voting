@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 29 (0x1d)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Lombardia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Lombardia@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:10 2022 GMT
+            Not After : Aug  3 13:27:10 2023 GMT
+        Subject: CN=Ricardo, C=IT, ST=Italia, O=Regione Lombardia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:b2:d4:ae:32:0e:80:aa:5d:24:4b:3a:37:a0:56:
+                    32:77:30:57:0c:e1:49:7b:e3:72:79:2f:a4:a3:1c:
+                    71:c0:41:db:7c:12:f9:be:1a:fd:9f:5c:db:94:a0:
+                    76:8b:59:67:04:40:41:8b:4c:65:73:99:45:d1:41:
+                    25:19:c3:53:9d
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:41:f0:31:12:fd:ee:2b:b4:09:4d:e0:67:2d:e3:
+         1c:7c:48:b3:b9:d5:03:7d:37:a2:6c:e7:b6:48:8f:b0:ac:11:
+         02:20:5f:c7:1a:9c:7d:95:4d:5c:75:2b:02:ff:16:c1:3a:60:
+         3c:d6:7a:2f:14:37:cf:42:f3:ca:25:bd:22:f7:09:5e
+-----BEGIN CERTIFICATE-----
+MIIB+zCCAaKgAwIBAgIBHTAKBggqhkjOPQQDAjCBnTEaMBgGA1UEAwwRUmVnaW9u
+ZSBMb21iYXJkaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNV
+BAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1
+dGhvcml0eTEjMCEGCSqGSIb3DQEJARYUTG9tYmFyZGlhQGV2b3RpbmcuaXQwHhcN
+MjIwODAzMTMyNzEwWhcNMjMwODAzMTMyNzEwWjBMMRAwDgYDVQQDDAdSaWNhcmRv
+MQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRowGAYDVQQKDBFSZWdpb25l
+IExvbWJhcmRpYTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABLLUrjIOgKpdJEs6
+N6BWMncwVwzhSXvjcnkvpKMcccBB23wS+b4a/Z9c25SgdotZZwRAQYtMZXOZRdFB
+JRnDU52jIzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqG
+SM49BAMCA0cAMEQCIEHwMRL97iu0CU3gZy3jHHxIs7nVA303omzntkiPsKwRAiBf
+xxqcfZVNXHUrAv8WwTpgPNZ6LxQ3z0LzyiW9IvcJXg==
+-----END CERTIFICATE-----

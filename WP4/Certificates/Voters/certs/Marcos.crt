@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 53 (0x35)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Campania, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Campania@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:28 2022 GMT
+            Not After : Aug  3 13:28:28 2023 GMT
+        Subject: CN=Marcos, C=IT, ST=Italia, O=Regione Campania
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:9f:46:5c:1e:12:0d:95:90:87:79:f5:e7:f3:50:
+                    43:e2:52:30:9d:cc:62:c4:54:ef:08:26:e4:28:27:
+                    a1:60:76:57:00:ca:cb:0b:b3:bb:c4:1f:82:9f:c5:
+                    ef:b8:8d:98:48:27:31:d3:ad:33:03:82:38:cc:b3:
+                    31:f3:8b:8b:f0
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:68:76:92:36:86:d3:c5:e5:99:25:db:dc:a5:90:
+         16:d8:47:c5:cd:26:cd:c3:34:6f:dc:11:84:61:af:cc:30:d6:
+         02:21:00:ac:d1:e7:b4:fd:fd:45:1f:4f:89:c6:1c:f5:30:0f:
+         21:4f:44:de:01:56:7e:13:12:b2:d5:fb:2b:84:3f:9a:4e
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ6gAwIBAgIBNTAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYW1wYW5pYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYW1wYW5pYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjgyOFoXDTIzMDgwMzEzMjgyOFowSjEPMA0GA1UEAwwGTWFyY29zMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRkwFwYDVQQKDBBSZWdpb25lIENh
+bXBhbmlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEn0ZcHhINlZCHefXn81BD
+4lIwncxixFTvCCbkKCehYHZXAMrLC7O7xB+Cn8XvuI2YSCcx060zA4I4zLMx84uL
+8KMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDSAAwRQIgaHaSNobTxeWZJdvcpZAW2EfFzSbNwzRv3BGEYa/MMNYCIQCs0ee0
+/f1FH0+Jxhz1MA8hT0TeAVZ+ExKy1fsrhD+aTg==
+-----END CERTIFICATE-----

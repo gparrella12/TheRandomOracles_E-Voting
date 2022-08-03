@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 46 (0x2e)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Calabria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Calabria@evoting.it
+        Validity
+            Not Before: Aug  3 13:28:19 2022 GMT
+            Not After : Aug  3 13:28:19 2023 GMT
+        Subject: CN=Nettie, C=IT, ST=Italia, O=Regione Calabria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:6b:8b:a2:0e:ea:7b:a9:a8:84:55:41:b7:92:96:
+                    eb:6a:dc:a4:1e:38:7c:88:b7:0d:47:8d:7e:c3:9c:
+                    7e:2d:b4:d5:33:6a:37:ff:1b:bc:12:49:3e:4d:0d:
+                    09:dc:0c:d6:f6:2b:ee:e1:a6:5c:a0:d9:62:e1:94:
+                    5f:2d:2d:ba:e9
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:1b:e2:16:80:5b:80:81:46:42:ba:4a:25:d5:9c:
+         35:88:01:9f:80:e6:2b:5f:5a:cd:44:d2:2f:bd:47:f4:59:9e:
+         02:21:00:b1:3c:b0:e5:41:bc:39:b8:88:06:b7:7c:89:23:54:
+         1b:4b:dc:80:12:df:e8:e5:f2:2e:b2:a2:e1:7e:90:07:4e
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ6gAwIBAgIBLjAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYWxhYnJpYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYWxhYnJpYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjgxOVoXDTIzMDgwMzEzMjgxOVowSjEPMA0GA1UEAwwGTmV0dGllMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRkwFwYDVQQKDBBSZWdpb25lIENh
+bGFicmlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEa4uiDup7qaiEVUG3kpbr
+atykHjh8iLcNR41+w5x+LbTVM2o3/xu8Ekk+TQ0J3AzW9ivu4aZcoNli4ZRfLS26
+6aMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDSAAwRQIgG+IWgFuAgUZCukol1Zw1iAGfgOYrX1rNRNIvvUf0WZ4CIQCxPLDl
+Qbw5uIgGt3yJI1QbS9yAEt/o5fIusqLhfpAHTg==
+-----END CERTIFICATE-----

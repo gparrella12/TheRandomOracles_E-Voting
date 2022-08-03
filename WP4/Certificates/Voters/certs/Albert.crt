@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 35 (0x23)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Campania, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Campania@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:40 2022 GMT
+            Not After : Aug  3 13:27:40 2023 GMT
+        Subject: CN=Albert, C=IT, ST=Italia, O=Regione Campania
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:9b:47:0d:62:99:1c:13:3a:3e:bc:ca:e9:6a:66:
+                    0a:3c:00:13:22:c2:f3:68:16:f7:0d:c0:fd:5d:d5:
+                    01:4a:f7:78:60:36:cb:b3:ec:08:19:55:6b:1a:71:
+                    d6:5b:2a:27:08:f5:9b:50:6d:99:75:a1:4b:11:a0:
+                    c9:31:94:d9:a1
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:44:1b:81:32:b3:aa:a8:90:b9:8f:37:24:cc:4a:
+         2f:a1:a9:b6:76:62:f4:4a:30:18:1e:b4:84:c6:9d:69:19:46:
+         02:21:00:e0:f4:49:bb:50:12:7d:d5:ff:38:c6:81:9d:02:4e:
+         99:b6:5c:38:7e:42:8e:16:aa:ca:2c:ea:f8:aa:05:53:1d
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ6gAwIBAgIBIzAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYW1wYW5pYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYW1wYW5pYUBldm90aW5nLml0MB4XDTIy
+MDgwMzEzMjc0MFoXDTIzMDgwMzEzMjc0MFowSjEPMA0GA1UEAwwGQWxiZXJ0MQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRkwFwYDVQQKDBBSZWdpb25lIENh
+bXBhbmlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEm0cNYpkcEzo+vMrpamYK
+PAATIsLzaBb3DcD9XdUBSvd4YDbLs+wIGVVrGnHWWyonCPWbUG2ZdaFLEaDJMZTZ
+oaMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDSAAwRQIgRBuBMrOqqJC5jzckzEovoam2dmL0SjAYHrSExp1pGUYCIQDg9Em7
+UBJ91f84xoGdAk6Ztlw4fkKOFqrKLOr4qgVTHQ==
+-----END CERTIFICATE-----

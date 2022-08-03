@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 30 (0x1e)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Lombardia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Lombardia@evoting.it
+        Validity
+            Not Before: Aug  3 13:27:11 2022 GMT
+            Not After : Aug  3 13:27:11 2023 GMT
+        Subject: CN=Guillermo, C=IT, ST=Italia, O=Regione Lombardia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:da:66:8f:59:9c:dd:89:a2:32:1e:cd:6f:6f:0e:
+                    f8:0a:dd:ac:bc:ec:16:f5:47:6a:5b:1f:fb:d5:12:
+                    47:76:24:b3:b8:ca:9d:63:57:31:62:0a:14:50:ab:
+                    4d:07:61:e8:48:3e:cc:6e:c9:b9:db:8c:35:48:1f:
+                    20:26:bf:f1:48
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:cc:09:6f:8f:7c:dc:cb:21:b7:0e:05:6e:4f:
+         fc:bb:5e:ae:0b:5b:64:19:3f:f5:b1:da:0f:0e:db:67:03:e5:
+         00:02:20:34:09:f0:04:cd:f5:e4:44:5e:8b:77:5a:47:b7:d6:
+         0a:fc:9c:65:36:dc:50:26:04:1c:67:e8:85:57:36:c9:02
+-----BEGIN CERTIFICATE-----
+MIIB/jCCAaSgAwIBAgIBHjAKBggqhkjOPQQDAjCBnTEaMBgGA1UEAwwRUmVnaW9u
+ZSBMb21iYXJkaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNV
+BAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1
+dGhvcml0eTEjMCEGCSqGSIb3DQEJARYUTG9tYmFyZGlhQGV2b3RpbmcuaXQwHhcN
+MjIwODAzMTMyNzExWhcNMjMwODAzMTMyNzExWjBOMRIwEAYDVQQDDAlHdWlsbGVy
+bW8xCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGjAYBgNVBAoMEVJlZ2lv
+bmUgTG9tYmFyZGlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE2maPWZzdiaIy
+Hs1vbw74Ct2svOwW9UdqWx/71RJHdiSzuMqdY1cxYgoUUKtNB2HoSD7Mbsm524w1
+SB8gJr/xSKMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYI
+KoZIzj0EAwIDSAAwRQIhAMwJb4983Mshtw4Fbk/8u16uC1tkGT/1sdoPDttnA+UA
+AiA0CfAEzfXkRF6Ld1pHt9YK/JxlNtxQJgQcZ+iFVzbJAg==
+-----END CERTIFICATE-----

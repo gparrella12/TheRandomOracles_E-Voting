@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 29 (0x1d)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Basilicata, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Basilicata@evoting.it
+        Validity
+            Not Before: Aug  3 13:26:55 2022 GMT
+            Not After : Aug  3 13:26:55 2023 GMT
+        Subject: CN=Cindy, C=IT, ST=Italia, O=Regione Basilicata
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:0d:c5:2d:40:8e:0a:55:02:7c:b6:03:a7:f8:64:
+                    f2:4f:b1:95:21:8f:cf:12:a3:95:2f:41:f0:4e:73:
+                    81:da:7d:b7:73:64:c4:46:50:78:06:d9:3d:9e:81:
+                    be:56:dd:63:f5:10:a4:b4:1e:c5:5e:de:84:62:65:
+                    65:c8:d0:f2:12
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:73:0b:83:f2:61:19:68:87:22:18:5d:7e:d3:d7:
+         f7:6e:cf:1e:e2:bd:51:6f:02:13:a8:24:83:b5:fe:77:c9:45:
+         02:20:05:51:0a:cc:61:ec:65:8d:e9:24:a9:cc:15:e0:cc:ce:
+         14:ee:2a:d7:c2:60:ca:63:cc:dc:68:f9:a3:b9:11:c6
+-----BEGIN CERTIFICATE-----
+MIIB/DCCAaOgAwIBAgIBHTAKBggqhkjOPQQDAjCBnzEbMBkGA1UEAwwSUmVnaW9u
+ZSBCYXNpbGljYXRhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYD
+VQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBh
+dXRob3JpdHkxJDAiBgkqhkiG9w0BCQEWFUJhc2lsaWNhdGFAZXZvdGluZy5pdDAe
+Fw0yMjA4MDMxMzI2NTVaFw0yMzA4MDMxMzI2NTVaMEsxDjAMBgNVBAMMBUNpbmR5
+MQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRswGQYDVQQKDBJSZWdpb25l
+IEJhc2lsaWNhdGEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQNxS1AjgpVAny2
+A6f4ZPJPsZUhj88So5UvQfBOc4HafbdzZMRGUHgG2T2egb5W3WP1EKS0HsVe3oRi
+ZWXI0PISoyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggq
+hkjOPQQDAgNHADBEAiBzC4PyYRlohyIYXX7T1/duzx7ivVFvAhOoJIO1/nfJRQIg
+BVEKzGHsZY3pJKnMFeDMzhTuKtfCYMpjzNxo+aO5EcY=
+-----END CERTIFICATE-----
