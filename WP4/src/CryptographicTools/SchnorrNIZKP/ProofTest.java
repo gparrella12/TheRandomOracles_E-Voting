@@ -1,4 +1,4 @@
-package CryptographicTools.SchnorrNIZPK;
+package CryptographicTools.SchnorrNIZKP;
 
 import CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters;
 import CryptographicTools.ElGamalHomomorphic.ElGamalKeyPair;

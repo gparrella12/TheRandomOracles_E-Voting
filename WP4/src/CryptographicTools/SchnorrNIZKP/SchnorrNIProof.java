@@ -1,4 +1,4 @@
-package CryptographicTools.SchnorrNIZPK;
+package CryptographicTools.SchnorrNIZKP;
 
 import java.io.Serializable;
 import java.math.BigInteger;
