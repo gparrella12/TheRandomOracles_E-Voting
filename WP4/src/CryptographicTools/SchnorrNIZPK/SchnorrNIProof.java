@@ -80,7 +80,7 @@ public class SchnorrNIProof implements Serializable {
      */
     @Override
     public String toString() {
-        return "(" + "a=" + a + ", c=" + c + ", z=" + z + ')';
+        return "(" + "\n\ta=" + a + "\n\tc=" + c + "\n\tz=" + z + "\n)";
     }
 
 }
