@@ -182,9 +182,6 @@ public class SmartContract implements Serializable {
      *
      *
      *
-     * In particular, votes of Omega_2 = (Number of transactions - votes of
-     * Omega_1)
-     *
      * @param aggregatedCipherText the aggregate ciphertext
      */
     public void tallying(ElGamalCipherText aggregatedCipherText) {
