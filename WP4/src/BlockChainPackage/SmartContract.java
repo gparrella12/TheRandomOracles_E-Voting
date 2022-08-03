@@ -190,12 +190,18 @@ public class SmartContract implements Serializable {
         BigInteger p = cp.getP();
         BigInteger q = cp.getQ();
 
+        //u = g^r, with r randomly chosen in Z_q
         BigInteger u = aggregatedCipherText.getU();
+        //v = g^m * y^r, with y public key
         BigInteger z = aggregatedCipherText.getV();
-
+        
+        
         for (Authority a : manager.getAuthorityList()) {
+            // for each Authority a compute the corresponding share
             BigInteger share = u.modPow(a.getPrivateEncKey().mod(q), p);
+            // add the authority share to the others just collected
             partialShares.add(share);
+            // create and add a new block associated to the partial share of the autority
             this.blockchain.addBlock(new Block<>(new PartialShareBlock(share, a, aggregatedCipherText)));
         }
 
