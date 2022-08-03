@@ -88,8 +88,7 @@ public class SmartContract implements Serializable {
 
     /**
      * This method adds on the blockchain a transaction that contains:   
-     * <ul> 
-     * <li> voter </li>
+     * <ul>     
      * <li> voter's vote </li>
      * <li> vote's proof </li>
      * <li> signature of the vote and its proof </li>
