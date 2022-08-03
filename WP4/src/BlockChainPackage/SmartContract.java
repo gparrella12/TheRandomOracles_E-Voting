@@ -141,7 +141,7 @@ public class SmartContract implements Serializable {
      * x<sub>A<sub>n</sub></sub>)
      * TN= number of transactions.
      *<br></br>
-     * This aggregation is made possible by the Multiplicative Homomorphism
+     * This aggregation is made possible by the Additive Homomorphism
      * ElGamal Encryption Scheme.
      *
      * @return the aggregate ciphertext

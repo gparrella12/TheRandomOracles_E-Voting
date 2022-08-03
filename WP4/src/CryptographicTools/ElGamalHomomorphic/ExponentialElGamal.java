@@ -77,7 +77,7 @@ public class ExponentialElGamal {
 
     /**
      * This method aggregates two Exponential ElGama Ciphertext, to exploit the
-     * multiplicative homomorphic property of the scheme.
+     * additive homomorphic property of the scheme.
      *
      * @param param the parameters of the cyclic group of order q used.
      * @param cipherText1 the 1st ciphertext
