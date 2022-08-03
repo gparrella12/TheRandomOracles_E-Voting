@@ -40,7 +40,14 @@ public class AuthorityShareProof implements Serializable {
      * This method creates a proof for an authority a and ciphertext c. In our
      * case, we simulate the proof with <code>H(a || c || share)</code>, with H
      * random oracle.
-     *
+     * 
+     * The claim of the proof is the following: d<sub>A<sub>i</sub>, voti
+     * <sub>&Omega;<sub>1</sub></sub></sub>
+     * = (g<sup>r</sup>)<sup>x<sub>A<sub>i</sub></sub></sup>
+     * &and; PK<sub>A<sub>i</sub></sub>
+     * =
+     * g<sup>x<sub>A<sub>i</sub></sub></sup>
+     * 
      * @param a the authority
      * @param c the aggregate ciphertext
      * @param share the share of the authority

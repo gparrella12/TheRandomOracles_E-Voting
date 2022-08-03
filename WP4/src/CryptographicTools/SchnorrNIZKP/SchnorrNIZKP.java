@@ -15,14 +15,10 @@ public class SchnorrNIZKP {
 
     /**
      * This method allows to make the Schnorr Non-interactive Zero-Knowledge
-     * Proof.
+     * Proof to prove that the owner of the public key y,
+     * also knows the secrete key x associated with it.
      *
-     * The claim of the proof is the following: d<sub>A<sub>i</sub>, voti
-     * <sub>&Omega;<sub>1</sub></sub></sub>
-     * = (g<sup>r</sup>)<sup>x<sub>A<sub>i</sub></sub></sup>
-     * &and; PK<sub>A<sub>i</sub></sub>
-     * =
-     * g<sup>x<sub>A<sub>i</sub></sub></sup>
+
      *
      * @param x the secrete key associated to y
      * @param y the public key, y=g^x
