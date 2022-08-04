@@ -215,7 +215,7 @@ public class SmartContract implements Serializable {
 
         BigInteger prod_d_inverse = prod_d.modInverse(p);
 
-        // compute a partial decryption
+        // compute g^M
         BigInteger semiResult = prod_d_inverse.multiply(z).mod(p);
 
         BigInteger result = new BigInteger("0");
