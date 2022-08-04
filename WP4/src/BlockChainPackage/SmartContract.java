@@ -206,6 +206,8 @@ public class SmartContract implements Serializable {
         }
 
         BigInteger prod_d = BigInteger.ONE;
+        // compute the product of ciphertext just collected in PartialShares list
+        // by using the Additive Homomorphism ElGamal Encryption Scheme.
         for (BigInteger b : partialShares) {
             prod_d = prod_d.multiply(b);
         }
@@ -213,9 +215,11 @@ public class SmartContract implements Serializable {
 
         BigInteger prod_d_inverse = prod_d.modInverse(p);
 
+        // compute a partial decryption
         BigInteger semiResult = prod_d_inverse.multiply(z).mod(p);
 
         BigInteger result = new BigInteger("0");
+        // compute the final result for candidate 1
         while (true) {
             if (g.modPow(result, p).compareTo(semiResult) == 0) {
                 break;
@@ -224,6 +228,7 @@ public class SmartContract implements Serializable {
         }
 
         this.resultCandidate1 = result;
+        // the result for candidate 2 is equal to (TN - result for candidate 1)
         this.resultCandidate2 = new BigInteger(String.valueOf(this.votes.size())).subtract(this.resultCandidate1);
     }
 
