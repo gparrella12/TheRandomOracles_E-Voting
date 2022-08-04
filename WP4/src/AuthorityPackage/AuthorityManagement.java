@@ -92,7 +92,9 @@ public class AuthorityManagement implements Serializable {
      * otherwise false
      */
     public boolean validateVote(Voter voter, Vote vote, VoteProof vp, byte[] signVote) {
-        return SignatureScheme.verifySignature(voter.getPublicSigKey(), Utils.append(SerializationUtils.serialize(vote),SerializationUtils.serialize(vp)), signVote);
+        return SignatureScheme.verifySignature(voter.getPublicSigKey(), 
+                Utils.append(SerializationUtils.serialize(vote),SerializationUtils.serialize(vp)), 
+                signVote);
     }
 
     /**
