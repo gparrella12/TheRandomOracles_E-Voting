@@ -1,7 +1,7 @@
 package BlockChainPackage;
 
 import AuthorityPackage.Authority;
-import CryptographicTools.SchnorrNIZKP.SchnorrNIProof;
+import CryptographicTools.Schnorr.NIZKP.SchnorrNIProof;
 import CryptographicTools.SignatureScheme;
 import Utils.Utils;
 import java.io.Serializable;

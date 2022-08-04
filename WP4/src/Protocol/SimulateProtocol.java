@@ -4,6 +4,7 @@ import AuthorityPackage.AuthorityManagement;
 import BlockChainPackage.SmartContract;
 import CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters;
 import CryptographicTools.ElGamalHomomorphic.ElGamalCipherText;
+import CryptographicTools.Schnorr.ZKP.Verifier;
 import VoterPackage.Vote;
 import VoterPackage.VoteProof;
 import VoterPackage.Voter;
@@ -65,6 +66,9 @@ public class SimulateProtocol {
                 String voterName = in.next();
                 voter = new Voter("Certificates/Voters/certs/" + voterName + ".crt", "Certificates/Voters/keys/" + voterName + ".p8");
                 System.out.print("\n----\nVoter: " + voter.getName());
+                if(!sc.verifyProof(voter, sc, param)){
+                    throw new RuntimeException("ERROR - INVALID ELECTOR (please go back to your textbook of geometry and repeat it carefully)");
+                }
                 if (activeElectorate.contains(voter.getPublicSigKey())) {
                     System.out.println("\t hasn't voted yet");
                     int preference = new SecureRandom().nextInt(2);

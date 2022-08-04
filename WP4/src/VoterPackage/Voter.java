@@ -3,6 +3,8 @@ package VoterPackage;
 import CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters;
 import CryptographicTools.ElGamalHomomorphic.ElGamalCipherText;
 import CryptographicTools.ElGamalHomomorphic.ExponentialElGamal;
+import CryptographicTools.Schnorr.ZKP.Prover;
+import CryptographicTools.Schnorr.ZKP.SchnorrKeyPair;
 import CryptographicTools.SignatureScheme;
 import Utils.EasyLoadFromFile;
 import Utils.Utils;
@@ -26,7 +28,7 @@ import org.bouncycastle.cert.jcajce.JcaX509CertificateHolder;
  *
  * @author fsonnessa
  */
-public class Voter implements Serializable {
+public class Voter extends Prover implements Serializable {
 
     private String name;
     private final PublicKey publicSigKey;
@@ -50,6 +52,7 @@ public class Voter implements Serializable {
      * signature key
      */
     public Voter(String certificateFileName, String privSigKeyFileName) {
+        super(new SchnorrKeyPair(CyclicGroupParameters.getInstance()));
         X509Certificate certificate = EasyLoadFromFile.loadCrt(certificateFileName);
 
         X500Name x500name = null;

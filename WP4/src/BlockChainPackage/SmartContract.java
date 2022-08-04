@@ -5,13 +5,15 @@ import AuthorityPackage.AuthorityManagement;
 import CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters;
 import CryptographicTools.ElGamalHomomorphic.ElGamalCipherText;
 import CryptographicTools.ElGamalHomomorphic.ExponentialElGamal;
-import CryptographicTools.SchnorrNIZKP.SchnorrNIProof;
-import CryptographicTools.SchnorrNIZKP.SchnorrNIZKP;
+import CryptographicTools.Schnorr.NIZKP.SchnorrNIProof;
+import CryptographicTools.Schnorr.NIZKP.SchnorrNIZKP;
+import CryptographicTools.Schnorr.ZKP.Verifier;
 import VoterPackage.Vote;
 import VoterPackage.VoteProof;
 import VoterPackage.Voter;
 import java.io.Serializable;
 import java.math.BigInteger;
+import java.security.SecureRandom;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +25,7 @@ import java.util.List;
  *
  * @author franc
  */
-public class SmartContract implements Serializable {
+public class SmartContract extends Verifier implements Serializable {
 
     private final BlockChain blockchain;
     private BigInteger votingKey;
@@ -267,5 +269,4 @@ public class SmartContract implements Serializable {
     public String toString() {
         return "SmartContract:\nVoting Key=" + votingKey + "\nStart Election= " + startElection + "\tEnd Election= " + endElection + "\nCandidate #1 = Omega1 [v=1]\nCandidate #2 = Omega2 [v=0]";
     }
-
 }
