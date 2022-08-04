@@ -12,8 +12,8 @@ import java.math.BigInteger;
  */
 public class SchnorrNIProof implements Serializable {
 
-    private final BigInteger a; // a = g^r mod p, x is the secrete to demostrate and r some randommess
-    private final BigInteger c; // c = H(y || a), con y=g^x mod p
+    private final BigInteger a; // a = g^r mod p, where r is some randommess
+    private final BigInteger c; // c = H(y || a), with y=g^x mod p
     private final BigInteger z; // z = (r + c*x) mod q
 
     /**
