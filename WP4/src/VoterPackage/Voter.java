@@ -31,31 +31,6 @@ public class Voter implements Serializable {
     private String name;
     private final PublicKey publicSigKey;
     private final PrivateKey privateSigKey;
-    private X509Certificate certificate;
-    private boolean voted;
-
-    /**
-     * Creates a voter by passing:
-     *
-     * <ul>
-     * <li><code>name, the name of the voter</code></li>
-     * <li><code>privateSigKey, the voter's private signature key</code></li>
-     * <li><code>certificate, the voter's certificate, from which
-     * can be extracted his/her public key</code></li>
-     * </ul>
-     *
-     *
-     * @param name the name of the voter
-     * @param privateSigKey the private signature key of the voter
-     * @param certificate the certificate of the voter
-     */
-    public Voter(String name, PrivateKey privateSigKey, X509Certificate certificate) {
-        this.name = name;
-        this.publicSigKey = certificate.getPublicKey();
-        this.privateSigKey = privateSigKey;
-        this.certificate = certificate;
-        this.voted = false;
-    }
 
     /**
      * Creates a voter by passing:
@@ -75,7 +50,7 @@ public class Voter implements Serializable {
      * signature key
      */
     public Voter(String certificateFileName, String privSigKeyFileName) {
-        this.certificate = EasyLoadFromFile.loadCrt(certificateFileName);
+        X509Certificate certificate = EasyLoadFromFile.loadCrt(certificateFileName);
 
         X500Name x500name = null;
         try {
@@ -128,7 +103,7 @@ public class Voter implements Serializable {
      * @return <code>SIG(Vote||VoteProof)</code>
      */
     public byte[] signVote(Vote v, VoteProof vp) {
-        return SignatureScheme.signMessage(this.privateSigKey, Utils.append(SerializationUtils.serialize(v),SerializationUtils.serialize(vp)));
+        return SignatureScheme.signMessage(this.privateSigKey, Utils.append(SerializationUtils.serialize(v), SerializationUtils.serialize(vp)));
     }
 
     /**
@@ -161,41 +136,12 @@ public class Voter implements Serializable {
     }
 
     /**
-     * This method returns the certificate of the voter
-     *
-     * @return a <code>X509Certificate</code> object containing the certificate
-     * of the voter.
-     */
-    public X509Certificate getCertificate() {
-        return certificate;
-    }
-
-    /**
-     * This method returns the attribute of the voter that take into account if
-     * he or she has or not voted.
-     *
-     * @return the certificate of the voter
-     */
-    public boolean hasVoted() {
-        return voted;
-    }
-
-    /**
-     * This method sets the attribute of the voter that take into account if he
-     * or she has or not voted.
-     *
-     */
-    public void setVoted() {
-        this.voted = true;
-    }
-
-    /**
      * This method prints information of the voter.
      *
      * @return a <code>String</code> containing the voter's information
      */
     @Override
     public String toString() {
-        return "\nname: " + name + "\npk: " + publicSigKey.toString() + "\nsk: " + privateSigKey.toString() + "\ncrt: " + certificate.toString() + "\nvoted: " + voted + "\n";
+        return "\nname: " + name + "\npk: " + publicSigKey.toString() + "\nsk: " + privateSigKey.toString() + "\n";
     }
 }

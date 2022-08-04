@@ -11,8 +11,11 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.math.BigInteger;
+import java.security.PublicKey;
 import java.security.SecureRandom;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -41,6 +44,18 @@ public class SimulateProtocol {
         sc.keyGeneration();
         System.out.println("======== KEY GENERATION OK ========");
 
+        // Voter Key collecting
+        List<PublicKey> activeElectorate = new ArrayList<>();
+        System.out.println("======== VOTER KEY COLLECTING ========");
+        try ( Scanner in = new Scanner(new BufferedReader(new FileReader("Certificates/Voters/.voters_list.txt")))) {
+            while (in.hasNext()) {
+                String voterName = in.next();
+                Voter voter = new Voter("Certificates/Voters/certs/" + voterName + ".crt", "Certificates/Voters/keys/" + voterName + ".p8");
+                activeElectorate.add(voter.getPublicSigKey());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         // Voting Phase
         Voter voter = null;
         int c1RealVotes = 0;
@@ -49,16 +64,22 @@ public class SimulateProtocol {
             while (in.hasNext()) {
                 String voterName = in.next();
                 voter = new Voter("Certificates/Voters/certs/" + voterName + ".crt", "Certificates/Voters/keys/" + voterName + ".p8");
-                System.out.println("\n----\nVoter: " + voter.getName() + "\tvoted = " + voter.hasVoted());
-                int preference = new SecureRandom().nextInt(2);
-                c1RealVotes += preference;
-                System.out.println("Voting...");
-                Vote vote = voter.makeVote(new BigInteger(String.valueOf(preference)), sc.getVotingKey(), param);
-                VoteProof vp = voter.makeProof(vote);
-                byte[] sign = voter.signVote(vote, vp);
+                System.out.print("\n----\nVoter: " + voter.getName());
+                if (activeElectorate.contains(voter.getPublicSigKey())) {
+                    System.out.println("\t hasn't voted yet");
+                    int preference = new SecureRandom().nextInt(2);
+                    c1RealVotes += preference;
+                    System.out.println("Voting...");
+                    Vote vote = voter.makeVote(new BigInteger(String.valueOf(preference)), sc.getVotingKey(), param);
+                    VoteProof vp = voter.makeProof(vote);
+                    byte[] sign = voter.signVote(vote, vp);
 
-                sc.vote(voter, vote, vp, sign);
-                System.out.println("Valid vote generated, voted = " + voter.hasVoted());
+                    sc.vote(voter, vote, vp, sign);
+                    System.out.println("Valid vote generated, voted ");
+                    activeElectorate.remove(voter.getPublicSigKey());
+                } else {
+                    System.err.println(voter.getName() + " has already voted!");
+                }
             }
         } catch (IOException e) {
             e.printStackTrace();

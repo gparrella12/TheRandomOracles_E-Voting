@@ -111,11 +111,10 @@ public class SmartContract implements Serializable {
      */
     public void vote(Voter voter, Vote vote, VoteProof vp, byte[] signVote) {
         if (LocalDateTime.now().isBefore(endElection) && LocalDateTime.now().isAfter(startElection)) {
-            if (!voter.hasVoted() && this.manager.validateVote(voter, vote, vp, signVote)) {
+            if (this.manager.validateVote(voter, vote, vp, signVote)) {
                 this.votes.add(vote.getEncVote());
                 VoteTransaction vt = new VoteTransaction(vote, vp, signVote);
                 this.blockchain.addBlock(new Block<>(vt));
-                voter.setVoted();
             } else {
                 throw new RuntimeException("Not valid vote");
             }
