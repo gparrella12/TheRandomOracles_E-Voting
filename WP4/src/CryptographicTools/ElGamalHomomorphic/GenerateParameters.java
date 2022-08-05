@@ -19,7 +19,7 @@ public class GenerateParameters {
      */
     public static void main(String[] args) {
         BigInteger securityParameter = BigInteger.valueOf(2048);
-        String filename = "parameters.txt";
+        String filename = "parameters_with_isqr.txt";
         BigInteger g, p, q;
         SecureRandom sr = new SecureRandom();
 
@@ -29,7 +29,15 @@ public class GenerateParameters {
             p = p.add(BigInteger.ONE);
 
             if (p.isProbablePrime(50) == true) {
-                g = new BigInteger("4");
+                g = new BigInteger("2");
+
+                while (true) {
+
+                    if (isqr(g, p) == 1) {
+                        break;
+                    }
+                    g = g.add(BigInteger.ONE);
+                }
                 try ( BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
                     writer.write(securityParameter.toString() + "\n"); // SECURITY PARAMETER
                     writer.write(g.toString() + "\n"); // G
@@ -45,4 +53,11 @@ public class GenerateParameters {
 
     }
 
+    public static int isqr(BigInteger x, BigInteger p) {
+        // x ^ {(p-1)/2} mod p == 1
+        if (x.modPow(p.subtract(BigInteger.ONE).divide(BigInteger.TWO), p).compareTo(BigInteger.ONE) == 0) {
+            return 1;
+        }
+        return 0;
+    }
 }

@@ -4,7 +4,6 @@ import AuthorityPackage.AuthorityManagement;
 import BlockChainPackage.SmartContract;
 import CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters;
 import CryptographicTools.ElGamalHomomorphic.ElGamalCipherText;
-import CryptographicTools.Schnorr.ZKP.Verifier;
 import VoterPackage.Vote;
 import VoterPackage.VoteProof;
 import VoterPackage.Voter;
