@@ -21,26 +21,33 @@ import java.math.BigInteger;
 import java.security.SecureRandom;
 
 /**
+ * This class represents a Verifier of the System.
  *
  * @author gparrella
  */
 public abstract class Verifier {
 
     /**
+     * This method generates and returns the <code>c</code> value, representing
+     * some randomness.
      *
-     * @param param
-     * @return
+     * @param param the parameters that defines a cyclic group of order q.
+     * @return a <code>BigInteger</code> representing the <code>c</code> value.
      */
     public BigInteger getC(CyclicGroupParameters param) {
         return new BigInteger(param.getSecurityParameter().intValue(), new SecureRandom()).mod(param.getQ());
     }
 
     /**
+     * This method verifies the proof. it checks if a*y<sup>c</sup> mod p is
+     * equal to g<sup>z</sup> mod p
      *
-     * @param p
-     * @param v
-     * @param param
-     * @return
+     * @param p the Proover
+     * @param v the Verifier
+     * @param param the parameters that defines a cyclic group of order q.
+     * @return a <code>boolean</code> that is <code>true</code> if
+     * a*y<sup>c</sup> mod p is equal to g<sup>z</sup> mod p, <code>false</code>
+     * otherwise.
      */
     public boolean verifyProof(Prover p, Verifier v, CyclicGroupParameters param) {
         BigInteger a = p.getA();
