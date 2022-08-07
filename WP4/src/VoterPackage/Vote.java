@@ -4,7 +4,7 @@ import CryptographicTools.ElGamalHomomorphic.ElGamalCipherText;
 import java.io.Serializable;
 
 /**
- * This class contains the encrypted vote, which will then be sent to the system
+ * This class contains the encrypted vote, which will then be sent to the system.
  *
  * @author franc
  */
@@ -25,7 +25,7 @@ public class Vote implements Serializable {
     }
 
     /**
-     * This method returns the encrypted vote of a voter
+     * This method returns the encrypted vote of a voter.
      *
      * @return an <code>ElGamalCipherText</code> object representing the
      * encrypted vote
@@ -35,7 +35,7 @@ public class Vote implements Serializable {
     }
 
     /**
-     * This method returns a string representation of the vote
+     * This method returns a string representation of the vote.
      *
      * @return a <code>String</code> containing a representation of the vote
      */
