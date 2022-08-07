@@ -25,7 +25,7 @@ import java.util.Scanner;
 public class SimulateProtocol {
 
     /**
-     * Here we are simulating the entire protocol.
+     * Here the is a simulation of the entire protocol.
      *
      * @param args the command voterName arguments
      */
@@ -66,7 +66,7 @@ public class SimulateProtocol {
                 voter = new Voter("Certificates/Voters/certs/" + voterName + ".crt", "Certificates/Voters/keys/" + voterName + ".p8");
                 System.out.print("\n----\nVoter: " + voter.getName());
                 if(!sc.verifyProof(voter, sc, param)){
-                    throw new RuntimeException("ERROR - INVALID ELECTOR (please go back to your textbook of geometry and repeat it carefully)");
+                    throw new RuntimeException("ERROR - INVALID ELECTOR");
                 }
                 if (activeElectorate.contains(voter.getPublicSigKey())) {
                     System.out.println("\t hasn't voted yet");
@@ -78,7 +78,7 @@ public class SimulateProtocol {
                     byte[] sign = voter.signVote(vote, vp);
 
                     sc.vote(voter, vote, vp, sign);
-                    System.out.println("Valid vote generated, voted ");
+                    System.out.println("Valid vote generated, voted.");
                     activeElectorate.remove(voter.getPublicSigKey());
                 } else {
                     System.err.println(voter.getName() + " has already voted!");
