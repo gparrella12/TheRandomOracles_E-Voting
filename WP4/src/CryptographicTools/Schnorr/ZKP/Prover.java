@@ -20,24 +20,31 @@ import java.math.BigInteger;
 import java.security.SecureRandom;
 
 /**
+ * This class represent a Prover of the System. It has to generate the
+ * <code>a</code> and <code>y</code> values.
  *
  * @author gparrella
  */
 public abstract class Prover {
+
     private BigInteger schnorrRandomness = null;
     private SchnorrKeyPair keys;
 
     /**
+     * Starting from the <code>SchnorrKeyPair</code> keys, it generates the
+     * <code>a</code> and <code>y</code> values.
      *
      * @param keys
      */
     public Prover(SchnorrKeyPair keys) {
         this.keys = keys;
     }
-    
+
     /**
+     * This method generates and returns the <code>a</code> value, that is equal
+     * to g<sup>r</sup> mod p.
      *
-     * @return
+     * @return a <code>BigInteger</code> representing the <code>a</code> value.
      */
     public BigInteger getA() {
         schnorrRandomness = new BigInteger(keys.getParam().getSecurityParameter().intValue(), new SecureRandom()).mod(keys.getParam().getQ());
@@ -45,20 +52,23 @@ public abstract class Prover {
     }
 
     /**
+     * This method generates and returns the <code>a</code> value, that is equal
+     * to r+c*x.
      *
-     * @param c
-     * @return
+     * @param c c = H(y || a), with y=g<sup>x</sup> mod p.
+     * @return a <code>BigInteger</code> representing the <code>z</code> value.
      */
     public BigInteger getZ(BigInteger c) {
         return schnorrRandomness.add(c.multiply(keys.getX())).mod(keys.getParam().getQ());
     }
 
     /**
+     * This method returns the <code>y</code> value, that is equal to
+     * g<sup>x</sup> mod p.
      *
-     * @return
+     * @return a <code>BigInteger</code> representing the <code>y</code> value.
      */
     public BigInteger getY() {
         return keys.getY();
     }
 }
-
