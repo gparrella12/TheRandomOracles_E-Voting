@@ -13,7 +13,6 @@ import VoterPackage.VoteProof;
 import VoterPackage.Voter;
 import java.io.Serializable;
 import java.math.BigInteger;
-import java.security.SecureRandom;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
