@@ -15,14 +15,14 @@ public class SchnorrNIZKP {
 
     /**
      * This method allows to make the Schnorr Non-interactive Zero-Knowledge
-     * Proof to prove that the owner of the public key y,
-     * also knows the secrete key x associated with it.
+     * Proof to prove that the owner of the public key y, also knows the secrete
+     * key x associated with it.
      *
-
      *
-     * @param x the secrete key associated to y
-     * @param y the public key, y=g^x
-     * @param param the parameters of a cyclic group of order q
+     *
+     * @param x the secrete key associated to y.
+     * @param y the public key, g<sup>x</sup> mod p.
+     * @param param the parameters of a cyclic group of order q.
      * @return a <code>SchnorrNIProof</code> object
      */
     public static SchnorrNIProof makeProof(BigInteger x, BigInteger y, CyclicGroupParameters param) {
@@ -38,7 +38,7 @@ public class SchnorrNIZKP {
         BigInteger a = g.modPow(r.mod(q), p);
 
         BigInteger toHash = new BigInteger(Utils.append(y.toByteArray(), a.toByteArray()));
-        BigInteger c = new BigInteger(CryptographicHash.hash(toHash.toByteArray())); // c = H(y || a), con y=g^x mod p  
+        BigInteger c = new BigInteger(CryptographicHash.hash(toHash.toByteArray())); // c = H(y || a), with y=g^x mod p  
         // z = r+c*x
         BigInteger z = r.add(c.multiply(x)).mod(q);
 
@@ -51,7 +51,7 @@ public class SchnorrNIZKP {
      *
      * @param proof the proof, represented by a <code>SchnorrNIProof</code>
      * object
-     * @param y the public key, y=g^x
+     * @param y the public key, y=g<sup>x</sup> mod p.
      * @param param the parameters of a cyclic group of order q
      * @return true if the NIZKP is valid, false otherwise
      */
