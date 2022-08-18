@@ -57,7 +57,7 @@ public abstract class Prover {
         // Take a random value of securityParameter bit.
         // h <- Z_p*
         BigInteger h = new BigInteger(securityParameter, new SecureRandom()).mod(p);
-        while (h.equals(BigInteger.ONE) || h.equals(BigInteger.ZERO)) {
+        while (h.equals(BigInteger.ONE)) {
             h = new BigInteger(securityParameter, new SecureRandom()).mod(p);
         }
         // SK = h^2 mod p (because p=2q+1), this is a group element of cyclic group of order q [pag. 322]
