@@ -29,18 +29,15 @@ public class GenerateParameters {
             p = p.add(BigInteger.ONE);
 
             if (p.isProbablePrime(50) == true) {
-                // Start with a random generator
                 g = new BigInteger("2");
 
                 while (true) {
-                    // if g is in the subgroup of order q, then g is a good generator
-                    if (isInQSubgroup(g, p) == 1) {
+
+                    if (isqr(g, p) == 1) {
                         break;
                     }
-                    // if not, increment g and check
                     g = g.add(BigInteger.ONE);
                 }
-                // write all parameters on a file
                 try ( BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
                     writer.write(securityParameter.toString() + "\n"); // SECURITY PARAMETER
                     writer.write(g.toString() + "\n"); // G
@@ -56,8 +53,8 @@ public class GenerateParameters {
 
     }
 
-    public static int isInQSubgroup(BigInteger x, BigInteger p) {
-        // x ^ {(p-1)/2} mod p == 1 <-> x^q = 1 mod p [pag. 323]
+    public static int isqr(BigInteger x, BigInteger p) {
+        // x ^ {(p-1)/2} mod p == 1
         if (x.modPow(p.subtract(BigInteger.ONE).divide(BigInteger.TWO), p).compareTo(BigInteger.ONE) == 0) {
             return 1;
         }
