@@ -34,7 +34,7 @@ public class SchnorrNIZKP {
         // r random
         // h <- Z_p*
         BigInteger h = new BigInteger(securityParameter, new SecureRandom()).mod(p);
-        while (h.equals(BigInteger.ONE)) {
+        while (h.equals(BigInteger.ONE) || h.equals(BigInteger.ZERO)) {
             h = new BigInteger(securityParameter, new SecureRandom()).mod(p);
         }
         // r = h^2 mod p (because p=2q+1), this is a group element of cyclic group of order q [pag. 322]
