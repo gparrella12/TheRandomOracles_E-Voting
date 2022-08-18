@@ -55,7 +55,7 @@ public abstract class Prover {
      * This method generates and returns the <code>a</code> value, that is equal
      * to r+c*x.
      *
-     * @param c c = H(y || a), with y=g<sup>x</sup> mod p.
+     * @param c is the random challenge from the verifier.
      * @return a <code>BigInteger</code> representing the <code>z</code> value.
      */
     public BigInteger getZ(BigInteger c) {
