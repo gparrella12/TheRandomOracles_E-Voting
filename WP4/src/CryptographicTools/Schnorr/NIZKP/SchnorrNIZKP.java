@@ -32,19 +32,10 @@ public class SchnorrNIZKP {
         BigInteger g = param.getG();
 
         // r random
-        // h <- Z_p*
-        BigInteger h = new BigInteger(securityParameter, new SecureRandom()).mod(p);
-        while (h.equals(BigInteger.ONE)) {
-            h = new BigInteger(securityParameter, new SecureRandom()).mod(p);
-        }
-        // r = h^2 mod p (because p=2q+1), this is a group element of cyclic group of order q [pag. 322]
-        BigInteger r = h.modPow(new BigInteger("2"), p);
-        if (isInQSubgroup(r, p) == 0) {
-            throw new RuntimeException("Malformed C value");
-        }
+        BigInteger r = new BigInteger(securityParameter, new SecureRandom());
 
         // a = g^r mod p
-        BigInteger a = g.modPow(r, p);
+        BigInteger a = g.modPow(r.mod(q), p);
 
         BigInteger toHash = new BigInteger(Utils.append(y.toByteArray(), a.toByteArray()));
         BigInteger c = new BigInteger(CryptographicHash.hash(toHash.toByteArray())); // c = H(y || a), with y=g^x mod p  
@@ -95,11 +86,4 @@ public class SchnorrNIZKP {
         return false;
     }
 
-    private static int isInQSubgroup(BigInteger x, BigInteger p) {
-        // x ^ {(p-1)/2} mod p == 1 <-> x^q = 1 mod p [pag. 323]
-        if (x.modPow(p.subtract(BigInteger.ONE).divide(BigInteger.TWO), p).compareTo(BigInteger.ONE) == 0) {
-            return 1;
-        }
-        return 0;
-    }
 }

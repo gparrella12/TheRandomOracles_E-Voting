@@ -30,16 +30,7 @@ public class ExponentialElGamal {
         SecureRandom sc = new SecureRandom();
 
         // r <- Z_q, r randomly chosen in Z_q
-        // h <- Z_p*
-        BigInteger h = new BigInteger(securityParameter, new SecureRandom()).mod(p);
-        while (h.equals(BigInteger.ONE)) {
-            h = new BigInteger(securityParameter, new SecureRandom()).mod(p);
-        }
-        // r = h^2 mod p (because p=2q+1), this is a group element of cyclic group of order q [pag. 322]
-        BigInteger r = h.modPow(new BigInteger("2"), p);
-        if (isInQSubgroup(r, p) == 0) {
-            throw new RuntimeException("Malformed randomness value");
-        }
+        BigInteger r = new BigInteger(securityParameter, sc).mod(q);
 
         // u = g^r mod p 
         BigInteger u = g.modPow(r, p);
@@ -101,13 +92,5 @@ public class ExponentialElGamal {
         BigInteger newU = cipherText1.getU().multiply(cipherText2.getU()).mod(p);
         BigInteger newV = cipherText1.getV().multiply(cipherText2.getV()).mod(p);
         return new ElGamalCipherText(newU, newV);
-    }
-
-    private static int isInQSubgroup(BigInteger x, BigInteger p) {
-        // x ^ {(p-1)/2} mod p == 1 <-> x^q = 1 mod p [pag. 323]
-        if (x.modPow(p.subtract(BigInteger.ONE).divide(BigInteger.TWO), p).compareTo(BigInteger.ONE) == 0) {
-            return 1;
-        }
-        return 0;
     }
 }
