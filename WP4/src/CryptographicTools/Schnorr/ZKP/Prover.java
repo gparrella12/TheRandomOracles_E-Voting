@@ -16,6 +16,7 @@
  */
 package CryptographicTools.Schnorr.ZKP;
 
+import CryptographicTools.ElGamalHomomorphic.CyclicGroupParameters;
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
@@ -47,15 +48,40 @@ public abstract class Prover {
      * @return a <code>BigInteger</code> representing the <code>a</code> value.
      */
     public BigInteger getA() {
-        schnorrRandomness = new BigInteger(keys.getParam().getSecurityParameter().intValue(), new SecureRandom()).mod(keys.getParam().getQ());
-        return keys.getParam().getG().modPow(schnorrRandomness, keys.getParam().getP());
+        CyclicGroupParameters param = keys.getParam();
+        int securityParameter = param.getSecurityParameter().intValue();
+        BigInteger q = param.getQ();
+        BigInteger p = param.getP();
+        BigInteger g = param.getG();
+
+        // Take a random value of securityParameter bit.
+        // h <- Z_p*
+        BigInteger h = new BigInteger(securityParameter, new SecureRandom()).mod(p);
+        while (h.equals(BigInteger.ONE)) {
+            h = new BigInteger(securityParameter, new SecureRandom()).mod(p);
+        }
+        // SK = h^2 mod p (because p=2q+1), this is a group element of cyclic group of order q [pag. 322]
+        this.schnorrRandomness = h.modPow(new BigInteger("2"), p);
+        if (isInQSubgroup(this.schnorrRandomness, p) == 0) {
+            throw new RuntimeException("Malformed Schnorr randomness");
+        }
+        // return a = g^r mod p 
+        return g.modPow(schnorrRandomness, p);
+    }
+
+    private static int isInQSubgroup(BigInteger x, BigInteger p) {
+        // x ^ {(p-1)/2} mod p == 1 <-> x^q = 1 mod p [pag. 323]
+        if (x.modPow(p.subtract(BigInteger.ONE).divide(BigInteger.TWO), p).compareTo(BigInteger.ONE) == 0) {
+            return 1;
+        }
+        return 0;
     }
 
     /**
      * This method generates and returns the <code>a</code> value, that is equal
      * to r+c*x.
      *
-     * @param c c = H(y || a), with y=g<sup>x</sup> mod p.
+     * @param c is the challenge from the verifier.
      * @return a <code>BigInteger</code> representing the <code>z</code> value.
      */
     public BigInteger getZ(BigInteger c) {
