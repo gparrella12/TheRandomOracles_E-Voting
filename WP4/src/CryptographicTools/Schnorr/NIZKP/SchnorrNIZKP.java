@@ -42,7 +42,7 @@ public class SchnorrNIZKP {
         // z = r+c*x
         BigInteger z = r.add(c.multiply(x)).mod(q);
 
-        return new SchnorrNIProof(a, c, z);
+        return new SchnorrNIProof(a, z);
     }
 
     /**
@@ -63,27 +63,23 @@ public class SchnorrNIZKP {
         // Get the value of the NIZKP
 
         BigInteger a = proof.getA();
-        BigInteger c = proof.getC();
         BigInteger z = proof.getZ();
 
         // Compute the digest of y || a
         BigInteger toHash = new BigInteger(Utils.append(y.toByteArray(), a.toByteArray()));
 
-        // c1 = H(y || a), con y=g^x mod p
-        BigInteger c1 = new BigInteger(CryptographicHash.hash(toHash.toByteArray()));
+        // c = H(y || a), con y=g^x mod p
+        BigInteger c = new BigInteger(CryptographicHash.hash(toHash.toByteArray()));
 
-        // Verify if c value is equal to H(y || a) previously computed
-        if (c.equals(c1)) {
-            // compute k = g^z mod p
-            BigInteger k = g.modPow(z.mod(q), p);
+        // compute k = g^z mod p
+        BigInteger k = g.modPow(z.mod(q), p);
 
-            // compute a * y^c mod p
-            BigInteger res = a.multiply(y.modPow(c.mod(q), p)).mod(p);
+        // compute a * y^c mod p
+        BigInteger res = a.multiply(y.modPow(c.mod(q), p)).mod(p);
 
-            // verify if a*y^c = g^z
-            return k.equals(res);
-        }
-        return false;
+        // verify if a*y^c = g^z
+        return k.equals(res);
+
     }
 
 }

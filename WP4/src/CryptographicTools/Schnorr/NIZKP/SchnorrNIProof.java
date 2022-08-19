@@ -13,15 +13,12 @@ import java.math.BigInteger;
 public class SchnorrNIProof implements Serializable {
 
     private final BigInteger a; // a = g^r mod p, where r is some randommess
-    private final BigInteger c; // c = H(y || a), with y=g^x mod p
     private final BigInteger z; // z = (r + c*x) mod q
 
     /**
      * Creates a Schnorr Non-interactive Zero-Knowledge Proof by passing:
      * <ul>
      * <li><code>a = g<sup>r</sup> mod p</code></li>
-     * <li><code>c = H(y || a)</code>, whit <code>y=g<sup>x</sup> mod
-     * p</code></li>
      * <li><code>z = (r + c*x) mod q</code></li>
      * </ul>
      *
@@ -34,12 +31,10 @@ public class SchnorrNIProof implements Serializable {
      * </ul>
      *
      * @param a g<sup>r</sup> mod p
-     * @param c H(g<sup>x</sup> mod p || g<sup>r</sup> mod p)
      * @param z (r + c*x) mod q
      */
-    public SchnorrNIProof(BigInteger a, BigInteger c, BigInteger z) {
+    public SchnorrNIProof(BigInteger a, BigInteger z) {
         this.a = a;
-        this.c = c;
         this.z = z;
     }
 
@@ -54,16 +49,6 @@ public class SchnorrNIProof implements Serializable {
     }
 
     /**
-     * This method returns the <code>c</code> value, that is equal to
-     * H(g<sup>x</sup> mod p || g<sup>r</sup> mod p)
-     *
-     * @return a <code>BigInteger</code> representing the <code>c</code> value.
-     */
-    public BigInteger getC() {
-        return c;
-    }
-
-    /**
      * This method returns the <code>z</code> value, that is equal to
      * (r+c*x)mod(q)
      *
@@ -74,13 +59,13 @@ public class SchnorrNIProof implements Serializable {
     }
 
     /**
-     * This method prints the triple (a, c, z).
+     * This method prints the couple (a, z).
      *
-     * @return a <code>String</code> containing the representation of (a, c, z).
+     * @return a <code>String</code> containing the representation of (a , z).
      */
     @Override
     public String toString() {
-        return "(" + "\n\ta=" + a + "\n\tc=" + c + "\n\tz=" + z + "\n)";
+        return "(\n \ta=" + a + "\n\tz=" + z + "\n)";
     }
 
 }
