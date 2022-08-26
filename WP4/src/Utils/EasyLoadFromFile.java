@@ -27,9 +27,6 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
  */
 public class EasyLoadFromFile {
 
-    private static X509Certificate lastCrt = null;
-    private static PrivateKey lastPrivSigKey = null;
-
     /**
      * This method loads the .crt certificate, in X509 format, from the file
      * with the specified name
@@ -42,6 +39,7 @@ public class EasyLoadFromFile {
 
         //Open the file that contains the certificate
         InputStream in = null;
+    
         try {
             in = new FileInputStream(filename);
         } catch (FileNotFoundException ex) {
@@ -55,24 +53,15 @@ public class EasyLoadFromFile {
         } catch (CertificateException ex) {
             ex.printStackTrace();
         }
-
+        
+        X509Certificate lastCrt = null;
         try {
             //Read the certificate
-            lastCrt = (X509Certificate) fact.generateCertificate(in);
+          lastCrt  = (X509Certificate) fact.generateCertificate(in);
         } catch (CertificateException ex) {
             ex.printStackTrace();
         }
 
-        return lastCrt;
-    }
-
-    /**
-     * This method returns the last loaded X509Certificate
-     *
-     * @return a <code>X509Certificate</code> object representing the last
-     * loaded X509Certificate
-     */
-    public static X509Certificate getLastCrt() {
         return lastCrt;
     }
 
@@ -94,19 +83,8 @@ public class EasyLoadFromFile {
         } catch (IOException | NoSuchAlgorithmException | InvalidKeySpecException ex) {
             ex.printStackTrace();
         }
-        lastPrivSigKey = key;
 
         return key;
-    }
-
-    /**
-     * This method returns the last loaded Private Signature Key
-     *
-     * @return a <code>PrivateKey</code> object representing the last loaded
-     * Private Signature Key
-     */
-    public static PrivateKey getLastPrivSigKey() {
-        return lastPrivSigKey;
     }
 
 }
