@@ -1,0 +1,43 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 12 (0xc)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Calabria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Calabria@evoting.it
+        Validity
+            Not Before: Aug 26 15:19:25 2022 GMT
+            Not After : Aug 26 15:19:25 2023 GMT
+        Subject: CN=Harriett, C=IT, ST=Italia, O=Regione Calabria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:ba:dc:bd:6b:ea:2f:db:a8:22:58:74:db:24:0f:
+                    b5:ba:88:1d:ce:b5:b9:38:d9:31:61:d2:e6:94:39:
+                    8c:98:6c:e8:2b:83:c3:ba:4b:f2:5f:3a:ee:a4:33:
+                    bc:63:84:39:9d:39:3f:39:e7:0a:e7:c0:a3:cd:3a:
+                    4e:35:77:21:45
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:9f:bc:09:05:24:84:7d:30:4a:99:49:a2:7c:
+         5a:f9:02:42:8b:2d:68:00:d8:62:b7:b9:08:23:d2:cd:24:d8:
+         4e:02:20:78:81:b5:e3:54:6b:75:67:86:4d:34:78:44:5e:82:
+         b2:cc:ed:bf:d2:2c:ad:f9:a2:b4:7e:cb:2a:79:5f:00:b0
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZ2gAwIBAgIBDDAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYWxhYnJpYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYWxhYnJpYUBldm90aW5nLml0MB4XDTIy
+MDgyNjE1MTkyNVoXDTIzMDgyNjE1MTkyNVowTDERMA8GA1UEAwwISGFycmlldHQx
+CzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUg
+Q2FsYWJyaWEwVjAQBgcqhkjOPQIBBgUrgQQACgNCAAS63L1r6i/bqCJYdNskD7W6
+iB3Otbk42TFh0uaUOYyYbOgrg8O6S/JfOu6kM7xjhDmdOT855wrnwKPNOk41dyFF
+oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
+AgNIADBFAiEAn7wJBSSEfTBKmUmifFr5AkKLLWgA2GK3uQgj0s0k2E4CIHiBteNU
+a3Vnhk00eERegrLM7b/SLK35orR+yyp5XwCw
+-----END CERTIFICATE-----

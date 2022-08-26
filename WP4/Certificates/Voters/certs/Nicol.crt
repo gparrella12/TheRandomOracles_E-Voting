@@ -1,0 +1,43 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 20 (0x14)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Lazio, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Lazio@evoting.it
+        Validity
+            Not Before: Aug 26 15:19:37 2022 GMT
+            Not After : Aug 26 15:19:37 2023 GMT
+        Subject: CN=Nicol, C=IT, ST=Italia, O=Regione Lazio
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:3d:f4:5f:04:3c:e2:fb:38:40:b8:3b:76:8b:5b:
+                    32:33:5b:99:67:9e:69:5f:1f:cf:74:ab:4c:c2:aa:
+                    1d:c9:f9:81:b9:76:59:ce:f4:82:4f:59:a3:82:b8:
+                    4f:db:43:ba:ef:8d:32:a9:d9:65:b1:c0:5b:36:4c:
+                    a2:89:e2:7a:a6
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:2e:db:64:0a:77:ac:cd:c0:5e:a6:5f:86:d3:3f:
+         9e:86:f3:3c:94:59:d1:50:52:1b:e8:27:25:9e:b8:4c:87:66:
+         02:20:72:5e:5b:46:10:e3:82:b0:24:92:a9:84:e5:8a:f4:12:
+         ac:a2:5c:27:d3:c3:90:b8:2c:ea:d8:a5:61:f9:5e:b8
+-----BEGIN CERTIFICATE-----
+MIIB6jCCAZGgAwIBAgIBFDAKBggqhkjOPQQDAjCBlTEWMBQGA1UEAwwNUmVnaW9u
+ZSBMYXppbzELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UECgwP
+RS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0aG9y
+aXR5MR8wHQYJKoZIhvcNAQkBFhBMYXppb0Bldm90aW5nLml0MB4XDTIyMDgyNjE1
+MTkzN1oXDTIzMDgyNjE1MTkzN1owRjEOMAwGA1UEAwwFTmljb2wxCzAJBgNVBAYT
+AklUMQ8wDQYDVQQIDAZJdGFsaWExFjAUBgNVBAoMDVJlZ2lvbmUgTGF6aW8wVjAQ
+BgcqhkjOPQIBBgUrgQQACgNCAAQ99F8EPOL7OEC4O3aLWzIzW5lnnmlfH890q0zC
+qh3J+YG5dlnO9IJPWaOCuE/bQ7rvjTKp2WWxwFs2TKKJ4nqmoyMwITAOBgNVHQ8B
+Af8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQDAgNHADBEAiAu22QK
+d6zNwF6mX4bTP56G8zyUWdFQUhvoJyWeuEyHZgIgcl5bRhDjgrAkkqmE5Yr0Eqyi
+XCfTw5C4LOrYpWH5Xrg=
+-----END CERTIFICATE-----

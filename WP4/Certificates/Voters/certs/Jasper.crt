@@ -1,0 +1,43 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 39 (0x27)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Sicilia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sicilia@evoting.it
+        Validity
+            Not Before: Aug 26 15:20:44 2022 GMT
+            Not After : Aug 26 15:20:44 2023 GMT
+        Subject: CN=Jasper, C=IT, ST=Italia, O=Regione Sicilia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:b1:fe:e2:14:b8:2e:64:80:79:a6:9e:99:3c:72:
+                    c0:45:ea:46:7f:07:12:e0:57:76:1d:fe:32:12:58:
+                    c5:c8:2c:bf:58:24:9f:1e:82:5c:af:c8:e2:92:12:
+                    df:65:bc:64:09:22:8d:64:6b:3b:7b:e2:4d:89:d4:
+                    09:65:9b:a5:cc
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:99:42:c7:7e:88:99:2a:bf:52:fe:52:7c:13:
+         e4:8d:ae:66:97:89:93:fb:1f:65:e1:3f:01:c2:07:cf:aa:04:
+         04:02:20:40:93:ec:8a:28:17:5d:39:62:2c:ff:75:1a:8c:12:
+         e7:8b:db:80:23:6a:61:ae:e3:c7:b8:42:51:00:76:13:86
+-----BEGIN CERTIFICATE-----
+MIIB8jCCAZigAwIBAgIBJzAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBTaWNpbGlhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWElNpY2lsaWFAZXZvdGluZy5pdDAeFw0yMjA4
+MjYxNTIwNDRaFw0yMzA4MjYxNTIwNDRaMEkxDzANBgNVBAMMBkphc3BlcjELMAkG
+A1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UECgwPUmVnaW9uZSBTaWNp
+bGlhMFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEsf7iFLguZIB5pp6ZPHLARepGfwcS
+4Fd2Hf4yEljFyCy/WCSfHoJcr8jikhLfZbxkCSKNZGs7e+JNidQJZZulzKMjMCEw
+DgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0EAwIDSAAw
+RQIhAJlCx36ImSq/Uv5SfBPkja5ml4mT+x9l4T8BwgfPqgQEAiBAk+yKKBddOWIs
+/3UajBLni9uAI2phruPHuEJRAHYThg==
+-----END CERTIFICATE-----

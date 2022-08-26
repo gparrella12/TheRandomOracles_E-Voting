@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 9 (0x9)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Trentino_Alto_Adige, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Trentino_Alto_Adige@evoting.it
+        Validity
+            Not Before: Aug 26 15:19:16 2022 GMT
+            Not After : Aug 26 15:19:16 2023 GMT
+        Subject: CN=Melba, C=IT, ST=Italia, O=Regione Trentino_Alto_Adige
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:1f:46:2d:ff:68:fc:98:2d:1d:e7:67:61:a1:e8:
+                    9f:3c:da:58:23:6e:5c:f6:2e:92:26:d0:1a:42:cc:
+                    22:24:26:36:72:d7:a8:16:3d:78:58:11:ea:b3:5e:
+                    fd:8b:b9:f5:db:56:81:34:29:61:35:b1:ed:34:10:
+                    07:95:d0:7b:0b
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:3c:99:a4:b5:3f:c7:0d:89:f1:e6:ea:ec:e0:e4:
+         86:f0:93:b2:ca:17:00:92:46:0b:52:7f:2d:b7:5d:42:34:7a:
+         02:21:00:ba:ba:86:53:dd:31:7a:62:43:15:b3:b7:38:b8:b8:
+         9c:b4:37:3b:62:c2:a0:15:5e:38:58:ff:33:5f:b8:f9:4e
+-----BEGIN CERTIFICATE-----
+MIICFTCCAbugAwIBAgIBCTAKBggqhkjOPQQDAjCBsTEkMCIGA1UEAwwbUmVnaW9u
+ZSBUcmVudGlub19BbHRvX0FkaWdlMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRh
+bGlhMRgwFgYDVQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5n
+IHN5c3RlbSBhdXRob3JpdHkxLTArBgkqhkiG9w0BCQEWHlRyZW50aW5vX0FsdG9f
+QWRpZ2VAZXZvdGluZy5pdDAeFw0yMjA4MjYxNTE5MTZaFw0yMzA4MjYxNTE5MTZa
+MFQxDjAMBgNVBAMMBU1lbGJhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlh
+MSQwIgYDVQQKDBtSZWdpb25lIFRyZW50aW5vX0FsdG9fQWRpZ2UwVjAQBgcqhkjO
+PQIBBgUrgQQACgNCAAQfRi3/aPyYLR3nZ2Gh6J882lgjblz2LpIm0BpCzCIkJjZy
+16gWPXhYEeqzXv2LufXbVoE0KWE1se00EAeV0HsLoyMwITAOBgNVHQ8BAf8EBAMC
+BaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQDAgNIADBFAiA8maS1P8cNifHm
+6uzg5Ibwk7LKFwCSRgtSfy23XUI0egIhALq6hlPdMXpiQxWztzi4uJy0NztiwqAV
+XjhY/zNfuPlO
+-----END CERTIFICATE-----

@@ -1,0 +1,43 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 40 (0x28)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Emilia_Romagna, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Emilia_Romagna@evoting.it
+        Validity
+            Not Before: Aug 26 15:21:02 2022 GMT
+            Not After : Aug 26 15:21:02 2023 GMT
+        Subject: CN=Adolph, C=IT, ST=Italia, O=Regione Emilia_Romagna
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:ca:33:dc:fb:52:f5:1b:21:7d:81:be:ed:de:be:
+                    01:31:22:9f:ae:b2:48:b6:b6:c2:a2:39:f8:91:69:
+                    04:e2:b2:94:28:3b:0b:bd:7a:f6:e4:4a:a1:0a:af:
+                    80:21:87:28:1a:79:5d:22:a4:a9:eb:7a:a9:73:d3:
+                    cb:ff:f8:2a:8f
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:5f:75:18:90:77:88:46:ee:11:df:b8:8f:ed:3b:
+         00:cb:82:b5:7a:95:2a:66:7b:50:38:60:43:fb:83:4e:79:85:
+         02:21:00:c7:91:a2:3e:af:15:0b:77:e3:61:bd:77:31:45:c6:
+         b5:2e:7e:f3:94:50:6f:e6:3b:a4:d8:d2:3a:f6:8c:b3:f7
+-----BEGIN CERTIFICATE-----
+MIICBzCCAa2gAwIBAgIBKDAKBggqhkjOPQQDAjCBpzEfMB0GA1UEAwwWUmVnaW9u
+ZSBFbWlsaWFfUm9tYWduYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEY
+MBYGA1UECgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0
+ZW0gYXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlFbWlsaWFfUm9tYWduYUBldm90
+aW5nLml0MB4XDTIyMDgyNjE1MjEwMloXDTIzMDgyNjE1MjEwMlowUDEPMA0GA1UE
+AwwGQWRvbHBoMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMR8wHQYDVQQK
+DBZSZWdpb25lIEVtaWxpYV9Sb21hZ25hMFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE
+yjPc+1L1GyF9gb7t3r4BMSKfrrJItrbCojn4kWkE4rKUKDsLvXr25EqhCq+AIYco
+GnldIqSp63qpc9PL//gqj6MjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQF
+MAMCAQMwCgYIKoZIzj0EAwIDSAAwRQIgX3UYkHeIRu4R37iP7TsAy4K1epUqZntQ
+OGBD+4NOeYUCIQDHkaI+rxULd+NhvXcxRca1Ln7zlFBv5juk2NI69oyz9w==
+-----END CERTIFICATE-----

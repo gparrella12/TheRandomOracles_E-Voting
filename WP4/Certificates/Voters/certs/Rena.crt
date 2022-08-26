@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 34 (0x22)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Friuli_Venezia_Giulia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Friuli_Venezia_Giulia@evoting.it
+        Validity
+            Not Before: Aug 26 15:21:05 2022 GMT
+            Not After : Aug 26 15:21:05 2023 GMT
+        Subject: CN=Rena, C=IT, ST=Italia, O=Regione Friuli_Venezia_Giulia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:78:0f:44:14:86:53:55:62:fa:40:9b:f9:8e:9c:
+                    4a:f0:38:06:7a:08:db:8c:56:5a:df:b8:57:7d:b7:
+                    fe:f9:02:e4:82:73:02:b6:db:1c:ba:2d:34:cd:57:
+                    7e:a3:4a:36:1a:62:05:4f:da:78:db:6a:5a:9b:5c:
+                    1d:62:06:aa:4a
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:5e:c3:0a:17:75:69:8e:24:ca:59:70:25:5f:d5:
+         ee:3c:05:fc:a1:99:9b:60:52:77:fe:2c:6c:8d:63:bf:1d:aa:
+         02:20:20:96:f7:37:ab:35:e3:1a:f7:78:8b:72:57:a1:16:c3:
+         7c:6d:3c:4d:74:da:47:e6:2a:48:e5:c1:86:09:25:f3
+-----BEGIN CERTIFICATE-----
+MIICGTCCAcCgAwIBAgIBIjAKBggqhkjOPQQDAjCBtTEmMCQGA1UEAwwdUmVnaW9u
+ZSBGcml1bGlfVmVuZXppYV9HaXVsaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJ
+dGFsaWExGDAWBgNVBAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rp
+bmcgc3lzdGVtIGF1dGhvcml0eTEvMC0GCSqGSIb3DQEJARYgRnJpdWxpX1ZlbmV6
+aWFfR2l1bGlhQGV2b3RpbmcuaXQwHhcNMjIwODI2MTUyMTA1WhcNMjMwODI2MTUy
+MTA1WjBVMQ0wCwYDVQQDDARSZW5hMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRh
+bGlhMSYwJAYDVQQKDB1SZWdpb25lIEZyaXVsaV9WZW5lemlhX0dpdWxpYTBWMBAG
+ByqGSM49AgEGBSuBBAAKA0IABHgPRBSGU1Vi+kCb+Y6cSvA4BnoI24xWWt+4V323
+/vkC5IJzArbbHLotNM1XfqNKNhpiBU/aeNtqWptcHWIGqkqjIzAhMA4GA1UdDwEB
+/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMCA0cAMEQCIF7DChd1
+aY4kyllwJV/V7jwF/KGZm2BSd/4sbI1jvx2qAiAglvc3qzXjGvd4i3JXoRbDfG08
+TXTaR+YqSOXBhgkl8w==
+-----END CERTIFICATE-----

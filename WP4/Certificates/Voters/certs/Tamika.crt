@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 33 (0x21)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Trentino_Alto_Adige, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Trentino_Alto_Adige@evoting.it
+        Validity
+            Not Before: Aug 26 15:20:44 2022 GMT
+            Not After : Aug 26 15:20:44 2023 GMT
+        Subject: CN=Tamika, C=IT, ST=Italia, O=Regione Trentino_Alto_Adige
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:1c:44:03:c0:6b:a3:72:31:27:08:0d:7a:46:4c:
+                    ab:7f:f9:eb:d7:da:c6:1d:10:34:de:72:30:5a:44:
+                    f5:9b:f7:60:f8:d9:a7:37:63:3f:f6:78:77:5e:87:
+                    74:d8:c6:e0:d7:60:d9:7d:66:40:e1:b7:84:11:f9:
+                    27:e4:f2:88:97
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:43:38:b2:53:a1:03:c9:48:4a:8d:1f:5b:6b:52:
+         9c:93:60:27:23:95:91:7c:af:20:2a:fe:ae:62:0c:c9:41:38:
+         02:21:00:8e:04:b7:8a:1e:d4:44:70:84:52:24:f7:3f:ef:e8:
+         f8:11:25:a6:48:15:3d:8d:7b:be:20:ec:6b:0b:0f:87:e0
+-----BEGIN CERTIFICATE-----
+MIICFjCCAbygAwIBAgIBITAKBggqhkjOPQQDAjCBsTEkMCIGA1UEAwwbUmVnaW9u
+ZSBUcmVudGlub19BbHRvX0FkaWdlMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRh
+bGlhMRgwFgYDVQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5n
+IHN5c3RlbSBhdXRob3JpdHkxLTArBgkqhkiG9w0BCQEWHlRyZW50aW5vX0FsdG9f
+QWRpZ2VAZXZvdGluZy5pdDAeFw0yMjA4MjYxNTIwNDRaFw0yMzA4MjYxNTIwNDRa
+MFUxDzANBgNVBAMMBlRhbWlrYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxp
+YTEkMCIGA1UECgwbUmVnaW9uZSBUcmVudGlub19BbHRvX0FkaWdlMFYwEAYHKoZI
+zj0CAQYFK4EEAAoDQgAEHEQDwGujcjEnCA16Rkyrf/nr19rGHRA03nIwWkT1m/dg
++NmnN2M/9nh3Xod02Mbg12DZfWZA4beEEfkn5PKIl6MjMCEwDgYDVR0PAQH/BAQD
+AgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0EAwIDSAAwRQIgQziyU6EDyUhK
+jR9ba1Kck2AnI5WRfK8gKv6uYgzJQTgCIQCOBLeKHtREcIRSJPc/7+j4ESWmSBU9
+jXu+IOxrCw+H4A==
+-----END CERTIFICATE-----

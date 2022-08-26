@@ -1,0 +1,43 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 8 (0x8)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Umbria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Umbria@evoting.it
+        Validity
+            Not Before: Aug 26 15:18:49 2022 GMT
+            Not After : Aug 26 15:18:49 2023 GMT
+        Subject: CN=Romana, C=IT, ST=Italia, O=Regione Umbria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:1f:6b:e7:0f:42:5c:ba:41:4c:d5:d3:74:8a:f5:
+                    00:a5:d6:2d:d2:f2:87:44:6e:d3:e1:72:46:77:b8:
+                    39:68:b0:cc:14:58:9a:b0:6a:cb:29:8c:70:d5:d3:
+                    28:77:b4:1e:d3:77:b6:3d:cd:b8:24:6a:bc:2f:64:
+                    40:65:e8:f8:2b
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:95:e9:32:b0:83:5f:65:04:52:9a:4d:ec:57:
+         0d:f3:77:6f:40:20:2e:e0:0b:6c:40:38:db:07:bb:9e:4e:f5:
+         b2:02:21:00:af:53:93:e9:a7:0a:6c:30:f7:5a:62:4f:f8:36:
+         1d:c8:5c:3c:f9:fb:0a:17:15:0f:ff:8b:69:36:4f:1f:2e:d2
+-----BEGIN CERTIFICATE-----
+MIIB8DCCAZWgAwIBAgIBCDAKBggqhkjOPQQDAjCBlzEXMBUGA1UEAwwOUmVnaW9u
+ZSBVbWJyaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoM
+D0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1dGhv
+cml0eTEgMB4GCSqGSIb3DQEJARYRVW1icmlhQGV2b3RpbmcuaXQwHhcNMjIwODI2
+MTUxODQ5WhcNMjMwODI2MTUxODQ5WjBIMQ8wDQYDVQQDDAZSb21hbmExCzAJBgNV
+BAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExFzAVBgNVBAoMDlJlZ2lvbmUgVW1icmlh
+MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEH2vnD0JcukFM1dN0ivUApdYt0vKHRG7T
+4XJGd7g5aLDMFFiasGrLKYxw1dMod7Qe03e2Pc24JGq8L2RAZej4K6MjMCEwDgYD
+VR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0EAwIDSQAwRgIh
+AJXpMrCDX2UEUppN7FcN83dvQCAu4AtsQDjbB7ueTvWyAiEAr1OT6acKbDD3WmJP
++DYdyFw8+fsKFxUP/4tpNk8fLtI=
+-----END CERTIFICATE-----

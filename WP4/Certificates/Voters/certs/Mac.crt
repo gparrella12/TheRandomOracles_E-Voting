@@ -1,0 +1,43 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 4 (0x4)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Puglia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Puglia@evoting.it
+        Validity
+            Not Before: Aug 26 15:18:38 2022 GMT
+            Not After : Aug 26 15:18:38 2023 GMT
+        Subject: CN=Mac, C=IT, ST=Italia, O=Regione Puglia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:4b:9e:f5:d2:3d:47:96:c0:d3:50:db:4c:ee:31:
+                    d9:b4:c0:e4:1a:66:3c:90:65:21:47:ba:a9:d3:7a:
+                    08:c7:9e:4e:21:0e:83:08:83:89:af:c8:92:73:77:
+                    b7:85:e0:bc:23:b0:2c:2d:5c:b3:52:05:78:7a:08:
+                    37:de:9a:ca:79
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:ba:e0:93:92:9c:fd:f3:41:07:2c:3a:3f:d9:
+         b0:5c:82:03:0c:2a:20:fa:70:2f:6b:4b:ab:ea:91:f3:8d:1d:
+         ec:02:21:00:e3:bb:32:bb:05:86:95:b3:d8:7d:3b:f6:3b:ae:
+         9a:ea:39:67:82:8e:93:f4:99:df:3b:c6:a6:b5:cd:99:61:22
+-----BEGIN CERTIFICATE-----
+MIIB7TCCAZKgAwIBAgIBBDAKBggqhkjOPQQDAjCBlzEXMBUGA1UEAwwOUmVnaW9u
+ZSBQdWdsaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoM
+D0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1dGhv
+cml0eTEgMB4GCSqGSIb3DQEJARYRUHVnbGlhQGV2b3RpbmcuaXQwHhcNMjIwODI2
+MTUxODM4WhcNMjMwODI2MTUxODM4WjBFMQwwCgYDVQQDDANNYWMxCzAJBgNVBAYT
+AklUMQ8wDQYDVQQIDAZJdGFsaWExFzAVBgNVBAoMDlJlZ2lvbmUgUHVnbGlhMFYw
+EAYHKoZIzj0CAQYFK4EEAAoDQgAES5710j1HlsDTUNtM7jHZtMDkGmY8kGUhR7qp
+03oIx55OIQ6DCIOJr8iSc3e3heC8I7AsLVyzUgV4egg33prKeaMjMCEwDgYDVR0P
+AQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0EAwIDSQAwRgIhALrg
+k5Kc/fNBByw6P9mwXIIDDCog+nAva0ur6pHzjR3sAiEA47syuwWGlbPYfTv2O66a
+6jlngo6T9JnfO8amtc2ZYSI=
+-----END CERTIFICATE-----

@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 34 (0x22)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Trentino_Alto_Adige, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Trentino_Alto_Adige@evoting.it
+        Validity
+            Not Before: Aug 26 15:20:46 2022 GMT
+            Not After : Aug 26 15:20:46 2023 GMT
+        Subject: CN=Glen, C=IT, ST=Italia, O=Regione Trentino_Alto_Adige
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:0a:0c:64:60:b6:c1:96:ac:9e:1b:70:b3:01:52:
+                    66:89:07:c0:f7:ce:a6:c6:46:68:04:7b:4f:41:e1:
+                    a5:7d:2b:bb:60:0f:f8:19:e9:22:50:cb:4b:b6:a7:
+                    32:ff:22:14:3a:8e:b0:d2:b2:53:76:a9:f6:7d:ba:
+                    19:f1:b1:e1:59
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:f0:71:a1:3e:e5:a6:5d:71:d8:8c:25:32:4f:
+         8d:b5:e3:6e:be:86:3d:d8:8e:88:28:5d:14:dd:7a:36:ec:43:
+         59:02:21:00:aa:0c:a4:bf:c6:11:50:c9:4b:a5:78:ca:69:d4:
+         00:f7:0a:bb:92:ee:f4:31:be:21:3f:e6:7a:ce:3b:17:af:42
+-----BEGIN CERTIFICATE-----
+MIICFTCCAbqgAwIBAgIBIjAKBggqhkjOPQQDAjCBsTEkMCIGA1UEAwwbUmVnaW9u
+ZSBUcmVudGlub19BbHRvX0FkaWdlMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRh
+bGlhMRgwFgYDVQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5n
+IHN5c3RlbSBhdXRob3JpdHkxLTArBgkqhkiG9w0BCQEWHlRyZW50aW5vX0FsdG9f
+QWRpZ2VAZXZvdGluZy5pdDAeFw0yMjA4MjYxNTIwNDZaFw0yMzA4MjYxNTIwNDZa
+MFMxDTALBgNVBAMMBEdsZW4xCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWEx
+JDAiBgNVBAoMG1JlZ2lvbmUgVHJlbnRpbm9fQWx0b19BZGlnZTBWMBAGByqGSM49
+AgEGBSuBBAAKA0IABAoMZGC2wZasnhtwswFSZokHwPfOpsZGaAR7T0HhpX0ru2AP
++BnpIlDLS7anMv8iFDqOsNKyU3ap9n26GfGx4VmjIzAhMA4GA1UdDwEB/wQEAwIF
+oDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMCA0kAMEYCIQDwcaE+5aZdcdiM
+JTJPjbXjbr6GPdiOiChdFN16NuxDWQIhAKoMpL/GEVDJS6V4ymnUAPcKu5Lu9DG+
+IT/mes47F69C
+-----END CERTIFICATE-----

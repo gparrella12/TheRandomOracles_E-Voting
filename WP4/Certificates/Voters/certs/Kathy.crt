@@ -1,44 +1,43 @@
 Certificate:
     Data:
         Version: 3 (0x2)
-        Serial Number: 37 (0x25)
+        Serial Number: 33 (0x21)
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: CN=Regione Emilia_Romagna, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Emilia_Romagna@evoting.it
         Validity
-            Not Before: Aug  3 13:28:10 2022 GMT
-            Not After : Aug  3 13:28:10 2023 GMT
+            Not Before: Aug 26 15:20:35 2022 GMT
+            Not After : Aug 26 15:20:35 2023 GMT
         Subject: CN=Kathy, C=IT, ST=Italia, O=Regione Emilia_Romagna
         Subject Public Key Info:
             Public Key Algorithm: id-ecPublicKey
                 Public-Key: (256 bit)
                 pub:
-                    04:e0:ff:49:72:53:d9:f1:5f:97:e8:41:8a:ae:cc:
-                    50:b3:d7:8e:be:c1:dd:85:7c:82:e4:63:12:77:28:
-                    32:50:ab:05:b4:03:28:df:56:1c:0d:07:d2:57:9a:
-                    a9:11:50:01:02:1b:56:fa:14:ef:fb:f0:26:06:a5:
-                    b8:74:a0:67:86
-                ASN1 OID: prime256v1
-                NIST CURVE: P-256
+                    04:ff:02:70:d4:f6:81:fa:88:39:0d:93:d4:13:19:
+                    67:ed:74:bc:81:3a:53:14:54:30:97:13:7b:78:94:
+                    b5:d0:aa:2b:b1:1b:76:a2:f0:c4:97:c2:84:ea:83:
+                    d6:80:80:33:03:7e:1a:c8:fd:3f:9d:f9:4b:93:05:
+                    6a:20:ea:4a:fa
+                ASN1 OID: secp256k1
         X509v3 extensions:
             X509v3 Key Usage: critical
                 Digital Signature, Key Encipherment
             X509v3 Basic Constraints: critical
                 CA:FALSE, pathlen:3
     Signature Algorithm: ecdsa-with-SHA256
-         30:44:02:20:3e:f5:64:09:18:88:6a:5f:17:06:f4:7f:85:52:
-         84:70:6f:ac:67:31:dd:87:03:56:ad:de:a1:70:f8:b4:81:9f:
-         02:20:55:f6:8c:00:48:c8:4e:95:3f:17:f0:24:95:4f:16:fc:
-         bb:93:6c:d6:34:7d:b9:14:e4:ec:f0:7c:ba:c6:74:3a
+         30:45:02:20:5d:11:ef:8f:de:4d:1e:67:f0:f1:10:1d:60:88:
+         58:79:a1:84:4d:ac:5c:44:33:d1:2f:f7:2e:ba:55:17:6b:38:
+         02:21:00:f1:83:85:bf:25:43:f8:85:5a:54:3e:3b:c4:4f:61:
+         50:ca:c2:d1:2e:2e:e5:9e:e0:d8:d8:25:77:84:c3:e1:17
 -----BEGIN CERTIFICATE-----
-MIICCDCCAa+gAwIBAgIBJTAKBggqhkjOPQQDAjCBpzEfMB0GA1UEAwwWUmVnaW9u
+MIICBjCCAaygAwIBAgIBITAKBggqhkjOPQQDAjCBpzEfMB0GA1UEAwwWUmVnaW9u
 ZSBFbWlsaWFfUm9tYWduYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEY
 MBYGA1UECgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0
 ZW0gYXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlFbWlsaWFfUm9tYWduYUBldm90
-aW5nLml0MB4XDTIyMDgwMzEzMjgxMFoXDTIzMDgwMzEzMjgxMFowTzEOMAwGA1UE
+aW5nLml0MB4XDTIyMDgyNjE1MjAzNVoXDTIzMDgyNjE1MjAzNVowTzEOMAwGA1UE
 AwwFS2F0aHkxCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExHzAdBgNVBAoM
-FlJlZ2lvbmUgRW1pbGlhX1JvbWFnbmEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNC
-AATg/0lyU9nxX5foQYquzFCz146+wd2FfILkYxJ3KDJQqwW0AyjfVhwNB9JXmqkR
-UAECG1b6FO/78CYGpbh0oGeGoyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/
-BAUwAwIBAzAKBggqhkjOPQQDAgNHADBEAiA+9WQJGIhqXxcG9H+FUoRwb6xnMd2H
-A1at3qFw+LSBnwIgVfaMAEjITpU/F/AklU8W/LuTbNY0fbkU5OzwfLrGdDo=
+FlJlZ2lvbmUgRW1pbGlhX1JvbWFnbmEwVjAQBgcqhkjOPQIBBgUrgQQACgNCAAT/
+AnDU9oH6iDkNk9QTGWftdLyBOlMUVDCXE3t4lLXQqiuxG3ai8MSXwoTqg9aAgDMD
+fhrI/T+d+UuTBWog6kr6oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUw
+AwIBAzAKBggqhkjOPQQDAgNIADBFAiBdEe+P3k0eZ/DxEB1giFh5oYRNrFxEM9Ev
+9y66VRdrOAIhAPGDhb8lQ/iFWlQ+O8RPYVDKwtEuLuWe4NjYJXeEw+EX
 -----END CERTIFICATE-----

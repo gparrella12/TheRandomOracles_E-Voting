@@ -1,0 +1,43 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 48 (0x30)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Lombardia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Lombardia@evoting.it
+        Validity
+            Not Before: Aug 26 15:21:21 2022 GMT
+            Not After : Aug 26 15:21:21 2023 GMT
+        Subject: CN=Elijah, C=IT, ST=Italia, O=Regione Lombardia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:6f:5d:8c:cb:36:91:f7:c9:0e:f0:51:58:74:55:
+                    63:40:e5:98:f8:6e:76:f1:d1:95:da:65:8f:f9:7d:
+                    07:72:ae:9d:39:a9:f2:8f:5c:72:66:73:1a:40:f6:
+                    88:bf:c1:c3:1e:91:c3:84:af:f5:d5:96:ba:3e:f3:
+                    90:84:15:9c:33
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:90:6f:3b:3e:64:8a:0b:52:77:4e:92:6b:cc:
+         c3:81:e3:93:49:ef:15:0e:3f:53:4e:49:65:42:9c:1e:0f:44:
+         45:02:20:44:7f:09:40:4a:c8:75:2f:27:3d:fd:af:5f:2b:70:
+         97:a8:5f:66:84:c1:6b:b3:f2:fc:5a:b0:0b:22:c1:f4:31
+-----BEGIN CERTIFICATE-----
+MIIB+DCCAZ6gAwIBAgIBMDAKBggqhkjOPQQDAjCBnTEaMBgGA1UEAwwRUmVnaW9u
+ZSBMb21iYXJkaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNV
+BAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1
+dGhvcml0eTEjMCEGCSqGSIb3DQEJARYUTG9tYmFyZGlhQGV2b3RpbmcuaXQwHhcN
+MjIwODI2MTUyMTIxWhcNMjMwODI2MTUyMTIxWjBLMQ8wDQYDVQQDDAZFbGlqYWgx
+CzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGjAYBgNVBAoMEVJlZ2lvbmUg
+TG9tYmFyZGlhMFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEb12MyzaR98kO8FFYdFVj
+QOWY+G528dGV2mWP+X0Hcq6dOanyj1xyZnMaQPaIv8HDHpHDhK/11Za6PvOQhBWc
+M6MjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0E
+AwIDSAAwRQIhAJBvOz5kigtSd06Sa8zDgeOTSe8VDj9TTkllQpweD0RFAiBEfwlA
+Ssh1Lyc9/a9fK3CXqF9mhMFrs/L8WrALIsH0MQ==
+-----END CERTIFICATE-----

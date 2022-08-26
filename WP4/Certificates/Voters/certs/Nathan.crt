@@ -1,0 +1,43 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 36 (0x24)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Piemonte, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Piemonte@evoting.it
+        Validity
+            Not Before: Aug 26 15:20:52 2022 GMT
+            Not After : Aug 26 15:20:52 2023 GMT
+        Subject: CN=Nathan, C=IT, ST=Italia, O=Regione Piemonte
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:0d:68:2c:0d:d5:5e:ad:e9:55:cd:dd:9e:83:e7:
+                    82:34:cf:c8:77:9f:09:be:cc:12:3f:b1:88:eb:c7:
+                    f5:2e:87:ed:9e:e3:18:db:23:b0:0e:2e:a6:cd:ee:
+                    7f:c8:b5:df:88:ab:28:c9:50:60:b5:a9:21:1f:02:
+                    31:a2:0d:97:4f
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:1a:33:46:01:90:8a:2b:54:c8:30:1c:11:4e:2c:
+         c1:65:80:3e:af:e3:da:49:5c:34:7e:19:ec:ce:3c:8f:9d:9e:
+         02:20:75:e8:18:b3:1f:3a:0d:f1:7b:2e:1b:26:ea:01:a0:17:
+         b7:44:ba:37:15:44:c8:6b:93:8d:cf:53:51:21:a8:98
+-----BEGIN CERTIFICATE-----
+MIIB9DCCAZugAwIBAgIBJDAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBQaWVtb250ZTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNQaWVtb250ZUBldm90aW5nLml0MB4XDTIy
+MDgyNjE1MjA1MloXDTIzMDgyNjE1MjA1MlowSjEPMA0GA1UEAwwGTmF0aGFuMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRkwFwYDVQQKDBBSZWdpb25lIFBp
+ZW1vbnRlMFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEDWgsDdVerelVzd2eg+eCNM/I
+d58JvswSP7GI68f1LoftnuMY2yOwDi6mze5/yLXfiKsoyVBgtakhHwIxog2XT6Mj
+MCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0EAwID
+RwAwRAIgGjNGAZCKK1TIMBwRTizBZYA+r+PaSVw0fhnszjyPnZ4CIHXoGLMfOg3x
+ey4bJuoBoBe3RLo3FUTIa5ONz1NRIaiY
+-----END CERTIFICATE-----

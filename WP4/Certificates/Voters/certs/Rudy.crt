@@ -1,0 +1,43 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 29 (0x1d)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Campania, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Campania@evoting.it
+        Validity
+            Not Before: Aug 26 15:20:33 2022 GMT
+            Not After : Aug 26 15:20:33 2023 GMT
+        Subject: CN=Rudy, C=IT, ST=Italia, O=Regione Campania
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:47:49:63:e2:ce:25:9b:3b:c8:ea:d3:d2:a0:f4:
+                    46:1f:46:8f:38:aa:99:40:fa:34:3d:96:ae:9a:cc:
+                    cc:db:cc:71:6f:83:7e:58:d3:91:58:a7:36:fd:50:
+                    ce:f4:0a:d3:7e:39:47:00:7f:6b:4b:72:06:39:10:
+                    22:87:fc:75:67
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:2b:cb:d1:47:c0:3e:19:d1:ad:84:0c:aa:f2:d2:
+         39:37:8d:d5:09:43:84:d6:b7:3b:ab:d9:8e:73:8d:8b:f9:11:
+         02:21:00:d3:a7:d2:f0:b0:22:84:54:b3:d1:6d:1b:49:35:0e:
+         60:a7:15:29:26:06:3c:2a:c3:f7:94:48:86:20:0b:88:f3
+-----BEGIN CERTIFICATE-----
+MIIB8zCCAZmgAwIBAgIBHTAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYW1wYW5pYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYW1wYW5pYUBldm90aW5nLml0MB4XDTIy
+MDgyNjE1MjAzM1oXDTIzMDgyNjE1MjAzM1owSDENMAsGA1UEAwwEUnVkeTELMAkG
+A1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEZMBcGA1UECgwQUmVnaW9uZSBDYW1w
+YW5pYTBWMBAGByqGSM49AgEGBSuBBAAKA0IABEdJY+LOJZs7yOrT0qD0Rh9Gjziq
+mUD6ND2WrprMzNvMcW+DfljTkVinNv1QzvQK0345RwB/a0tyBjkQIof8dWejIzAh
+MA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMCA0gA
+MEUCICvL0UfAPhnRrYQMqvLSOTeN1QlDhNa3O6vZjnONi/kRAiEA06fS8LAihFSz
+0W0bSTUOYKcVKSYGPCrD95RIhiALiPM=
+-----END CERTIFICATE-----

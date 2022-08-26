@@ -1,0 +1,43 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 10 (0xa)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Molise, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Molise@evoting.it
+        Validity
+            Not Before: Aug 26 15:19:20 2022 GMT
+            Not After : Aug 26 15:19:20 2023 GMT
+        Subject: CN=Inez, C=IT, ST=Italia, O=Regione Molise
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:9e:10:81:d4:aa:20:b4:fd:7d:5e:bf:6c:43:61:
+                    1e:a1:ba:47:c0:26:cc:8a:c2:c7:56:b0:e1:a0:30:
+                    1a:33:03:8a:ee:c9:b6:7e:a7:e8:fe:a5:98:54:0f:
+                    36:4d:58:18:9f:cb:80:a2:06:30:38:5b:96:21:9f:
+                    b2:f3:aa:0c:11
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:29:3c:59:e2:77:af:bc:a5:2b:f2:fd:dc:6c:24:
+         ac:cf:c0:ad:88:dc:42:e0:58:96:53:33:64:8b:5f:e0:e3:7f:
+         02:20:55:9f:b7:5f:a0:df:d3:9b:fc:3c:a8:07:30:78:88:51:
+         d2:7e:ca:f6:f7:c5:93:00:bd:05:64:4b:92:47:a5:8c
+-----BEGIN CERTIFICATE-----
+MIIB7DCCAZOgAwIBAgIBCjAKBggqhkjOPQQDAjCBlzEXMBUGA1UEAwwOUmVnaW9u
+ZSBNb2xpc2UxCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoM
+D0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rpbmcgc3lzdGVtIGF1dGhv
+cml0eTEgMB4GCSqGSIb3DQEJARYRTW9saXNlQGV2b3RpbmcuaXQwHhcNMjIwODI2
+MTUxOTIwWhcNMjMwODI2MTUxOTIwWjBGMQ0wCwYDVQQDDARJbmV6MQswCQYDVQQG
+EwJJVDEPMA0GA1UECAwGSXRhbGlhMRcwFQYDVQQKDA5SZWdpb25lIE1vbGlzZTBW
+MBAGByqGSM49AgEGBSuBBAAKA0IABJ4QgdSqILT9fV6/bENhHqG6R8AmzIrCx1aw
+4aAwGjMDiu7Jtn6n6P6lmFQPNk1YGJ/LgKIGMDhbliGfsvOqDBGjIzAhMA4GA1Ud
+DwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMCA0cAMEQCICk8
+WeJ3r7ylK/L93GwkrM/ArYjcQuBYllMzZItf4ON/AiBVn7dfoN/Tm/w8qAcweIhR
+0n7K9vfFkwC9BWRLkkeljA==
+-----END CERTIFICATE-----

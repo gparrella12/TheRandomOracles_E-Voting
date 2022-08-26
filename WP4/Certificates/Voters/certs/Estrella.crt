@@ -1,0 +1,43 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 56 (0x38)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Liguria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Liguria@evoting.it
+        Validity
+            Not Before: Aug 26 15:21:36 2022 GMT
+            Not After : Aug 26 15:21:36 2023 GMT
+        Subject: CN=Estrella, C=IT, ST=Italia, O=Regione Liguria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:66:db:07:94:ee:73:ae:a5:43:28:7a:69:e6:fc:
+                    0d:a3:4f:cb:37:e1:e8:e0:30:ad:89:86:d7:50:67:
+                    c8:78:dd:39:23:74:75:f6:fd:64:3e:c2:95:82:b1:
+                    5a:98:25:cf:be:4f:78:19:a0:1d:73:86:c1:08:6c:
+                    d4:a9:25:e6:de
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:a8:ec:6d:eb:1c:ef:3e:00:a4:f1:05:e2:ad:
+         1d:82:59:c1:00:df:67:a4:3f:43:7b:23:32:d9:4e:93:81:8b:
+         a5:02:20:75:36:e0:a3:50:c9:03:5f:90:5b:b9:33:04:bf:b8:
+         76:96:cc:89:c5:f8:29:6e:15:fe:51:f3:88:ad:1c:f2:d1
+-----BEGIN CERTIFICATE-----
+MIIB9DCCAZqgAwIBAgIBODAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBMaWd1cmlhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWEkxpZ3VyaWFAZXZvdGluZy5pdDAeFw0yMjA4
+MjYxNTIxMzZaFw0yMzA4MjYxNTIxMzZaMEsxETAPBgNVBAMMCEVzdHJlbGxhMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQKDA9SZWdpb25lIExp
+Z3VyaWEwVjAQBgcqhkjOPQIBBgUrgQQACgNCAARm2weU7nOupUMoemnm/A2jT8s3
+4ejgMK2JhtdQZ8h43TkjdHX2/WQ+wpWCsVqYJc++T3gZoB1zhsEIbNSpJebeoyMw
+ITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQDAgNI
+ADBFAiEAqOxt6xzvPgCk8QXirR2CWcEA32ekP0N7IzLZTpOBi6UCIHU24KNQyQNf
+kFu5MwS/uHaWzInF+CluFf5R84itHPLR
+-----END CERTIFICATE-----

@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 20 (0x14)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Friuli_Venezia_Giulia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Friuli_Venezia_Giulia@evoting.it
+        Validity
+            Not Before: Aug 26 15:19:57 2022 GMT
+            Not After : Aug 26 15:19:57 2023 GMT
+        Subject: CN=Kara, C=IT, ST=Italia, O=Regione Friuli_Venezia_Giulia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:be:79:e1:96:ed:3f:c0:b2:8b:97:ce:dc:09:15:
+                    0a:8d:bc:b0:8d:4e:93:fb:80:59:73:c7:08:d3:76:
+                    5b:79:9a:eb:3e:4b:5b:11:a4:3e:36:ff:b8:89:1d:
+                    92:5b:a2:aa:c6:cd:98:b0:4f:f0:ef:31:c2:ba:26:
+                    c9:4d:81:3d:c6
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:84:10:7d:fd:18:ea:0f:54:ca:9b:e9:6c:a0:
+         4b:ef:28:54:54:87:f1:4d:23:53:03:0f:b5:67:91:4f:2c:92:
+         ec:02:21:00:b0:36:6c:c1:7c:e4:0b:17:c1:8c:37:d3:c1:10:
+         c1:d7:18:69:7a:c4:0e:fb:cd:ec:38:80:d9:92:aa:58:79:ae
+-----BEGIN CERTIFICATE-----
+MIICGzCCAcCgAwIBAgIBFDAKBggqhkjOPQQDAjCBtTEmMCQGA1UEAwwdUmVnaW9u
+ZSBGcml1bGlfVmVuZXppYV9HaXVsaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJ
+dGFsaWExGDAWBgNVBAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rp
+bmcgc3lzdGVtIGF1dGhvcml0eTEvMC0GCSqGSIb3DQEJARYgRnJpdWxpX1ZlbmV6
+aWFfR2l1bGlhQGV2b3RpbmcuaXQwHhcNMjIwODI2MTUxOTU3WhcNMjMwODI2MTUx
+OTU3WjBVMQ0wCwYDVQQDDARLYXJhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRh
+bGlhMSYwJAYDVQQKDB1SZWdpb25lIEZyaXVsaV9WZW5lemlhX0dpdWxpYTBWMBAG
+ByqGSM49AgEGBSuBBAAKA0IABL554ZbtP8Cyi5fO3AkVCo28sI1Ok/uAWXPHCNN2
+W3ma6z5LWxGkPjb/uIkdkluiqsbNmLBP8O8xwromyU2BPcajIzAhMA4GA1UdDwEB
+/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMCA0kAMEYCIQCEEH39
+GOoPVMqb6WygS+8oVFSH8U0jUwMPtWeRTyyS7AIhALA2bMF85AsXwYw308EQwdcY
+aXrEDvvN7DiA2ZKqWHmu
+-----END CERTIFICATE-----

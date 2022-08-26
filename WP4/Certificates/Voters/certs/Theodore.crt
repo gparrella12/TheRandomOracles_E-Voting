@@ -1,44 +1,43 @@
 Certificate:
     Data:
         Version: 3 (0x2)
-        Serial Number: 4 (0x4)
+        Serial Number: 47 (0x2f)
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: CN=Regione Liguria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Liguria@evoting.it
         Validity
-            Not Before: Aug  3 13:25:49 2022 GMT
-            Not After : Aug  3 13:25:49 2023 GMT
+            Not Before: Aug 26 15:20:51 2022 GMT
+            Not After : Aug 26 15:20:51 2023 GMT
         Subject: CN=Theodore, C=IT, ST=Italia, O=Regione Liguria
         Subject Public Key Info:
             Public Key Algorithm: id-ecPublicKey
                 Public-Key: (256 bit)
                 pub:
-                    04:17:41:12:69:a0:2b:9f:89:48:2a:fb:59:9c:e5:
-                    00:e5:6a:ca:57:82:5c:0c:55:09:2e:57:c0:fc:e0:
-                    33:ec:86:98:d6:d7:19:bd:8d:90:7d:0d:10:be:35:
-                    43:a4:6f:d3:18:6b:8c:c7:df:a7:e9:b0:a5:e0:97:
-                    4c:09:b9:de:33
-                ASN1 OID: prime256v1
-                NIST CURVE: P-256
+                    04:fd:8d:3c:b2:13:86:bf:83:e9:cc:2c:7c:54:f3:
+                    4a:58:d9:db:42:88:02:ca:91:31:76:49:17:fc:fb:
+                    be:13:0f:72:6e:82:b3:df:48:af:a0:fb:f0:cc:59:
+                    4c:4d:80:c3:a2:91:09:89:9f:18:2f:d9:7f:1d:1a:
+                    0d:b6:92:7b:96
+                ASN1 OID: secp256k1
         X509v3 extensions:
             X509v3 Key Usage: critical
                 Digital Signature, Key Encipherment
             X509v3 Basic Constraints: critical
                 CA:FALSE, pathlen:3
     Signature Algorithm: ecdsa-with-SHA256
-         30:44:02:20:29:98:ba:6a:17:80:ea:83:04:27:1a:6a:18:86:
-         4c:d6:09:12:11:89:d7:04:ad:6a:30:7d:e0:4c:e7:a6:fd:98:
-         02:20:5b:8e:90:e9:53:db:31:91:f5:29:77:66:d4:03:de:3b:
-         9b:5c:f1:5d:d6:17:2f:99:21:b1:a4:4a:2c:f9:0e:61
+         30:46:02:21:00:be:57:53:c9:d8:15:09:b8:ec:94:a6:c1:07:
+         b0:22:0d:0e:d5:75:f9:f2:05:ea:a2:b7:47:4b:95:12:ef:b1:
+         f9:02:21:00:92:21:21:46:5e:cf:d9:cb:5f:ad:b0:b7:18:69:
+         31:80:9c:8f:c5:c7:6c:d7:d7:d1:9b:a8:a3:03:a1:c4:8f:83
 -----BEGIN CERTIFICATE-----
-MIIB9jCCAZ2gAwIBAgIBBDAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+MIIB9TCCAZqgAwIBAgIBLzAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
 ZSBMaWd1cmlhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
 DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
 b3JpdHkxITAfBgkqhkiG9w0BCQEWEkxpZ3VyaWFAZXZvdGluZy5pdDAeFw0yMjA4
-MDMxMzI1NDlaFw0yMzA4MDMxMzI1NDlaMEsxETAPBgNVBAMMCFRoZW9kb3JlMQsw
+MjYxNTIwNTFaFw0yMzA4MjYxNTIwNTFaMEsxETAPBgNVBAMMCFRoZW9kb3JlMQsw
 CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQKDA9SZWdpb25lIExp
-Z3VyaWEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQXQRJpoCufiUgq+1mc5QDl
-aspXglwMVQkuV8D84DPshpjW1xm9jZB9DRC+NUOkb9MYa4zH36fpsKXgl0wJud4z
-oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
-AgNHADBEAiApmLpqF4DqgwQnGmoYhkzWCRIRidcErWowfeBM56b9mAIgW46Q6VPb
-MZH1KXdm1APeO5tc8V3WFy+ZIbGkSiz5DmE=
+Z3VyaWEwVjAQBgcqhkjOPQIBBgUrgQQACgNCAAT9jTyyE4a/g+nMLHxU80pY2dtC
+iALKkTF2SRf8+74TD3JugrPfSK+g+/DMWUxNgMOikQmJnxgv2X8dGg22knuWoyMw
+ITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQDAgNJ
+ADBGAiEAvldTydgVCbjslKbBB7AiDQ7VdfnyBeqit0dLlRLvsfkCIQCSISFGXs/Z
+y1+tsLcYaTGAnI/Fx2zX19GbqKMDocSPgw==
 -----END CERTIFICATE-----

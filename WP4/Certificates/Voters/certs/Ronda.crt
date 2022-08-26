@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 33 (0x21)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Friuli_Venezia_Giulia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Friuli_Venezia_Giulia@evoting.it
+        Validity
+            Not Before: Aug 26 15:21:03 2022 GMT
+            Not After : Aug 26 15:21:03 2023 GMT
+        Subject: CN=Ronda, C=IT, ST=Italia, O=Regione Friuli_Venezia_Giulia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:b5:38:a3:6e:1a:d3:e8:7c:e6:e3:21:d7:38:3f:
+                    03:fe:49:ac:85:af:ef:3e:16:10:fa:d1:cd:9c:6c:
+                    55:12:14:09:38:5f:00:77:ca:3c:7b:ff:1f:47:90:
+                    a1:14:dd:9c:fb:0f:79:c8:70:5b:46:aa:ca:12:a5:
+                    4e:1e:f0:b7:91
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:2c:02:6c:4f:67:a7:b1:c4:1b:1f:ea:d3:68:38:
+         40:df:b5:2a:1f:0d:42:ce:72:89:46:84:9d:86:01:e4:3a:16:
+         02:21:00:c3:3b:ff:a0:68:ed:e6:9d:6f:bd:b3:76:60:ef:f5:
+         ec:5f:a5:af:f3:12:e8:17:84:6f:fa:8a:75:ae:fc:c7:95
+-----BEGIN CERTIFICATE-----
+MIICGzCCAcGgAwIBAgIBITAKBggqhkjOPQQDAjCBtTEmMCQGA1UEAwwdUmVnaW9u
+ZSBGcml1bGlfVmVuZXppYV9HaXVsaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJ
+dGFsaWExGDAWBgNVBAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rp
+bmcgc3lzdGVtIGF1dGhvcml0eTEvMC0GCSqGSIb3DQEJARYgRnJpdWxpX1ZlbmV6
+aWFfR2l1bGlhQGV2b3RpbmcuaXQwHhcNMjIwODI2MTUyMTAzWhcNMjMwODI2MTUy
+MTAzWjBWMQ4wDAYDVQQDDAVSb25kYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0
+YWxpYTEmMCQGA1UECgwdUmVnaW9uZSBGcml1bGlfVmVuZXppYV9HaXVsaWEwVjAQ
+BgcqhkjOPQIBBgUrgQQACgNCAAS1OKNuGtPofObjIdc4PwP+SayFr+8+FhD60c2c
+bFUSFAk4XwB3yjx7/x9HkKEU3Zz7D3nIcFtGqsoSpU4e8LeRoyMwITAOBgNVHQ8B
+Af8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQDAgNIADBFAiAsAmxP
+Z6exxBsf6tNoOEDftSofDULOcolGhJ2GAeQ6FgIhAMM7/6Bo7eadb72zdmDv9exf
+pa/zEugXhG/6inWu/MeV
+-----END CERTIFICATE-----

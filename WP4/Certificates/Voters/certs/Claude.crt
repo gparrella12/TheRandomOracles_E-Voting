@@ -1,44 +1,43 @@
 Certificate:
     Data:
         Version: 3 (0x2)
-        Serial Number: 33 (0x21)
+        Serial Number: 20 (0x14)
         Signature Algorithm: ecdsa-with-SHA256
-        Issuer: CN=Regione Sicilia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sicilia@evoting.it
+        Issuer: CN=Regione Sardegna, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sardegna@evoting.it
         Validity
-            Not Before: Aug  3 13:28:34 2022 GMT
-            Not After : Aug  3 13:28:34 2023 GMT
-        Subject: CN=Claude, C=IT, ST=Italia, O=Regione Sicilia
+            Not Before: Aug 26 15:20:02 2022 GMT
+            Not After : Aug 26 15:20:02 2023 GMT
+        Subject: CN=Claude, C=IT, ST=Italia, O=Regione Sardegna
         Subject Public Key Info:
             Public Key Algorithm: id-ecPublicKey
                 Public-Key: (256 bit)
                 pub:
-                    04:a5:c7:f4:5c:94:f6:44:7e:98:c8:8d:a9:44:bb:
-                    2d:54:e8:bf:b9:ff:ac:02:29:a4:9c:ea:48:ca:fb:
-                    07:e0:f3:01:1e:0b:cc:ba:dc:d5:6c:b0:7d:ec:a8:
-                    4a:27:7d:37:da:17:53:28:0b:50:53:46:f9:f9:e2:
-                    95:f4:f3:e2:10
-                ASN1 OID: prime256v1
-                NIST CURVE: P-256
+                    04:4d:5e:bd:f0:0c:29:7c:c3:d6:28:23:79:80:68:
+                    df:d1:14:40:26:ff:a8:1d:77:d2:8b:15:71:00:ed:
+                    2e:65:cc:46:1f:d8:94:ef:89:29:e0:a3:d3:31:67:
+                    65:7e:53:c8:02:43:f2:4b:61:b9:07:f0:e9:6e:af:
+                    25:72:3f:41:df
+                ASN1 OID: secp256k1
         X509v3 extensions:
             X509v3 Key Usage: critical
                 Digital Signature, Key Encipherment
             X509v3 Basic Constraints: critical
                 CA:FALSE, pathlen:3
     Signature Algorithm: ecdsa-with-SHA256
-         30:45:02:21:00:e2:12:11:94:63:c9:65:90:b0:45:0e:9b:90:
-         b4:5a:91:c1:59:4e:22:42:65:92:fc:38:bd:fc:7b:92:52:73:
-         57:02:20:36:8d:26:f5:54:70:f5:14:65:dd:1e:78:e0:5d:4c:
-         a7:8d:b3:d7:57:3f:df:b9:0d:46:0c:b2:44:c1:16:6c:fb
+         30:45:02:20:0d:c8:59:f8:5f:1a:91:5c:d5:f4:ac:66:ab:6d:
+         e5:0d:83:92:ca:5f:3e:17:99:7a:fb:9b:0c:8e:ac:83:74:b3:
+         02:21:00:92:3d:93:5c:71:99:66:b7:f5:de:5a:7e:57:d9:12:
+         9a:7e:c4:65:f0:f2:d6:0c:91:2c:6d:b5:92:53:67:03:20
 -----BEGIN CERTIFICATE-----
-MIIB9TCCAZugAwIBAgIBITAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
-ZSBTaWNpbGlhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
-DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
-b3JpdHkxITAfBgkqhkiG9w0BCQEWElNpY2lsaWFAZXZvdGluZy5pdDAeFw0yMjA4
-MDMxMzI4MzRaFw0yMzA4MDMxMzI4MzRaMEkxDzANBgNVBAMMBkNsYXVkZTELMAkG
-A1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UECgwPUmVnaW9uZSBTaWNp
-bGlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEpcf0XJT2RH6YyI2pRLstVOi/
-uf+sAimknOpIyvsH4PMBHgvMutzVbLB97KhKJ3032hdTKAtQU0b5+eKV9PPiEKMj
+MIIB9TCCAZugAwIBAgIBFDAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBTYXJkZWduYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNTYXJkZWduYUBldm90aW5nLml0MB4XDTIy
+MDgyNjE1MjAwMloXDTIzMDgyNjE1MjAwMlowSjEPMA0GA1UEAwwGQ2xhdWRlMQsw
+CQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRkwFwYDVQQKDBBSZWdpb25lIFNh
+cmRlZ25hMFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAETV698AwpfMPWKCN5gGjf0RRA
+Jv+oHXfSixVxAO0uZcxGH9iU74kp4KPTMWdlflPIAkPyS2G5B/Dpbq8lcj9B36Mj
 MCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0EAwID
-SAAwRQIhAOISEZRjyWWQsEUOm5C0WpHBWU4iQmWS/Di9/HuSUnNXAiA2jSb1VHD1
-FGXdHnjgXUynjbPXVz/fuQ1GDLJEwRZs+w==
+SAAwRQIgDchZ+F8akVzV9Kxmq23lDYOSyl8+F5l6+5sMjqyDdLMCIQCSPZNccZlm
+t/XeWn5X2RKafsRl8PLWDJEsbbWSU2cDIA==
 -----END CERTIFICATE-----

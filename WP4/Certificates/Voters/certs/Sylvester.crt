@@ -1,0 +1,43 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 19 (0x13)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Lazio, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Lazio@evoting.it
+        Validity
+            Not Before: Aug 26 15:19:36 2022 GMT
+            Not After : Aug 26 15:19:36 2023 GMT
+        Subject: CN=Sylvester, C=IT, ST=Italia, O=Regione Lazio
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:f4:a0:af:13:18:b5:0e:28:96:34:aa:83:85:cc:
+                    38:85:58:30:2a:88:91:bf:7d:ca:7f:2d:2c:75:29:
+                    a1:25:31:78:ab:57:77:32:52:49:a3:fe:0a:3e:19:
+                    43:95:50:83:e9:cd:a9:4e:8f:46:e2:23:0c:98:58:
+                    f4:da:5c:db:4f
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:cd:0a:ee:74:d6:a3:4a:e8:fd:ed:25:17:38:
+         a8:43:70:ac:24:2b:bc:30:91:39:92:be:4b:76:fb:ed:22:a5:
+         fe:02:20:6e:e9:23:91:18:91:fc:66:4d:67:ed:df:18:6e:9a:
+         4b:b8:06:bb:22:29:a8:5b:9c:a0:ba:ec:ec:c0:56:4c:9f
+-----BEGIN CERTIFICATE-----
+MIIB7zCCAZWgAwIBAgIBEzAKBggqhkjOPQQDAjCBlTEWMBQGA1UEAwwNUmVnaW9u
+ZSBMYXppbzELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UECgwP
+RS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0aG9y
+aXR5MR8wHQYJKoZIhvcNAQkBFhBMYXppb0Bldm90aW5nLml0MB4XDTIyMDgyNjE1
+MTkzNloXDTIzMDgyNjE1MTkzNlowSjESMBAGA1UEAwwJU3lsdmVzdGVyMQswCQYD
+VQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRYwFAYDVQQKDA1SZWdpb25lIExhemlv
+MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE9KCvExi1DiiWNKqDhcw4hVgwKoiRv33K
+fy0sdSmhJTF4q1d3MlJJo/4KPhlDlVCD6c2pTo9G4iMMmFj02lzbT6MjMCEwDgYD
+VR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0EAwIDSAAwRQIh
+AM0K7nTWo0ro/e0lFzioQ3CsJCu8MJE5kr5LdvvtIqX+AiBu6SORGJH8Zk1n7d8Y
+bppLuAa7IimoW5yguuzswFZMnw==
+-----END CERTIFICATE-----

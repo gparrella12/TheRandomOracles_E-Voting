@@ -1,0 +1,43 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 33 (0x21)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Calabria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Calabria@evoting.it
+        Validity
+            Not Before: Aug 26 15:21:02 2022 GMT
+            Not After : Aug 26 15:21:02 2023 GMT
+        Subject: CN=Darnell, C=IT, ST=Italia, O=Regione Calabria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:39:81:e0:b0:03:ab:59:a9:a6:91:80:7f:0b:f8:
+                    dc:3f:b3:aa:f8:2a:22:89:92:35:1e:4f:3e:b9:1a:
+                    ef:7f:57:a9:58:26:94:83:a6:d3:b7:77:b3:74:80:
+                    b0:e8:76:47:83:a1:14:fc:b6:2f:26:7d:e1:05:2a:
+                    a5:c3:13:d0:04
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:3b:8e:4f:79:02:02:a5:7c:21:d7:03:80:5b:e5:
+         91:06:b3:be:08:39:15:26:99:df:a9:b7:74:b2:4a:91:4f:e1:
+         02:20:06:95:a9:89:0f:46:83:3b:52:dc:05:41:71:91:dd:af:
+         4d:92:63:44:ee:0e:87:1e:42:dc:c0:22:27:e2:91:2c
+-----BEGIN CERTIFICATE-----
+MIIB9TCCAZygAwIBAgIBITAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBDYWxhYnJpYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNDYWxhYnJpYUBldm90aW5nLml0MB4XDTIy
+MDgyNjE1MjEwMloXDTIzMDgyNjE1MjEwMlowSzEQMA4GA1UEAwwHRGFybmVsbDEL
+MAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEZMBcGA1UECgwQUmVnaW9uZSBD
+YWxhYnJpYTBWMBAGByqGSM49AgEGBSuBBAAKA0IABDmB4LADq1mpppGAfwv43D+z
+qvgqIomSNR5PPrka739XqVgmlIOm07d3s3SAsOh2R4OhFPy2LyZ94QUqpcMT0ASj
+IzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMC
+A0cAMEQCIDuOT3kCAqV8IdcDgFvlkQazvgg5FSaZ36m3dLJKkU/hAiAGlamJD0aD
+O1LcBUFxkd2vTZJjRO4Ohx5C3MAiJ+KRLA==
+-----END CERTIFICATE-----

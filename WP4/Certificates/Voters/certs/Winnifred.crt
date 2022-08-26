@@ -1,0 +1,43 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 33 (0x21)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Liguria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Liguria@evoting.it
+        Validity
+            Not Before: Aug 26 15:19:53 2022 GMT
+            Not After : Aug 26 15:19:53 2023 GMT
+        Subject: CN=Winnifred, C=IT, ST=Italia, O=Regione Liguria
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:cc:79:cf:74:1f:ef:40:a7:4c:9d:d4:75:72:29:
+                    4c:8e:a9:7e:fa:d5:45:53:a5:a6:fc:ac:80:4a:ea:
+                    be:ca:6c:f3:fe:40:4c:cd:19:17:39:7a:8f:5e:3d:
+                    3f:3f:de:e4:06:a8:4d:2b:c4:13:b2:9b:bd:8d:96:
+                    52:df:d7:20:ba
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:07:1a:76:05:2a:b8:67:0c:aa:63:70:26:b5:33:
+         b2:cb:e6:12:27:05:33:3f:fd:7d:04:ed:8c:56:f9:a9:99:64:
+         02:20:03:e0:6e:5c:f2:94:a1:08:3e:15:04:c4:f5:aa:64:2c:
+         63:68:a7:e5:13:36:8a:df:e2:c9:f8:e0:fa:23:b7:28
+-----BEGIN CERTIFICATE-----
+MIIB9DCCAZugAwIBAgIBITAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBMaWd1cmlhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWEkxpZ3VyaWFAZXZvdGluZy5pdDAeFw0yMjA4
+MjYxNTE5NTNaFw0yMzA4MjYxNTE5NTNaMEwxEjAQBgNVBAMMCVdpbm5pZnJlZDEL
+MAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UECgwPUmVnaW9uZSBM
+aWd1cmlhMFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEzHnPdB/vQKdMndR1cilMjql+
++tVFU6Wm/KyASuq+ymzz/kBMzRkXOXqPXj0/P97kBqhNK8QTspu9jZZS39cguqMj
+MCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0EAwID
+RwAwRAIgBxp2BSq4ZwyqY3AmtTOyy+YSJwUzP/19BO2MVvmpmWQCIAPgblzylKEI
+PhUExPWqZCxjaKflEzaK3+LJ+OD6I7co
+-----END CERTIFICATE-----

@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 24 (0x18)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Friuli_Venezia_Giulia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Friuli_Venezia_Giulia@evoting.it
+        Validity
+            Not Before: Aug 26 15:20:23 2022 GMT
+            Not After : Aug 26 15:20:23 2023 GMT
+        Subject: CN=Alva, C=IT, ST=Italia, O=Regione Friuli_Venezia_Giulia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:57:53:e6:6f:7e:e9:5a:a3:c7:52:29:5e:8f:19:
+                    e0:e6:ce:2f:83:cc:45:ce:9f:41:02:e9:1a:26:85:
+                    af:43:c4:7a:82:32:42:0d:cf:f9:79:a8:f0:1e:2d:
+                    12:0f:83:b9:f7:cd:73:97:c0:6b:58:6e:f4:b5:ec:
+                    f8:5d:fa:45:44
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:21:00:97:67:54:ee:e7:82:bf:86:59:0c:d6:15:8d:
+         73:a7:dc:10:4a:3f:57:91:37:27:6c:65:04:cc:16:b4:2a:de:
+         75:02:20:47:8d:bb:5b:56:8c:ee:a3:98:de:db:c1:2f:31:a7:
+         9e:3f:c7:41:dd:ec:66:bc:f8:f4:b2:65:0d:0a:ab:58:f1
+-----BEGIN CERTIFICATE-----
+MIICGjCCAcCgAwIBAgIBGDAKBggqhkjOPQQDAjCBtTEmMCQGA1UEAwwdUmVnaW9u
+ZSBGcml1bGlfVmVuZXppYV9HaXVsaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJ
+dGFsaWExGDAWBgNVBAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rp
+bmcgc3lzdGVtIGF1dGhvcml0eTEvMC0GCSqGSIb3DQEJARYgRnJpdWxpX1ZlbmV6
+aWFfR2l1bGlhQGV2b3RpbmcuaXQwHhcNMjIwODI2MTUyMDIzWhcNMjMwODI2MTUy
+MDIzWjBVMQ0wCwYDVQQDDARBbHZhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRh
+bGlhMSYwJAYDVQQKDB1SZWdpb25lIEZyaXVsaV9WZW5lemlhX0dpdWxpYTBWMBAG
+ByqGSM49AgEGBSuBBAAKA0IABFdT5m9+6Vqjx1IpXo8Z4ObOL4PMRc6fQQLpGiaF
+r0PEeoIyQg3P+Xmo8B4tEg+DuffNc5fAa1hu9LXs+F36RUSjIzAhMA4GA1UdDwEB
+/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMCA0gAMEUCIQCXZ1Tu
+54K/hlkM1hWNc6fcEEo/V5E3J2xlBMwWtCredQIgR427W1aM7qOY3tvBLzGnnj/H
+Qd3sZrz49LJlDQqrWPE=
+-----END CERTIFICATE-----

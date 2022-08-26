@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 52 (0x34)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Trentino_Alto_Adige, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Trentino_Alto_Adige@evoting.it
+        Validity
+            Not Before: Aug 26 15:21:39 2022 GMT
+            Not After : Aug 26 15:21:39 2023 GMT
+        Subject: CN=Florine, C=IT, ST=Italia, O=Regione Trentino_Alto_Adige
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:f6:00:71:65:c2:de:1e:42:64:28:4c:b9:a0:d9:
+                    3a:82:38:e4:87:62:b3:21:a8:15:ee:81:93:c2:5f:
+                    47:9f:47:6d:df:cb:a1:cb:21:33:04:51:e3:2a:7a:
+                    c5:98:05:59:59:9d:d1:d5:ef:9d:6f:3b:13:57:40:
+                    98:06:9c:c3:ca
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:8d:0d:e5:73:ba:6b:c0:fa:8d:41:a4:8f:b5:
+         d3:43:95:f2:80:3d:fa:6a:72:38:ee:82:38:e6:9f:14:ef:12:
+         40:02:21:00:c8:a6:d6:02:c6:d5:e7:20:1d:8b:0b:6f:18:30:
+         6c:35:b0:0d:84:e1:b7:cd:32:e8:b1:09:de:e5:de:57:d0:86
+-----BEGIN CERTIFICATE-----
+MIICGDCCAb2gAwIBAgIBNDAKBggqhkjOPQQDAjCBsTEkMCIGA1UEAwwbUmVnaW9u
+ZSBUcmVudGlub19BbHRvX0FkaWdlMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRh
+bGlhMRgwFgYDVQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5n
+IHN5c3RlbSBhdXRob3JpdHkxLTArBgkqhkiG9w0BCQEWHlRyZW50aW5vX0FsdG9f
+QWRpZ2VAZXZvdGluZy5pdDAeFw0yMjA4MjYxNTIxMzlaFw0yMzA4MjYxNTIxMzla
+MFYxEDAOBgNVBAMMB0Zsb3JpbmUxCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFs
+aWExJDAiBgNVBAoMG1JlZ2lvbmUgVHJlbnRpbm9fQWx0b19BZGlnZTBWMBAGByqG
+SM49AgEGBSuBBAAKA0IABPYAcWXC3h5CZChMuaDZOoI45IdisyGoFe6Bk8JfR59H
+bd/LocshMwRR4yp6xZgFWVmd0dXvnW87E1dAmAacw8qjIzAhMA4GA1UdDwEB/wQE
+AwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMCA0kAMEYCIQCNDeVzumvA
++o1BpI+100OV8oA9+mpyOO6COOafFO8SQAIhAMim1gLG1ecgHYsLbxgwbDWwDYTh
+t80y6LEJ3uXeV9CG
+-----END CERTIFICATE-----

@@ -1,44 +1,43 @@
 Certificate:
     Data:
         Version: 3 (0x2)
-        Serial Number: 45 (0x2d)
+        Serial Number: 5 (0x5)
         Signature Algorithm: ecdsa-with-SHA256
-        Issuer: CN=Regione Liguria, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Liguria@evoting.it
+        Issuer: CN=Regione Valle_d_Aosta, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Valle_d_Aosta@evoting.it
         Validity
-            Not Before: Aug  3 13:28:14 2022 GMT
-            Not After : Aug  3 13:28:14 2023 GMT
-        Subject: CN=Brenda, C=IT, ST=Italia, O=Regione Liguria
+            Not Before: Aug 26 15:18:37 2022 GMT
+            Not After : Aug 26 15:18:37 2023 GMT
+        Subject: CN=Brenda, C=IT, ST=Italia, O=Regione Valle_d_Aosta
         Subject Public Key Info:
             Public Key Algorithm: id-ecPublicKey
                 Public-Key: (256 bit)
                 pub:
-                    04:94:d7:43:ae:81:ab:56:83:b2:9a:46:f0:b1:80:
-                    25:75:fa:cf:79:d6:c0:ff:39:23:79:82:47:96:44:
-                    82:07:88:aa:7f:c4:4f:16:d9:69:17:62:da:ed:f8:
-                    53:1c:f4:ae:2e:47:20:6a:61:78:ec:9c:3c:09:45:
-                    bf:f8:97:28:df
-                ASN1 OID: prime256v1
-                NIST CURVE: P-256
+                    04:ad:d4:3a:13:72:f4:5e:c8:81:70:e8:3c:91:06:
+                    d7:8e:e2:51:1d:3c:86:36:dd:90:81:81:61:ed:c8:
+                    3c:1a:dc:17:12:49:18:19:56:58:67:00:8f:f3:10:
+                    2c:ed:d9:95:20:65:f5:15:c4:b0:f6:c8:62:52:d2:
+                    88:2e:bf:6a:68
+                ASN1 OID: secp256k1
         X509v3 extensions:
             X509v3 Key Usage: critical
                 Digital Signature, Key Encipherment
             X509v3 Basic Constraints: critical
                 CA:FALSE, pathlen:3
     Signature Algorithm: ecdsa-with-SHA256
-         30:45:02:20:30:e5:c8:30:7b:08:14:3e:b4:4a:d6:84:25:9d:
-         70:8f:48:ea:0b:cf:c3:e9:89:2f:14:a9:f1:e3:9c:c0:ab:c3:
-         02:21:00:b3:f5:72:f0:75:5e:51:d3:76:18:14:b7:d8:bc:18:
-         b8:f2:c6:ac:95:6a:42:49:fb:75:6c:d1:de:6f:0e:e9:95
+         30:46:02:21:00:87:bc:44:e8:f5:27:bf:a3:81:0e:20:cf:a3:
+         d9:d5:ab:f9:bb:8c:a5:63:9b:9f:ab:25:4c:a5:13:b0:f7:a3:
+         61:02:21:00:f5:2e:19:83:15:55:ad:ae:36:cf:5e:c0:a9:2c:
+         cd:ec:2d:be:c9:83:11:7f:c4:53:76:3f:96:f4:ea:ae:0c:0e
 -----BEGIN CERTIFICATE-----
-MIIB9TCCAZugAwIBAgIBLTAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
-ZSBMaWd1cmlhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
-DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
-b3JpdHkxITAfBgkqhkiG9w0BCQEWEkxpZ3VyaWFAZXZvdGluZy5pdDAeFw0yMjA4
-MDMxMzI4MTRaFw0yMzA4MDMxMzI4MTRaMEkxDzANBgNVBAMMBkJyZW5kYTELMAkG
-A1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UECgwPUmVnaW9uZSBMaWd1
-cmlhMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAElNdDroGrVoOymkbwsYAldfrP
-edbA/zkjeYJHlkSCB4iqf8RPFtlpF2La7fhTHPSuLkcgamF47Jw8CUW/+Jco36Mj
-MCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0EAwID
-SAAwRQIgMOXIMHsIFD60StaEJZ1wj0jqC8/D6YkvFKnx45zAq8MCIQCz9XLwdV5R
-03YYFLfYvBi48saslWpCSft1bNHebw7plQ==
+MIICBTCCAaqgAwIBAgIBBTAKBggqhkjOPQQDAjCBpTEeMBwGA1UEAwwVUmVnaW9u
+ZSBWYWxsZV9kX0Fvc3RhMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgw
+FgYDVQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3Rl
+bSBhdXRob3JpdHkxJzAlBgkqhkiG9w0BCQEWGFZhbGxlX2RfQW9zdGFAZXZvdGlu
+Zy5pdDAeFw0yMjA4MjYxNTE4MzdaFw0yMzA4MjYxNTE4MzdaME8xDzANBgNVBAMM
+BkJyZW5kYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEeMBwGA1UECgwV
+UmVnaW9uZSBWYWxsZV9kX0Fvc3RhMFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAErdQ6
+E3L0XsiBcOg8kQbXjuJRHTyGNt2QgYFh7cg8GtwXEkkYGVZYZwCP8xAs7dmVIGX1
+FcSw9shiUtKILr9qaKMjMCEwDgYDVR0PAQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMC
+AQMwCgYIKoZIzj0EAwIDSQAwRgIhAIe8ROj1J7+jgQ4gz6PZ1av5u4ylY5ufqyVM
+pROw96NhAiEA9S4ZgxVVra42z17AqSzN7C2+yYMRf8RTdj+W9OquDA4=
 -----END CERTIFICATE-----

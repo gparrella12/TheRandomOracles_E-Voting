@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 44 (0x2c)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Trentino_Alto_Adige, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Trentino_Alto_Adige@evoting.it
+        Validity
+            Not Before: Aug 26 15:21:11 2022 GMT
+            Not After : Aug 26 15:21:11 2023 GMT
+        Subject: CN=Fannie, C=IT, ST=Italia, O=Regione Trentino_Alto_Adige
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:ed:b1:23:1a:fa:47:ae:40:a5:6c:9c:35:93:1e:
+                    7d:6e:cb:ab:06:31:43:49:03:a1:45:f3:01:e6:75:
+                    92:82:ae:8d:0d:14:65:58:40:4c:80:0b:28:0e:fc:
+                    20:d9:96:58:d3:05:f0:68:30:3e:24:18:0c:e3:48:
+                    08:f2:0b:9c:cc
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:b9:e8:2d:7a:4e:2f:68:06:12:a4:de:e2:8a:
+         da:eb:24:c0:6b:7f:f5:3c:59:8a:f2:f0:79:64:7a:3c:b7:aa:
+         2f:02:21:00:d5:91:7c:c3:15:97:63:9d:19:f8:03:8e:bb:40:
+         ae:79:c8:bd:56:c2:63:51:e5:35:9b:a8:0e:d0:f9:a3:ed:37
+-----BEGIN CERTIFICATE-----
+MIICFzCCAbygAwIBAgIBLDAKBggqhkjOPQQDAjCBsTEkMCIGA1UEAwwbUmVnaW9u
+ZSBUcmVudGlub19BbHRvX0FkaWdlMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRh
+bGlhMRgwFgYDVQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5n
+IHN5c3RlbSBhdXRob3JpdHkxLTArBgkqhkiG9w0BCQEWHlRyZW50aW5vX0FsdG9f
+QWRpZ2VAZXZvdGluZy5pdDAeFw0yMjA4MjYxNTIxMTFaFw0yMzA4MjYxNTIxMTFa
+MFUxDzANBgNVBAMMBkZhbm5pZTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxp
+YTEkMCIGA1UECgwbUmVnaW9uZSBUcmVudGlub19BbHRvX0FkaWdlMFYwEAYHKoZI
+zj0CAQYFK4EEAAoDQgAE7bEjGvpHrkClbJw1kx59bsurBjFDSQOhRfMB5nWSgq6N
+DRRlWEBMgAsoDvwg2ZZY0wXwaDA+JBgM40gI8guczKMjMCEwDgYDVR0PAQH/BAQD
+AgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0EAwIDSQAwRgIhALnoLXpOL2gG
+EqTe4ora6yTAa3/1PFmK8vB5ZHo8t6ovAiEA1ZF8wxWXY50Z+AOOu0Cueci9VsJj
+UeU1m6gO0Pmj7Tc=
+-----END CERTIFICATE-----

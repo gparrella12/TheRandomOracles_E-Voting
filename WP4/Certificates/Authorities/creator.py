@@ -78,13 +78,13 @@ os.system('sudo rm -f index.txt serial.txt')
 os.system('sudo touch index.txt')
 os.system("echo '01' > serial.txt")
 # Generazione del certificato ROOT-CA per il ministero 
-os.system('sudo openssl ecparam -name prime256v1 -genkey -noout -out keys/Ministero.key')
+os.system('sudo openssl ecparam -name secp256k1 -genkey -noout -out keys/Ministero.key')
 os.system('sudo openssl req -new -x509 -config ca.cnf -key keys/Ministero.key -out certs/Ministero.crt -days 365 -batch')
 os.system('sudo openssl pkcs8 -topk8 -inform PEM -outform DER -in keys/Ministero.key  -nocrypt > keys/Ministero.p8')
 print("ministero ok")
 for r in regioni:
     # crea la chiave per ogni regione
-    os.system('sudo openssl ecparam -name prime256v1 -genkey -noout -out keys/' + r + '.key')
+    os.system('sudo openssl ecparam -name secp256k1 -genkey -noout -out keys/' + r + '.key')
      # esportala nel formato P8
     os.system('sudo openssl pkcs8 -topk8 -inform PEM -outform DER -in keys/'+r+'.key  -nocrypt > keys/' + r+'.p8')   
     

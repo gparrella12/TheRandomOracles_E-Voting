@@ -1,0 +1,43 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 13 (0xd)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Sardegna, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Sardegna@evoting.it
+        Validity
+            Not Before: Aug 26 15:19:39 2022 GMT
+            Not After : Aug 26 15:19:39 2023 GMT
+        Subject: CN=Leonardo, C=IT, ST=Italia, O=Regione Sardegna
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:41:75:da:4e:4f:3f:3b:3b:7e:1e:8c:ce:77:29:
+                    6d:83:70:c5:20:8f:7c:03:80:fe:ba:b5:b0:d6:a8:
+                    0d:77:a9:8e:b8:bd:90:cd:58:94:e8:ab:e6:b5:d2:
+                    b3:24:a9:ac:ab:56:dc:50:1a:ac:a2:5e:d0:4a:a5:
+                    94:4d:5d:15:a1
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:3e:94:35:b9:2a:d4:fe:5b:bf:0f:5a:81:fb:84:
+         6c:80:db:20:12:bb:36:fb:22:2d:6f:d9:63:1d:2b:6f:2a:84:
+         02:21:00:f2:cf:2b:ff:db:04:4c:ad:00:04:85:60:9f:8b:57:
+         9d:ac:63:93:96:8d:55:c6:e5:e3:a3:22:b8:02:78:ca:2d
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZ2gAwIBAgIBDTAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBTYXJkZWduYTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNTYXJkZWduYUBldm90aW5nLml0MB4XDTIy
+MDgyNjE1MTkzOVoXDTIzMDgyNjE1MTkzOVowTDERMA8GA1UEAwwITGVvbmFyZG8x
+CzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGTAXBgNVBAoMEFJlZ2lvbmUg
+U2FyZGVnbmEwVjAQBgcqhkjOPQIBBgUrgQQACgNCAARBddpOTz87O34ejM53KW2D
+cMUgj3wDgP66tbDWqA13qY64vZDNWJToq+a10rMkqayrVtxQGqyiXtBKpZRNXRWh
+oyMwITAOBgNVHQ8BAf8EBAMCBaAwDwYDVR0TAQH/BAUwAwIBAzAKBggqhkjOPQQD
+AgNIADBFAiA+lDW5KtT+W78PWoH7hGyA2yASuzb7Ii1v2WMdK28qhAIhAPLPK//b
+BEytAASFYJ+LV52sY5OWjVXG5eOjIrgCeMot
+-----END CERTIFICATE-----

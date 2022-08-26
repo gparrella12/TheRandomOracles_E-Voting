@@ -1,0 +1,43 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 24 (0x18)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Piemonte, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Piemonte@evoting.it
+        Validity
+            Not Before: Aug 26 15:20:22 2022 GMT
+            Not After : Aug 26 15:20:22 2023 GMT
+        Subject: CN=Lucinda, C=IT, ST=Italia, O=Regione Piemonte
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:d0:ce:e8:49:91:0c:a9:b5:d8:ca:e3:76:06:ee:
+                    49:27:31:52:e0:f6:8a:6b:6e:b9:bc:fd:b6:88:88:
+                    ac:c3:b5:e8:3e:50:97:14:55:e0:1d:db:f7:e0:81:
+                    d5:c7:03:5f:ad:f5:5b:d3:0f:32:59:f1:06:26:a1:
+                    8d:f9:d1:50:66
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:de:0b:69:05:92:6b:85:9b:9f:71:35:62:de:
+         7f:8e:18:10:64:c1:65:87:ff:80:01:61:7d:57:74:cd:b9:78:
+         fa:02:21:00:f4:5d:d5:ad:c0:9c:a4:04:a6:7a:35:52:33:26:
+         68:72:37:72:a3:ef:ba:46:7b:e7:f8:63:cd:c4:fe:9f:82:91
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZygAwIBAgIBGDAKBggqhkjOPQQDAjCBmzEZMBcGA1UEAwwQUmVnaW9u
+ZSBQaWVtb250ZTELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UE
+CgwPRS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0
+aG9yaXR5MSIwIAYJKoZIhvcNAQkBFhNQaWVtb250ZUBldm90aW5nLml0MB4XDTIy
+MDgyNjE1MjAyMloXDTIzMDgyNjE1MjAyMlowSzEQMA4GA1UEAwwHTHVjaW5kYTEL
+MAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEZMBcGA1UECgwQUmVnaW9uZSBQ
+aWVtb250ZTBWMBAGByqGSM49AgEGBSuBBAAKA0IABNDO6EmRDKm12MrjdgbuSScx
+UuD2imtuubz9toiIrMO16D5QlxRV4B3b9+CB1ccDX631W9MPMlnxBiahjfnRUGaj
+IzAhMA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMC
+A0kAMEYCIQDeC2kFkmuFm59xNWLef44YEGTBZYf/gAFhfVd0zbl4+gIhAPRd1a3A
+nKQEpno1UjMmaHI3cqPvukZ75/hjzcT+n4KR
+-----END CERTIFICATE-----

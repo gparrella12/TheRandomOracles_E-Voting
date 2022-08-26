@@ -1,0 +1,43 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 39 (0x27)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Toscana, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Toscana@evoting.it
+        Validity
+            Not Before: Aug 26 15:21:19 2022 GMT
+            Not After : Aug 26 15:21:19 2023 GMT
+        Subject: CN=Lovella, C=IT, ST=Italia, O=Regione Toscana
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:89:bf:0c:34:d9:bd:9e:b3:66:57:02:49:45:3a:
+                    ee:35:69:50:71:94:ff:bc:d5:fd:1c:37:6b:5e:e6:
+                    05:93:6f:10:7f:4e:f5:35:90:0b:02:b5:42:f4:04:
+                    c1:1f:42:d1:cc:95:e7:d6:82:8f:61:4f:f1:fe:37:
+                    72:c4:9d:9a:8f
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:3c:1a:ae:da:70:9a:97:0e:35:0c:31:94:bf:56:
+         72:4c:4d:3d:db:5e:2b:3a:43:64:d6:a9:94:4c:fc:2c:2a:94:
+         02:20:54:a7:95:e4:da:10:45:c0:ea:f9:5b:d9:4e:41:2b:98:
+         c7:77:40:d0:cc:35:7d:57:73:4e:78:e7:37:34:70:9a
+-----BEGIN CERTIFICATE-----
+MIIB8jCCAZmgAwIBAgIBJzAKBggqhkjOPQQDAjCBmTEYMBYGA1UEAwwPUmVnaW9u
+ZSBUb3NjYW5hMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRhbGlhMRgwFgYDVQQK
+DA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5nIHN5c3RlbSBhdXRo
+b3JpdHkxITAfBgkqhkiG9w0BCQEWElRvc2NhbmFAZXZvdGluZy5pdDAeFw0yMjA4
+MjYxNTIxMTlaFw0yMzA4MjYxNTIxMTlaMEoxEDAOBgNVBAMMB0xvdmVsbGExCzAJ
+BgNVBAYTAklUMQ8wDQYDVQQIDAZJdGFsaWExGDAWBgNVBAoMD1JlZ2lvbmUgVG9z
+Y2FuYTBWMBAGByqGSM49AgEGBSuBBAAKA0IABIm/DDTZvZ6zZlcCSUU67jVpUHGU
+/7zV/Rw3a17mBZNvEH9O9TWQCwK1QvQEwR9C0cyV59aCj2FP8f43csSdmo+jIzAh
+MA4GA1UdDwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMCA0cA
+MEQCIDwartpwmpcONQwxlL9WckxNPdteKzpDZNaplEz8LCqUAiBUp5Xk2hBFwOr5
+W9lOQSuYx3dA0Mw1fVdzTnjnNzRwmg==
+-----END CERTIFICATE-----

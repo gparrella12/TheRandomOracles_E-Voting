@@ -50,7 +50,7 @@ for voter in rand_names:
 
     # crea la chiave per ogni votante
     print('> Creating key')
-    os.system(f'sudo openssl ecparam -name prime256v1 -genkey -noout -out keys/{voter}.key')
+    os.system(f'sudo openssl ecparam -name secp256k1 -genkey -noout -out keys/{voter}.key')
     
     # crea il csr
     print('> Creating csr')

@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 18 (0x12)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Friuli_Venezia_Giulia, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Friuli_Venezia_Giulia@evoting.it
+        Validity
+            Not Before: Aug 26 15:19:44 2022 GMT
+            Not After : Aug 26 15:19:44 2023 GMT
+        Subject: CN=Nadine, C=IT, ST=Italia, O=Regione Friuli_Venezia_Giulia
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:5a:94:38:7a:aa:cb:9e:5d:55:4b:59:13:7f:d6:
+                    bf:d8:c3:78:1c:b0:b5:ea:d4:6b:dc:47:1e:86:06:
+                    ca:d7:4c:ea:fd:72:e2:10:04:31:c4:fe:db:48:34:
+                    69:33:c1:d7:28:68:ff:9d:b4:75:6c:0a:49:e9:96:
+                    5c:13:6a:e9:6e
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:dd:59:72:25:1b:69:30:c7:9f:a9:4f:f8:95:
+         51:0d:a6:fb:84:53:be:b6:fb:5b:75:e7:ca:41:a2:c8:fc:b6:
+         17:02:21:00:a5:14:56:13:25:e3:1d:15:cc:6e:91:33:bb:95:
+         89:f4:0c:c8:5d:75:ea:6e:19:74:81:78:9c:bb:0b:9c:94:69
+-----BEGIN CERTIFICATE-----
+MIICHTCCAcKgAwIBAgIBEjAKBggqhkjOPQQDAjCBtTEmMCQGA1UEAwwdUmVnaW9u
+ZSBGcml1bGlfVmVuZXppYV9HaXVsaWExCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJ
+dGFsaWExGDAWBgNVBAoMD0UtVm90aW5nIHN5c3RlbTEiMCAGA1UECwwZRS1Wb3Rp
+bmcgc3lzdGVtIGF1dGhvcml0eTEvMC0GCSqGSIb3DQEJARYgRnJpdWxpX1ZlbmV6
+aWFfR2l1bGlhQGV2b3RpbmcuaXQwHhcNMjIwODI2MTUxOTQ0WhcNMjMwODI2MTUx
+OTQ0WjBXMQ8wDQYDVQQDDAZOYWRpbmUxCzAJBgNVBAYTAklUMQ8wDQYDVQQIDAZJ
+dGFsaWExJjAkBgNVBAoMHVJlZ2lvbmUgRnJpdWxpX1ZlbmV6aWFfR2l1bGlhMFYw
+EAYHKoZIzj0CAQYFK4EEAAoDQgAEWpQ4eqrLnl1VS1kTf9a/2MN4HLC16tRr3Ece
+hgbK10zq/XLiEAQxxP7bSDRpM8HXKGj/nbR1bApJ6ZZcE2rpbqMjMCEwDgYDVR0P
+AQH/BAQDAgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0EAwIDSQAwRgIhAN1Z
+ciUbaTDHn6lP+JVRDab7hFO+tvtbdefKQaLI/LYXAiEApRRWEyXjHRXMbpEzu5WJ
+9AzIXXXqbhl0gXicuwuclGk=
+-----END CERTIFICATE-----

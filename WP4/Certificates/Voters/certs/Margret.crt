@@ -1,0 +1,43 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 4 (0x4)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Lazio, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Lazio@evoting.it
+        Validity
+            Not Before: Aug 26 15:18:33 2022 GMT
+            Not After : Aug 26 15:18:33 2023 GMT
+        Subject: CN=Margret, C=IT, ST=Italia, O=Regione Lazio
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:f1:8e:6e:73:99:2b:25:8a:df:2b:72:7c:a6:0e:
+                    c2:e8:55:c9:1b:03:19:88:3d:37:4d:bd:d9:f6:e7:
+                    ed:3b:c9:b0:05:63:8f:5d:c6:85:2d:c4:ab:05:c1:
+                    ee:25:71:18:77:e4:be:61:40:10:88:a3:fe:19:17:
+                    b1:f0:39:63:58
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:3f:be:92:f0:4c:83:13:27:d2:0b:78:07:f4:72:
+         46:58:2e:b0:5e:5c:ac:83:a2:68:9d:01:76:d9:2d:c9:fe:0e:
+         02:21:00:da:9c:7b:5a:59:07:45:a5:ae:f1:a6:e8:0f:cd:af:
+         f4:0f:ba:71:b6:12:72:cc:ba:ed:e5:eb:09:fa:88:be:3e
+-----BEGIN CERTIFICATE-----
+MIIB7TCCAZOgAwIBAgIBBDAKBggqhkjOPQQDAjCBlTEWMBQGA1UEAwwNUmVnaW9u
+ZSBMYXppbzELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxpYTEYMBYGA1UECgwP
+RS1Wb3Rpbmcgc3lzdGVtMSIwIAYDVQQLDBlFLVZvdGluZyBzeXN0ZW0gYXV0aG9y
+aXR5MR8wHQYJKoZIhvcNAQkBFhBMYXppb0Bldm90aW5nLml0MB4XDTIyMDgyNjE1
+MTgzM1oXDTIzMDgyNjE1MTgzM1owSDEQMA4GA1UEAwwHTWFyZ3JldDELMAkGA1UE
+BhMCSVQxDzANBgNVBAgMBkl0YWxpYTEWMBQGA1UECgwNUmVnaW9uZSBMYXppbzBW
+MBAGByqGSM49AgEGBSuBBAAKA0IABPGObnOZKyWK3ytyfKYOwuhVyRsDGYg9N029
+2fbn7TvJsAVjj13GhS3EqwXB7iVxGHfkvmFAEIij/hkXsfA5Y1ijIzAhMA4GA1Ud
+DwEB/wQEAwIFoDAPBgNVHRMBAf8EBTADAgEDMAoGCCqGSM49BAMCA0gAMEUCID++
+kvBMgxMn0gt4B/RyRlgusF5crIOiaJ0Bdtktyf4OAiEA2px7WlkHRaWu8aboD82v
+9A+6cbYScsy67eXrCfqIvj4=
+-----END CERTIFICATE-----

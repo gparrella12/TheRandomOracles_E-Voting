@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 50 (0x32)
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Regione Trentino_Alto_Adige, C=IT, ST=Italia, O=E-Voting system, OU=E-Voting system authority/emailAddress=Trentino_Alto_Adige@evoting.it
+        Validity
+            Not Before: Aug 26 15:21:34 2022 GMT
+            Not After : Aug 26 15:21:34 2023 GMT
+        Subject: CN=Stefan, C=IT, ST=Italia, O=Regione Trentino_Alto_Adige
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:08:1d:57:62:05:1c:df:f3:12:06:09:21:49:1e:
+                    82:d5:16:c0:eb:3f:0e:ab:9f:c1:2b:60:54:5c:c3:
+                    46:0e:f5:72:ab:24:bb:9f:b9:6d:c4:86:68:f7:cc:
+                    35:10:c5:4f:09:59:47:ca:98:b1:95:80:2b:ac:56:
+                    66:0f:2e:9e:86
+                ASN1 OID: secp256k1
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Basic Constraints: critical
+                CA:FALSE, pathlen:3
+    Signature Algorithm: ecdsa-with-SHA256
+         30:46:02:21:00:a9:f0:49:f8:44:75:ea:f2:e8:87:cd:c8:6f:
+         4b:c7:eb:a5:d7:5b:42:26:11:0d:37:50:07:f4:f2:65:dd:fe:
+         4a:02:21:00:95:e0:a8:ab:db:3a:6d:ac:7c:51:ad:c6:b4:47:
+         45:6b:ee:3d:bc:d0:83:33:69:3f:41:c2:9a:97:34:d8:68:05
+-----BEGIN CERTIFICATE-----
+MIICFzCCAbygAwIBAgIBMjAKBggqhkjOPQQDAjCBsTEkMCIGA1UEAwwbUmVnaW9u
+ZSBUcmVudGlub19BbHRvX0FkaWdlMQswCQYDVQQGEwJJVDEPMA0GA1UECAwGSXRh
+bGlhMRgwFgYDVQQKDA9FLVZvdGluZyBzeXN0ZW0xIjAgBgNVBAsMGUUtVm90aW5n
+IHN5c3RlbSBhdXRob3JpdHkxLTArBgkqhkiG9w0BCQEWHlRyZW50aW5vX0FsdG9f
+QWRpZ2VAZXZvdGluZy5pdDAeFw0yMjA4MjYxNTIxMzRaFw0yMzA4MjYxNTIxMzRa
+MFUxDzANBgNVBAMMBlN0ZWZhbjELMAkGA1UEBhMCSVQxDzANBgNVBAgMBkl0YWxp
+YTEkMCIGA1UECgwbUmVnaW9uZSBUcmVudGlub19BbHRvX0FkaWdlMFYwEAYHKoZI
+zj0CAQYFK4EEAAoDQgAECB1XYgUc3/MSBgkhSR6C1RbA6z8Oq5/BK2BUXMNGDvVy
+qyS7n7ltxIZo98w1EMVPCVlHypixlYArrFZmDy6ehqMjMCEwDgYDVR0PAQH/BAQD
+AgWgMA8GA1UdEwEB/wQFMAMCAQMwCgYIKoZIzj0EAwIDSQAwRgIhAKnwSfhEdery
+6IfNyG9Lx+ul11tCJhENN1AH9PJl3f5KAiEAleCoq9s6bax8Ua3GtEdFa+49vNCD
+M2k/QcKalzTYaAU=
+-----END CERTIFICATE-----
