@@ -163,19 +163,19 @@ public class SmartContract extends Verifier implements Serializable {
      * = ( g<sup>R</sup>)<sup>x<sub>A<sub>i</sub></sub></sup> </li>
      *
      * <li>
-     * voti<sub>&#937;<sub>1</sub></sub>
-     * =
-     * (g<sup>M</sup> g<sup>RK</sup>) (&#928; <sub> i=1 </sub>
+     * The minister computes:     
+     * 1) (g<sup>M</sup> g<sup>RK</sup>) (&#928; <sub> i=1 </sub>
      * <sup>N<sub>a</sub></sup>
-     * (d<sub>A<sub>i</sub>,
-     * voti<sub>&#937;<sub>1</sub></sub></sub>))<sup>-1</sup>
-     * =(g<sup>M</sup> g<sup>RK</sup>)(g<sup>RK</sup>)<sup>-1</sup>
+     * (d<sub>A<sub>i</sub>,    
+     *  voti<sub>&#937;<sub>1</sub></sub></sub>))<sup>-1</sup>
+     * =(g<sup>M</sup> g<sup>RK</sup>)(g<sup>RK</sup>)<sup>-1</sup> =g^M
      * </li>
      *
      *
      * <li>
-     * voti<sub>&#937;<sub>2</sub></sub> = TN -
-     * voti<sub>&#937;<sub>1</sub></sub>, with TN= number of transactions
+     * 2) voti<sub>&#937;<sub>2</sub></sub> = TN -
+     * voti<sub>&#937;<sub>1</sub></sub>, with TN= number of transactions.
+     * This step is done by brute-force
      * </li>
      * </ul>
      *
