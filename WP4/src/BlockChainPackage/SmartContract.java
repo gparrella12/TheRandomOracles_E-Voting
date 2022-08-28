@@ -163,7 +163,7 @@ public class SmartContract extends Verifier implements Serializable {
      * = ( g<sup>R</sup>)<sup>x<sub>A<sub>i</sub></sub></sup> </li>
      *
      * <li>
-     * The minister computes:     
+     * The smart contract computes:     
      * 1) (g<sup>M</sup> g<sup>RK</sup>) (&#928; <sub> i=1 </sub>
      * <sup>N<sub>a</sub></sup>
      * (d<sub>A<sub>i</sub>,    
