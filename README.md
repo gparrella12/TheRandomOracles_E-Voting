@@ -14,7 +14,7 @@ Francesco Sonnessa: @s0nFra
 
 # How to Run
 
-It's necessary to clone the repository in your favourite IDE and run the SimulateProtocol.java file in Protocol package.
+You can clone the repository in your favourite IDE and run the SimulateProtocol.java file in the Protocol package.
 
 # Who can contribute to this project?
 
