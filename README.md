@@ -12,7 +12,7 @@ Giuseppe Parrella: @gparrella12
 
 Francesco Sonnessa: @s0nFra
 
-#How to Run
+# How to Run
 
 It's necessary to clone the repository in your favourite IDE and run the SimulateProtocol.java file in Protocol folder.
 
