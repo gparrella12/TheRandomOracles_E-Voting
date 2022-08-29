@@ -1,6 +1,6 @@
-# The Random Oracles - A Blockchain based e-voting system
+# The Random Oracles - A Blockchain Based E-Voting System
 
-This repository contains a prototype for a Blockchain based E-voting system in Java.
+This repository contains a prototype for a Blockchain Based E-Voting System, implemented using Java
 
 Authors
 
@@ -14,7 +14,7 @@ Francesco Sonnessa: @s0nFra
 
 # How to Run
 
-It's necessary to clone the repository in your favourite IDE and run the SimulateProtocol.java file in Protocol folder.
+It's necessary to clone the repository in your favourite IDE and run the SimulateProtocol.java file in Protocol package.
 
 # Who can contribute to this project?
 
