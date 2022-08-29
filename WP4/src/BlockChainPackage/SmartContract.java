@@ -17,8 +17,6 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-
-
 /**
  * This class contains the implementation of a Smart Contract.
  *
@@ -88,8 +86,8 @@ public class SmartContract extends Verifier implements Serializable {
     }
 
     /**
-     * This method adds on the blockchain a transaction that contains:   
-     * <ul>     
+     * This method adds on the blockchain a transaction that contains:
+     * <ul>
      * <li> voter's vote </li>
      * <li> vote's proof </li>
      * <li> signature of the vote and its proof </li>
@@ -128,7 +126,7 @@ public class SmartContract extends Verifier implements Serializable {
      * This method aggregates the ciphertexts submitted by all the voters. The
      * aggregation will ouput a ciphertext whose underlying message represents
      * the total number of votes associated with the candidate Omega_1.
-     *<br></br>
+     * <br></br>
      * c<sub>voti<sub> &#937; <sub>1</sub></sub></sub> = &#928; <sub> i=1
      * </sub><sup>TN </sup> (c<sub>i</sub>) = (g<sup>R</sup>, g<sup>M</sup>
      * g<sup>RK</sup>)
@@ -136,12 +134,11 @@ public class SmartContract extends Verifier implements Serializable {
      * where:<br></br>
      * R=&sum;<sub>i=1</sub><sup>TN</sup>(r<sub>i</sub>)
      * M=&sum;<sub>i=1</sub><sup>TN</sup>(m<sub>i</sub>)
-     * K=&sum;<sub>n=1</sub><sup>n<sub>a</sub></sup>(
-     * x<sub>A<sub>n</sub></sub>)
+     * K=&sum;<sub>n=1</sub><sup>n<sub>a</sub></sup>( x<sub>A<sub>n</sub></sub>)
      * TN= number of transactions.
-     *<br></br>
-     * This aggregation is made possible by the Additive Homomorphism
-     * ElGamal Encryption Scheme.
+     * <br></br>
+     * This aggregation is made possible by the Additive Homomorphism ElGamal
+     * Encryption Scheme.
      *
      * @return the aggregate ciphertext
      */
@@ -163,19 +160,19 @@ public class SmartContract extends Verifier implements Serializable {
      * = ( g<sup>R</sup>)<sup>x<sub>A<sub>i</sub></sub></sup> </li>
      *
      * <li>
-     * The smart contract computes:     
-     * 1) (g<sup>M</sup> g<sup>RK</sup>) (&#928; <sub> i=1 </sub>
+     * The smart contract computes: 1) (g<sup>M</sup> g<sup>RK</sup>) (&#928;
+     * <sub> i=1 </sub>
      * <sup>N<sub>a</sub></sup>
-     * (d<sub>A<sub>i</sub>,    
-     *  voti<sub>&#937;<sub>1</sub></sub></sub>))<sup>-1</sup>
+     * (d<sub>A<sub>i</sub>,
+     * voti<sub>&#937;<sub>1</sub></sub></sub>))<sup>-1</sup>
      * =(g<sup>M</sup> g<sup>RK</sup>)(g<sup>RK</sup>)<sup>-1</sup> =g^M
      * </li>
      *
      *
      * <li>
      * 2) voti<sub>&#937;<sub>2</sub></sub> = TN -
-     * voti<sub>&#937;<sub>1</sub></sub>, with TN= number of transactions.
-     * This step is done by brute-force
+     * voti<sub>&#937;<sub>1</sub></sub>, with TN= number of transactions. This
+     * step is done by brute-force
      * </li>
      * </ul>
      *
@@ -194,8 +191,7 @@ public class SmartContract extends Verifier implements Serializable {
         BigInteger u = aggregatedCipherText.getU();
         //v = g^m * y^r, with y public key
         BigInteger z = aggregatedCipherText.getV();
-        
-        
+
         for (Authority a : manager.getAuthorityList()) {
             // for each Authority a compute the corresponding share
             BigInteger share = u.modPow(a.getPrivateEncKey().mod(q), p);
@@ -230,6 +226,10 @@ public class SmartContract extends Verifier implements Serializable {
         this.resultCandidate1 = result;
         // the result for candidate 2 is equal to (TN - result for candidate 1)
         this.resultCandidate2 = new BigInteger(String.valueOf(this.votes.size())).subtract(this.resultCandidate1);
+
+        // Print results on blockchain
+        this.blockchain.addBlock(new Block<>("FINAL RESULTS:\nCandidate 1:\t" + this.resultCandidate1 + "\nCandidate 2:\t" + this.resultCandidate2));
+
     }
 
     /**
@@ -261,8 +261,9 @@ public class SmartContract extends Verifier implements Serializable {
 
     /**
      * This method prints all information of the smart contract.
-     * 
-     * @return a <code>String</code> containing all information of the smart contract.
+     *
+     * @return a <code>String</code> containing all information of the smart
+     * contract.
      */
     @Override
     public String toString() {

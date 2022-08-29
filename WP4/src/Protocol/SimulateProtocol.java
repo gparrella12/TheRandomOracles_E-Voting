@@ -99,7 +99,7 @@ public class SimulateProtocol {
         }
         System.out.println("\n======== RESULT ========");
 
-        // Printing the results
+        // Printing the results on standard output
         System.out.println("Votes for candidate Omega1 =\t" + sc.getResultCandidate1());
         System.out.println("Votes for candidate Omega2 =\t" + sc.getResultCandidate2());
     }
