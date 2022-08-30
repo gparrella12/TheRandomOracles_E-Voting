@@ -45,7 +45,7 @@ public class CyclicGroupParameters {
      */
     public static CyclicGroupParameters getInstance() {
         if (instance == null) {
-            return new CyclicGroupParameters("parameters_with_isqr.txt");
+            return new CyclicGroupParameters("parameters.txt");
         }
         return instance;
     }

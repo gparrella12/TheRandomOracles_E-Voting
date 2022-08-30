@@ -228,7 +228,7 @@ public class SmartContract extends Verifier implements Serializable {
         this.resultCandidate2 = new BigInteger(String.valueOf(this.votes.size())).subtract(this.resultCandidate1);
 
         // Print results on blockchain
-        this.blockchain.addBlock(new Block<>("FINAL RESULTS:\nCandidate 1:\t" + this.resultCandidate1 + "\nCandidate 2:\t" + this.resultCandidate2));
+        this.blockchain.addBlock(new Block<>("FINAL RESULTS:\nCandidate Omega1:\t" + this.resultCandidate1 + "\nCandidate Omega2:\t" + this.resultCandidate2));
 
     }
 
