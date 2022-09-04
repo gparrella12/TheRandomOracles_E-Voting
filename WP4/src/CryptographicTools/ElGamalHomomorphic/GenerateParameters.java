@@ -19,7 +19,7 @@ public class GenerateParameters {
      */
     public static void main(String[] args) {
         BigInteger securityParameter = BigInteger.valueOf(2048);
-        String filename = "parameters_with_isqr.txt";
+        String filename = "parameters.txt";
         BigInteger g, p, q;
         SecureRandom sr = new SecureRandom();
 
