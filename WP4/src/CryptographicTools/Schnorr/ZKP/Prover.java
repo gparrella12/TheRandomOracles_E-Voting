@@ -48,7 +48,7 @@ public abstract class Prover {
      */
     public BigInteger getA() {
         schnorrRandomness = new BigInteger(keys.getParam().getSecurityParameter().intValue(), new SecureRandom()).mod(keys.getParam().getQ());
-        return keys.getParam().getG().modPow(schnorrRandomness, keys.getParam().getP());
+        return keys.getParam().getG().modPow(schnorrRandomness, keys.getParam().getP()); // a = g^r mod p
     }
 
     /**
@@ -59,7 +59,7 @@ public abstract class Prover {
      * @return a <code>BigInteger</code> representing the <code>z</code> value.
      */
     public BigInteger getZ(BigInteger c) {
-        return schnorrRandomness.add(c.multiply(keys.getX())).mod(keys.getParam().getQ());
+        return schnorrRandomness.add(c.multiply(keys.getX())).mod(keys.getParam().getQ()); // z = r + x*c mod q
     }
 
     /**

@@ -54,8 +54,8 @@ public abstract class Verifier {
         BigInteger c = v.getC(param);
         BigInteger z = p.getZ(c);
 
-        BigInteger left = a.multiply(p.getY().modPow(c, param.getP())).mod(param.getP());
-        BigInteger right = param.getG().modPow(z, param.getP());
-        return left.equals(right);
+        BigInteger left = a.multiply(p.getY().modPow(c, param.getP())).mod(param.getP()); // left = g^z
+        BigInteger right = param.getG().modPow(z, param.getP()); // right = a*y^c
+        return left.equals(right); // g^z == a*y^c
     }
 }
